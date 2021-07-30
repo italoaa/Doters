@@ -1,0 +1,125 @@
+import:
+  - ~/.config/alacritty/schemes.yml
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+  padding:
+    x: 10
+    y: 10
+  decorations: buttonless
+  title: Mostrositty
+  dynamic_title: false
+  history: 1000
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+
+    style: Regular
+
+  bold:
+    family: JetBrainsMono Nerd Font
+
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font
+
+    style: Italic
+
+
+  size: 16.0
+  use_thin_strokes: true
+
+draw_bold_text_with_bright_colors: true
+
+background_opacity: 0.86
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  save_to_clipboard: false
+
+cursor:
+  style:
+    shape: Block
+
+    blinking: Off
+
+  vi_mode_style: None
+
+  unfocused_hollow: true
+
+live_config_reload: true
+
+shell:
+  program: /usr/local/bin/fish
+working_directory: /Users/italoamaya/
+alt_send_esc: false
+
+key_bindings:
+  - { key: V,        mods: Command, action: Paste                        }
+  - { key: C,        mods: Command, action: Copy                         }
+  - { key: Q,        mods: Command, action: Quit                         }
+  - { key: W,        mods: Command, action: Quit                         }
+  - { key: Plus,   mods: Command, action: IncreaseFontSize             }
+  - { key: Minus,    mods: Command, action: DecreaseFontSize             }
+  - { key: PageDown, mods: Shift,   chars: "\x1b[6;2~"                   }
+  
+  
+schemes:
+  Mine : &Mine
+    primary:
+      background :  "#1b1f27"
+      foreground : "#abb2bf"
+    normal:
+      black : "#282c34" 
+      red : "#d47d85"
+      green : "#A3BE8C"
+      yellow : "#e7c787"
+      blue : "#61afef"
+      magenta : "#c882e7"
+      cyan : "#a3b8ef"
+      white : "#abb2bf"
+    bright:
+      black : "#252931" 
+      red : "#DE5852"
+      green : "#7eca9c"
+      yellow : "#ebcb8b"
+      blue : "#519ABA"
+      magenta : "#fca2aa"
+      cyan : "#a3b8ef"
+      white : "#abb2bf"
+
+
+# BEGIN ACE
+colors:
+  primary:
+    background: '#0A1006'
+    foreground: '#dac4c6'
+  cursor:
+    text:       '#0A1006'
+    cursor:     '#dac4c6'
+  normal:
+    black:      '#0A1006'
+    red:        '#B1716F'
+    green:      '#C66F6B'
+    yellow:     '#A9827D'
+    blue:       '#AB7C84'
+    magenta:    '#79898A'
+    cyan:       '#79898A'
+    white:      '#dac4c6'
+  bright:
+    black:      '#98898a'
+    red:        '#B1716F'
+    green:      '#C66F6B'
+    yellow:     '#A9827D'
+    blue:       '#AB7C84'
+    magenta:    '#79898A'
+    cyan:       '#A39095'
+    white:      '#dac4c6'
+# END ACE
+# colors: *Mine

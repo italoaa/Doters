@@ -1,0 +1,154 @@
+#!/usr/bin/env sh
+#SKHD STUFF
+
+# if you're having troubles finding key codes for a key just type skhd --observe in a terminal and type a key. Pretty cool! Or just check the wiki.
+
+## HYPER == SHIFT + CMD + ALT + OPTION
+
+## Quickly restart the yabai launch agent
+ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+
+## Close active application
+# hyper - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+
+# test a command
+#lshift - x : terminal-notifier -message "lshift - x"
+#lshift - x : terminal-notifier -message "$(yabai -m query --windows --window | jq -re ".id")"
+
+## open terminal
+hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+
+## swap window
+cmd + alt - h : yabai -m window --swap west
+cmd + alt - j : yabai -m window --swap south
+cmd + alt - k : yabai -m window --swap north
+cmd + alt - l : yabai -m window --swap east # 0x21 is the "[" key
+
+## send window to monitor and follow focus
+
+## focus display
+# ctrl + cmd - 1 : yabai -m window --display 1 yabai -m display --focus 1
+# ctrl + cmd - 2 : yabai -m window --display 2 yabai -m display --focus 2
+# ctrl + cmd - 3 : yabai -m window --display 3 yabai -m display --focus 3
+
+## increase window size
+cmd + alt - a : yabai -m window --resize left:-40:0
+cmd + alt - s : yabai -m window --resize bottom:0:40
+cmd + alt - w : yabai -m window --resize top:0:-40
+cmd + alt - d : yabai -m window --resize right:40:0
+
+## decrease window size
+shift + cmd + alt - a : yabai -m window --resize left:40:0
+shift + cmd + alt - s : yabai -m window --resize bottom:0:-40
+shift + cmd + alt - w : yabai -m window --resize top:0:40
+shift + cmd + alt - d : yabai -m window --resize right:-40:0
+
+## rotate tree 90
+hyper - r : yabai -m space --rotate 90
+
+## flip the tree vertically
+# hyper - 4 : yabai -m space --mirror y-axis
+
+#Move active window to next space on current display
+# shift + lalt + lcmd + ctrl + ralt - 1 : yabai -m query --spaces --space | jq -re ".index" | xargs -I {} bash -c "if [[ '{}' = '1' ]]; then yabai -m window --space 2; elif [[ '{}' = '2' ]]; then yabai -m window --space 1; fi"
+# shift + lalt + lcmd + ctrl + ralt - 2 : yabai -m query --spaces --space | jq -re ".index" | xargs -I {} bash -c "if [[ '{}' = '3' ]]; then yabai -m window --space 4; elif [[ '{}' = '4' ]]; then yabai -m window --space 3; fi"
+# shift + lalt + lcmd + ctrl + ralt - 3 : yabai -m query --spaces --space | jq -re ".index" | xargs -I {} bash -c "if [[ '{}' = '5' ]]; then yabai -m window --space 6; elif [[ '{}' = '6' ]]; then yabai -m window --space 5; fi"
+
+hyper - f : yabai -m window --toggle zoom-fullscreen
+
+
+
+## move window and focus to other space
+
+hyper - 1 : yabai -m window --space  1; yabai -m space --focus 1
+hyper - 2 : yabai -m window --space  2; yabai -m space --focus 2
+hyper - 3 : yabai -m window --space  3; yabai -m space --focus 3
+hyper - 4 : yabai -m window --space  4; yabai -m space --focus 4
+hyper - 5 : yabai -m window --space  5; yabai -m space --focus 5
+hyper - 6 : yabai -m window --space  6; yabai -m space --focus 6
+hyper - 7 : yabai -m window --space  7; yabai -m space --focus 7
+hyper - 8 : yabai -m window --space  8; yabai -m space --focus 8
+hyper - 9 : yabai -m window --space  9; yabai -m space --focus 9
+hyper - a : yabai -m window --space 10; yabai -m space --focus 10
+
+# show / hide Widgets
+
+# hyper - a : ~/.config/skhd/widgets.sh 0
+# hyper - s : ~/.config/skhd/widgets.sh 1
+
+# cycle through windows
+# cycle backwards
+hyper - i : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
+hyper - o : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | reverse | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
+
+
+## float / unfloat window and center on screen
+alt - t : yabai -m window --toggle float;\
+#yabai -m window --grid 4:4:1:1:2:2 
+## toggle sticky 
+# alt - s : yabai -m window --toggle sticky 
+## toggle sticky, float and resize to picture-in-picture size 
+# alt - p : yabai -m window --toggle sticky;\ yabai -m window --grid 5:5:4:0:1:1 
+## change layout of desktop 
+# ctrl + alt - a : yabai -m space --layout bsp ctrl + alt - d : yabai -m space --layout float
+
+## toggle window split type
+#alt - e : yabai -m window --toggle split
+
+## toggle window border
+# shift + alt - b : yabai -m window --toggle border
+
+## create desktop, move window and follow focus
+shift + cmd - n : yabai -m space --create && \
+set index (yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index') && \
+yabai -m window --space "$index" && \
+yabai -m space --focus "$index"
+
+## create desktop and follow focus
+shift + alt - n : yabai -m space --create && \
+set index (yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index') && \
+yabai -m space --focus "$index"
+
+## destroy desktop
+cmd - backspace : yabai -m space --destroy
+
+## fast focus desktop
+cmd - 1 : yabai -m space --focus 1
+cmd - 2 : yabai -m space --focus 2
+cmd - 3 : yabai -m space --focus 3
+cmd - 4 : yabai -m space --focus 4
+cmd - 5 : yabai -m space --focus 5
+cmd - 6 : yabai -m space --focus 6
+cmd - 7 : yabai -m space --focus 7
+cmd - 8 : yabai -m space --focus 8
+cmd - 9 : yabai -m space --focus 9
+
+# -----------------------------------
+# Launcha
+# ----------------------------------- 
+# cmd - space : ~/.config/Bin/popup.sh ~/.config/Bin/launcher.sh
+
+# -----------------------------------
+# Launch with key
+# ----------------------------------- 
+
+# Chrome
+# hyper - b : /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+# Calendar
+
+# Notion
+# hyper - n : /Applications/Notion.app/Contents/MacOS/Notion
+
+# Music
+# hyper - m : /Applications/Music.app/Contents/MacOS/Music
+
+# open terminal
+hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+
+
+## move window
+#shift + ctrl - a : yabai -m window --move rel:-20:0
+#shift + ctrl - s : yabai -m window --move rel:0:20
+#shift + ctrl - w : yabai -m window --move rel:0:-20
+#shift + ctrl - d : yabai -m window --move rel:20:0

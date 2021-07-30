@@ -1,0 +1,109 @@
+import:
+  - ~/.config/alacritty/schemes.yml
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+  padding:
+    x: 10
+    y: 10
+  decorations: buttonless
+  title: Mostrositty
+  dynamic_title: false
+  history: 1000
+font:
+  normal:
+    family: JetBrainsMono Nerd Font
+
+    style: Regular
+
+  bold:
+    family: JetBrainsMono Nerd Font
+
+    style: Bold
+
+  italic:
+    family: JetBrainsMono Nerd Font
+
+    style: Italic
+
+
+  size: 16.0
+  use_thin_strokes: true
+
+draw_bold_text_with_bright_colors: true
+
+background_opacity: 0.90
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  save_to_clipboard: false
+
+cursor:
+  style:
+    shape: Block
+
+    blinking: Off
+
+  vi_mode_style: None
+
+  unfocused_hollow: true
+
+live_config_reload: true
+env:
+  TERM: xterm-256color
+alt_send_esc: false
+schemes:
+  Mine : &Mine
+    primary:
+      background :  "#1b1f27"
+      foreground : "#abb2bf"
+    normal:
+      black : "#282c34" 
+      red : "#d47d85"
+      green : "#A3BE8C"
+      yellow : "#e7c787"
+      blue : "#61afef"
+      magenta : "#c882e7"
+      cyan : "#a3b8ef"
+      white : "#abb2bf"
+    bright:
+      black : "#252931" 
+      red : "#DE5852"
+      green : "#7eca9c"
+      yellow : "#ebcb8b"
+      blue : "#519ABA"
+      magenta : "#fca2aa"
+      cyan : "#a3b8ef"
+      white : "#abb2bf"
+
+
+# BEGIN ACE
+colors:
+  primary:
+    background: '#1C2331'
+    foreground: '#acdae8'
+  cursor:
+    text:       '#04080C'
+    cursor:     '#acdae8'
+  normal:
+    black:      '#04080C'
+    red:        '#8B4A89'
+    green:      '#4B3697'
+    yellow:     '#37539A'
+    blue:       '#4951AC'
+    magenta:    '#4F6CCE'
+    cyan:       '#559EDF'
+    white:      '#acdae8'
+  bright:
+    black:      '#7898a2'
+    red:        '#AB1AA9'
+    green:      '#4B3697'
+    yellow:     '#37539A'
+    blue:       '#4951AC'
+    magenta:    '#4F6CCE'
+    cyan:       '#559EDF'
+    white:      '#acdae8'
+# END ACE
+# colors: *Mine
