@@ -152,3 +152,17 @@ hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 #shift + ctrl - s : yabai -m window --move rel:0:20
 #shift + ctrl - w : yabai -m window --move rel:0:-20
 #shift + ctrl - d : yabai -m window --move rel:20:0
+
+# -----------------------------------
+# Stacks
+# ----------------------------------- 
+# Focus window up/down in stack
+hyper - n : yabai -m window --focus stack.next
+hyper - p : yabai -m window --focus stack.prev
+
+# Add the active window  to the window or stack to the {direction}
+# Note that this only works when the active window does *not* already belong to a stack
+cmd + alt + shift - l  : yabai -m window west --stack (yabai -m query --windows --window | jq -r '.id')
+cmd + alt + shift - h  : yabai -m window south --stack (yabai -m query --windows --window | jq -r '.id')
+cmd + alt + shift - k    : yabai -m window north --stack (yabai -m query --windows --window | jq -r '.id')
+cmd + alt + shift - j : yabai -m window east --stack (yabai -m query --windows --window | jq -r '.id')

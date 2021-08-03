@@ -3,11 +3,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=$LANG
 # EXA CONFIG AND ALIASES
 
-function pywal
-    # generate color scheme from current wallpaper
-    set current_wallpaper "(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)')"
-    wal -i $current_wallpaper -n
-end
+# wal -n -i ~/Personal/bkg/Fav/wallpaper.png -o ~/Personal/Programing/Scripts/wal_to_alacritty.sh
 
 function tmux-sessionizer
     ~/.config/Bin/tmux/tmux-sessionizer

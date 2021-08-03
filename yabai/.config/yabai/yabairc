@@ -39,6 +39,7 @@ yabai -m rule --add app="^CiscoSparkHelper$" manage=off
 yabai -m rule --add app="^Logi Options$" manage=off
 yabai -m rule --add app="^Cisco Webex Start$" manage=off
 yabai -m rule --add app="^Private Internet Access$" manage=off
+yabai -m rule --add app="^csgo_osx64$" manage=off
 yabai -m rule --add app="^mpv$" manage=off layer=above
 yabai -m rule --add title='Launcha' manage=off sticky=on layer=above border=off #Custom launcher
 

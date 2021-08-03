@@ -9,9 +9,7 @@ else
     #if no argument enable a fzf to search common places to start a session
     items=`find ~/Personal/Programing -maxdepth 1 -mindepth 1 -type d`
     items+=`find ~/Dot -maxdepth 1 -mindepth 1 -type d`
-    # items+=("$HOME/Personal")
-    # items+=("$HOME/Personal/Programing/projects/")
-    # items+=("$HOME/Dot")
+    items+=`find ~/.hammerspoon -maxdepth 0 -mindepth 0 -type d`
     selected=`echo "$items" | fzf`
 fi
 

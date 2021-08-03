@@ -23,16 +23,34 @@ c.downloads.location.directory = '~/Downloads'
 c.tabs.show = 'switching'
 c.window.hide_decoration = False
 config.set("colors.webpage.darkmode.enabled", True)
+c.fonts.default_size = '13pt'
+c.fonts.hints = 'bold 15pt default_family'
 # == }}}
 
 
 # ================== Key Bindigns ======================= {{{
-c.aliases = {'q': 'quit', 'w': 'session-save', 'wq': 'quit --save'}
+c.aliases = {
+        'q': 'quit',
+        'w': 'session-save',
+        'wq': 'quit --save'
+        }
 config.bind('<Alt-y>','hint links spawn /usr/local/bin/mpv --force-window --script-opts=ytdl_hook-ytdl_path=/usr/local/bin/youtube-dl {hint-url}')
-
-
+config.bind('<Alt-Shift-y>','hint links spawn /usr/local/bin/mpv --no-video --force-window --script-opts=ytdl_hook-ytdl_path=/usr/local/bin/youtube-dl {hint-url}')
+config.bind('<Ctrl-r>','config-source')
 # == }}}
 
+# Athetics
+c.fonts.completion.entry = '15pt monospace'
+c.completion.height = '30%'
+c.statusbar.padding = {'bottom': 5, 'left': 5, 'right': 5, 'top': 5}
+c.statusbar.widgets = ["keypress", "url", "scroll", "history", "tabs", "progress"]
+c.colors.completion.fg = 'black'
+c.colors.completion.odd.bg = '#F2F2F2'
+c.colors.completion.even.bg = 'lightgrey'
+c.hints.border = '2px solid black'
+c.colors.hints.fg = 'red'
+c.colors.hints.bg = 'black'
+c.colors.hints.match.fg = 'lime'
 
 # ================== Youtube Add Blocking ======================= {{{
 def filter_yt(info: interceptor.Request):
