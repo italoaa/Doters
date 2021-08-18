@@ -5,17 +5,20 @@ export LC_ALL=$LANG
 
 # wal -n -i ~/Personal/bkg/Fav/wallpaper.png -o ~/Personal/Programing/Scripts/wal_to_alacritty.sh
 
+function fish_greeting
+     pokemon-colorscripts -r
+end
+
 function tmux-sessionizer
     ~/.config/Bin/tmux/tmux-sessionizer
 end
 
 bind \cf tmux-sessionizer
  
-
 set -g theme_color_scheme zenburn
 
 # Ubersicht
-balias uber "cd ~/Library/Application\ Support/Übersicht/widgets/"
+    balias uber "cd ~/Library/Application\ Support/Übersicht/widgets/"
 
 
 # Yabai
@@ -25,10 +28,10 @@ balias sp 'brew services restart spacebar'
 
 balias o. "open ."
 balias l "exa --group-directories-first"
-balias la "exa --group-directories-first --long --all --group --header --binary --links --inode --blocks"
-balias ll "exa --group-directories-first --long --all --group --header"
-balias lg "exa --group-directories-first --long --all --group --header --git"
-balias lt "exa --group-directories-first --long --all --group --header -T"
+balias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
+balias ll "exa --icons --group-directories-first --long --all --group --header"
+balias lg "exa --icons --group-directories-first --long --all --group --header --git"
+balias lt "exa --icons --group-directories-first --long --all --group --header -T"
 
 
 

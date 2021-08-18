@@ -36,7 +36,7 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
-background_opacity: 0.86
+background_opacity: 0.96
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -59,6 +59,11 @@ shell:
   program: /usr/local/bin/fish
 working_directory: /Users/italoamaya/
 alt_send_esc: false
+
+colors:
+  primary:
+    background: '#282c34'
+    foreground: '#bbc2cf'
 
 key_bindings:
   - { key: V,        mods: Command, action: Paste                        }
@@ -97,29 +102,27 @@ schemes:
 
 # BEGIN ACE
 colors:
-  primary:
-    background: '#1a1e25'
-    foreground: '#c3ced3'
   cursor:
-    text:       '#1a1e25'
-    cursor:     '#c3ced3'
+    text:       '#0A0918'
+    cursor:     '#8fd6d5'
   normal:
-    black:      '#1a1e25'
-    red:        '#CF8771'
-    green:      '#577194'
-    yellow:     '#5E81AC'
-    blue:       '#6F93B3'
-    magenta:    '#7D9EC0'
-    cyan:       '#9C8CAC'
-    white:      '#c3ced3'
+    black:      '#0A0918'
+    red:        '#274D45'
+    green:      '#B9434D'
+    yellow:     '#26B273'
+    blue:       '#EFB757'
+    magenta:    '#155E9E'
+    cyan:       '#1A75CB'
+    white:      '#8fd6d5'
   bright:
-    black:      '#889093'
-    red:        '#CF8771'
-    green:      '#577194'
-    yellow:     '#5E81AC'
-    blue:       '#6F93B3'
-    magenta:    '#7D9EC0'
-    cyan:       '#9C8CAC'
-    white:      '#c3ced3'
+    black:      '#649595'
+    red:        '#274D45'
+    green:      '#B9434D'
+    yellow:     '#26B273'
+    blue:       '#EFB757'
+    magenta:    '#155E9E'
+    cyan:       '#1A75CB'
+    white:      '#8fd6d5'
 # END ACE
+# blue is the the item colors in ll
 # colors: *Mine

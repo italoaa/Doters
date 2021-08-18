@@ -112,4 +112,6 @@ EOF
 } && cat "$tempfile" > "$CFG" \
   && rm "$tempfile"
 trap - INT TERM EXIT
+
 printf "'%s' exported to '%s'\n" "$SRC" "$CFG"
+

@@ -1,30 +1,20 @@
-sw_volume: 100
-audio_device_state:1:My Mac Device
+sw_volume: 60
+audio_device_state:1:Italo Macbook
 audio_device_state:1:my_fifo
 state: pause
 current: 4
-time: 45.396000
+time: 18.372000
 random: 0
 repeat: 1
-single: 0
+single: 1
 consume: 0
-crossfade: 5
+crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:extras/BEST MR ROBOT SONGS-9ASLyYUrhvY.mp3
-1:lofi/Die For You (The Weeknd Lofi Flip)-546ZakzI0pQ.mp3
-2:Trova/¿A dónde van (Silvio Rodríguez).mp3
-3:Oasis acustics/Noel Gallagher & Gem - Half The World Away (live).mp3
-4:Oasis acustics/Noel Gallagher - Wonderwall (The End Acoustic Session '05).mp3
-5:Oasis acustics/Noel Gallagher (Oasis) - Live Acoustic Session for Rolling Stone 2006 (Full Set).mp3
-6:Oasis acustics/Noel Gallagher - The Importance Of Being Idle - Acoustic Set, Rolling Stones [2006].mp3
-7:Red_hot_Chili/Red Hot Chili Peppers - Scar Tissue [Official Music Video].mp3
-8:meme music/Cockmasta Flex - Bros B4 Hoes/10 Cockmasta Flex - Cock (remastered).mp3
-9:Oasis acustics/Noel Gallagher — Setting Sun [The Best Version].mp3
-10:Led Zeppelin/live/Led Zeppelin - Stairway to heaven LIVE.mp3
-11:Oasis acustics/Oasis - Fade In-Out - Legendado • [BR   Live Acoustic].mp3
-12:Oasis acustics/Oasis - One Way Road (acoustic Edge Radio, Toronto 2005) audio.mp3
-13:Oasis acustics/Oasis - Stop Crying Your Heart Out (Noel Acoustic).mp3
-14:Oasis acustics/Oasis - Sunday Morning Call (Acoustic Session).mp3
+0:charly/Sui Generis - Vida (1972)/09 - Quizas, Porque.flac
+1:charly/Sui Generis - Vida (1972)/01 - Cancion Para Mi Muerte.flac
+2:Oasis acustics/Oasis - Digsy's Dinner Acoustic [Live Paris Instore 1994].mp3
+3:Peter Gabriel - Growing Up Live  2019/13 - Solsbury Hill (Live).mp3
+4:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/05 - Monoculo fantastico.flac
 playlist_end

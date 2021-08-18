@@ -1,6 +1,19 @@
 #!/usr/bin/env sh
 #YABAI STUFF
 
+source ~/.cache/wal/colors.sh # pywal scheme - update if needed
+CBACK=$(echo $background | sed 's/#//')
+CFORE=$(echo $foreground | sed 's/#//')
+CACTV=$(echo $color3 | sed 's/#//')
+CNORM=$(echo $color1 | sed 's/#//')
+CINSE=$(echo $foreground | sed 's/#//')
+
+function pywal {
+    # generate color scheme from current wallpaper
+    current_wallpaper="$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)')"
+    wal -i $current_wallpaper -n -o ~/Personal/Programing/Scripts/wal_to_alacritty.sh
+}
+
 #names used in other scripts
 yabai -m space 1 --label Term
 yabai -m space 2 --label Chrome
@@ -41,6 +54,7 @@ yabai -m rule --add app="^Cisco Webex Start$" manage=off
 yabai -m rule --add app="^Private Internet Access$" manage=off
 yabai -m rule --add app="^csgo_osx64$" manage=off
 yabai -m rule --add app="^mpv$" manage=off layer=above
+yabai -m rule --add app="^LastPass$" manage=off layer=above
 yabai -m rule --add title='Launcha' manage=off sticky=on layer=above border=off #Custom launcher
 
 ## Some random global settings
@@ -54,11 +68,11 @@ yabai -m config window_opacity_duration 0.00
 
 ## built in border
 yabai -m config window_border off
-
 yabai -m config window_border on
 yabai -m config window_border_width 1
-yabai -m config active_window_border_color 0xFFC2BAFF
-yabai -m config normal_window_border_color 0x00000000
+yabai -m config active_window_border_color   0xff$CFORE
+yabai -m config normal_window_border_color   0xcc$CBACK
+yabai -m config insert_window_border_color   0xcc$CINSE
 killall limelight &>/dev/null
 
 
@@ -77,6 +91,17 @@ yabai -m config right_padding 10
 yabai -m config window_gap 10
  
 ###################################################
+## Bars
+###################################################
+# yabai -m config status_bar                   on
+# yabai -m config status_bar_text_font         "Helvetica Neue:Bold:12.0"
+# yabai -m config status_bar_icon_font         "FontAwesome:Regular:12.0"
+# yabai -m config status_bar_background_color  0xff202020
+# yabai -m config status_bar_foreground_color  0xffa8a8a8
+# yabai -m config status_bar_space_icon_strip  "(1) web" 2 3 4 5 6 7 8 9 10
+# yabai -m config status_bar_power_icon_strip   
+# yabai -m config status_bar_space_icon        
+# yabai -m config status_bar_clock_icon        time
 # spacebar
 # yabai -m config external_bar all:26:0
 
@@ -84,5 +109,7 @@ yabai -m config window_gap 10
 yabai -m signal --add event=window_destroyed action="./on_destroy"
 
 echo "yabai configuration loaded.."
+
+# pywal
 
 #END
