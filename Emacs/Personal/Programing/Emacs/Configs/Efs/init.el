@@ -2,8 +2,8 @@
 ;;       in Emacs and init.el will be generated automatically!
 
 ;; You will most likely need to adjust this font size for your system!
-(defvar efs/default-font-size 180)
-(defvar efs/default-variable-font-size 180)
+(defvar efs/default-font-size 140)
+(defvar efs/default-variable-font-size 140)
 
 ;; Make frame transparency overridable
 (defvar efs/frame-transparency '(100 . 100))
@@ -143,7 +143,7 @@
     "ot"  '(:ignore t :which-key "treemacs file")
     "otv"  '(treemacs-visit-node-vertical-split :which-key "Vertical Split")
     "oth"  '(treemacs-visit-node-horizontal-split :which-key "Horizontal Split")
-    "oce" '((lambda () (interactive) (find-file "~/Dot/Emacs/.emacs.d/Emacs.org")) :which-key "Emacs")
+    "oce" '((lambda () (interactive) (find-file "~/Dot/Emacs/Configs/Efs/Emacs.org")) :which-key "Emacs")
     "t"  '(:ignore t :which-key "toggles")
     "tt" '(counsel-load-theme :which-key "choose theme")))
     ;; "fde" '(lambda () (interactive) (find-file (expand-file-name "~/.emacs.d/Emacs.org")))))
@@ -175,7 +175,7 @@
   :commands command-log-mode)
 
 (use-package doom-themes
-  :init (load-theme 'doom-palenight t))
+  :init (load-theme 'doom-dracula t))
 
 (use-package all-the-icons)
 
@@ -253,6 +253,25 @@
 
 (efs/leader-keys
   "ts" '(hydra-text-scale/body :which-key "scale text"))
+
+(use-package dashboard
+  :config
+  (dashboard-setup-startup-hook))
+  (setq initial-buffer-choice (lambda () (get-buffer "*dashboard*")))
+  (setq dashboard-center-content t)
+  ;; To disable shortcut "jump" indicators for each section, set
+  ;; (setq dashboard-show-shortcuts nil)
+  ;; Set the title
+  (setq dashboard-banner-logo-title "Welcome to Emacs Dashboard")
+  ;; Set the banner
+  (setq dashboard-startup-banner "~/Personal/Programing/Emacs/Configs/Efs/computer.txt")
+  (setq dashboard-set-heading-icons t)
+  (setq dashboard-set-file-icons t)
+  (setq dashboard-items '((recents  . 5)
+                          (projects . 5)
+                          (bookmarks . 3)
+                          ))
+  ;; (set-face-attribute 'dashboard-text-banner nil :height 140 :weight 'regular)
 
 (use-package page-break-lines)
 
