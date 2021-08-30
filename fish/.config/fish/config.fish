@@ -18,13 +18,15 @@ bind \cf tmux-sessionizer
 set -g theme_color_scheme zenburn
 
 # Ubersicht
-    balias uber "cd ~/Library/Application\ Support/Übersicht/widgets/"
+balias uber "cd ~/Library/Application\ Support/Übersicht/widgets/"
 
 
 # Yabai
 balias ys 'brew services restart yabai'
 balias sk 'brew services restart skhd'
 balias sp 'brew services restart spacebar'
+balias rem 'emacsclient -e "(kill-emacs)"; emacs --daemon'
+balias kem 'emacsclient -e "(kill-emacs)"'
 
 balias o. "open ."
 balias l "exa --group-directories-first"

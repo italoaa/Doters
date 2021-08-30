@@ -39,7 +39,7 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:555\x1eyellow
 SETUVAR fish_pager_color_prefix:cyan
 SETUVAR fish_pager_color_progress:cyan
-SETUVAR fish_user_paths:/Users/italoamaya/Documents/scripts/\x1e/usr/local/bin\x1e/opt/X11/bin\x1e/Library/Frameworks/Mono\x2eframework/Versions/Current/Commands/\x1e/Library/TeX/texbin/\x1e/usr/local/sbin\x1e/Users/italoamaya/Documents/Current/Scripts/\x1e/usr/local/opt/ruby/bin\x1e/Users/italoamaya/\x2econfig/Bin/qute/
+SETUVAR fish_user_paths:/usr/local/opt/llvm/bin/\x1e/Applications/Emacs\x2eapp/Contents/MacOS/bin/\x1e/usr/local/bin\x1e/opt/X11/bin\x1e/Library/Frameworks/Mono\x2eframework/Versions/Current/Commands/\x1e/Library/TeX/texbin/\x1e/usr/local/sbin\x1e/usr/local/opt/ruby/bin\x1e/Users/italoamaya/\x2econfig/Bin/qute/
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
 SETUVAR pure_color_at_sign:pure_color_mute

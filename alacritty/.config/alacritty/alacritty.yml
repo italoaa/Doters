@@ -100,6 +100,28 @@ schemes:
       white : "#abb2bf"
 
 
+# colors:
+#   cursor:
+#     text:       '#0A0918'
+#     cursor:     '#8fd6d5'
+#   normal:
+#     black:      '#0A0918'
+#     red:        '#B9434D'
+#     green:      '#274D45'
+#     yellow:     '#EFB757'
+#     blue:    '#155E9E'
+#     cyan:       '#2A95eB'
+#     green:    '#274D45'
+#     white:      '#8fd6d5'
+#   bright:
+#     black:      '#2A2938'
+#     red:        '#c9535D'
+#     green:      '#26B273'
+#     yellow:       '#fFc767'
+#     cyan:       '#4Aa5fB'
+#     blue:    '#358EcE'
+#     white:      '#aff6f5'
+#
 # BEGIN ACE
 colors:
   cursor:
@@ -107,22 +129,21 @@ colors:
     cursor:     '#8fd6d5'
   normal:
     black:      '#0A0918'
-    red:        '#274D45'
-    green:      '#B9434D'
-    yellow:     '#26B273'
-    blue:       '#EFB757'
-    magenta:    '#155E9E'
-    cyan:       '#1A75CB'
+    red:        '#B9434D'
+    green:      '#274D45'
+    yellow:     '#EFB757'
+    blue:    '#155E9E'
+    cyan:       '#2A95eB'
+    green:    '#274D45'
     white:      '#8fd6d5'
   bright:
-    black:      '#649595'
-    red:        '#274D45'
-    green:      '#B9434D'
-    yellow:     '#26B273'
-    blue:       '#EFB757'
-    magenta:    '#155E9E'
-    cyan:       '#1A75CB'
-    white:      '#8fd6d5'
+    black:      '#2A2938'
+    red:        '#c9535D'
+    green:      '#26B273'
+    yellow:       '#fFc767'
+    cyan:       '#4Aa5fB'
+    blue:    '#358EcE'
+    white:      '#aff6f5'
 # END ACE
 # blue is the the item colors in ll
 # colors: *Mine

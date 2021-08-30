@@ -1,0 +1,1 @@
+{"title":"","rules":[{"description":"Roption to control in emacs","manipulators":[{"type":"frontmost_application_if","from":{"key_code":"right_alt"},"conditions":[{"type":"frontmost_application_if","bundle_identifiers":["org.gnu.Emacs"]}],"to":[{"repeat":true,"key_code":"right_control"}]}]}]}
