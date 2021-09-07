@@ -318,10 +318,10 @@
                             {
                                 "conditions": [
                                     {
+                                        "type": "frontmost_application_if",
                                         "bundle_identifiers": [
                                             "^org\\.gnu\\.Emacs$"
-                                        ],
-                                        "type": "frontmost_application_if"
+                                        ]
                                     }
                                 ],
                                 "from": {
@@ -343,10 +343,10 @@
                             {
                                 "conditions": [
                                     {
+                                        "type": "frontmost_application_if",
                                         "bundle_identifiers": [
                                             "^org\\.gnu\\.Emacs$"
-                                        ],
-                                        "type": "frontmost_application_if"
+                                        ]
                                     }
                                 ],
                                 "from": {

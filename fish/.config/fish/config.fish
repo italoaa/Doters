@@ -19,6 +19,7 @@ set -g theme_color_scheme zenburn
 
 # Ubersicht
 balias uber "cd ~/Library/Application\ Support/Übersicht/widgets/"
+balias appemacs "/Applications/Emacs.app/Contents/MacOS/Emacs"
 
 
 # Yabai
@@ -27,6 +28,7 @@ balias sk 'brew services restart skhd'
 balias sp 'brew services restart spacebar'
 balias rem 'emacsclient -e "(kill-emacs)"; emacs --daemon'
 balias kem 'emacsclient -e "(kill-emacs)"'
+balias ytdl 'youtube-dl -f 137+140'
 
 balias o. "open ."
 balias l "exa --group-directories-first"
