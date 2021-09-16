@@ -1,5 +1,6 @@
 plugin/
-./nvim/
+nvim/
+neovim/
 dein
 tags*
 .netrwhist
