@@ -5,3 +5,6 @@
 
 # install via brew
 brew bundle --file=./Brewfile
+
+#Fonts
+cp -R ./fonts ~/Library/Fonts
