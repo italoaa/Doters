@@ -1,0 +1,1 @@
+{"title":"","rules":[{"description":"cmd -> ctrl v2","manipulators":[{"type":"basic","from":{"key_code":"right_gui"},"conditions":[{"type":"frontmost_application_if","bundle_identifiers":["^org.gnu.Emacs$","^io.alacritty$"]}],"to":[{"repeat":true,"key_code":"right_control"}]}]}]}

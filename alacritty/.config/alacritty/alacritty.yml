@@ -70,9 +70,12 @@ key_bindings:
   - { key: C,        mods: Command, action: Copy                         }
   - { key: Q,        mods: Command, action: Quit                         }
   - { key: W,        mods: Command, action: Quit                         }
-  - { key: Plus,   mods: Command, action: IncreaseFontSize             }
+  - { key: Plus,     mods: Command, action: IncreaseFontSize             }
   - { key: Minus,    mods: Command, action: DecreaseFontSize             }
-  - { key: PageDown, mods: Shift,   chars: "\x1b[6;2~"                   }
+  - { key: Q,        mods: Control, chars: "\x01\x31"                    }
+  - { key: W,        mods: Control, chars: "\x01\x32"                    }
+  - { key: E,        mods: Control, chars: "\x01\x33"                    }
+  - { key: R,        mods: Control, chars: "\x01\x34"                    }
   
   
 schemes:
@@ -98,52 +101,5 @@ schemes:
       magenta : "#fca2aa"
       cyan : "#a3b8ef"
       white : "#abb2bf"
-
-
-# colors:
-#   cursor:
-#     text:       '#0A0918'
-#     cursor:     '#8fd6d5'
-#   normal:
-#     black:      '#0A0918'
-#     red:        '#B9434D'
-#     green:      '#274D45'
-#     yellow:     '#EFB757'
-#     blue:    '#155E9E'
-#     cyan:       '#2A95eB'
-#     green:    '#274D45'
-#     white:      '#8fd6d5'
-#   bright:
-#     black:      '#2A2938'
-#     red:        '#c9535D'
-#     green:      '#26B273'
-#     yellow:       '#fFc767'
-#     cyan:       '#4Aa5fB'
-#     blue:    '#358EcE'
-#     white:      '#aff6f5'
-#
-# BEGIN ACE
-colors:
-  cursor:
-    text:       '#0A0918'
-    cursor:     '#8fd6d5'
-  normal:
-    black:      '#0A0918'
-    red:        '#B9434D'
-    green:      '#274D45'
-    yellow:     '#EFB757'
-    blue:    '#155E9E'
-    cyan:       '#2A95eB'
-    green:    '#274D45'
-    white:      '#8fd6d5'
-  bright:
-    black:      '#2A2938'
-    red:        '#c9535D'
-    green:      '#26B273'
-    yellow:       '#fFc767'
-    cyan:       '#4Aa5fB'
-    blue:    '#358EcE'
-    white:      '#aff6f5'
-# END ACE
 # blue is the the item colors in ll
-# colors: *Mine
+colors: *Mine

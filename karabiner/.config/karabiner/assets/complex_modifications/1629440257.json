@@ -1,1 +1,0 @@
-{"title":"","rules":[{"description":"Cmd to Control in emacs","manipulators":[{"type":"frontmost_application_if","from":{"key_code":"left_gui"},"conditions":[{"type":"frontmost_application_if","bundle_identifiers":["org.gnu.Emacs"]}],"to":[{"repeat":true,"key_code":"left_control"}]}]}]}
