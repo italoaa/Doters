@@ -22,6 +22,7 @@ brew "aircrack-ng"
 brew "automake"
 brew "bat"
 brew "bfg"
+brew "mas"
 brew "binutils"
 brew "gmp"
 brew "numpy"
@@ -174,3 +175,9 @@ cask "stats"
 cask "bettertouchtool"
 cask "dozer"
 cask "omnidisksweeper"
+mas "GoodNotes 5", id: 1444383602
+mas "Microsoft OneNote", id: 784801555
+mas "Spark – Email App by Readdle", id: 1176895641
+mas "The Unarchiver", id: 425424353
+mas "Encrypto: Secure Your Files", id: 935235287
+mas "Speedtest by Ookla", id: 1153157709
