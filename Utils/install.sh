@@ -1,10 +1,10 @@
 # !/bin/bash
 
+# install xcode tools
+xcode-select --install
+
 # install brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+caffeinate -idm /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install via brew
 brew bundle --file=./Brewfile
-
-#Fonts
-cp -R ./fonts ~/Library/Fonts

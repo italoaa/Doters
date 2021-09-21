@@ -11,7 +11,7 @@ ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 ## open terminal
 hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
-hyper - e : /Applications/Emacs.app/Contents/MacOS/Emacs
+hyper - e : /usr/local/Cellar/emacs-mac/emacs-27.2-mac-8.2/Emacs.app/Contents/MacOS/Emacs
 
 ## swap window
 cmd + alt - h : yabai -m window --swap west

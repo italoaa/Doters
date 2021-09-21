@@ -1,0 +1,4 @@
+[init]
+	defaultBranch = main
+[ghq]
+    root = ~/Personal/Programing/repos

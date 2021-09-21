@@ -1,18 +1,9 @@
 #!/usr/bin/env sh
 #YABAI STUFF
 
-source ~/.cache/wal/colors.sh # pywal scheme - update if needed
-CBACK=$(echo $background | sed 's/#//')
-CFORE=$(echo $foreground | sed 's/#//')
-CACTV=$(echo $color3 | sed 's/#//')
-CNORM=$(echo $color1 | sed 's/#//')
-CINSE=$(echo $foreground | sed 's/#//')
-
-function pywal {
-    # generate color scheme from current wallpaper
-    current_wallpaper="$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)')"
-    wal -i $current_wallpaper -n -o ~/Personal/Programing/Scripts/wal_to_alacritty.sh
-}
+CBACK='111318'
+CFORE='d8d5d8'
+CINSE='d8d5d8'
 
 #names used in other scripts
 yabai -m space 1 --label Term

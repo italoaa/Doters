@@ -175,6 +175,7 @@ cask "stats"
 cask "bettertouchtool"
 cask "dozer"
 cask "omnidisksweeper"
+cask "dropbox"
 mas "GoodNotes 5", id: 1444383602
 mas "Microsoft OneNote", id: 784801555
 mas "Spark – Email App by Readdle", id: 1176895641
