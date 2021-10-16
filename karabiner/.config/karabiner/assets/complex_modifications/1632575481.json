@@ -1,0 +1,1 @@
+{"title":"","rules":[{"description":"L to R in csgo","manipulators":[{"type":"basic","from":{"pointing_button":"button1"},"conditions":[{"type":"frontmost_application_if","file_paths":["/Users/italo/Library/Application Support/Steam/steamapps/common/Counter-Strike Global Offensive/csgo_osx64"]}],"to":[{"repeat":true,"pointing_button":"button2"}]}]}]}
