@@ -28,7 +28,7 @@ balias sk 'brew services restart skhd'
 balias sp 'brew services restart spacebar'
 balias rem 'emacsclient -e "(kill-emacs)"; emacs --daemon'
 balias kem 'emacsclient -e "(kill-emacs)"'
-balias ytdl 'youtube-dl -f 137+140'
+balias oem 'emacsclient -c'
 
 balias o. "open ."
 balias l "exa --group-directories-first"

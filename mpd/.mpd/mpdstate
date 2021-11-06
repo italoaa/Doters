@@ -1,9 +1,9 @@
-sw_volume: 60
+sw_volume: 100
 audio_device_state:1:Italo Macbook
 audio_device_state:1:my_fifo
 state: pause
-current: 6
-time: 12.304000
+current: 16
+time: 3.639000
 random: 0
 repeat: 1
 single: 1
@@ -15,7 +15,6 @@ playlist_begin
 0:charly/Sui Generis - Vida (1972)/09 - Quizas, Porque.flac
 1:Oasis acustics/Oasis - Digsy's Dinner Acoustic [Live Paris Instore 1994].mp3
 2:Peter Gabriel - Growing Up Live  2019/13 - Solsbury Hill (Live).mp3
-3:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/05 - Monoculo fantastico.flac
 song_begin: charly/Sui Generis - Vida (1972)/Vida.cue/track0001
 Range: 0-215906
 Genre: Latin Rock
@@ -26,6 +25,26 @@ Track: 01
 Title: Cancion Para Mi Muerte
 Artist: Sui Generis
 song_end
-5:Led Zeppelin/live/Led Zeppelin - Stairway to heaven LIVE.mp3
-6:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/01.-In The Air Tonight.flac
+4:Led Zeppelin/live/Led Zeppelin - Stairway to heaven LIVE.mp3
+5:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/01.-In The Air Tonight.flac
+song_begin: charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Range: 147840-
+Genre: Rock
+Date: 1982
+AlbumArtist: Charly Garcia
+Album: Pubis angelical - Yendo de la cama al living
+Track: 05
+Title: Monoculo fantastico
+Artist: Charly Garcia
+song_end
+7:Red_hot_Chili/Red Hot Chili Peppers - Scar Tissue [Official Music Video].mp3
+8:U2/joshua_tree/U2- I Still Haven't Found What I'm Looking For (Joshua Tree 1987).mp3
+9:Trova/Fernando Delgadillo - 1999 - Febrero 13, Volumen I/13 - Hoy ten miedo de mí.mp3
+10:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/05 - Monoculo fantastico.flac
+11:lofi/Die For You (The Weeknd Lofi Flip)-546ZakzI0pQ.mp3
+12:Oasis acustics/Noel Gallagher - Stay Young (Acoustic Session).mp3
+13:Oasis acustics/Oasis - Married With Children acoustic.mp3
+14:Trova/¿A dónde van (Silvio Rodríguez).mp3
+15:Oasis acustics/Oasis - Whatever (Acoustic) HQ.mp3
+16:meme music/audios/pegar hembras-miranda.mp3
 playlist_end

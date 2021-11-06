@@ -6,12 +6,12 @@
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 # test a command
-#lshift - x : terminal-notifier -message "lshift - x"
-#lshift - x : terminal-notifier -message "$(yabai -m query --windows --window | jq -re ".id")"
+# lshift - x : terminal-notifier -message "lshift - x"
+# lshift - x : terminal-notifier -message "$(yabai -m query --windows --window | jq -re ".id")"
 
 ## open terminal
 hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
-hyper - e : /usr/local/Cellar/emacs-mac/emacs-27.2-mac-8.2/Emacs.app/Contents/MacOS/Emacs
+hyper - e : open /usr/local/Cellar/emacs-mac/emacs-27.2-mac-8.2/Emacs.app
 
 
 ## swap window

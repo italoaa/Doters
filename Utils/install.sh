@@ -8,3 +8,4 @@ caffeinate -idm /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Hom
 
 # install via brew
 brew bundle --file=./Brewfile
+
