@@ -17,10 +17,19 @@ bind \cf tmux-sessionizer
  
 set -g theme_color_scheme zenburn
 
-# Ubersicht
-balias uber "cd ~/Library/Application\ Support/Übersicht/widgets/"
-balias appemacs "/Applications/Emacs.app/Contents/MacOS/Emacs"
+balias showFunc 'echo "serve <port> , multi <Lhost>,<port>"'
 
+set rockyou "~/Personal/CTF's/KaliLists/rockyou.txt"
+
+function serve
+         python -m SimpleHTTPServer $argv
+end
+
+function multi
+         msfconsole -qx 'use multi/handler; set PAYLOAD generic/shell_reverse_tcp; set LHOST '$argv[1]'; set LPORT '$argv[2]';exploit'
+end
+
+balias tnmap 'nmap -sC -sV -oA nmap/initial'
 
 # Yabai
 balias ys 'brew services restart yabai'
@@ -35,7 +44,6 @@ balias l "exa --group-directories-first"
 balias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
 balias ll "exa --icons --group-directories-first --long --all --group --header"
 balias lg "exa --icons --group-directories-first --long --all --group --header --git"
-balias lt "exa --icons --group-directories-first --long --all --group --header -T"
 
 
 
