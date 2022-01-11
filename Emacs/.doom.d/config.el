@@ -29,12 +29,14 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 
+
+
 (defvar Dropbox-dir "~/Personal/Dropbox"
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-dracula
-      doom-font (font-spec :family "Fira Code Retina" :size 16)
+(setq doom-theme 'doom-henna
+      doom-font (font-spec :family "Roboto Mono" :size 16)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
 
@@ -74,6 +76,14 @@
       "h" 'dired-up-directory
       "l" 'dired-find-file))
 
+(defun fd-switch-dictionary()
+      (interactive)
+      (let* ((dic ispell-current-dictionary)
+    	 (change (if (string= dic "spanish") "english" "spanish")))
+        (ispell-change-dictionary change)
+        (message "Dictionary switched from %s to %s" dic change)
+        ))
+
 (setq org-directory "/Users/italo/Personal/Programing/Emacs/Org"
       org-ellipsis " ▾ "
       org-hide-emphasis-markers t
@@ -95,6 +105,10 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
 
+(defun roam-face ()
+    (set-face-attribute 'org-roam-title nil
+                    :foreground "#ff5555"
+                    :background "#1E2029"))
 (use-package! websocket
     :after org-roam)
 
@@ -146,6 +160,7 @@
 (evil-global-set-key 'motion "j" 'evil-next-visual-line)
 (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
 
+
 (after! org
   (set-face-attribute 'org-link nil
                       :weight 'normal
@@ -189,8 +204,6 @@
 (define-key evil-ex-map "W" 'save-buffer)
 (define-key evil-ex-map "q" 'save-buffer)
 
-(add-hook 'org-mode-hook 'turn-on-flyspell)
-
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
@@ -211,6 +224,10 @@
 (map! :leader
       :desc "Correct Word"
       "t s" #'flyspell-auto-correct-word)
+
+(map! :leader
+      :desc "Change Dictionary"
+      "t d" #'fd-switch-dictionary)
 
 (map! "C-s" #'swiper)
 
@@ -273,11 +290,23 @@
       :desc "Org ui Open"
       "n r u" #'org-roam-ui-open)
 
+(map! :leader
+      :desc "Next org header"
+      "m j" #'org-next-visible-heading)
+
+(map! :leader
+      :desc "Next org header"
+      "m k" #'org-previous-visible-heading)
+
 (defun doters ()
   (interactive)
   (doom-project-find-file "~/Dot/"))
 
 (setq confirm-kill-emacs nil)
+
+(use-package! olivetti
+  :config
+  (setq olivetti-margin-width 100))
 
 (use-package! beacon
   :config
@@ -305,5 +334,9 @@
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
 
 (setq org-roam-capture-templates '(("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-  (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|Applied Maths}:\n")
+  (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci}:\n")
   :unnarrowed t)))
+
+
+
+(setq tramp-default-method "ssh")

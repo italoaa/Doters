@@ -1,9 +1,9 @@
 sw_volume: 100
 audio_device_state:0:Italo Macbook
 audio_device_state:1:my_fifo
-state: pause
-current: 14
-time: 4.508000
+state: play
+current: 0
+time: 117.133000
 random: 0
 repeat: 1
 single: 1
@@ -12,19 +12,5 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:charly/Sui Generis - Vida (1972)/09 - Quizas, Porque.flac
-1:Oasis acustics/Oasis - Digsy's Dinner Acoustic [Live Paris Instore 1994].mp3
-2:Peter Gabriel - Growing Up Live  2019/13 - Solsbury Hill (Live).mp3
-3:Led Zeppelin/live/Led Zeppelin - Stairway to heaven LIVE.mp3
-4:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/01.-In The Air Tonight.flac
-5:Red_hot_Chili/Red Hot Chili Peppers - Scar Tissue [Official Music Video].mp3
-6:U2/joshua_tree/U2- I Still Haven't Found What I'm Looking For (Joshua Tree 1987).mp3
-7:Trova/Fernando Delgadillo - 1999 - Febrero 13, Volumen I/13 - Hoy ten miedo de mí.mp3
-8:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/05 - Monoculo fantastico.flac
-9:lofi/Die For You (The Weeknd Lofi Flip)-546ZakzI0pQ.mp3
-10:Oasis acustics/Noel Gallagher - Stay Young (Acoustic Session).mp3
-11:Oasis acustics/Oasis - Married With Children acoustic.mp3
-12:Trova/¿A dónde van (Silvio Rodríguez).mp3
-13:Oasis acustics/Oasis - Whatever (Acoustic) HQ.mp3
-14:meme music/audios/pegar hembras-miranda.mp3
+0:lofi/If Drake and J. Cole made lofi hip hop radio-sDXy4xqKmA0.mp3
 playlist_end

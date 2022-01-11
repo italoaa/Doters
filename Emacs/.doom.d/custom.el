@@ -66,3 +66,4 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'projectile-ripgrep 'disabled nil)
+(put 'projectile-ag 'disabled nil)

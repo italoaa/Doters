@@ -14,9 +14,10 @@
   (setq pdf-view-midnight-colors '("#ABB2BF" . "#282C35")))
 
 (package! spacemacs-theme)
+(package! olivetti)
 (package! poet-theme)
+(package! modus-themes)
 (package! solo-jazz-theme)
 (package! srcery-theme)
 (package! org-download)
 (package! org-roam-ui)
-(unpin! org-roam)

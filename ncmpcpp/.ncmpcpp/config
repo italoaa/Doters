@@ -1,5 +1,5 @@
 # Files
- mpd_music_dir = "~/Music/Music/blink"
+ mpd_music_dir = "~/Music/Music"
  lyrics_directory = ~/.ncmpcpp/lyrics
  ncmpcpp_directory = ~/.ncmpcpp
  mpd_host = "localhost"
