@@ -152,6 +152,7 @@
         +attach          ; custom attachment system
         +babel           ; running code in org
         +roam2
+        +hugo
         +journal
         +capture         ; org-capture in and outside of Emacs
         +export          ; Exporting org to whatever you want

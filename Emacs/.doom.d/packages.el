@@ -7,13 +7,8 @@
 
 (package! beacon)
 (package! org-bullets)
-(use-package! pdf-view
-  :hook (pdf-tools-enabled . pdf-view-midnight-minor-mode)
-  :hook (pdf-tools-enabled . hide-mode-line-mode)
-  :config
-  (setq pdf-view-midnight-colors '("#ABB2BF" . "#282C35")))
-
 (package! spacemacs-theme)
+(package! smooth-scrolling)
 (package! olivetti)
 (package! poet-theme)
 (package! modus-themes)

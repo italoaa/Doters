@@ -1,18 +1,17 @@
 #!/usr/bin/env sh
-
 ## HYPER == SHIFT + CMD + ALT + OPTION
 
 ## Quickly restart the yabai launch agent
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
-# test a command
-# lshift - x : terminal-notifier -message "lshift - x"
-# lshift - x : terminal-notifier -message "$(yabai -m query --windows --window | jq -re ".id")"
-
 ## open terminal
 hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+hyper - m : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu"
 hyper - e : open /Applications/Emacs.app
-
+hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
+hyper - n : notflix
+hyper - z : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/Zoomer/zoomer"
+hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
 
 ## swap window
 cmd + alt - h : yabai -m window --swap west

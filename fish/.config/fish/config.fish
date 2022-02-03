@@ -9,11 +9,16 @@ function fish_greeting
      pokemon-colorscripts -r
 end
 
+function PubHugo
+    ls ~/Personal/Dropbox/Bak/Org/roam/*.org >> ~/Personal/Dropbox/Bak/Org/roam/list.txt
+end
+
 function tmux-sessionizer
     ~/.config/Bin/tmux/tmux-sessionizer
 end
 
 bind \cf tmux-sessionizer
+bind \ca tmux a
  
 set -g theme_color_scheme zenburn
 
@@ -40,6 +45,7 @@ balias kem 'emacsclient -e "(kill-emacs)"'
 balias oem 'emacsclient -c'
 
 balias o. "open ."
+balias tn "terminal-notifier"
 balias l "exa --group-directories-first"
 balias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
 balias ll "exa --icons --group-directories-first --long --all --group --header"
@@ -58,7 +64,6 @@ balias p3 "python3"
 ## this is for faster config
 
 balias confish "cd ~/.confg ; nvim ~/.config/fish/config.fish"
-balias tmuxh "cat ~/tmux.txt"
 
 # PATH #
 ## Vi mode ## 

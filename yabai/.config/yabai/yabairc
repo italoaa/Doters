@@ -47,12 +47,14 @@ yabai -m rule --add app="^Private Internet Access$" manage=off
 yabai -m rule --add app="^csgo_osx64$" manage=off
 yabai -m rule --add app="^Steam$" manage=off
 yabai -m rule --add app="^mpv$" manage=off layer=above
+yabai -m rule --add app="qemu" manage=off
 yabai -m rule --add app="^Spark$" manage=off
 yabai -m rule --add app="^Microsoft Outlook$" manage=off
 yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^Greenshot$" manage=off layer=above
 yabai -m rule --add app="^LastPass$" manage=off layer=above
 yabai -m rule --add title='Launcha' manage=off sticky=on layer=above border=off #Custom launcher
+yabai -m rule --add title='^Menu$' manage=off sticky=on layer=above border=on #Custom launcher
 
 ## Some random global settings
 # yabai -m config focus_follows_mouse          autoraise

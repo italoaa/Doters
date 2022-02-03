@@ -54,7 +54,7 @@
 
 (setq +doom-dashboard-ascii-banner-fn #'+fl/splashcii-banner)
 
-(setq +fl/splashcii-query "dragons")
+(setq +fl/splashcii-query "dragon")
 
 
 (map! :leader "-" #'+doom-dashboard/open)
@@ -248,9 +248,24 @@
 
 (add-hook! 'vterm-mode-hook #'vterm-padding)
 
-(map! "∂" #'doters)
+(use-package! pdf-view
+  :hook (pdf-tools-enabled . pdf-view-midnight-minor-mode)
+  :hook (pdf-tools-enabled . hide-mode-line-mode)
+  :config
+  (setq pdf-view-midnight-colors '("#ABB2BF" . "#282C35")))
+
+(map! "∂" #'italo/find/downloads)
+(map! "ç" #'italo/find/doters)
+(map! "˙" #'italo/find/Hugo)
+(map! "®" #'italo/find/Roam)
+(map! "©" #'italo/find/Repos)
 (map! :leader "j" #'next-buffer)
 (map! :leader "k" #'previous-buffer)
+
+(setq company-idle-delay 0.1
+      org-startup-with-latex-preview t
+      org-startup-with-inline-images t
+      org-startup-folded t)
 
 (defun oterm()
   (interactive)
@@ -298,9 +313,25 @@
       :desc "Next org header"
       "m k" #'org-previous-visible-heading)
 
-(defun doters ()
+(defun italo/find/Repos ()
+  (interactive)
+  (doom-project-find-file "/Users/italo/Personal/Programing/Repos/"))
+
+(defun italo/find/Roam ()
+  (interactive)
+  (doom-project-find-file org-roam-directory))
+
+(defun italo/find/Hugo ()
+  (interactive)
+  (doom-project-find-file (concat org-directory "/Hugo/")))
+
+(defun italo/find/doters ()
   (interactive)
   (doom-project-find-file "~/Dot/"))
+
+(defun italo/find/downloads ()
+  (interactive)
+  (doom-project-find-file "~/Downloads/"))
 
 (setq confirm-kill-emacs nil)
 
@@ -337,6 +368,18 @@
   (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci}:\n")
   :unnarrowed t)))
 
-
-
+(setq scroll-margin 8
+      org-hugo-base-dir (concat org-directory "/Hugo/"))
 (setq tramp-default-method "ssh")
+
+(smooth-scrolling-mode 1)
+
+(load "~/Dot/Emacs/.doom.d/publish.el")
+
+(defun italo/Publish/Hugo ()
+  (interactive)
+  (setq default-directory org-roam-directory)
+  (shell-command "PubHugo")
+  (hugcis/publish-lines (concat org-roam-directory "list.txt"))
+  (setq default-directory org-hugo-base-dir)
+  (shell-command "hugo -D;hugo server"))
