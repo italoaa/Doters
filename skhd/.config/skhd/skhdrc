@@ -12,6 +12,8 @@ hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.j
 hyper - n : notflix
 hyper - z : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/Zoomer/zoomer"
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
+hyper - q : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/Kuiqer/kuiqer.sh"
+hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e "btm"
 
 ## swap window
 cmd + alt - h : yabai -m window --swap west

@@ -2,8 +2,8 @@ import:
   - ~/.config/alacritty/schemes.yml
 window:
   dimensions:
-    columns: 0
-    lines: 0
+    columns: 1000
+    lines: 100
   padding:
     x: 10
     y: 10
@@ -11,6 +11,7 @@ window:
   title: Mostrositty
   dynamic_title: false
   history: 1000
+  opacity: 0.96
 font:
   normal:
     family: JetBrainsMono Nerd Font
@@ -32,8 +33,6 @@ font:
   use_thin_strokes: true
 
 draw_bold_text_with_bright_colors: true
-
-background_opacity: 0.90
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -79,31 +78,49 @@ schemes:
       white : "#abb2bf"
 
 
-# BEGIN ACE
 colors:
+  # Default colours
   primary:
-    background: '#1C2331'
-    foreground: '#acdae8'
-  cursor:
-    text:       '#04080C'
-    cursor:     '#acdae8'
+    background: '0x000b1e'
+    foreground: '0x0abdc6'
+
+  # Colors that should be used to draw the terminal cursor. If these are unset,
+  # the cursor colour will be the inverse of the cell colour.
+  # cursor:
+  #   text: '0x2e2e2d'
+  #   # text: '0x000000'
+  #   cursor: '0xffffff'
+
+  # Normal colors
   normal:
-    black:      '#04080C'
-    red:        '#8B4A89'
-    green:      '#4B3697'
-    yellow:     '#37539A'
-    blue:       '#4951AC'
-    magenta:    '#4F6CCE'
-    cyan:       '#559EDF'
-    white:      '#acdae8'
+    black:   '0x123e7c'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x123e7c'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
+
+  # Bright colors
   bright:
-    black:      '#7898a2'
-    red:        '#AB1AA9'
-    green:      '#4B3697'
-    yellow:     '#37539A'
-    blue:       '#4951AC'
-    magenta:    '#4F6CCE'
-    cyan:       '#559EDF'
-    white:      '#acdae8'
-# END ACE
+    black:   '0x1c61c2'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x00ff00'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
+
+  # dim colors
+  dim:
+    black:   '0x1c61c2'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x123e7c'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
 # colors: *Mine

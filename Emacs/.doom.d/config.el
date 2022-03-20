@@ -66,9 +66,19 @@
 (add-hook! '+doom-dashboard-mode-hook (hide-mode-line-mode 1) (hl-line-mode -1))
 (setq-hook! '+doom-dashboard-mode-hook evil-normal-state-cursor (list nil))
 
-(setq which-key-idle-delay 0.1)
+(defcustom which-key-idle-delay 0.1
+  "Delay (in seconds) for which-key buffer to popup. This
+ variable should be set before activating `which-key-mode'.
+
+A value of zero might lead to issues, so a non-zero value is
+recommended
+(see https://github.com/justbur/emacs-which-key/issues/134)."
+  :group 'which-key
+  :type 'float)
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
+
+(setq which-key-use-C-h-commands 't)
 
 (use-package! dired
     :config
@@ -111,6 +121,13 @@
                     :background "#1E2029"))
 (use-package! websocket
     :after org-roam)
+
+(use-package! org-roam-bibtex
+  :after org-roam
+  :config
+  (setq orb-preformat-keywords '("citekey" "title" "url" "author" "date" "file")
+        orb-process-file-keywords t
+        orb-attached-file-extensions '("pdf")))
 
 (use-package! org-roam-ui
     :after org-roam
@@ -231,6 +248,12 @@
 
 (map! "C-s" #'swiper)
 
+(map! :leader
+      "w C-h" nil)
+
+(map! :leader
+      :desc "delete other windows"
+      "w w" #'delete-other-windows)
 
 (defconst doom-frame-transparency 96)
 (set-frame-parameter (selected-frame) 'alpha doom-frame-transparency)
@@ -262,10 +285,57 @@
 (map! :leader "j" #'next-buffer)
 (map! :leader "k" #'previous-buffer)
 
-(setq company-idle-delay 0.1
-      org-startup-with-latex-preview t
+(setq company-idle-delay 0.9
       org-startup-with-inline-images t
-      org-startup-folded t)
+      org-startup-with-latex-preview t
+      org-startup-folded nil)
+
+
+;; (dap-register-debug-template "My App"
+;;   (list :type "python"
+;;         :args "-i"
+;;         :cwd nil
+;;         :env '(("DEBUG" . "1"))
+;;         :target-module (expand-file-name "~/src/myapp/.env/bin/myapp")
+;;         :request "launch"
+;;         :name "My App"))
+
+(after! dap-mode
+  (setq dap-python-debugger 'debugpy
+        dap-python-executable "python3"
+        python-shell-interpreter "python3")
+        (require 'dap-python))
+
+(map! :map dap-mode-map
+      :leader
+      :prefix ("d" . "dap")
+      ;; basics
+      :desc "dap next"          "n" #'dap-next
+      :desc "dap step in"       "i" #'dap-step-in
+      :desc "dap step out"      "o" #'dap-step-out
+      :desc "dap continue"      "c" #'dap-continue
+      :desc "dap hydra"         "h" #'dap-hydra
+      :desc "dap debug restart" "r" #'dap-debug-restart
+      :desc "dap debug"         "s" #'dap-debug
+
+      ;; debug
+      :prefix ("dd" . "Debug")
+      :desc "dap debug recent"  "r" #'dap-debug-recent
+      :desc "dap debug last"    "l" #'dap-debug-last
+
+      ;; eval
+      :prefix ("de" . "Eval")
+      :desc "eval"                "e" #'dap-eval
+      :desc "eval region"         "r" #'dap-eval-region
+      :desc "eval thing at point" "s" #'dap-eval-thing-at-point
+      :desc "add expression"      "a" #'dap-ui-expressions-add
+      :desc "remove expression"   "d" #'dap-ui-expressions-remove
+
+      :prefix ("db" . "Breakpoint")
+      :desc "dap breakpoint toggle"      "b" #'dap-breakpoint-toggle
+      :desc "dap breakpoint condition"   "c" #'dap-breakpoint-condition
+      :desc "dap breakpoint hit count"   "h" #'dap-breakpoint-hit-condition
+      :desc "dap breakpoint log message" "l" #'dap-breakpoint-log-message)
 
 (defun oterm()
   (interactive)
@@ -298,8 +368,14 @@
       "n r a" #'org-roam-alias-add)
 
 (map! :leader
-      :desc "ivy Switch Buffer"
+      :prefix ("l" . "LSP")
+      :desc "list"
       "l" #'ivy-switch-buffer)
+
+(map! :leader
+      :prefix ("g h" . "GHQ")
+      :desc "Ghq get"
+      "g" #'italo/exec/ghqGet)
 
 (map! :leader
       :desc "Org ui Open"
@@ -312,6 +388,58 @@
 (map! :leader
       :desc "Next org header"
       "m k" #'org-previous-visible-heading)
+
+(map! :leader
+      :desc "Show lsp ui Doc"
+      "l s" #'lsp-ui-doc-show)
+
+(map! :leader
+      :desc "Hide lsp ui Doc"
+      "l h" #'lsp-ui-doc-hide)
+
+(map! :leader
+      :desc "Disable Cursor and Mouse Doc"
+      "l d" #'italo/lsp/disableDoc)
+
+(map! :leader
+      :desc "Unfocus"
+      "l u" #'lsp-ui-doc-unfocus-frame)
+
+(map! :leader
+      :desc "Enable Cursor and Mouse Doc"
+      "l e" #'italo/lsp/enableDoc)
+
+(map! :leader
+      :desc "Glance lsp ui Doc"
+      "l g" #'lsp-ui-doc-glance)
+
+(map! :leader
+      :desc "Focus lsp ui Doc"
+      "l f" #'lsp-ui-doc-focus-frame)
+
+(defun italo/lsp/disableDoc ()
+  (interactive)
+  (setq lsp-ui-doc-show-with-cursor nil
+        lsp-ui-doc-show-with-mouse nil)
+  (message "Docs Disabled"))
+
+(defun italo/lsp/enableDoc ()
+  (interactive)
+  (setq lsp-ui-doc-show-with-cursor t
+        lsp-ui-doc-show-with-mouse t)
+  (message "Docs Enabled"))
+
+(defun italo/server (ip)
+  (interactive "sServer IP: ")
+  (setq
+   ssh-deploy-root-local (concat doom-private-dir "Servers/")
+   ssh-deploy-root-remote (format "/ssh:%s:/home/ito/Deploy/" ip)
+   ssh-deploy-async 1
+   ssh-deploy-async-with-threads 1))
+
+(defun italo/exec/ghqGet (link)
+  (interactive "sRepo Link: ")
+  (shell-command (format "ghq get %s" link)))
 
 (defun italo/find/Repos ()
   (interactive)
@@ -339,12 +467,6 @@
   :config
   (setq olivetti-margin-width 100))
 
-(use-package! beacon
-  :config
-  (setq beacon-size 50)
-  (setq beacon-blink-delay 0.7)
-  (beacon-mode +1))
-
 (setq org-roam-directory (concat org-directory "/roam/"))
 
 (setq org-roam-mode-section-functions
@@ -365,8 +487,17 @@
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
 
 (setq org-roam-capture-templates '(("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-  (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci}:\n")
-  :unnarrowed t)))
+  (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
+  :unnarrowed t)
+                                   (
+                                    "r" "bibliography Reference" plain
+                                    (file "./reftemp.org")
+                                    :target
+                                    (file+head "Bibliography/%{citekey}.org" "#+title: ${title}\n")
+                                    :unarrowed t
+                                    )))
+
+(yas-global-mode 1)
 
 (setq scroll-margin 8
       org-hugo-base-dir (concat org-directory "/Hugo/"))
@@ -383,3 +514,49 @@
   (hugcis/publish-lines (concat org-roam-directory "list.txt"))
   (setq default-directory org-hugo-base-dir)
   (shell-command "hugo -D;hugo server"))
+
+(setq flycheck-rust-cargo-executable "/Users/italo/.cargo/bin/cargo"
+      flycheck-rust-executable "/Users/italo/.cargo/bin/rustc"
+      flycheck-rust-clippy-executable "/Users/italo/.cargo/bin/cargo-clippy"
+      flycheck-rustic-clippy-executable "/Users/italo/.cargo/bin/cargo-clippy")
+
+
+(use-package! lsp-ui
+  :config
+  (setq lsp-ui-sideline-show-hover t
+      lsp-ui-sideline-show-code-actions t
+      lsp-ui-doc-show-with-cursor nil
+      lsp-ui-doc-show-with-mouse t
+      lsp-ui-doc-max-width 150
+      lsp-ui-doc-max-height 100
+      lsp-ui-doc-position "Top"))
+
+(add-hook! rust-mode-hook #'tree-sitter-mode)
+(add-hook! tree-sitter-mode-hook #'tree-sitter-hl-mode)
+
+(use-package! tree-sitter
+  :config
+  (require 'tree-sitter-langs)
+  (global-tree-sitter-mode)
+  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
+
+(setq bibtex-completion-bibliography "/Users/italo/Personal/OneDrive - Leeds Beckett University/CW3/refs.bib")
+(setq org-latex-pdf-process (list
+   "latexmk -pdflatex='lualatex -shell-escape -interaction nonstopmode' -pdf -f  %f"))
+
+(use-package! org-ref-ivy
+  :config
+  (setq org-ref-insert-link-function 'org-ref-insert-link-hydra/body
+      org-ref-insert-cite-function 'org-ref-cite-insert-ivy
+      org-ref-insert-label-function 'org-ref-insert-label-link
+      org-ref-insert-ref-function 'org-ref-insert-ref-link
+      org-ref-cite-onclick-function (lambda (_) (org-ref-citation-hydra/body))))
+
+
+(use-package! exec-path-from-shell
+ :custom
+ (shell-file-name "/usr/local/bin/fish" "This is necessary because some Emacs install overwrite this variable")
+ (exec-path-from-shell-variables '("PATH" "MANPATH" "PKG_CONFIG_PATH") "This adds PKG_CONFIG_PATH to the list of variables to grab. I prefer to set the list explicitly so I know exactly what is getting pulled in.")
+ :init
+  (if (string-equal system-type "darwin")
+    (exec-path-from-shell-initialize)))
