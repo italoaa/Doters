@@ -1,4 +1,8 @@
 (server-start)
+(setq gc-cons-threshold (* 2 1024 1024))
+(setq gc-cons-percentage 0.5)
+(run-with-idle-timer 5 t #'garbage-collect)
+(setq garbage-collection-messages t)
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here! Remember, you do not need to run 'doom
@@ -54,14 +58,17 @@
 
 (setq +doom-dashboard-ascii-banner-fn #'+fl/splashcii-banner)
 
-(setq +fl/splashcii-query "dragon")
+(setq +fl/splashcii-query "nature")
 
 
 (map! :leader "-" #'+doom-dashboard/open)
 
+(map! :leader "RET" #'so-long-mode)
+
+(setq use-package-compute-statistics t)
 
 (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
-(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-loaded)
+;; (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-loaded)
 (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-footer)
 (add-hook! '+doom-dashboard-mode-hook (hide-mode-line-mode 1) (hl-line-mode -1))
 (setq-hook! '+doom-dashboard-mode-hook evil-normal-state-cursor (list nil))
@@ -81,6 +88,7 @@ recommended
 (setq which-key-use-C-h-commands 't)
 
 (use-package! dired
+  :defer 2
     :config
     (evil-collection-define-key 'normal 'dired-mode-map
       "h" 'dired-up-directory
@@ -149,6 +157,9 @@ recommended
     (org-download-screenshot-method "/usr/local/bin/pngpaste %s")
     :config
     (require 'org-download))
+
+(use-package! org-ref
+  :after org)
 
 (use-package! which-key
     :config (setq which-key-idle-delay 0.1))
@@ -237,6 +248,8 @@ recommended
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+(setq buffer-auto-save-file-format nil)
+
 
 (map! :leader
       :desc "Correct Word"
@@ -491,9 +504,9 @@ recommended
   :unnarrowed t)
                                    (
                                     "r" "bibliography Reference" plain
-                                    (file "./reftemp.org")
+                                    (file "~/.doom.d/reftemp.org")
                                     :target
-                                    (file+head "Bibliography/%{citekey}.org" "#+title: ${title}\n")
+                                    (file+head "reference-${citekey}.org" "#+title: ${title}\n")
                                     :unarrowed t
                                     )))
 
@@ -522,6 +535,7 @@ recommended
 
 
 (use-package! lsp-ui
+  :after lsp
   :config
   (setq lsp-ui-sideline-show-hover t
       lsp-ui-sideline-show-code-actions t
@@ -535,6 +549,7 @@ recommended
 (add-hook! tree-sitter-mode-hook #'tree-sitter-hl-mode)
 
 (use-package! tree-sitter
+  :after lsp
   :config
   (require 'tree-sitter-langs)
   (global-tree-sitter-mode)
@@ -545,6 +560,7 @@ recommended
    "latexmk -pdflatex='lualatex -shell-escape -interaction nonstopmode' -pdf -f  %f"))
 
 (use-package! org-ref-ivy
+  :after org
   :config
   (setq org-ref-insert-link-function 'org-ref-insert-link-hydra/body
       org-ref-insert-cite-function 'org-ref-cite-insert-ivy

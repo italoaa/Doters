@@ -37,6 +37,7 @@ end
 balias tnmap 'nmap -sC -sV -oA nmap/initial'
 
 # Yabai
+alias avet='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" -v $(pwd):/tools/avet/output avet /bin/bash'
 balias ys 'brew services restart yabai'
 balias sk 'brew services restart skhd'
 balias sp 'brew services restart spacebar'

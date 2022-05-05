@@ -26,4 +26,5 @@
 (package! org-roam-ui)
 (package! org-noter)
 (package! org-roam-bibtex)
+(package! explain-pause-mode)
 (package! tron-legacy-theme)
