@@ -33,6 +33,8 @@
  '(objed-cursor-color "#99324b")
  '(org-fontify-done-headline nil)
  '(org-fontify-todo-headline nil)
+ '(org-format-latex-options '(:foreground default :background default :scale 1.5))
+ '(package-selected-packages '(undo-tree))
  '(pdf-view-midnight-colors (cons "#2a2a2a" "#fafafa"))
  '(rustic-ansi-faces
    ["#fafafa" "#99324b" "#4f894c" "#9a7500" "#3b6ea8" "#97365b" "#398eac" "#2a2a2a"])
@@ -68,3 +70,5 @@
 (put 'projectile-ripgrep 'disabled nil)
 (put 'projectile-ag 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
+(put 'customize-face 'disabled nil)
+(put 'customize-variable 'disabled nil)

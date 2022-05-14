@@ -28,3 +28,6 @@
 (package! org-roam-bibtex)
 (package! explain-pause-mode)
 (package! tron-legacy-theme)
+(package! svg-tag-mode)
+(package! 0x0
+  :recipe (:host gitlab :repo "willvaughn/emacs-0x0"))

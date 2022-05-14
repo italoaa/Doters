@@ -1,8 +1,7 @@
 (server-start)
-(setq gc-cons-threshold (* 2 1024 1024))
+(setq gc-cons-threshold (* 511 1024 1024))
 (setq gc-cons-percentage 0.5)
 (run-with-idle-timer 5 t #'garbage-collect)
-(setq garbage-collection-messages t)
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here! Remember, you do not need to run 'doom
@@ -65,7 +64,7 @@
 
 (map! :leader "RET" #'so-long-mode)
 
-(setq use-package-compute-statistics t)
+(setq use-package-compute-statistics nil)
 
 (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
 ;; (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-loaded)
@@ -290,11 +289,11 @@ recommended
   :config
   (setq pdf-view-midnight-colors '("#ABB2BF" . "#282C35")))
 
-(map! "∂" #'italo/find/downloads)
-(map! "ç" #'italo/find/doters)
-(map! "˙" #'italo/find/Hugo)
-(map! "®" #'italo/find/Roam)
-(map! "©" #'italo/find/Repos)
+(map! :leader "f i D" #'italo/find/downloads)
+(map! :leader "f i d" #'italo/find/doters)
+(map! :leader "f i h" #'italo/find/Hugo)
+(map! :leader "f i r" #'italo/find/Roam)
+(map! :leader "f i R" #'italo/find/Repos)
 (map! :leader "j" #'next-buffer)
 (map! :leader "k" #'previous-buffer)
 
@@ -482,19 +481,6 @@ recommended
 
 (setq org-roam-directory (concat org-directory "/roam/"))
 
-(setq org-roam-mode-section-functions
-      (list ;;#'org-roam-backlinks-section
-            #'org-roam-reflinks-section
-            ;; #'org-roam-unlinked-references-section
-            ))
-
-(add-to-list 'display-buffer-alist
-             '("\\*org-roam\\*"
-               (display-buffer-in-direction)
-               (direction . right)
-               (window-width . 0.33)
-               (window-height . fit-window-to-buffer)))
-
 (setq org-agenda-files (directory-files-recursively org-directory "org$"))
 
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
@@ -533,7 +519,6 @@ recommended
       flycheck-rust-clippy-executable "/Users/italo/.cargo/bin/cargo-clippy"
       flycheck-rustic-clippy-executable "/Users/italo/.cargo/bin/cargo-clippy")
 
-
 (use-package! lsp-ui
   :after lsp
   :config
@@ -568,6 +553,17 @@ recommended
       org-ref-insert-ref-function 'org-ref-insert-ref-link
       org-ref-cite-onclick-function (lambda (_) (org-ref-citation-hydra/body))))
 
+(use-package! svg-tag-mode
+  :after org
+  :config
+  (setq svg-tag-tags
+        '(
+          ("\\(:[A-Z]+:\\)" . ((lambda (tag)
+                                 (svg-tag-make tag :beg 1 :end -1))))
+          ("\\(=[A-Z]+=\\)" . ((lambda (tag)
+                                 (svg-tag-make tag :beg 1 :end -1))))
+        )
+  ))
 
 (use-package! exec-path-from-shell
  :custom
@@ -576,3 +572,6 @@ recommended
  :init
   (if (string-equal system-type "darwin")
     (exec-path-from-shell-initialize)))
+
+;; (add-to-list 'load-path "/Users/italo/Personal/Programing/Repos/github.com/skyler544/doom-nano-testing/")
+;; (require 'load-nano)
