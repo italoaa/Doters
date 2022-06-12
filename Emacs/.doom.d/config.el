@@ -38,7 +38,7 @@
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-henna
+(setq doom-theme 'doom-rouge
       doom-font (font-spec :family "Roboto Mono" :size 16)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
@@ -91,7 +91,8 @@ recommended
     :config
     (evil-collection-define-key 'normal 'dired-mode-map
       "h" 'dired-up-directory
-      "l" 'dired-find-file))
+      "l" 'dired-find-file)
+    )
 
 (defun fd-switch-dictionary()
       (interactive)
@@ -201,22 +202,22 @@ recommended
   (set-face-attribute 'org-level-1 nil
                       :foreground "steelblue2"
                       :background nil
-                      :height 1.2
+                      :height 1.5
                       :weight 'normal)
   (set-face-attribute 'org-level-2 nil
                       :foreground "slategray2"
                       :background nil
-                      :height 1.0
+                      :height 1.3
                       :weight 'normal)
   (set-face-attribute 'org-level-3 nil
                       :foreground "SkyBlue2"
                       :background nil
-                      :height 1.0
+                      :height 1.1
                       :weight 'normal)
   (set-face-attribute 'org-level-4 nil
                       :foreground "DodgerBlue2"
                       :background nil
-                      :height 1.0
+                      :height 1.1
                       :weight 'normal)
   (set-face-attribute 'org-level-5 nil
                       :weight 'normal)
@@ -302,7 +303,6 @@ recommended
       org-startup-with-latex-preview t
       org-startup-folded nil)
 
-
 ;; (dap-register-debug-template "My App"
 ;;   (list :type "python"
 ;;         :args "-i"
@@ -317,6 +317,37 @@ recommended
         dap-python-executable "python3"
         python-shell-interpreter "python3")
         (require 'dap-python))
+
+(use-package! nav-flash
+  :init
+  (setq nav-flash-use-pulse t))
+(nav-flash-show)
+
+(use-package! bespoke-themes
+  :config
+  ;; Set evil cursor colors
+  (setq bespoke-set-evil-cursors t)
+  ;; Set use of italics
+  (setq bespoke-set-italic-comments t
+        bespoke-set-italic-keywords t)
+  ;; Set variable pitch
+  (setq bespoke-set-variable-pitch t)
+  ;; Set initial theme variant
+  (setq bespoke-set-theme 'dark)
+  ;; Load theme
+  )
+
+(after! lsp-mode
+  (setq lsp-signature-render-documentation nil))
+
+(use-package! company-box
+  :init
+  (setq company-box-doc-enable nil
+        company-box-doc-delay 0.5
+        company-box-tooltip-maximum-width 160
+        company-box--top 200
+        company-box--height 50
+        ))
 
 (map! :map dap-mode-map
       :leader
@@ -476,8 +507,13 @@ recommended
 (setq confirm-kill-emacs nil)
 
 (use-package! olivetti
+  :after org
+  :init
+  (setq olivetti-body-width 140)
+  :hook (org-mode . olivetti-mode)
   :config
-  (setq olivetti-margin-width 100))
+  (display-line-numbers-mode 0)
+  )
 
 (setq org-roam-directory (concat org-directory "/roam/"))
 

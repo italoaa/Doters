@@ -10,9 +10,10 @@ hyper - m : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu"
 hyper - e : emacs --with-profile nano -dark
 # hyper - q : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/Kuiqer/kuiqer.sh"
 # hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
-hyper - n : notflix
+# hyper - n : notflix
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
-hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e "btm"
+hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e 'btm'
+hyper - c : /Users/italo/.config/Bin/fun/classic-radio.sh
 
 ## swap window
 cmd + alt - h : yabai -m window --swap west
@@ -86,7 +87,7 @@ set index (yabai -m query --spaces --display | jq 'map(select(."native-fullscree
 yabai -m space --focus "$index"
 
 ## destroy desktop
-cmd - backspace : yabai -m space --destroy
+hyper - backspace : yabai -m space --destroy
 
 ## fast focus desktop
 cmd - 1 : yabai -m space --focus 1

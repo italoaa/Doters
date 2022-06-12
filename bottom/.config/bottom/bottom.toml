@@ -24,8 +24,11 @@ temperature_type = "c"
 [[row]]
    ratio=25
    [[row.child]]
-     ratio=4
+     ratio=50
      type="mem"
+   [[row.child]]
+     ratio=50
+     type="batt"
 [[row]]
  ratio=50
  [[row.child]]

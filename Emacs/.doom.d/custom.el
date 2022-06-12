@@ -72,3 +72,4 @@
 (put 'narrow-to-region 'disabled nil)
 (put 'customize-face 'disabled nil)
 (put 'customize-variable 'disabled nil)
+(put 'customize-group 'disabled nil)
