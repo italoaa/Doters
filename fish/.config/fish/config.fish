@@ -10,7 +10,7 @@ function fish_greeting
 end
 
 function PubHugo
-    ls ~/Personal/Dropbox/Bak/Org/roam/*.org >> ~/Personal/Dropbox/Bak/Org/roam/list.txt
+    ls ~/Personal/Dropbox/Bak/Org/Website/*.org >> ~/Personal/Dropbox/Bak/Org/Website/list.txt
 end
 
 function tmux-sessionizer
