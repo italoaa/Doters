@@ -14,8 +14,8 @@
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-gruvbox
-      doom-font (font-spec :family "Roboto Mono" :size 16)
+(setq doom-theme 'doom-rouge
+      doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
 
@@ -27,7 +27,7 @@
 (setq tramp-default-method "ssh")
 (smooth-scrolling-mode 1)
 
-(defconst doom-frame-transparency 96)
+(defconst doom-frame-transparency 98)
 (set-frame-parameter (selected-frame) 'alpha doom-frame-transparency)
 (add-to-list 'default-frame-alist `(alpha . ,doom-frame-transparency))
 (defun dwc-smart-transparent-frame ()
@@ -70,15 +70,28 @@
       (:prefix-map ("L" . "Library")
        :desc "open Library" "L" (lambda () (interactive)(find-file (concat org-roam-directory "references/Library.bib")))
        :desc "Find entry" "f" #'ivy-bibtex
-       :desc "Org Ref Hydra" "R" #'org-ref-citation-hydra/body
+       :desc "Org Ref Hydra citation" "R" #'org-ref-citation-hydra/body
+       :desc "Org Ref Hydra bibtex" "r" #'org-ref-bibtex-hydra/body
        :desc "New entry from DOI" "d" #'doi-add-bibtex-entry
        )
       )
 
 (map!
+ :leader
+ :desc "ssh deploy hydra panel" "r p" #'ssh-deploy-hydra/body
+ )
+
+(map!
       :leader
-      :map org-noter-mode-map
+      :map org-noter-notes-mode-map
       :desc "open org noter" "m n" #'org-noter
+      ;; use Hydra to move arround
+      )
+
+(map!
+      :leader
+      :map org-roam-bibtex-mode-map
+      :desc "insert bibliographic orb note" "n r b" #'orb-insert-link
       )
 
 (map! :leader
@@ -175,6 +188,7 @@
       "n r u" #'org-roam-ui-open)
 
 (map! :leader "-" #'+doom-dashboard/open)
+;; (map! "C-[Tab]" #'+fold/toggle)
 (map! :leader "RET" #'so-long-mode)
 (map! :leader "j" #'next-buffer)
 (map! :leader "k" #'previous-buffer)
@@ -208,6 +222,8 @@
       "l" 'dired-find-file)
     )
 
+(beacon-mode 1)
+
 (use-package! ssh-deploy
   :after hydra
   :init
@@ -217,6 +233,7 @@
         ssh-deploy-on-explicit-save 0
         ssh-deploy-async 1)
   :config
+  (ssh-deploy-hydra "C-c C-z")
   (ssh-deploy-line-mode))
 
 (setq flycheck-rust-cargo-executable "/Users/italo/.cargo/bin/cargo"
@@ -245,12 +262,6 @@
 
 (add-hook! 'vterm-mode-hook #'vterm-padding)
 
-(use-package! pdf-view
-  :hook (pdf-tools-enabled . pdf-view-midnight-minor-mode)
-  :hook (pdf-tools-enabled . hide-mode-line-mode)
-  :config
-  (setq pdf-view-midnight-colors '("#ABB2BF" . "#282C35")))
-
 (setq company-idle-delay 0.9)
 (use-package! company-box
   :init
@@ -274,6 +285,49 @@
   (setq bespoke-set-theme 'dark)
   ;; Load theme
   )
+
+;; we installed this with homebrew
+(setq mu4e-mu-binary (executable-find "mu"))
+
+;; this is the directory we created before:
+(setq mu4e-maildir "~/Personal/Mail/")
+
+;; this command is called to sync imap servers:
+(setq mu4e-get-mail-command (concat (executable-find "mbsync") " -a"))
+;; how often to call it in seconds:
+(setq mu4e-update-interval 300)
+
+;; save attachment to desktop by default
+;; or another choice of yours:
+(setq mu4e-attachment-dir "~/Personal/Mail/Attachments/")
+
+;; rename files when moving - needed for mbsync:
+(setq mu4e-change-filenames-when-moving t)
+
+;; list of your email adresses:
+(setq mu4e-user-mail-address-list '("italoamaya03@gmail.com"))
+
+;; (setq mu4e-contexts
+;;       `(,(make-mu4e-context
+;;           :name "gmail"
+;;           :enter-func
+;;           (lambda () (mu4e-message "Enter italoamaya03@gmail.com context"))
+;;           :leave-func
+;;           (lambda () (mu4e-message "Leave italoamaya03@gmail.com context"))
+;;           :match-func
+;;           (lambda (msg)
+;;             (when msg
+;;               (mu4e-message-contact-field-matches msg
+;;                                                   :to "italoamaya03@gmail.com")))
+;;           :vars '((user-mail-address . "italoamaya03@gmail.com")
+;;                   (user-full-name . "Italo Amaya Arlotti")
+;;                   (mu4e-drafts-folder . "/gmail/[Gmail]/Drafts")
+;;                   (mu4e-refile-folder . "/gmail/[Gmail]/Archive")
+;;                   (mu4e-sent-folder . "/gmail/[Gmail]/Sent")
+;;                   (mu4e-trash-folder . "/gmail/[Gmail]/Trash")))))
+
+;; (setq mu4e-context-policy 'pick-first) ;; start with the first (default) context;
+;; (setq mu4e-compose-context-policy 'ask) ;; ask for context if no context matches;
 
 (after! dap-mode
   (setq dap-python-debugger 'debugpy
@@ -348,7 +402,8 @@
 
 (setq org-directory "/Users/italo/Personal/Programing/Emacs/Org"
       org-ellipsis " ▾ "
-      org-agenda-files (directory-files-recursively org-directory "org$")
+      org-agenda-files (directory-files-recursively (concat org-directory "/Agenda/") "org$")
+      +org-capture-todo-file (concat org-directory "/Agenda/todo.org")
       org-startup-with-inline-images t
       org-startup-folded nil
       org-startup-with-latex-preview t
@@ -367,6 +422,18 @@
                                "* [ ] %?\n%i" :prepend t :kill-buffer t)))
 
 (setq org-roam-directory (concat org-directory "/roam/"))
+(defun org-roam-buffer-setup ()
+  "Function to make org-roam-buffer more pretty."
+  (progn
+    (setq-local olivetti-body-width 44)
+    (variable-pitch-mode 1)
+    (olivetti-mode 1)
+    (centaur-tabs-local-mode -1)
+
+  (set-face-background 'magit-section-highlight (face-background 'default))))
+
+(after! org-roam
+(add-hook! 'org-roam-mode-hook #'org-roam-buffer-setup))
 
 (setq org-roam-capture-templates '(("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
   (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
@@ -397,6 +464,19 @@
         orb-roam-ref-format 'org-ref-v3
         orb-process-file-keyword t
         orb-attached-file-extensions '("pdf")))
+
+(use-package! org-ol-tree
+  :after org
+  :commands org-ol-tree
+  :hook (org-ol-tree-mode . visual-line-mode)
+  :config
+  (setq org-ol-tree-ui-window-auto-resize nil
+        org-ol-tree-ui-window-max-width 0.3
+        org-ol-tree-ui-window-position 'right))
+(map! :map org-mode-map
+      :after org
+      :localleader
+      :desc "Outline" "O" #'org-ol-tree)
 
 (use-package! org-ref
   :after org
@@ -435,24 +515,6 @@
   :after org
   :config
   (setq org-noter-notes-search-path (concat org-roam-directory "references/sources/")))
-
-(use-package! org-pdftools
-  :hook (org-mode . org-pdftools-setup-link))
-
-(use-package! org-noter-pdftools
-  :after org-noter
-  :config
-  (defun org-noter-pdftools-insert-precise-note (&optional toggle-no-questions)
-    (interactive "P")
-    (org-noter--with-valid-session
-     (let ((org-noter-insert-note-no-questions (if toggle-no-questions
-                                                   (not org-noter-insert-note-no-questions)
-                                                 org-noter-insert-note-no-questions))
-           (org-pdftools-use-isearch-link t)
-           (org-pdftools-use-freepointer-annot t))
-       (org-noter-insert-note (org-noter--get-precise-info)))))
-  (with-eval-after-load 'pdf-annot
-    (add-hook 'pdf-annot-activate-handler-functions #'org-noter-pdftools-jump-to-note)))
 
 (use-package! org-auto-tangle
   :hook (org-mode . org-auto-tangle-mode))

@@ -9,7 +9,7 @@ hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 hyper - m : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu"
 hyper - e : emacs --with-profile nano -dark
 # hyper - q : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/Kuiqer/kuiqer.sh"
-# hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
+hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
 # hyper - n : notflix
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
 hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e 'btm'

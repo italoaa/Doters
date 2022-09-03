@@ -37,7 +37,7 @@
 * Init
 This file describes all the packages that I want preinstalled by doom.
 ** Completion
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
 (doom! :input
        ;;chinese
        ;;japanese
@@ -51,7 +51,7 @@ This file describes all the packages that I want preinstalled by doom.
        (vertico +icons)           ; the search engine of the future
 #+end_src
 ** UI
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :ui
        ;;deft              ; notational velocity for Emacs
        doom              ; what makes DOOM look the way it does
@@ -63,7 +63,7 @@ This file describes all the packages that I want preinstalled by doom.
        indent-guides     ; highlighted indent columns
        ;;ligatures         ; ligatures and symbols to make your code pretty again
        ;;minimap           ; show a map of the code on the side
-       (modeline +light)          ; snazzy, Atom-inspired modeline, plus API
+       modeline           ; snazzy, Atom-inspired modeline, plus API
        nav-flash         ; blink cursor line after big motions
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
@@ -80,7 +80,7 @@ This file describes all the packages that I want preinstalled by doom.
        zen               ; distraction-free coding or writing
 #+end_src
 ** Editor
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :editor
        (evil +everywhere); come to the dark side, we have cookies
        file-templates    ; auto-snippets for empty files
@@ -96,7 +96,7 @@ This file describes all the packages that I want preinstalled by doom.
        ;;word-wrap         ; soft wrapping with language-aware indent
 #+end_src
 ** Emacs
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :emacs
        (dired +icons)             ; making dired pretty [functional]
        electric          ; smarter, keyword-based electric-indent
@@ -105,7 +105,7 @@ This file describes all the packages that I want preinstalled by doom.
        vc                ; version-control and Emacs, sitting in a tree
 #+end_src
 ** Term
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :term
        ;;eshell            ; the elisp shell that works everywhere
        ;;shell             ; simple shell REPL for Emacs
@@ -113,14 +113,14 @@ This file describes all the packages that I want preinstalled by doom.
        vterm             ; the best terminal emulation in Emacs
 #+end_src
 ** Checkers
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :checkers
        syntax              ; tasing you for every semicolon you forget
        (spell +flyspell) ; tasing you for misspelling mispelling
        grammar           ; tasing grammar mistake every you make
 #+end_src
 ** Tools
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :tools
        ;;ansible
        (debugger +lsp)          ; FIXME stepping through code, to help you add bugs
@@ -135,7 +135,7 @@ This file describes all the packages that I want preinstalled by doom.
        (magit +forge)             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
-       pdf               ; pdf enhancements
+       ;;pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
        rgb               ; creating color strings
        ;;taskrunner        ; taskrunner for all your projects
@@ -144,13 +144,13 @@ This file describes all the packages that I want preinstalled by doom.
        upload            ; map local to remote projects via ssh/ftp
 #+end_src
 ** OS
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :os
        (:if IS-MAC macos)  ; improve compatibility with macOS
        tty               ; improve the terminal Emacs experience
 #+end_src
 ** Languages
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :lang
        cc                ; C > C++ == 1
        (emacs-lisp
@@ -181,12 +181,12 @@ This file describes all the packages that I want preinstalled by doom.
         +cython)            ; beautiful is better than ugly
        (rust
         +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
-       (sh +lsp)                ; she sells {ba,z,fi}sh shells on the C xor
-       web               ; the tubes
+       ;;(sh +lsp)                ; she sells {ba,z,fi}sh shells on the C xor
+       ;;web               ; the tubes
        yaml              ; JSON, but readable
 #+end_src
 *** Disabled
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        ;;zig               ; C, but simpler
        ;;agda              ; types of types of types of types...
        ;;beancount         ; mind the GAAP
@@ -231,9 +231,9 @@ This file describes all the packages that I want preinstalled by doom.
        ;;(ruby +rails)     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
 #+end_src
 ** Email, Apps and Config
-#+begin_src elisp :tangle "test.el"
+#+begin_src elisp :tangle "init.el"
        :email
-       ;;(mu4e +org +gmail)
+       (mu4e +org +gmail)
        ;;notmuch
        ;;(wanderlust +gmail)
 
@@ -265,7 +265,7 @@ Some variables to see what is making emacs slow.
 (run-with-idle-timer 5 t #'garbage-collect)
 #+end_src
 ** Main Variables
-Some vaiables used all over the config
+Some variable's used all over the config
 #+begin_src elisp :tangle "config.el"
 (setq user-full-name "Italo Amaya Arlotti"
       user-mail-address "italoamaya@me.com")
@@ -276,8 +276,8 @@ Some vaiables used all over the config
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-gruvbox
-      doom-font (font-spec :family "Roboto Mono" :size 16)
+(setq doom-theme 'doom-rouge
+      doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
 
@@ -294,7 +294,7 @@ Some vaiables used all over the config
 #+end_src
 *** Transparency
 #+begin_src elisp :tangle "config.el"
-(defconst doom-frame-transparency 96)
+(defconst doom-frame-transparency 98)
 (set-frame-parameter (selected-frame) 'alpha doom-frame-transparency)
 (add-to-list 'default-frame-alist `(alpha . ,doom-frame-transparency))
 (defun dwc-smart-transparent-frame ()
@@ -304,6 +304,10 @@ Some vaiables used all over the config
               100
              doom-frame-transparency)))
 #+end_src
+
+#+RESULTS:
+: dwc-smart-transparent-frame
+
 ** Splash Screen config
 #+begin_src elisp :tangle "config.el"
 (defvar +fl/splashcii-query ""
@@ -345,19 +349,38 @@ Some vaiables used all over the config
       (:prefix-map ("L" . "Library")
        :desc "open Library" "L" (lambda () (interactive)(find-file (concat org-roam-directory "references/Library.bib")))
        :desc "Find entry" "f" #'ivy-bibtex
-       :desc "Org Ref Hydra" "R" #'org-ref-citation-hydra/body
+       :desc "Org Ref Hydra citation" "R" #'org-ref-citation-hydra/body
+       :desc "Org Ref Hydra bibtex" "r" #'org-ref-bibtex-hydra/body
        :desc "New entry from DOI" "d" #'doi-add-bibtex-entry
        )
       )
 #+end_src
+*** Ssh Deploy
+#+begin_src elisp :tangle "config.el"
+(map!
+ :leader
+ :desc "ssh deploy hydra panel" "r p" #'ssh-deploy-hydra/body
+ )
+#+end_src
+
 *** Org Noter
 #+begin_src elisp :tangle "config.el"
 (map!
       :leader
-      :map org-noter-mode-map
+      :map org-noter-notes-mode-map
       :desc "open org noter" "m n" #'org-noter
+      ;; use Hydra to move arround
       )
 #+end_src
+*** Org roam bibtex
+#+begin_src elisp :tangle "config.el"
+(map!
+      :leader
+      :map org-roam-bibtex-mode-map
+      :desc "insert bibliographic orb note" "n r b" #'orb-insert-link
+      )
+#+end_src
+
 *** Flyspell
 #+begin_src elisp :tangle "config.el"
 (map! :leader
@@ -468,6 +491,7 @@ Some vaiables used all over the config
 These are all the custom key bindings in my config.
 #+begin_src elisp :tangle "config.el"
 (map! :leader "-" #'+doom-dashboard/open)
+;; (map! "C-[Tab]" #'+fold/toggle)
 (map! :leader "RET" #'so-long-mode)
 (map! :leader "j" #'next-buffer)
 (map! :leader "k" #'previous-buffer)
@@ -506,6 +530,10 @@ These are all the custom key bindings in my config.
       "l" 'dired-find-file)
     )
 #+end_src
+*** Beacon Mode
+#+begin_src elisp :tangle "config.el"
+(beacon-mode 1)
+#+end_src
 *** SSH Deploy
 #+begin_src elisp :tangle "config.el"
 (use-package! ssh-deploy
@@ -517,6 +545,7 @@ These are all the custom key bindings in my config.
         ssh-deploy-on-explicit-save 0
         ssh-deploy-async 1)
   :config
+  (ssh-deploy-hydra "C-c C-z")
   (ssh-deploy-line-mode))
 #+end_src
 *** FlyCheck
@@ -558,7 +587,7 @@ These are all the custom key bindings in my config.
 (add-hook! 'vterm-mode-hook #'vterm-padding)
 #+end_src
 *** Pdf view
-#+begin_src elisp :tangle "config.el"
+#+begin_src elisp ;;:tangle "config.el"
 (use-package! pdf-view
   :hook (pdf-tools-enabled . pdf-view-midnight-minor-mode)
   :hook (pdf-tools-enabled . hide-mode-line-mode)
@@ -592,6 +621,55 @@ These are all the custom key bindings in my config.
   (setq bespoke-set-theme 'dark)
   ;; Load theme
   )
+#+end_src
+*** Email
+The main package here is mu4e
+#+begin_src elisp :tangle "config.el"
+;; we installed this with homebrew
+(setq mu4e-mu-binary (executable-find "mu"))
+
+;; this is the directory we created before:
+(setq mu4e-maildir "~/Personal/Mail/")
+
+;; this command is called to sync imap servers:
+(setq mu4e-get-mail-command (concat (executable-find "mbsync") " -a"))
+;; how often to call it in seconds:
+(setq mu4e-update-interval 300)
+
+;; save attachment to desktop by default
+;; or another choice of yours:
+(setq mu4e-attachment-dir "~/Personal/Mail/Attachments/")
+
+;; rename files when moving - needed for mbsync:
+(setq mu4e-change-filenames-when-moving t)
+
+;; list of your email adresses:
+(setq mu4e-user-mail-address-list '("italoamaya03@gmail.com"))
+
+#+end_src
+**** Contexts
+#+begin_src elisp :tangle "config.el"
+;; (setq mu4e-contexts
+;;       `(,(make-mu4e-context
+;;           :name "gmail"
+;;           :enter-func
+;;           (lambda () (mu4e-message "Enter italoamaya03@gmail.com context"))
+;;           :leave-func
+;;           (lambda () (mu4e-message "Leave italoamaya03@gmail.com context"))
+;;           :match-func
+;;           (lambda (msg)
+;;             (when msg
+;;               (mu4e-message-contact-field-matches msg
+;;                                                   :to "italoamaya03@gmail.com")))
+;;           :vars '((user-mail-address . "italoamaya03@gmail.com")
+;;                   (user-full-name . "Italo Amaya Arlotti")
+;;                   (mu4e-drafts-folder . "/gmail/[Gmail]/Drafts")
+;;                   (mu4e-refile-folder . "/gmail/[Gmail]/Archive")
+;;                   (mu4e-sent-folder . "/gmail/[Gmail]/Sent")
+;;                   (mu4e-trash-folder . "/gmail/[Gmail]/Trash")))))
+
+;; (setq mu4e-context-policy 'pick-first) ;; start with the first (default) context;
+;; (setq mu4e-compose-context-policy 'ask) ;; ask for context if no context matches;
 #+end_src
 ** Coding
 *** Packages
@@ -686,7 +764,8 @@ These are all the custom key bindings in my config.
 #+begin_src elisp :tangle "config.el"
 (setq org-directory "/Users/italo/Personal/Programing/Emacs/Org"
       org-ellipsis " ▾ "
-      org-agenda-files (directory-files-recursively org-directory "org$")
+      org-agenda-files (directory-files-recursively (concat org-directory "/Agenda/") "org$")
+      +org-capture-todo-file (concat org-directory "/Agenda/todo.org")
       org-startup-with-inline-images t
       org-startup-folded nil
       org-startup-with-latex-preview t
@@ -712,6 +791,18 @@ These are all the custom key bindings in my config.
 ***** Variables
 #+begin_src elisp :tangle "config.el"
 (setq org-roam-directory (concat org-directory "/roam/"))
+(defun org-roam-buffer-setup ()
+  "Function to make org-roam-buffer more pretty."
+  (progn
+    (setq-local olivetti-body-width 44)
+    (variable-pitch-mode 1)
+    (olivetti-mode 1)
+    (centaur-tabs-local-mode -1)
+
+  (set-face-background 'magit-section-highlight (face-background 'default))))
+
+(after! org-roam
+(add-hook! 'org-roam-mode-hook #'org-roam-buffer-setup))
 #+end_src
 ***** Capture Templates
 #+begin_src elisp :tangle "config.el"
@@ -746,6 +837,22 @@ These are all the custom key bindings in my config.
         orb-roam-ref-format 'org-ref-v3
         orb-process-file-keyword t
         orb-attached-file-extensions '("pdf")))
+#+end_src
+**** Org ol
+#+begin_src elips :tangle "config.el"
+
+(use-package! org-ol-tree
+  :after org
+  :commands org-ol-tree
+  :hook (org-ol-tree-mode . visual-line-mode)
+  :config
+  (setq org-ol-tree-ui-window-auto-resize nil
+        org-ol-tree-ui-window-max-width 0.3
+        org-ol-tree-ui-window-position 'right))
+(map! :map org-mode-map
+      :after org
+      :localleader
+      :desc "Outline" "O" #'org-ol-tree)
 #+end_src
 **** Org Ref
 #+begin_src elisp :tangle "config.el"
@@ -790,26 +897,6 @@ These are all the custom key bindings in my config.
   :after org
   :config
   (setq org-noter-notes-search-path (concat org-roam-directory "references/sources/")))
-#+end_src
-**** Org PDF tools
-#+begin_src elisp :tangle "config.el"
-(use-package! org-pdftools
-  :hook (org-mode . org-pdftools-setup-link))
-
-(use-package! org-noter-pdftools
-  :after org-noter
-  :config
-  (defun org-noter-pdftools-insert-precise-note (&optional toggle-no-questions)
-    (interactive "P")
-    (org-noter--with-valid-session
-     (let ((org-noter-insert-note-no-questions (if toggle-no-questions
-                                                   (not org-noter-insert-note-no-questions)
-                                                 org-noter-insert-note-no-questions))
-           (org-pdftools-use-isearch-link t)
-           (org-pdftools-use-freepointer-annot t))
-       (org-noter-insert-note (org-noter--get-precise-info)))))
-  (with-eval-after-load 'pdf-annot
-    (add-hook 'pdf-annot-activate-handler-functions #'org-noter-pdftools-jump-to-note)))
 #+end_src
 **** Org Auto Tangle
 #+begin_src elisp :tangle "config.el"
@@ -963,14 +1050,16 @@ These are all the custom key bindings in my config.
 ;; on the command line, then restart Emacs for the changes to take effect -- or
 ;; use 'M-x doom/reload'.
 (package! exec-path-from-shell)
-(package! org-noter-pdftools)
 (package! org-bullets)
+(package! beacon)
 (package! org-ref)
 (package! ivy-bibtex)
 (package! spacemacs-theme)
 (package! tree-sitter)
 (package! tree-sitter-langs)
 (package! tsc)
+(package! org-ol-tree
+  :recipe (:host github :repo "Townk/org-ol-tree" :branch "main"))
 (package! org-auto-tangle)
 (package! smooth-scrolling)
 (package! olivetti)

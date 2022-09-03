@@ -5,14 +5,16 @@
 ;; on the command line, then restart Emacs for the changes to take effect -- or
 ;; use 'M-x doom/reload'.
 (package! exec-path-from-shell)
-(package! org-noter-pdftools)
 (package! org-bullets)
+(package! beacon)
 (package! org-ref)
 (package! ivy-bibtex)
 (package! spacemacs-theme)
 (package! tree-sitter)
 (package! tree-sitter-langs)
 (package! tsc)
+(package! org-ol-tree
+  :recipe (:host github :repo "Townk/org-ol-tree" :branch "main"))
 (package! org-auto-tangle)
 (package! smooth-scrolling)
 (package! olivetti)

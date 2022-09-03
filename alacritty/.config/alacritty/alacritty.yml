@@ -153,6 +153,34 @@ schemes:
       magenta : "#fca2aa"
       cyan : "#a3b8ef"
       white : "#abb2bf"
+  Rouge: &Rouge
+    bright:
+      black: '#616274'
+      blue: '#98b3cd'
+      cyan: '#abcbd3'
+      green: '#e6dcc4'
+      magenta: '#8283a1'
+      red: '#c6797e'
+      white: '#e8e8ea'
+      yellow: '#e6dcc4'
+    cursor:
+      cursor: '#969e92'
+      text: '#ffffff'
+    normal:
+      black: '#5d5d6b'
+      blue: '#6e94b9'
+      cyan: '#8ab6c1'
+      green: '#969e92'
+      magenta: '#4c4e78'
+      red: '#c6797e'
+      white: '#e8e8ea'
+      yellow: '#dbcdab'
+    primary:
+      background: '#17182b'
+      foreground: '#a2a3aa'
+    selection:
+      background: '#5d5d6b'
+      text: '#dfe5ee'
   Rose-Pine-Moon: &Rose-Pine-Moon
     primary:
       background: '0x232136'
@@ -270,4 +298,29 @@ schemes:
       magenta: '#8c738c'
       cyan: '#6d96a5'
       white: '#aeb3bb'
-colors: *Nord
+
+  Gruvbox: &Gruvbox
+    primary:
+      background: '0x282828'
+      foreground: '0xdfbf8e'
+
+    normal:
+      black:   '0x665c54'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xe78a4e'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xdfbf8e'
+
+    bright:
+      black:   '0x928374'
+      red:     '0xea6962'
+      green:   '0xa9b665'
+      yellow:  '0xe3a84e'
+      blue:    '0x7daea3'
+      magenta: '0xd3869b'
+      cyan:    '0x89b482'
+      white:   '0xdfbf8e'
+colors: *Rouge
