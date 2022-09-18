@@ -12,6 +12,7 @@ hyper - e : /Applications/Emacs.app/Contents/MacOS/Emacs
 hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
 hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e 'btm'
+hyper - c : /Users/italo/.config/Bin/fun/classic-radio.sh
 
 # focus
 alt - h : yabai -m window --focus west
