@@ -21,6 +21,12 @@ cmd + alt - j : yabai -m window --swap south
 cmd + alt - k : yabai -m window --swap north
 cmd + alt - l : yabai -m window --swap east
 
+# focus
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
+
 ## rotate tree 90
 hyper - r : yabai -m space --rotate 90
 
