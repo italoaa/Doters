@@ -478,6 +478,10 @@
       :localleader
       :desc "Outline" "O" #'org-ol-tree)
 
+(use-package! org-sticky-header
+  :after org
+  :hook (org-mode . org-sticky-header-mode))
+
 (use-package! org-ref
   :after org
   :init

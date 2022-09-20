@@ -15,7 +15,10 @@
 (package! tsc)
 (package! org-ol-tree
   :recipe (:host github :repo "Townk/org-ol-tree" :branch "main"))
+(package! topsy
+  :recipe (:host github :repo "alphapapa/topsy.el" :branch "master"))
 (package! org-auto-tangle)
+(package! org-sticky-header)
 (package! smooth-scrolling)
 (package! olivetti)
 (package! valign)
