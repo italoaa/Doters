@@ -48,6 +48,7 @@ balias oem 'emacsclient -c'
 balias o. "open ."
 balias tn "terminal-notifier"
 balias l "exa --group-directories-first"
+balias ls "exa --icons --group-directories-first --long"
 balias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
 balias ll "exa --icons --group-directories-first --long --all --group --header"
 balias lg "exa --icons --group-directories-first --long --all --group --header --git"

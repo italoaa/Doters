@@ -178,7 +178,7 @@
       "n r t" #'org-roam-tag-add)
 (map! :leader
       :desc "Paste Screenshot"
-      "n r p" #'org-download-screenshot)
+      "n r p" #'org-download-clipboard)
 
 (map! :leader
       :desc "Roam Add Alias"
@@ -422,38 +422,28 @@
                                "* [ ] %?\n%i" :prepend t :kill-buffer t)))
 
 (setq org-roam-directory (concat org-directory "/roam/"))
-(defun org-roam-buffer-setup ()
-  "Function to make org-roam-buffer more pretty."
-  (progn
-    (setq-local olivetti-body-width 44)
-    (variable-pitch-mode 1)
-    (olivetti-mode 1)
-    (centaur-tabs-local-mode -1)
+(add-to-list 'display-buffer-alist
+             '("\\*org-roam\\*"
+               (display-buffer-in-direction)
+               (direction . right)
+               (window-width . 0.33)
+               (window-height . fit-window-to-buffer)))
 
-  (set-face-background 'magit-section-highlight (face-background 'default))))
-
-(after! org-roam
-(add-hook! 'org-roam-mode-hook #'org-roam-buffer-setup))
-
-(setq org-roam-capture-templates '(("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-  (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
-  :unnarrowed t)
-                                   (
-                                    "r" "ref" plain
-                                    "%?"
-                                    :target
+(setq org-roam-capture-templates '(
+                                   ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
+                                    :unnarrowed t)
+                                   ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ProcProgramming|ProfessionalComputing|FundamentalMathConcepts|ComputerArchitecture|IntroToProgramming}:\n")
+                                    :unnarrowed t)
+                                   ("r" "ref" plain "%?" :target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n")
-                                    :unarrowed t
-                                    )
-                                   (
-                                    "n" "ref + noter" plain
-                                    ;; (file "~/.doom.d/templates/bibnote.org")
-                                    "%?"
-                                    :target
+                                    :unarrowed t)
+                                   ("n" "ref + noter" plain "%?":target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
-                                    :unarrowed t
-                                    )
+                                    :unarrowed t)
                                     ))
+                                    ;; (file "~/.doom.d/templates/bibnote.org")
 
 (setq! orb-note-actions-interface 'hydra)
 
@@ -555,7 +545,8 @@
     (org-download-image-org-width 300)
     (org-download-screenshot-method "/usr/local/bin/pngpaste %s")
     :config
-    (require 'org-download))
+    (require 'org-download)
+    (org-download-enable))
 
 (use-package! org-bullets
     :hook (org-mode . org-bullets-mode)
