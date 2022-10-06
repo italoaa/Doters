@@ -7,11 +7,12 @@ ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 ## open terminal
 hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 hyper - m : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu"
-hyper - e : /Applications/Emacs.app/Contents/MacOS/Emacs
+# hyper - e : /Applications/Emacs.app/Contents/MacOS/Emacs
 # hyper - q : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/Kuiqer/kuiqer.sh"
 hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
 hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e 'btm'
+# This is one of my favourites
 hyper - c : /Users/italo/.config/Bin/fun/classic-radio.sh
 
 # focus
