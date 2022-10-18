@@ -118,11 +118,11 @@
         +present)
        php               ; perl's insecure younger brother
        (python
+        +conda
         +lsp
         +pyright
         +pyenv
-        +poetry
-        +cython)            ; beautiful is better than ugly
+        +poetry)
        (rust
         +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;(sh +lsp)                ; she sells {ba,z,fi}sh shells on the C xor
