@@ -152,7 +152,7 @@ This file describes all the packages that I want preinstalled by doom.
 ** Languages
 #+begin_src elisp :tangle "init.el"
        :lang
-       cc                ; C > C++ == 1
+       (cc +lsp)                ; C > C++ == 1
        (emacs-lisp
         +lsp)       ; drown in parentheses
        (go +lsp)         ; the hipster dialect

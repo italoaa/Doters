@@ -96,7 +96,7 @@
        tty               ; improve the terminal Emacs experience
 
        :lang
-       cc                ; C > C++ == 1
+       (cc +lsp)                ; C > C++ == 1
        (emacs-lisp
         +lsp)       ; drown in parentheses
        (go +lsp)         ; the hipster dialect
