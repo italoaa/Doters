@@ -20,6 +20,8 @@
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
 
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
+;; latex
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 
 (setq display-line-numbers-type 'relative)
 (setq confirm-kill-emacs nil)
@@ -89,8 +91,11 @@
       )
 
 (map!
+      :desc "insert bibliographic orb note" "C-i" #'org-roam-node-insert
+      )
+
+(map!
       :leader
-      :map org-roam-bibtex-mode-map
       :desc "insert bibliographic orb note" "n r b" #'orb-insert-link
       )
 
