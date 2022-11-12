@@ -36,8 +36,11 @@ end
 
 balias tnmap 'nmap -sC -sV -oA nmap/initial'
 
+# Trash
+balias rm 'echo Use del or trash or /bin/rm'
+balias del 'trash'
+
 # Yabai
-alias avet='sudo docker run -it --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" -v $(pwd):/tools/avet/output avet /bin/bash'
 balias ys 'brew services restart yabai'
 balias sk 'brew services restart skhd'
 balias sp 'speedtest'

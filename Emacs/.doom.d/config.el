@@ -21,23 +21,13 @@
 
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
 ;; latex
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
+;; (after! org (plist-put org-format-latex-options :scale 1.75)
 
 (setq display-line-numbers-type 'relative)
 (setq confirm-kill-emacs nil)
 (setq scroll-margin 8)
 (setq tramp-default-method "ssh")
 (smooth-scrolling-mode 1)
-
-(defconst doom-frame-transparency 98)
-(set-frame-parameter (selected-frame) 'alpha doom-frame-transparency)
-(add-to-list 'default-frame-alist `(alpha . ,doom-frame-transparency))
-(defun dwc-smart-transparent-frame ()
-  (set-frame-parameter
-    (selected-frame)
-    'alpha (if (frame-parameter (selected-frame) 'fullscreen)
-              100
-             doom-frame-transparency)))
 
 (defvar +fl/splashcii-query ""
   "The query to search on asciiur.com")
@@ -51,9 +41,10 @@
                         (call-process "splashcii" nil standard-output nil +fl/splashcii-query))
                       "\n" t)))
 
-(setq +doom-dashboard-ascii-banner-fn #'+fl/splashcii-banner)
+;; (setq +doom-dashboard-ascii-banner-fn #'+fl/splashcii-banner)
 
 (setq +fl/splashcii-query "nature")
+(setq fancy-splash-image (concat doom-private-dir "bonsai.png"))
 
 (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
 ;; (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-loaded)
@@ -91,13 +82,15 @@
       )
 
 (map!
-      :desc "insert bibliographic orb note" "C-i" #'org-roam-node-insert
-      )
-
-(map!
       :leader
       :desc "insert bibliographic orb note" "n r b" #'orb-insert-link
       )
+
+;; (map!
+;;       :desc "insert bibliographic orb note" "C-i" #'org-roam-node-insert
+;;       )
+
+(map! :leader :desc "noter precise note" "n r N i" #'org-noter-insert-precise-note)
 
 (map! :leader
       :desc "Correct Word"
@@ -417,14 +410,9 @@
       org-journal-date-format "%a, %d-%m-%Y"
       org-journal-file-format "%d-%m-%Y.org"
       org-journal-time-prefix "* "
-      projectile-project-search-path '("~/Personal/Programming/Repos" "~/Dot/"))
+      projectile-project-search-path '("~/Dot/" "~/Downloads/School/y1/"))
 
-(setq org-capture-templates '(("x" "Note" entry
-                               (file+olp+datetree "journal.org")
-                               "**** [ ] %U %?" :prepend t :kill-buffer t)
-                              ("t" "Task" entry
-                               (file+headline "tasks.org" "Inbox")
-                               "* [ ] %?\n%i" :prepend t :kill-buffer t)))
+
 
 (setq org-roam-directory (concat org-directory "/roam/"))
 (add-to-list 'display-buffer-alist
@@ -491,6 +479,7 @@
     bibtex-completion-pdf-symbol "⌘"
     bibtex-completion-notes-symbol "✎"
     )
+  (setq org-latex-pdf-process (list "latexmk -f -pdf -%latex -interaction=nonstopmode -bibtex -output-directory=%o %f"))
 
   (setq bibtex-completion-display-formats
     '((article       . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} ${journal:40}")
@@ -501,6 +490,7 @@
 
   (setq org-ref-insert-link-function 'org-ref-insert-link-hydra/body
       org-ref-insert-cite-function 'org-ref-cite-insert-ivy
+      org-ref-csl-default-style (concat org-directory "/templates/harvard-university-of-leeds.csl")
       org-ref-insert-label-function 'org-ref-insert-label-link
       org-ref-insert-ref-function 'org-ref-insert-ref-link
       org-ref-cite-onclick-function (lambda (_) (org-ref-citation-hydra/body)))
@@ -558,6 +548,19 @@
     :custom
     (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
 
+(after! ox-latex
+  (add-to-list 'org-latex-classes
+               '("org-plain-latex"
+               "\\documentclass{article}
+           [NO-DEFAULT-PACKAGES]
+           [PACKAGES]
+           [EXTRA]"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
+
 (use-package! svg-tag-mode
   :after org
   :config
@@ -582,6 +585,10 @@
         (ispell-change-dictionary change)
         (message "Dictionary switched from %s to %s" dic change)
         ))
+
+(defun insert-setup-file()
+  (interactive)
+  (insert (concat "#+SETUPFILE: " org-directory "/templates/org-plain-latex-export.org")))
 
 (defun insert-file-path ()
   "Insert file path."

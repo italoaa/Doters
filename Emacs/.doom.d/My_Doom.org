@@ -135,7 +135,7 @@ This file describes all the packages that I want preinstalled by doom.
        (magit)             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
-       ;;pdf               ; pdf enhancements
+       pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
        rgb               ; creating color strings
        ;;taskrunner        ; taskrunner for all your projects
@@ -283,7 +283,7 @@ Some variable's used all over the config
 
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
 ;; latex
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
+;; (after! org (plist-put org-format-latex-options :scale 1.75)
 #+end_src
 
 ** Emacs Configuration
@@ -294,21 +294,6 @@ Some variable's used all over the config
 (setq tramp-default-method "ssh")
 (smooth-scrolling-mode 1)
 #+end_src
-*** Transparency
-#+begin_src elisp :tangle "config.el"
-(defconst doom-frame-transparency 98)
-(set-frame-parameter (selected-frame) 'alpha doom-frame-transparency)
-(add-to-list 'default-frame-alist `(alpha . ,doom-frame-transparency))
-(defun dwc-smart-transparent-frame ()
-  (set-frame-parameter
-    (selected-frame)
-    'alpha (if (frame-parameter (selected-frame) 'fullscreen)
-              100
-             doom-frame-transparency)))
-#+end_src
-
-#+RESULTS:
-: dwc-smart-transparent-frame
 
 ** Splash Screen config
 #+begin_src elisp :tangle "config.el"
@@ -324,9 +309,10 @@ Some variable's used all over the config
                         (call-process "splashcii" nil standard-output nil +fl/splashcii-query))
                       "\n" t)))
 
-(setq +doom-dashboard-ascii-banner-fn #'+fl/splashcii-banner)
+;; (setq +doom-dashboard-ascii-banner-fn #'+fl/splashcii-banner)
 
 (setq +fl/splashcii-query "nature")
+(setq fancy-splash-image (concat doom-private-dir "bonsai.png"))
 
 (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
 ;; (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-loaded)
@@ -377,15 +363,19 @@ Some variable's used all over the config
 *** Org roam bibtex
 #+begin_src elisp :tangle "config.el"
 (map!
-      :desc "insert bibliographic orb note" "C-i" #'org-roam-node-insert
+      :leader
+      :desc "insert bibliographic orb note" "n r b" #'orb-insert-link
       )
 #+end_src
 *** Org roam
 #+begin_src elisp :tangle "config.el"
-(map!
-      :leader
-      :desc "insert bibliographic orb note" "n r b" #'orb-insert-link
-      )
+;; (map!
+;;       :desc "insert bibliographic orb note" "C-i" #'org-roam-node-insert
+;;       )
+#+end_src
+*** Org Noter
+#+begin_src elisp :tangle "config.el"
+(map! :leader :desc "noter precise note" "n r N i" #'org-noter-insert-precise-note)
 #+end_src
 *** Flyspell
 #+begin_src elisp :tangle "config.el"
@@ -594,10 +584,11 @@ These are all the custom key bindings in my config.
 #+end_src
 *** Pdf view
 #+begin_src elisp ;;:tangle "config.el"
-(use-package! pdf-view
-  :hook (pdf-tools-enabled . pdf-view-midnight-minor-mode)
-  :hook (pdf-tools-enabled . hide-mode-line-mode)
+(use-package! pdf-view-mode
+  :hook (pdf-view-mode . pdf-view-midnight-minor-mode)
+  :hook (pdf-view-mode . hide-mode-line-mode)
   :config
+  (add-hook 'pdf-tools-enabled-hook 'pdf-view-midnight-minor-mode)
   (setq pdf-view-midnight-colors '("#ABB2BF" . "#282C35")))
 #+end_src
 *** Company Mode
@@ -781,17 +772,11 @@ The main package here is mu4e
       org-journal-date-format "%a, %d-%m-%Y"
       org-journal-file-format "%d-%m-%Y.org"
       org-journal-time-prefix "* "
-      projectile-project-search-path '("~/Personal/Programming/Repos" "~/Dot/"))
+      projectile-project-search-path '("~/Dot/" "~/Downloads/School/y1/"))
 
 #+end_src
 **** Org Capture templates
 #+begin_src elisp :tangle "config.el"
-(setq org-capture-templates '(("x" "Note" entry
-                               (file+olp+datetree "journal.org")
-                               "**** [ ] %U %?" :prepend t :kill-buffer t)
-                              ("t" "Task" entry
-                               (file+headline "tasks.org" "Inbox")
-                               "* [ ] %?\n%i" :prepend t :kill-buffer t)))
 #+end_src
 *** Packages
 **** Org Roam
@@ -837,7 +822,6 @@ The main package here is mu4e
 #+end_src
 **** Org ol
 #+begin_src elips :tangle "config.el"
-
 (use-package! org-ol-tree
   :after org
   :commands org-ol-tree
@@ -874,6 +858,7 @@ The main package here is mu4e
     bibtex-completion-pdf-symbol "⌘"
     bibtex-completion-notes-symbol "✎"
     )
+  (setq org-latex-pdf-process (list "latexmk -f -pdf -%latex -interaction=nonstopmode -bibtex -output-directory=%o %f"))
 
   (setq bibtex-completion-display-formats
     '((article       . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} ${journal:40}")
@@ -884,6 +869,7 @@ The main package here is mu4e
 
   (setq org-ref-insert-link-function 'org-ref-insert-link-hydra/body
       org-ref-insert-cite-function 'org-ref-cite-insert-ivy
+      org-ref-csl-default-style (concat org-directory "/templates/harvard-university-of-leeds.csl")
       org-ref-insert-label-function 'org-ref-insert-label-link
       org-ref-insert-ref-function 'org-ref-insert-ref-link
       org-ref-cite-onclick-function (lambda (_) (org-ref-citation-hydra/body)))
@@ -955,6 +941,21 @@ The main package here is mu4e
     :custom
     (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
 #+end_src
+**** Org-ox
+#+begin_src elisp :tangle "config.el"
+(after! ox-latex
+  (add-to-list 'org-latex-classes
+               '("org-plain-latex"
+               "\\documentclass{article}
+           [NO-DEFAULT-PACKAGES]
+           [PACKAGES]
+           [EXTRA]"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
+#+end_src
 **** Svg Tag mode
 #+begin_src elisp :tangle "config.el"
 (use-package! svg-tag-mode
@@ -987,6 +988,12 @@ The main package here is mu4e
         (ispell-change-dictionary change)
         (message "Dictionary switched from %s to %s" dic change)
         ))
+#+end_src
+*** Ox-latex
+#+begin_src elisp :tangle "config.el"
+(defun insert-setup-file()
+  (interactive)
+  (insert (concat "#+SETUPFILE: " org-directory "/templates/org-plain-latex-export.org")))
 #+end_src
 *** Insert file path
 #+begin_src elisp :tangle "config.el"
