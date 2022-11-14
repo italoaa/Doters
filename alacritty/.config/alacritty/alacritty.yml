@@ -12,7 +12,7 @@ window:
   title: Mostrositty
   dynamic_title: false
   history: 1000
-  opacity: 0.96
+  opacity: 0.85
 font:
   normal:
     family: JetBrainsMono Nerd Font

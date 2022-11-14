@@ -17,6 +17,8 @@
   :recipe (:host github :repo "Townk/org-ol-tree" :branch "main"))
 (package! topsy
   :recipe (:host github :repo "alphapapa/topsy.el" :branch "master"))
+(package! nano-theme
+  :recipe (:host github :repo "rougier/nano-theme" :branch "master"))
 (package! org-auto-tangle)
 (package! org-sticky-header)
 (package! smooth-scrolling)

@@ -15,11 +15,23 @@
 
 
 (setq doom-theme 'doom-rouge
-      doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
+      ;; doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
+      doom-font (font-spec :family "GohuFont" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
 
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
+
+(defconst doom-frame-transparency 85)
+(set-frame-parameter (selected-frame) 'alpha doom-frame-transparency)
+(add-to-list 'default-frame-alist `(alpha . ,doom-frame-transparency))
+(defun dwc-smart-transparent-frame ()
+  (set-frame-parameter
+    (selected-frame)
+    'alpha (if (frame-parameter (selected-frame) 'fullscreen)
+              100
+             doom-frame-transparency)))
+
 ;; latex
 ;; (after! org (plist-put org-format-latex-options :scale 1.75)
 
@@ -41,10 +53,10 @@
                         (call-process "splashcii" nil standard-output nil +fl/splashcii-query))
                       "\n" t)))
 
-;; (setq +doom-dashboard-ascii-banner-fn #'+fl/splashcii-banner)
+(setq +doom-dashboard-ascii-banner-fn #'+fl/splashcii-banner)
 
-(setq +fl/splashcii-query "nature")
-(setq fancy-splash-image (concat doom-private-dir "bonsai.png"))
+(setq +fl/splashcii-query "dragon")
+;; (setq fancy-splash-image (concat doom-private-dir "bonsai.png"))
 
 (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
 ;; (remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-loaded)
@@ -249,6 +261,8 @@
   :config
   (display-line-numbers-mode 0))
 
+(use-package! nano-theme)
+
 (use-package! websocket
     :after org-roam)
 
@@ -400,6 +414,7 @@
 
 (setq org-directory "/Users/italo/Personal/Programing/Emacs/Org"
       org-ellipsis " ▾ "
+      org-clock-sound (concat doom-private-dir "bell.wav")
       org-agenda-files (directory-files-recursively (concat org-directory "/Agenda/") "org$")
       +org-capture-todo-file (concat org-directory "/Agenda/todo.org")
       org-startup-with-inline-images t
