@@ -277,8 +277,7 @@ Some variable's used all over the config
 
 
 (setq doom-theme 'doom-rouge
-      ;; doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
-      doom-font (font-spec :family "GohuMono" :size 16 :height 181 :weight 'light)
+      doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
 
@@ -295,8 +294,11 @@ Some variable's used all over the config
              doom-frame-transparency)))
 
 ;; latex
-;; (after! org (plist-put org-format-latex-options :scale 1.75)
+;; (after! org (plist-put org-format-latex-options :scale 1.70)
 #+end_src
+
+#+RESULTS:
+: dwc-smart-transparent-frame
 
 ** Emacs Configuration
 #+begin_src elisp :tangle "config.el"
@@ -332,9 +334,6 @@ Some variable's used all over the config
 (add-hook! '+doom-dashboard-mode-hook (hide-mode-line-mode 1) (hl-line-mode -1))
 (setq-hook! '+doom-dashboard-mode-hook evil-normal-state-cursor (list nil))
 #+end_src
-
-#+RESULTS:
-| doom--setq-evil-normal-state-cursor-for-+doom-dashboard-mode-h | doom-modeline-set-project-modeline | (lambda (&rest _) (hide-mode-line-mode 1) (hl-line-mode -1)) |
 
 ** Key Bindings
 *** Find Files
@@ -582,7 +581,7 @@ These are all the custom key bindings in my config.
 #+end_src
 *** Nano theme
 #+begin_src elisp :tangle "config.el"
-(use-package! nano-theme)
+;; (use-package! nano-theme)
 #+end_src
 *** Websocket
 #+begin_src elisp :tangle "config.el"
@@ -603,11 +602,10 @@ These are all the custom key bindings in my config.
 #+end_src
 *** Pdf view
 #+begin_src elisp ;;:tangle "config.el"
-(use-package! pdf-view-mode
-  :hook (pdf-view-mode . pdf-view-midnight-minor-mode)
-  :hook (pdf-view-mode . hide-mode-line-mode)
+(use-package pdf-view
+  :hook (pdf-tools-enabled-hook . pdf-view-midnight-minor-mode)
+  :hook (pdf-tools-enabled-hook . hide-mode-line-mode)
   :config
-  (add-hook 'pdf-tools-enabled-hook 'pdf-view-midnight-minor-mode)
   (setq pdf-view-midnight-colors '("#ABB2BF" . "#282C35")))
 #+end_src
 *** Company Mode

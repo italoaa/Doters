@@ -15,8 +15,7 @@
 
 
 (setq doom-theme 'doom-rouge
-      ;; doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
-      doom-font (font-spec :family "GohuFont" :size 16 :height 181 :weight 'light)
+      doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
 
@@ -33,7 +32,7 @@
              doom-frame-transparency)))
 
 ;; latex
-;; (after! org (plist-put org-format-latex-options :scale 1.75)
+;; (after! org (plist-put org-format-latex-options :scale 1.70)
 
 (setq display-line-numbers-type 'relative)
 (setq confirm-kill-emacs nil)
@@ -261,7 +260,7 @@
   :config
   (display-line-numbers-mode 0))
 
-(use-package! nano-theme)
+;; (use-package! nano-theme)
 
 (use-package! websocket
     :after org-roam)

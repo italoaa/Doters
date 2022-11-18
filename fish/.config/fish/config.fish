@@ -19,7 +19,7 @@ end
 
 bind \cf tmux-sessionizer
 bind \ca tmux a
- 
+
 set -g theme_color_scheme zenburn
 
 balias showFunc 'echo "serve <port> , multi <Lhost>,<port>"'
