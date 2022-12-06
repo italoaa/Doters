@@ -153,6 +153,10 @@
       :desc "dap breakpoint log message" "l" #'dap-breakpoint-log-message)
 
 (map! :leader
+      :desc "lsp ivy workspace symbols"
+      "l w" #'lsp-ivy-workspace-symbol)
+
+(map! :leader
       :desc "Show lsp ui Doc"
       "l s" #'lsp-ui-doc-show)
 
@@ -226,10 +230,12 @@
 (use-package! dired
   :defer 2
     :config
+(after! evil-collection
     (evil-collection-define-key 'normal 'dired-mode-map
       "h" 'dired-up-directory
       "l" 'dired-find-file)
     )
+  )
 
 (beacon-mode 1)
 
@@ -418,6 +424,7 @@
       +org-capture-todo-file (concat org-directory "/Agenda/todo.org")
       org-startup-with-inline-images t
       org-startup-folded nil
+      org-clock-clocktable-default-properties '(:maxlevel 4)
       org-startup-with-latex-preview t
       org-hide-emphasis-markers t
       org-journal-date-prefix "#+TITLE: "
@@ -587,6 +594,9 @@
         )
   ))
 
+(after! org-fancy-priorities
+  (setq org-fance-priorities-list '("■","■","■")))
+
 (evil-global-set-key 'motion "j" 'evil-next-visual-line)
 (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
 (define-key evil-ex-map "W" 'save-buffer)
@@ -599,6 +609,10 @@
         (ispell-change-dictionary change)
         (message "Dictionary switched from %s to %s" dic change)
         ))
+
+(defun insert-bibtex-from-jstor-stable-url (link)
+  (interactive "sJstor Link: ")
+  (shell-command (format (concat "~/.config/Bin/practical/getJstorLink.sh " "'" "%s" "'") link)))
 
 (defun insert-setup-file()
   (interactive)

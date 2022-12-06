@@ -7,6 +7,7 @@ ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 ## open terminal
 hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 hyper - m : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu"
+hyper - t : /Users/italo/.config/yabai/toggle-bar.sh
 # hyper - e : /Applications/Emacs.app/Contents/MacOS/Emacs
 # hyper - q : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/Kuiqer/kuiqer.sh"
 hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
@@ -48,7 +49,7 @@ hyper - f : yabai -m window --toggle zoom-fullscreen
 cmd + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 ## float / unfloat window and center on screen
-alt - t : yabai -m window --toggle float;\
+alt - t : yabai -m window --toggle float
 
 ## create desktop, move window and follow focus
 shift + cmd - n : yabai -m space --create && \

@@ -452,6 +452,10 @@ Some variable's used all over the config
 *** Lsp mode
 #+begin_src elisp :tangle "config.el"
 (map! :leader
+      :desc "lsp ivy workspace symbols"
+      "l w" #'lsp-ivy-workspace-symbol)
+
+(map! :leader
       :desc "Show lsp ui Doc"
       "l s" #'lsp-ui-doc-show)
 
@@ -535,10 +539,12 @@ These are all the custom key bindings in my config.
 (use-package! dired
   :defer 2
     :config
+(after! evil-collection
     (evil-collection-define-key 'normal 'dired-mode-map
       "h" 'dired-up-directory
       "l" 'dired-find-file)
     )
+  )
 #+end_src
 *** Beacon Mode
 #+begin_src elisp :tangle "config.el"
@@ -602,6 +608,8 @@ These are all the custom key bindings in my config.
 #+end_src
 *** Pdf view
 #+begin_src elisp ;;:tangle "config.el"
+(add-hook! 'pdf-tools-enabled-hook #'pdf-view-midnight-minor-mode)
+(setq pdf-view-midnight-colors '("#ABB2BF" . "#282C35"))
 (use-package pdf-view
   :hook (pdf-tools-enabled-hook . pdf-view-midnight-minor-mode)
   :hook (pdf-tools-enabled-hook . hide-mode-line-mode)
@@ -784,6 +792,7 @@ The main package here is mu4e
       +org-capture-todo-file (concat org-directory "/Agenda/todo.org")
       org-startup-with-inline-images t
       org-startup-folded nil
+      org-clock-clocktable-default-properties '(:maxlevel 4)
       org-startup-with-latex-preview t
       org-hide-emphasis-markers t
       org-journal-date-prefix "#+TITLE: "
@@ -839,7 +848,7 @@ The main package here is mu4e
         orb-attached-file-extensions '("pdf")))
 #+end_src
 **** Org ol
-#+begin_src elips :tangle "config.el"
+#+begin_src elisp :tangle "config.el"
 (use-package! org-ol-tree
   :after org
   :commands org-ol-tree
@@ -989,6 +998,11 @@ The main package here is mu4e
   ))
 
 #+end_src
+**** Org Fancy Priorities
+#+begin_src elisp :tangle "config.el"
+(after! org-fancy-priorities
+  (setq org-fance-priorities-list '("■","■","■")))
+#+end_src
 ** Evil mode
 #+begin_src elisp :tangle "config.el"
 (evil-global-set-key 'motion "j" 'evil-next-visual-line)
@@ -1007,6 +1021,14 @@ The main package here is mu4e
         (message "Dictionary switched from %s to %s" dic change)
         ))
 #+end_src
+*** Bibtex from Jstore
+#+begin_src elisp :tangle "config.el"
+(defun insert-bibtex-from-jstor-stable-url (link)
+  (interactive "sJstor Link: ")
+  (shell-command (format (concat "~/.config/Bin/practical/getJstorLink.sh " "'" "%s" "'") link)))
+
+#+end_src
+
 *** Ox-latex
 #+begin_src elisp :tangle "config.el"
 (defun insert-setup-file()
@@ -1059,6 +1081,7 @@ The main package here is mu4e
 (defun italo/exec/ghqGet (link)
   (interactive "sRepo Link: ")
   (shell-command (format "ghq get %s" link)))
+
 #+end_src
 
 ** Better execution
