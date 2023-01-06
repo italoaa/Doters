@@ -46,7 +46,7 @@ shift + alt - r : yabai -m space --rotate 90
 hyper - f : yabai -m window --toggle zoom-fullscreen
 
 # enable / Disable gaps in current workspace
-cmd + alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+cmd + alt + shift - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 ## float / unfloat window and center on screen
 alt - t : yabai -m window --toggle float

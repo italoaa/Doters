@@ -1,16 +1,19 @@
 sw_volume: 100
-audio_device_state:0:Italo Macbook
+audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: pause
-current: 0
-time: 411.242000
+state: stop
 random: 0
-repeat: 1
-single: 1
-consume: 0
+repeat: 0
+single: 0
+consume: 1
 crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:lofi/If Drake and J. Cole made lofi hip hop radio-sDXy4xqKmA0.mp3
+0:breakcore/chill breakcore songs to to vanish to [-D0_Voa7gEo].mp3
+1:breakcore/goodbye [z7vDWCbJ3L8].mp3
+2:breakcore/Mellow Breaks [l4fBd4AHySk].mp3
+3:Oasis acustics/Oasis - Rockin Chair (Demo).mp3
+4:Oasis acustics/Noel Gallagher (Oasis) - Let There Be Love (Live Acoustic at Radio Deejay, Milan, Italy 2005).mp3
+5:Oasis acustics/Noel Gallagher (Oasis) - Live Acoustic Session for Rolling Stone 2006 (Full Set).mp3
 playlist_end

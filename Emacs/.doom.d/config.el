@@ -6,7 +6,7 @@
 (run-with-idle-timer 5 t #'garbage-collect)
 
 (setq user-full-name "Italo Amaya Arlotti"
-      user-mail-address "italoamaya@me.com")
+      user-mail-address "italoamaya@icloud.com")
 
 (setq baby-blue '("#d2ecff" "#d2ecff" "brightblue"))
 
@@ -14,7 +14,7 @@
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-rouge
+(setq doom-theme 'doom-gruvbox
       doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
@@ -279,7 +279,7 @@
 
 (add-hook! 'vterm-mode-hook #'vterm-padding)
 
-(setq company-idle-delay 0.9)
+(setq company-idle-delay 0.3)
 (use-package! company-box
   :init
   (setq company-box-doc-enable nil
@@ -307,7 +307,7 @@
 (setq mu4e-mu-binary (executable-find "mu"))
 
 ;; this is the directory we created before:
-(setq mu4e-maildir "~/Personal/Mail/")
+(setq mu4e-maildir "~/.maildir")
 
 ;; this command is called to sync imap servers:
 (setq mu4e-get-mail-command (concat (executable-find "mbsync") " -a"))
@@ -316,16 +316,44 @@
 
 ;; save attachment to desktop by default
 ;; or another choice of yours:
-(setq mu4e-attachment-dir "~/Personal/Mail/Attachments/")
+(setq mu4e-attachment-dir "~/.maildir/Attachments")
 
 ;; rename files when moving - needed for mbsync:
 (setq mu4e-change-filenames-when-moving t)
 
 ;; list of your email adresses:
-(setq mu4e-user-mail-address-list '("italoamaya03@gmail.com"))
+(setq mu4e-user-mail-address-list '("italoamaya03@gmail.com"
+                                    "italoamaya@icloud.com"))
+
+;; check your ~/.maildir to see how the subdirectories are called
+;; for the generic imap account:
+;; e.g `ls ~/.maildir/example'
+(setq   mu4e-maildir-shortcuts
+        '(("/icloud/INBOX" . ?i)
+          ("/icloud/Sent Messages" . ?I)
+          ("/gmail/INBOX" . ?g)
+          ("/gmail/[Gmail]/Sent Mail" . ?G)))
 
 ;; (setq mu4e-contexts
 ;;       `(,(make-mu4e-context
+;;           :name "icloud"
+;;           :enter-func
+;;           (lambda () (mu4e-message "Enter italoamaya@icloud.com context"))
+;;           :leave-func
+;;           (lambda () (mu4e-message "Leave italoamaya@icloud.com context"))
+;;           :match-func
+;;           (lambda (msg)
+;;             (when msg
+;;               (mu4e-message-contact-field-matches msg
+;;                                                   :to "italoamaya@icloud.com")))
+;;           :vars '((user-mail-address . "italoamaya@icloud.com" )
+;;                   (user-full-name . "Italo Amaya")
+;;                   (mu4e-drafts-folder . "/icloud/Drafts")
+;;                   (mu4e-refile-folder . "/icloud/Archive")
+;;                   (mu4e-sent-folder . "/icloud/Sent Messages")
+;;                   (mu4e-trash-folder . "/icloud/Deleted Messages")))
+
+;;         ,(make-mu4e-context
 ;;           :name "gmail"
 ;;           :enter-func
 ;;           (lambda () (mu4e-message "Enter italoamaya03@gmail.com context"))
@@ -337,11 +365,11 @@
 ;;               (mu4e-message-contact-field-matches msg
 ;;                                                   :to "italoamaya03@gmail.com")))
 ;;           :vars '((user-mail-address . "italoamaya03@gmail.com")
-;;                   (user-full-name . "Italo Amaya Arlotti")
-;;                   (mu4e-drafts-folder . "/gmail/[Gmail]/Drafts")
-;;                   (mu4e-refile-folder . "/gmail/[Gmail]/Archive")
-;;                   (mu4e-sent-folder . "/gmail/[Gmail]/Sent")
-;;                   (mu4e-trash-folder . "/gmail/[Gmail]/Trash")))))
+;;                   (user-full-name . "Italo Amaya")
+;;                   (mu4e-drafts-folder . "/gmail/Drafts")
+;;                   (mu4e-refile-folder . "/gmail/Archive")
+;;                   (mu4e-sent-folder . "/gmail/Sent")
+;;                   (mu4e-trash-folder . "/gmail/Trash")))))
 
 ;; (setq mu4e-context-policy 'pick-first) ;; start with the first (default) context;
 ;; (setq mu4e-compose-context-policy 'ask) ;; ask for context if no context matches;
@@ -370,9 +398,10 @@
       lsp-ui-sideline-show-code-actions t
       lsp-ui-doc-show-with-cursor nil
       lsp-ui-doc-show-with-mouse t
-      lsp-ui-doc-max-width 150
-      lsp-ui-doc-max-height 100
-      lsp-ui-doc-position "Top"))
+      lsp-ui-doc-max-width 450
+      lsp-ui-doc-max-height 400
+      lsp-ui-imenu-auto-refresh t
+      lsp-ui-doc-position "top"))
 
 (add-hook! rust-mode-hook #'tree-sitter-mode)
 (add-hook! tree-sitter-mode-hook #'tree-sitter-hl-mode)
@@ -425,7 +454,7 @@
       org-startup-with-inline-images t
       org-startup-folded nil
       org-clock-clocktable-default-properties '(:maxlevel 4)
-      org-startup-with-latex-preview t
+      ;; org-startup-with-latex-preview t
       org-hide-emphasis-markers t
       org-journal-date-prefix "#+TITLE: "
       org-journal-date-format "%a, %d-%m-%Y"
@@ -481,6 +510,9 @@
       :after org
       :localleader
       :desc "Outline" "O" #'org-ol-tree)
+
+(use-package! org-preview
+  :after org)
 
 (use-package! org-sticky-header
   :after org

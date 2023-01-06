@@ -37,6 +37,8 @@
 (package! explain-pause-mode)
 (package! tron-legacy-theme)
 (package! svg-tag-mode)
+(package! org-preview
+  :recipe (:host github :repo "karthink/org-preview" :branch "master"))
 (package! bespoke-themes
   :recipe (:host github :repo "mclear-tools/bespoke-themes" :branch "main"))
 (package! 0x0

@@ -1,19 +1,57 @@
-IMAPStore gmail-remote
-Host imap.gmail.com
+IMAPAccount icloud
+Host imap.mail.me.com
+User italoamaya
+PassCmd "security find-generic-password -s mu4e-icloud -a italoamaya -w"
+Port 993
 SSLType IMAPS
-AuthMechs LOGIN
+SSLVersions TLSv1.2
+AuthMechs PLAIN
+SystemCertificates no
+CertificateFile ~/.maildir/certificates/root-certificates.pem
+
+IMAPStore icloud-remote
+Account icloud
+
+MaildirStore icloud-local
+SubFolders Verbatim
+Path ~/.maildir/icloud/
+Inbox ~/.maildir/icloud/INBOX
+
+Channel icloud
+Far :icloud-remote:
+Near :icloud-local:
+Patterns *
+Create Near
+Sync All
+Expunge Both
+SyncState *
+
+# =====================================================================
+
+IMAPAccount gmail
+Host imap.gmail.com
 User italoamaya03@gmail.com
-PassCmd "pass email/italoamaya03@gmail.com"
+PassCmd "security find-generic-password -s mu4e-gmail -a italoamaya03 -w"
+Port 993
+SSLType IMAPS
+SSLVersions TLSv1.2
+AuthMechs PLAIN
+SystemCertificates no
+CertificateFile ~/.maildir/certificates/root-certificates.pem
+
+IMAPStore gmail-remote
+Account gmail
 
 MaildirStore gmail-local
-Path ~/Personal/Mail/gmail/
-Inbox ~/Personal/Mail/gmail/Inbox
-Subfolders Verbatim
+SubFolders Verbatim
+Path ~/.maildir/gmail/
+Inbox ~/.maildir/gmail/INBOX
 
 Channel gmail
-far :gmail-remote:
-near :gmail-local:
-Create Both
+Far :gmail-remote:
+Near :gmail-local:
+Patterns *
+Create Near
+Sync All
 Expunge Both
-Patterns * !"[Gmail]/All Mail" !"[Gmail]/Important" !"[Gmail]/Starred" !"[Gmail]/Bin"
 SyncState *
