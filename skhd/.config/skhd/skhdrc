@@ -52,7 +52,7 @@ cmd + alt + shift - g : yabai -m space --toggle padding; yabai -m space --toggle
 alt - t : yabai -m window --toggle float
 
 ## create desktop, move window and follow focus
-shift + cmd - n : yabai -m space --create && \
+shift + cmd - n : yabai -m space --create \
 set index (yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index') && \
 yabai -m window --space "$index" && \
 yabai -m space --focus "$index"
