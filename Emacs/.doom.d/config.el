@@ -8,13 +8,11 @@
 (setq user-full-name "Italo Amaya Arlotti"
       user-mail-address "italoamaya@icloud.com")
 
-(setq baby-blue '("#d2ecff" "#d2ecff" "brightblue"))
-
 (defvar Dropbox-dir "~/Personal/Dropbox"
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-gruvbox
+(setq doom-theme 'doom-nord-aurora
       doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
@@ -30,9 +28,6 @@
     'alpha (if (frame-parameter (selected-frame) 'fullscreen)
               100
              doom-frame-transparency)))
-
-;; latex
-;; (after! org (plist-put org-format-latex-options :scale 1.70)
 
 (setq display-line-numbers-type 'relative)
 (setq confirm-kill-emacs nil)
@@ -417,22 +412,22 @@
                       :foreground "#5B6268"
                       :background nil)
   (set-face-attribute 'org-level-1 nil
-                      :foreground "steelblue2"
+                      ;; :foreground "steelblue2"
                       :background nil
                       :height 1.5
                       :weight 'normal)
   (set-face-attribute 'org-level-2 nil
-                      :foreground "slategray2"
+                      ;; :foreground "slategray2"
                       :background nil
                       :height 1.3
                       :weight 'normal)
   (set-face-attribute 'org-level-3 nil
-                      :foreground "SkyBlue2"
+                      ;; :foreground "SkyBlue2"
                       :background nil
                       :height 1.1
                       :weight 'normal)
   (set-face-attribute 'org-level-4 nil
-                      :foreground "DodgerBlue2"
+                      ;; :foreground "DodgerBlue2"
                       :background nil
                       :height 1.1
                       :weight 'normal)
@@ -441,7 +436,7 @@
   (set-face-attribute 'org-level-6 nil
                       :weight 'normal)
   (set-face-attribute 'org-document-title nil
-                      :foreground "SlateGray1"
+                      ;; :foreground "SlateGray1"
                       :background nil
                       :height 1.75
                       :weight 'bold))
@@ -455,7 +450,7 @@
       org-startup-folded nil
       org-clock-clocktable-default-properties '(:maxlevel 4)
       ;; org-startup-with-latex-preview t
-      org-hide-emphasis-markers t
+      org-hide-emphasis-markers nil
       org-journal-date-prefix "#+TITLE: "
       org-journal-date-format "%a, %d-%m-%Y"
       org-journal-file-format "%d-%m-%Y.org"
@@ -512,7 +507,11 @@
       :desc "Outline" "O" #'org-ol-tree)
 
 (use-package! org-preview
-  :after org)
+  :after org
+  :config
+  (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0)))
+
+(add-hook! 'org-mode-hook #'org-preview-mode)
 
 (use-package! org-sticky-header
   :after org
