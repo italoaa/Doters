@@ -4,8 +4,10 @@
 xcode-select --install
 
 # install brew
-caffeinate -idm /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+export HOMEBREW_BREW_GIT_REMOTE="..."  # put your Git mirror of Homebrew/brew here
+export HOMEBREW_CORE_GIT_REMOTE="..."  # put your Git mirror of Homebrew/homebrew-core here
+
+caffeinate -idm NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install via brew
-brew bundle --file=./Brewfile
-
+caffeinate -idm /bin/bash -c "$(brew bundle --file=./Brewfile)"
