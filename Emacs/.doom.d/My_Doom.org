@@ -172,6 +172,7 @@ This file describes all the packages that I want preinstalled by doom.
         +capture         ; org-capture in and outside of Emacs
         +export          ; Exporting org to whatever you want
         +present)
+       (java +lsp +meghanda)
        php               ; perl's insecure younger brother
        (python
         +conda
@@ -181,8 +182,8 @@ This file describes all the packages that I want preinstalled by doom.
         +poetry)
        (rust
         +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
-       ;;(sh +lsp)                ; she sells {ba,z,fi}sh shells on the C xor
-       ;;web               ; the tubes
+       (sh +lsp +fish)                ; she sells {ba,z,fi}sh shells on the C xor
+       web               ; the tubes
        yaml              ; JSON, but readable
 #+end_src
 *** Disabled
@@ -260,9 +261,9 @@ Some variables to see what is making emacs slow.
 ** Garbage collection
 #+begin_src elisp :tangle "config.el"
 (server-start)
-(setq gc-cons-threshold (* 511 1024 1024))
-(setq gc-cons-percentage 0.5)
-(run-with-idle-timer 5 t #'garbage-collect)
+;; (setq gc-cons-threshold (100000000))
+;; (setq gc-cons-percentage 0.5)
+;; (run-with-idle-timer 5 t #'garbage-collect)
 #+end_src
 ** Main Variables
 Some variable's used all over the config
@@ -616,7 +617,7 @@ These are all the custom key bindings in my config.
 #+end_src
 *** Company Mode
 #+begin_src elisp :tangle "config.el"
-(setq company-idle-delay 0.3)
+(setq company-idle-delay 0.5)
 (use-package! company-box
   :init
   (setq company-box-doc-enable nil
@@ -854,7 +855,7 @@ The main package here is mu4e
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
                                     :unnarrowed t)
                                    ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ProcProgramming|ProfessionalComputing|FundamentalMathConcepts|ComputerArchitecture|IntroToProgramming}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ComputerProcessors|DataBases|DiscreteMaths|}:\n")
                                     :unnarrowed t)
                                    ("r" "ref" plain "%?" :target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n")

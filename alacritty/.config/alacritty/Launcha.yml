@@ -2,13 +2,13 @@ import:
   - ~/.config/alacritty/schemes.yml
 window:
   dimensions:
-    columns: 1000
-    lines: 100
+    columns: 150
+    lines: 50
   padding:
     x: 10
     y: 10
   decorations: buttonless
-  title: Mostrositty
+  title: Btm
   dynamic_title: false
   history: 1000
   opacity: 0.96
@@ -30,7 +30,7 @@ font:
 
 
   size: 16.0
-  use_thin_strokes: true
+  AppleFontSmoothing: true
 
 draw_bold_text_with_bright_colors: true
 

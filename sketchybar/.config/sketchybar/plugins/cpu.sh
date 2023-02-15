@@ -1,22 +1,6 @@
-source "$HOME/.config/sketchybar/colors.sh"
+#!/usr/bin/env bash
 
-add_hover() {
-    sketchybar --animate linear 10 --set $NAME background.border_color=$BAR_ORANGE
-}
+cpu_usage="$(ps -axro pcpu | awk '{sum+=$1} END {print sum}')"
+average_by_core=$(echo "$cpu_usage/10" | bc)
 
-remove_hover() {
-    sketchybar --animate linear 10 --set $NAME background.border_color=$BAR_BACKGROUND
-}
-
-mouse_clicked() {
-    open -a alacritty --args -e btop
-}
-
-case "$SENDER" in
-  "mouse.clicked") mouse_clicked
-  ;;
-  "mouse.entered") add_hover
-  ;;
-  "mouse.exited") remove_hover
-  ;;
-esac
+sketchybar -m --set cpu label="$average_by_core%"

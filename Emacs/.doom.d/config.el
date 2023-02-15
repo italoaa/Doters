@@ -1,9 +1,9 @@
 (setq use-package-compute-statistics nil)
 
 (server-start)
-(setq gc-cons-threshold (* 511 1024 1024))
-(setq gc-cons-percentage 0.5)
-(run-with-idle-timer 5 t #'garbage-collect)
+;; (setq gc-cons-threshold (100000000))
+;; (setq gc-cons-percentage 0.5)
+;; (run-with-idle-timer 5 t #'garbage-collect)
 
 (setq user-full-name "Italo Amaya Arlotti"
       user-mail-address "italoamaya@icloud.com")
@@ -274,7 +274,7 @@
 
 (add-hook! 'vterm-mode-hook #'vterm-padding)
 
-(setq company-idle-delay 0.3)
+(setq company-idle-delay 0.5)
 (use-package! company-box
   :init
   (setq company-box-doc-enable nil
@@ -472,7 +472,7 @@
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
                                     :unnarrowed t)
                                    ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ProcProgramming|ProfessionalComputing|FundamentalMathConcepts|ComputerArchitecture|IntroToProgramming}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ComputerProcessors|DataBases|DiscreteMaths|}:\n")
                                     :unnarrowed t)
                                    ("r" "ref" plain "%?" :target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n")

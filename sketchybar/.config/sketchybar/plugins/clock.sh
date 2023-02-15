@@ -1,6 +1,3 @@
-#!/usr/bin/env sh
-source "$HOME/.config/sketchybar/icons.sh"
+#!/usr/bin/env bash
 
-ICON="$ICON_CLOCK"
-LABEL=$(date '+%H:%M:%S')
-sketchybar --set $NAME icon="$ICON" label="$LABEL"
+sketchybar -m --set clock label="$(date '+%Y-%m-%d %H:%M')"

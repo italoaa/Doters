@@ -116,6 +116,7 @@
         +capture         ; org-capture in and outside of Emacs
         +export          ; Exporting org to whatever you want
         +present)
+       (java +lsp +meghanda)
        php               ; perl's insecure younger brother
        (python
         +conda
@@ -125,8 +126,8 @@
         +poetry)
        (rust
         +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
-       ;;(sh +lsp)                ; she sells {ba,z,fi}sh shells on the C xor
-       ;;web               ; the tubes
+       (sh +lsp +fish)                ; she sells {ba,z,fi}sh shells on the C xor
+       web               ; the tubes
        yaml              ; JSON, but readable
 
        ;;zig               ; C, but simpler

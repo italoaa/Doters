@@ -6,11 +6,11 @@ baroff="yabai -m config external_bar off:26:0"
 if [ 1 = $disp ]; then
 	/usr/local/bin/trash ~/.config/yabai/yabairc
 	cp ~/.config/yabai/yabaircbaroff ~/.config/yabai/yabairc
-	brew services stop spacebar
+	brew services stop sketchybar
 else
 	/usr/local/bin/trash ~/.config/yabai/yabairc
 	cp ~/.config/yabai/yabaircbaron ~/.config/yabai/yabairc
-	brew services start spacebar
+	brew services start sketchybar
 fi
 
 brew services restart yabai

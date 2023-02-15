@@ -1,8 +1,8 @@
 #!/usr/bin/env fish
 
 # bar settings
-spacebar -m config text_font         "JetBrainsMono Nerd Font:Bold:12.0"
-spacebar -m config icon_font         "JetBrainsMono Nerd Font:Regular:12.0"
+spacebar -m config text_font         "JetBrainsMono NF:Bold:12.0"
+spacebar -m config icon_font         "JetBrainsMono NF:Regular:12.0"
 spacebar -m config background_color  0x66202020
 spacebar -m config foreground_color  0xffa8a8a8
 spacebar -m config space_icon_strip    3 4 5 6 7 8 9

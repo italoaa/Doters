@@ -1,56 +1,228 @@
 #!/usr/bin/env sh
-source "$HOME/.config/sketchybar/state.sh"
-source "$HOME/.config/sketchybar/colors.sh"
-source "$HOME/.config/sketchybar/icons.sh"
 
-PLUGIN_DIR="$HOME/.config/sketchybar/plugins"
-ITEM_DIR="$HOME/.config/sketchybar/items" 
+#!/usr/bin/env sh
 
-DATA_ICON_PADDING_RIGHT=3
-DATA_BACKGROUND_PADDING_LEFT=7
-DATA_ICON_PADDING_LEFT=3
-DATA_LABEL_PADDING_RIGHT=5
-BORDER_SELECTED_WIDTH=2
+#
+# colors
+#
+transparent_color="0x00000000"
 
-FONT="JetBrainsMono Nerd Font"
-FONT_ICON="Material Design Icons:Bold:12.0"
-PADDINGS=1
+# tokyonight-night
+# bar_color=0xff1a1b26
+# default_icon_color="0xffc0caf5"
+# icon_highlight_color="0xffbb9af7"
+# default_label_color="0xffc0caf5"
 
-sketchybar --bar     height=32                        \
-                     color=$TRANSPARENT               \
-                     shadow=on                        \
-                     position=top                     \
-                     sticky=off                       \
-                     padding_right=0                  \
-                     padding_left=0                   \
-                     corner_radius=0                  \
-                     margin=-8                        \
-                     font_smoothing=on                \
-                     blur_radius=0                    \
-                     notch_width=0                    \
-           --default                                  \
-                     icon.font="$FONT_ICON"           \
-                     icon.y_offset=3                  \
-                     label.font="$FONT:SemiBold:10.0"  \
-                     label.y_offset=3                 \
-                     background.y_offset=3            \
-                     background.height=21
+# onedark-deep
+bar_color="0x33FFFFFF"
+bar_border_color="0xffd8d5d8"
+default_label_color="0xff93a4c3"
+default_icon_color="0xff93a4c3"
+icon_highlight_color="0xffd8d5d8"
+bracket_hightlight_color="0xffd8d5d8"
+danger_color="0xff992525"
+
+#
+# fonts
+#
+default_icon_font="JetBrainsMono NF:Bold:12.0"
+default_label_font="Cascadia Mono PL:SemiBold:14.0"
+brand_font="Font Awesome 6 Brands:Regular:14.0"
+# duotone_font="Font Awesome 6 Duotone:Solid:14.0"
+
+#
+# variables
+#
+plugins="$HOME/Dot/sketchybar/.config/sketchybar/plugins"
+display_count="$(yabai -m query --displays | jq -r 'length')"
+
+############## BAR ##############
+sketchybar --bar                   \
+  border_color=${bar_border_color} \
+  border_width=0                   \
+  corner_radius=8                  \
+  color=${transparent_color}       \
+  height=25                        \
+  margin=8                         \
+  padding_left=10                  \
+  padding_right=10                 \
+  position=top                     \
+  shadow=off                       \
+  y_offset=2
+
+# ############## DEFAULTS ###############
+sketchybar --default                             \
+  cache_scripts=on                               \
+  icon.color="${default_icon_color}"             \
+  icon.font="${default_icon_font}"               \
+  icon.highlight_color="${icon_highlight_color}" \
+  icon.padding_left=8                            \
+  label.color="${default_label_color}"           \
+  label.font="${default_label_font}"             \
+  label.padding_left=4                           \
+  updates=when_shown
 
 
-# Left
-source "$ITEM_DIR/spaces.sh"
+############## SPACES ###############
+############## DISPLAY 1 ###############
+sketchybar                                         \
+  --add space term left                             \
+  --set term associated_display=1                   \
+    associated_space=1                             \
+    icon=                                        \
+    icon.padding_left 1                            \
+  --add space web left                           \
+  --set web associated_display=1                 \
+    associated_space=2                             \
+    icon=󰈹                                        \
+    icon.padding_left 1                            \
+  --add space misc left                        \
+  --set misc associated_display=1              \
+    associated_space=3                             \
+    icon=                                         \
+    icon.padding_left 1                            \
 
-# Right
-source "$ITEM_DIR/data_spacer.sh"
-source "$ITEM_DIR/clock.sh"
-source "$ITEM_DIR/calendar.sh"
-source "$ITEM_DIR/volume.sh"
-source "$ITEM_DIR/battery.sh"
-source "$ITEM_DIR/cpu.sh"
-source "$ITEM_DIR/wattage.sh"
-# source "$ITEM_DIR/spotify.sh"
-source "$ITEM_DIR/brackets.sh"
+# sketchybar                                                \
+#   --add bracket primary_spaces_bracket                    \
+#     term                                                   \
+#     web                                                 \
+#     misc                                              \
+#   --set primary_spaces_bracket                            \
+#     background.color="${bar_color}"                       \
+#     background.border_color="${bracket_hightlight_color}" \
+#     background.border_width=1                             \
+#     background.corner_radius=6
 
-sketchybar --update
+# # ############## DISPLAY 2 ###############
+# scratch_space=5
+# terminal_space=6
+# flex=" "
 
-echo "sketchybar configuation loaded.."
+# if [ "${display_count}" = "2" ]; then
+#   scratch_space=6
+#   terminal_space=7
+#   flex="flex"
+
+#   sketchybar                                     \
+#     --add space flex left                        \
+#     --set flex associated_display=2              \
+#       associated_space=5                         \
+#       icon=􏢺                                     \
+#       icon.padding_left 0                        \
+#       click_script="yabai -m space --focus flex"
+# fi
+
+# sketchybar                                         \
+#   --add space scratch left                         \
+#   --set scratch associated_display=2               \
+#     associated_space="${scratch_space}"            \
+#     icon=                                         \
+#     icon.padding_left 0                            \
+#     click_script="yabai -m space --focus scratch"  \
+#   --add space terminal left                        \
+#   --set terminal associated_display=2              \
+#     associated_space="${terminal_space}"           \
+#     icon=                                         \
+#     icon.padding_left 0                            \
+#     click_script="yabai -m space --focus terminal" \
+
+# sketchybar                                                \
+#   --add bracket secondary_spaces_bracket                  \
+#     "${flex}"                                             \
+#     scratch                                               \
+#     terminal                                              \
+#   --set secondary_spaces_bracket                          \
+#     background.color="${bar_color}"                       \
+#     background.border_color="${bracket_hightlight_color}" \
+#     background.border_width=1                             \
+#     background.corner_radius=6
+
+# ################# RIGHT ITEMS ####################
+sketchybar                                                                  \
+  --add item clock right                                                    \
+  --set clock                                                               \
+    icon=󰥔                                                                 \
+    icon.padding_left=10                                                    \
+    label.padding_right=10                                                  \
+    update_freq=10                                                          \
+    script="${plugins}/clock.sh"                                            \
+  --add item clock_spacer right                                             \
+  --set clock_spacer                                                        \
+    label=" "                                                               \
+    label.padding_left=1                                                    \
+    label.padding_right=2                                                   \
+  --add item mpd right                                                      \
+  --set mpd                                                                 \
+    update_freq=2                                                           \
+    label.padding_left=10                                                   \
+    label.padding_right=10                                                  \
+    script="${plugins}/mpd.sh"                                              \
+    click_script="mpc toggle"                                               \
+  --add item mpd_spacer right                                               \
+  --set mpd_spacer                                                          \
+    label=" "                                                               \
+    label.padding_left=2                                                    \
+    label.padding_right=2                                                   \
+  --add item cpu right                                                      \
+  --set cpu                                                                 \
+    icon=                                                                  \
+    update_freq=5                                                           \
+    label.padding_left=10                                                   \
+    label.padding_right=10                                                  \
+    script="${plugins}/cpu.sh"                                              \
+    click_script="open -a activity\ monitor"                                \
+
+# sketchybar                                                \
+#   --add bracket clock_bracket                             \
+#     clock                                                 \
+#   --set clock_bracket                                     \
+#     background.color="${bar_color}"                       \
+#     background.border_color="${bracket_hightlight_color}" \
+#     background.blur_radius=50                             \
+#     background.border_width=2                             \
+#     background.corner_radius=6                            \
+#   --add bracket mpd_bracket                               \
+#     mpd                                                   \
+#   --set mpd_bracket                                       \
+#     background.color="${bar_color}"                       \
+#     background.border_color="${bracket_hightlight_color}" \
+#     background.border_width=2                             \
+#     background.corner_radius=6                            \
+#   --add bracket utility_bracket                           \
+#     cpu                                                   \
+#   --set utility_bracket                                   \
+#     background.color="${bar_color}"                       \
+#     background.border_color="${bracket_hightlight_color}" \
+#     background.border_width=2                             \
+#     background.corner_radius=6
+
+###################### CENTER ITEMS ###################
+sketchybar                                                \
+  --add event window_focus                                \
+  --add event title_change                                \
+  --add item window_title center                          \
+  --set window_title                                      \
+    icon.padding_left=10                                  \
+    label.padding_right=10                                \
+    script="$plugins/window_title.sh" \
+  --subscribe window_title                                \
+    window_focus                                          \
+    front_app_switched                                    \
+    space_change                                          \
+    title_change
+
+# sketchybar                                                \
+#   --add bracket center                                    \
+#     window_title                                          \
+#   --set center                                            \
+#     background.color="${bar_color}"                       \
+#     background.border_color="${bracket_hightlight_color}" \
+#     background.border_width=2                             \
+#     background.corner_radius=6
+
+###################### FINALIZE ###################
+sketchybar -m --update
+
+echo "sketchybar configuration loaded.."
+
+exit 0
