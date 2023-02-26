@@ -4,7 +4,6 @@
 #+auto_tangle: t
 
 * Table of Contents :TOC_2:
-- [[#introduction][Introduction]]
 - [[#init][Init]]
   - [[#completion][Completion]]
   - [[#ui][UI]]
@@ -34,7 +33,6 @@
 - [[#templates][Templates]]
   - [[#notes-on-bibliographic-references][Notes on bibliographic references]]
 
-* Introduction
 * Init
 This file describes all the packages that I want preinstalled by doom.
 ** Completion
