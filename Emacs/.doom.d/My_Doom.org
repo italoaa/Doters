@@ -19,6 +19,7 @@
 - [[#config][Config]]
   - [[#analisis][Analisis]]
   - [[#garbage-collection][Garbage collection]]
+  - [[#backup][Backup]]
   - [[#main-variables][Main Variables]]
   - [[#emacs-configuration][Emacs Configuration]]
   - [[#splash-screen-config][Splash Screen config]]
@@ -257,6 +258,7 @@ This is the meat of the config. Where most of the actual configuration happens.
 Some variables to see what is making emacs slow.
 #+begin_src elisp :tangle "config.el"
 (setq use-package-compute-statistics nil)
+(setq nand2tetris-core-base-dir "~/Downloads/")
 #+end_src
 ** Garbage collection
 #+begin_src elisp :tangle "config.el"
@@ -264,6 +266,15 @@ Some variables to see what is making emacs slow.
 ;; (setq gc-cons-threshold (100000000))
 ;; (setq gc-cons-percentage 0.5)
 ;; (run-with-idle-timer 5 t #'garbage-collect)
+#+end_src
+** Backup
+#+begin_src elisp :tangle "config.el"
+(setq backup-by-copying t ; don't clobber symlinks
+      backup-directory-alist '(("." . "~/.saves")) ; don't litter my fs tree
+      delete-old-versions t
+      kept-new-versions 6
+      kept-old-versions 2
+      version-control t)
 #+end_src
 ** Main Variables
 Some variable's used all over the config
@@ -275,7 +286,7 @@ Some variable's used all over the config
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-nord-aurora
+(setq doom-theme 'doom-gruvbox
       doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
@@ -768,6 +779,10 @@ The main package here is mu4e
 #+begin_src elisp :tangle "config.el"
 (add-hook! rust-mode-hook #'tree-sitter-mode)
 (add-hook! tree-sitter-mode-hook #'tree-sitter-hl-mode)
+#+end_src
+**** C
+#+begin_src elisp :tangle "config.el"
+(setq-hook! 'c-mode-hook +format-with-lsp nil)
 #+end_src
 ** Org-mode
 *** Base

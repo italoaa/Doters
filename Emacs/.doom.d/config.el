@@ -1,9 +1,17 @@
 (setq use-package-compute-statistics nil)
+(setq nand2tetris-core-base-dir "~/Downloads/")
 
 (server-start)
 ;; (setq gc-cons-threshold (100000000))
 ;; (setq gc-cons-percentage 0.5)
 ;; (run-with-idle-timer 5 t #'garbage-collect)
+
+(setq backup-by-copying t ; don't clobber symlinks
+      backup-directory-alist '(("." . "~/.saves")) ; don't litter my fs tree
+      delete-old-versions t
+      kept-new-versions 6
+      kept-old-versions 2
+      version-control t)
 
 (setq user-full-name "Italo Amaya Arlotti"
       user-mail-address "italoamaya@icloud.com")
@@ -12,7 +20,7 @@
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-nord-aurora
+(setq doom-theme 'doom-gruvbox
       doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
       doom-big-font (font-spec :family "Fira Code Retina" :size 24))
@@ -400,6 +408,8 @@
 
 (add-hook! rust-mode-hook #'tree-sitter-mode)
 (add-hook! tree-sitter-mode-hook #'tree-sitter-hl-mode)
+
+(setq-hook! 'c-mode-hook +format-with-lsp nil)
 
 (after! org
   (set-face-attribute 'org-link nil

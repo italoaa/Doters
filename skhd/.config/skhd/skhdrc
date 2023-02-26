@@ -63,7 +63,7 @@ set index (yabai -m query --spaces --display | jq 'map(select(."native-fullscree
 yabai -m space --focus "$index"
 
 ## destroy desktop
-hyper - backspace : yabai -m space --destroy
+ctrl - backspace : yabai -m space --destroy
 
 ## fast focus desktop
 cmd - 1 : yabai -m space --focus 1
