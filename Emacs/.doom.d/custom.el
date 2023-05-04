@@ -6,6 +6,7 @@
  '(warning-suppress-types
    '(((yasnippet zombie))
      ((yasnippet zombie))
+     ((yasnippet zombie))
      (initialization)
      (defvaralias))))
 (custom-set-faces

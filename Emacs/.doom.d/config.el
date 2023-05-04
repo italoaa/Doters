@@ -20,14 +20,14 @@
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-gruvbox
-      doom-font (font-spec :family "Roboto Mono" :size 16 :height 181 :weight 'light)
-      doom-variable-pitch-font (font-spec :family "Cantarell" :size 18)
-      doom-big-font (font-spec :family "Fira Code Retina" :size 24))
+(setq doom-theme 'doom-gruvbox-light
+      doom-font (font-spec :family "Monaco" :size 16 :height 181 :weight 'light)
+      doom-variable-pitch-font (font-spec :family "Monaco" :size 18)
+      doom-big-font (font-spec :family "Monaco" :size 24))
 
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
 
-(defconst doom-frame-transparency 85)
+(defconst doom-frame-transparency 100)
 (set-frame-parameter (selected-frame) 'alpha doom-frame-transparency)
 (add-to-list 'default-frame-alist `(alpha . ,doom-frame-transparency))
 (defun dwc-smart-transparent-frame ()
@@ -269,6 +269,8 @@
   :config
   (display-line-numbers-mode 0))
 
+(add-hook! 'magit-mode-hook #'magit-todos-mode)
+
 ;; (use-package! nano-theme)
 
 (use-package! websocket
@@ -397,7 +399,7 @@
 (use-package! lsp-ui
   :after lsp
   :config
-  (setq lsp-ui-sideline-show-hover t
+  (setq lsp-ui-sideline-show-hover nil
       lsp-ui-sideline-show-code-actions t
       lsp-ui-doc-show-with-cursor nil
       lsp-ui-doc-show-with-mouse t
@@ -460,7 +462,7 @@
       org-startup-folded nil
       org-clock-clocktable-default-properties '(:maxlevel 4)
       ;; org-startup-with-latex-preview t
-      org-hide-emphasis-markers nil
+      org-hide-emphasis-markers t
       org-journal-date-prefix "#+TITLE: "
       org-journal-date-format "%a, %d-%m-%Y"
       org-journal-file-format "%d-%m-%Y.org"
