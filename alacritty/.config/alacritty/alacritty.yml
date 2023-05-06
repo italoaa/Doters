@@ -323,4 +323,4 @@ schemes:
       magenta: '#d3869b'
       cyan:    '#89b482'
       white:   '#dfbf8e'
-colors: *Nord
+colors: *Gruvbox
