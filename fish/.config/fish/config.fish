@@ -6,11 +6,11 @@ export LC_ALL=$LANG
 # wal -n -i ~/Personal/bkg/Fav/wallpaper.png -o ~/Personal/Programing/Scripts/wal_to_alacritty.sh
 
 function fish_greeting
-     pokemon-colorscripts -r
+    pokemon-colorscripts -r
 end
 
 function PubHugo
-    ls ~/Personal/Dropbox/Bak/Org/Website/*.org >> ~/Personal/Dropbox/Bak/Org/Website/list.txt
+    ls ~/Personal/Dropbox/Bak/Org/Website/*.org >>~/Personal/Dropbox/Bak/Org/Website/list.txt
 end
 
 function tmux-sessionizer
@@ -27,29 +27,29 @@ balias showFunc 'echo "serve <port> , multi <Lhost>,<port>"'
 set rockyou "~/Personal/CTF's/KaliLists/rockyou.txt"
 
 function serve
-         python -m SimpleHTTPServer $argv
+    python -m SimpleHTTPServer $argv
 end
 
 function multi
-         msfconsole -qx 'use multi/handler; set PAYLOAD generic/shell_reverse_tcp; set LHOST '$argv[1]'; set LPORT '$argv[2]';exploit'
+    msfconsole -qx 'use multi/handler; set PAYLOAD generic/shell_reverse_tcp; set LHOST '$argv[1]'; set LPORT '$argv[2]';exploit'
 end
 
 balias tnmap 'nmap -sC -sV -oA nmap/initial'
 
 # Trash
 balias rm 'echo Use del or trash or /bin/rm'
-balias del 'trash'
+balias del trash
 
 # Yabai
 balias ys 'brew services restart yabai'
 balias sk 'brew services restart skhd'
-balias sp 'speedtest'
+balias sp speedtest
 balias rem 'emacsclient -e "(kill-emacs)"; emacs --daemon'
 balias kem 'emacsclient -e "(kill-emacs)"'
 balias oem 'emacsclient -c'
 
 balias o. "open ."
-balias tn "terminal-notifier"
+balias tn terminal-notifier
 balias l "exa --group-directories-first"
 balias ls "exa --icons --group-directories-first --long"
 balias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
@@ -59,12 +59,12 @@ balias lg "exa --icons --group-directories-first --long --all --group --header -
 
 
 
-balias cl "clear"
-balias bp "bpython"
+balias cl clear
+balias bp bpython
 balias nvimconf "cd ~/.config/nvim; nvim"
-balias r "ranger"
-balias p "python"
-balias p3 "python3"
+balias r ranger
+balias p python
+balias p3 python3
 
 ## this is for faster config
 
@@ -77,3 +77,4 @@ fish_vi_key_bindings
 # Setting PATH for Python 3.9
 # The original version is saved in .zprofile.pysave
 # set PATH "/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH"
+starship init fish | source
