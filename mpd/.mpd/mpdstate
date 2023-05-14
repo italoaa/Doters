@@ -3,7 +3,7 @@ audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: pause
 current: 0
-time: 122.483000
+time: 155.767000
 random: 0
 repeat: 0
 single: 0
@@ -12,12 +12,9 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Macroblank Discography (320kbps) 03:04:2023/色​あ​せ​た​エ​コ​ー/Macroblank - 色あせたエコー - 03 サービスの不具合.mp3
-1:Macroblank Discography (320kbps) 03:04:2023/色​あ​せ​た​エ​コ​ー/Macroblank - 色あせたエコー - 04 それらの間に.mp3
-2:Macroblank Discography (320kbps) 03:04:2023/色​あ​せ​た​エ​コ​ー/Macroblank - 色あせたエコー - 05 自分を救う.mp3
-3:Macroblank Discography (320kbps) 03:04:2023/色​あ​せ​た​エ​コ​ー/Macroblank - 色あせたエコー - 06 エマスキュレート.mp3
-4:Macroblank Discography (320kbps) 03:04:2023/色​あ​せ​た​エ​コ​ー/Macroblank - 色あせたエコー - 07 私は疲れています.mp3
-5:Macroblank Discography (320kbps) 03:04:2023/色​あ​せ​た​エ​コ​ー/Macroblank - 色あせたエコー - 08 あなたの愛は私のものです.mp3
-6:Macroblank Discography (320kbps) 03:04:2023/色​あ​せ​た​エ​コ​ー/Macroblank - 色あせたエコー - 09 変わらないものもある.mp3
-7:Macroblank Discography (320kbps) 03:04:2023/色​あ​せ​た​エ​コ​ー/Macroblank - 色あせたエコー - 10 足を折る.mp3
+0:Macroblank Discography (320kbps) 03:04:2023/ibis valley/Macroblank - ibis valley - 02 absence.mp3
+1:Macroblank Discography (320kbps) 03:04:2023/ibis valley/Macroblank - ibis valley - 03 featherweight.mp3
+2:Macroblank Discography (320kbps) 03:04:2023/ibis valley/Macroblank - ibis valley - 04 white lie.mp3
+3:Macroblank Discography (320kbps) 03:04:2023/ibis valley/Macroblank - ibis valley - 05 golf club drama.mp3
+4:Macroblank Discography (320kbps) 03:04:2023/ibis valley/Macroblank - ibis valley - 06 burlington arcade.mp3
 playlist_end
