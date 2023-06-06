@@ -20,7 +20,7 @@
   "Path the the directory of dropbox")
 
 
-(setq doom-theme 'doom-gruvbox-light
+(setq doom-theme 'doom-gruvbox
       doom-font (font-spec :family "Monaco" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "Monaco" :size 18)
       doom-big-font (font-spec :family "Monaco" :size 24))
