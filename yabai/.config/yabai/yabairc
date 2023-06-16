@@ -106,7 +106,7 @@ yabai -m config window_gap 5
 # yabai -m config status_bar_space_icon        
 # yabai -m config status_bar_clock_icon        time
 # spacebar
-yabai -m config external_bar all:26:0
+yabai -m config external_bar off:26:0
 
 
 yabai -m signal --add event=window_destroyed action="./on_destroy"
@@ -116,4 +116,3 @@ yabai -m signal --add event=space_changed action="yabai -m window --focus \$(yab
 echo "yabai configuration loaded.."
 
 # pywal
-#END

@@ -10,23 +10,25 @@ window:
   decorations: buttonless
   title: Btm
   dynamic_title: false
+  startup_mode: Maximized
   history: 1000
   opacity: 0.96
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font
 
     style: Regular
 
   bold:
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font
 
     style: Bold
 
   italic:
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font
 
     style: Italic
+
 
 
   size: 16.0
@@ -52,7 +54,6 @@ cursor:
 live_config_reload: true
 env:
   TERM: xterm-256color
-alt_send_esc: false
 schemes:
   Mine : &Mine
     primary:

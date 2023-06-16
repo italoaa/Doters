@@ -15,17 +15,17 @@ window:
   opacity: 1.00
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font
 
     style: Regular
 
   bold:
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font
 
     style: Bold
 
   italic:
-    family: JetBrainsMono Nerd Font
+    family: FiraCode Nerd Font
 
     style: Italic
 
@@ -55,7 +55,6 @@ live_config_reload: true
 shell:
   program: /usr/local/bin/fish
 working_directory: /Users/italo/
-alt_send_esc: false
 
 colors:
   primary:

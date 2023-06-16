@@ -82,16 +82,16 @@ sketchybar                                         \
     icon=                                         \
     icon.padding_left 1                            \
 
-# sketchybar                                                \
-#   --add bracket primary_spaces_bracket                    \
-#     term                                                   \
-#     web                                                 \
-#     misc                                              \
-#   --set primary_spaces_bracket                            \
-#     background.color="${bar_color}"                       \
-#     background.border_color="${bracket_hightlight_color}" \
-#     background.border_width=1                             \
-#     background.corner_radius=6
+sketchybar                                                \
+  --add bracket primary_spaces_bracket                    \
+    term                                                   \
+    web                                                 \
+    misc                                              \
+  --set primary_spaces_bracket                            \
+    background.color="${bar_color}"                       \
+    background.border_color="${bracket_hightlight_color}" \
+    background.border_width=1                             \
+    background.corner_radius=6
 
 # # ############## DISPLAY 2 ###############
 # scratch_space=5

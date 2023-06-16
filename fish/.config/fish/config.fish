@@ -3,78 +3,27 @@ export LANG=en_US.UTF-8
 export LC_ALL=$LANG
 # EXA CONFIG AND ALIASES
 
-# wal -n -i ~/Personal/bkg/Fav/wallpaper.png -o ~/Personal/Programing/Scripts/wal_to_alacritty.sh
-
-function fish_greeting
-    pokemon-colorscripts -r
-end
-
-function PubHugo
-    ls ~/Personal/Dropbox/Bak/Org/Website/*.org >>~/Personal/Dropbox/Bak/Org/Website/list.txt
-end
-
-function tmux-sessionizer
-    ~/.config/Bin/tmux/tmux-sessionizer
-end
-
-bind \cf tmux-sessionizer
-bind \ca tmux a
-
 set -g theme_color_scheme zenburn
 
-balias showFunc 'echo "serve <port> , multi <Lhost>,<port>"'
-
-set rockyou "~/Personal/CTF's/KaliLists/rockyou.txt"
-
-function serve
-    python -m SimpleHTTPServer $argv
-end
-
-function multi
-    msfconsole -qx 'use multi/handler; set PAYLOAD generic/shell_reverse_tcp; set LHOST '$argv[1]'; set LPORT '$argv[2]';exploit'
-end
-
-balias tnmap 'nmap -sC -sV -oA nmap/initial'
-
 # Trash
-balias rm 'echo Use del or trash or /bin/rm'
-balias del trash
+alias rm 'echo Use del or trash or /bin/rm'
+alias del trash
 
 # Yabai
-balias ys 'brew services restart yabai'
-balias sk 'brew services restart skhd'
-balias sp speedtest
-balias rem 'emacsclient -e "(kill-emacs)"; emacs --daemon'
-balias kem 'emacsclient -e "(kill-emacs)"'
-balias oem 'emacsclient -c'
+alias ys 'yabai --restart-service'
+alias sk 'skhd --restart-service'
+alias sp speedtest
 
-balias o. "open ."
-balias tn terminal-notifier
-balias l "exa --group-directories-first"
-balias ls "exa --icons --group-directories-first --long"
-balias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
-balias ll "exa --icons --group-directories-first --long --all --group --header"
-balias lg "exa --icons --group-directories-first --long --all --group --header --git"
-
-
-
-
-balias cl clear
-balias bp bpython
-balias nvimconf "cd ~/.config/nvim; nvim"
-balias r ranger
-balias p python
-balias p3 python3
-
-## this is for faster config
-
-balias confish "cd ~/.confg ; nvim ~/.config/fish/config.fish"
+alias o. "open ."
+alias l "exa --group-directories-first"
+alias ls "exa --icons --group-directories-first --long"
+alias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
+alias ll "exa --icons --group-directories-first --long --all --group --header"
+alias lg "exa --icons --group-directories-first --long --all --group --header --git"
+alias cl clear
 
 # PATH #
 ## Vi mode ## 
 fish_vi_key_bindings
 
-# Setting PATH for Python 3.9
-# The original version is saved in .zprofile.pysave
-# set PATH "/Library/Frameworks/Python.framework/Versions/3.9/bin:$PATH"
 starship init fish | source
