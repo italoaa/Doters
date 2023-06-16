@@ -23,8 +23,6 @@ lv-settings.lua
 configstore/
 efm-languageserver
 iterm2/
-.ssh/
-ssh/
 id*
 *.pub
 urls
