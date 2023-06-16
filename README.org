@@ -1,1 +1,33 @@
-#+title: Readme
+#+title: README
+Hello these are my configuration files for a numerous amount of programs even though some I don't use anymore while others I use extensively (emacs). These are configurations that have come from all over the internet so there is definitely configuration that is not mine and some that is inspired by someone else. Sadly I have not kept any records on where I got the code but I am open to contact to give credits where it is due.
+
+This is the list of the configurations:
+
+1. BBT: better touch tool
+2. BIN: a folder for scripts
+3. Cava: music vis
+4. EMACS: THE EMACS
+5. firefox: userChrome basically
+6. Isync: for syncing files
+7. Msmtp: smtp client
+8. radare2: reverse engeneering
+9. starship: my prompt
+10. Utils: things to set up my computer again
+11. alacritty: my terminal
+12. bottom: process manager
+13. fish: the shell of the 90s
+14. git: ghq config
+15. karabiner: change keys
+16. mpd: music daemon
+17. mpv: video player
+18. ncmpcpp: mpd controller
+19. omf: OH MY FISH
+20. qutebrowser: dont even use it anymore
+21. ranger: file browsing in the terminal
+22. sketchybar: menu bar
+23. skhd: keybindings for everything
+24. spacebar: menu bar simple
+25. ssh: all ssh stuff
+26. tmux: terminal multiplexer
+27. yabai: window manager
+28. youtube-dl: get videos (yt-dlp is better)
