@@ -1,4 +1,5 @@
 #+title: README
+[[./desktop.jpg]]
 Hello these are my configuration files for a numerous amount of programs even though some I don't use anymore while others I use extensively (emacs). These are configurations that have come from all over the internet so there is definitely configuration that is not mine and some that is inspired by someone else. Sadly I have not kept any records on where I got the code but I am open to contact to give credits where it is due.
 
 This is the list of the configurations:

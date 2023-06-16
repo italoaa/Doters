@@ -1,9 +1,9 @@
 sw_volume: 40
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: pause
+state: play
 current: 0
-time: 628.357000
+time: 111.757000
 random: 0
 repeat: 0
 single: 0
@@ -12,5 +12,5 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Drum-n-Bass/(5 Hours) Best Liquid Drum and Bass mix [Study _ Chill DnB] [mbNi5L3QOCA].mp3
+0:Kendric/Sing About Me, I'm Dying Of Thirst [75wmW7xjyog].mp3
 playlist_end
