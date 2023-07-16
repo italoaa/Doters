@@ -60,7 +60,7 @@ This file describes all the packages that I want preinstalled by doom.
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        hydra
        indent-guides     ; highlighted indent columns
-       ;;ligatures         ; ligatures and symbols to make your code pretty again
+       ligatures         ; ligatures and symbols to make your code pretty again
        ;;minimap           ; show a map of the code on the side
        modeline           ; snazzy, Atom-inspired modeline, plus API
        nav-flash         ; blink cursor line after big motions
@@ -256,7 +256,6 @@ This is the meat of the config. Where most of the actual configuration happens.
 Some variables to see what is making emacs slow.
 #+begin_src elisp :tangle "config.el"
 (setq use-package-compute-statistics nil)
-(setq nand2tetris-core-base-dir "~/Downloads/")
 #+end_src
 ** Garbage collection
 #+begin_src elisp :tangle "config.el"
@@ -285,9 +284,9 @@ Some variable's used all over the config
 
 
 (setq doom-theme 'doom-gruvbox
-      doom-font (font-spec :family "Monaco" :size 16 :height 181 :weight 'light)
-      doom-variable-pitch-font (font-spec :family "Monaco" :size 18)
-      doom-big-font (font-spec :family "Monaco" :size 24))
+      doom-font (font-spec :family "FiraCode Nerd Font" :size 16 :height 181 :weight 'light)
+      doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font" :size 18)
+      doom-big-font (font-spec :family "FiraCode Nerd Font" :size 24))
 
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
 
@@ -303,9 +302,6 @@ Some variable's used all over the config
 
 #+end_src
 
-#+RESULTS:
-: dwc-smart-transparent-frame
-
 ** Emacs Configuration
 #+begin_src elisp :tangle "config.el"
 (setq display-line-numbers-type 'relative)
@@ -313,6 +309,7 @@ Some variable's used all over the config
 (setq scroll-margin 8)
 (setq tramp-default-method "ssh")
 (smooth-scrolling-mode 1)
+
 #+end_src
 
 ** Splash Screen config
@@ -640,22 +637,6 @@ These are all the custom key bindings in my config.
         company-box--height 50
         ))
 #+end_src
-*** Bespoke Themes
-#+begin_src elisp :tangle "config.el"
-(use-package! bespoke-themes
-  :config
-  ;; Set evil cursor colors
-  (setq bespoke-set-evil-cursors t)
-  ;; Set use of italics
-  (setq bespoke-set-italic-comments t
-        bespoke-set-italic-keywords t)
-  ;; Set variable pitch
-  (setq bespoke-set-variable-pitch t)
-  ;; Set initial theme variant
-  (setq bespoke-set-theme 'dark)
-  ;; Load theme
-  )
-#+end_src
 *** Email
 The main package here is mu4e
 #+begin_src elisp :tangle "config.el"
@@ -968,15 +949,7 @@ The main package here is mu4e
 #+begin_src elisp :tangle "config.el"
 (use-package! ox-hugo
   :init
-  (setq org-hugo-base-dir (concat org-directory "/Hugo/"))
-  :config
-  (defun italo/Publish/Hugo ()
-    (interactive)
-    (setq default-directory org-roam-directory)
-    (shell-command "PubHugo")
-    (hugcis/publish-lines (concat org-roam-directory "list.txt"))
-    (setq default-directory org-hugo-base-dir)
-    (shell-command "hugo -D;hugo server"))
+  (setq org-hugo-base-dir (concat org-directory "/personal/")) ;; The path to hugo site
   )
 #+end_src
 **** Org Roam UI
@@ -1016,31 +989,79 @@ The main package here is mu4e
 #+begin_src elisp :tangle "config.el"
 (after! ox-latex
   (add-to-list 'org-latex-classes
-               '("org-plain-latex"
-               "\\documentclass{article}
-           [NO-DEFAULT-PACKAGES]
-           [PACKAGES]
-           [EXTRA]"
-               ("\\section{%s}" . "\\section*{%s}")
-               ("\\subsection{%s}" . "\\subsection*{%s}")
-               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-               ("\\paragraph{%s}" . "\\paragraph*{%s}")
-               ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
-#+end_src
-**** Svg Tag mode
-#+begin_src elisp :tangle "config.el"
-(use-package! svg-tag-mode
-  :after org
-  :config
-  (setq svg-tag-tags
-        '(
-          ("\\(:[A-Z]+:\\)" . ((lambda (tag)
-                                 (svg-tag-make tag :beg 1 :end -1))))
-          ("\\(=[A-Z]+=\\)" . ((lambda (tag)
-                                 (svg-tag-make tag :beg 1 :end -1))))
-        )
-  ))
+               '("altacv" "\\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+                    % Change the page layout if you need to
+                    \\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
+                    % Use roboto and lato for fonts
+                    \\renewcommand{\\familydefault}{\\sfdefault}
+
+                    % Change the colours if you want to
+                    \\definecolor{SlateGrey}{HTML}{2E2E2E}
+                    \\definecolor{LightGrey}{HTML}{666666}
+                    \\definecolor{DarkPastelRed}{HTML}{450808}
+                    \\definecolor{PastelRed}{HTML}{8F0D0D}
+                    \\definecolor{GoldenEarth}{HTML}{E7D192}
+                    \\colorlet{name}{black}
+                    \\colorlet{tagline}{PastelRed}
+                    \\colorlet{heading}{DarkPastelRed}
+                    \\colorlet{headingrule}{GoldenEarth}
+                    \\colorlet{subheading}{PastelRed}
+                    \\colorlet{accent}{PastelRed}
+                    \\colorlet{emphasis}{SlateGrey}
+                    \\colorlet{body}{LightGrey}
+
+                    % Change some fonts, if necessary
+                    \\renewcommand{\\namefont}{\\Huge\\rmfamily\\bfseries}
+                    \\renewcommand{\\personalinfofont}{\\footnotesize}
+                    \\renewcommand{\\cvsectionfont}{\\LARGE\\rmfamily\\bfseries}
+                    \\renewcommand{\\cvsubsectionfont}{\\large\\bfseries}
+
+                    % Change the bullets for itemize and rating marker
+                    % for \cvskill if you want to
+                    \\renewcommand{\\itemmarker}{{\\small\\textbullet}}
+                    \\renewcommand{\\ratingmarker}{\\faCircle}
+                    "
+
+                    ("\\cvsection{%s}" . "\\cvsection*{%s}")
+                    ("\\cvevent{%s}" . "\\cvevent*{%s}")
+               )
+               '("org-plain-latex"
+                    "\\documentclass{article}
+                        [NO-DEFAULT-PACKAGES]
+                        [PACKAGES]
+                        [EXTRA]"
+                    ("\\section{%s}" . "\\section*{%s}")
+                    ("\\subsection{%s}" . "\\subsection*{%s}")
+                    ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                    ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
+               )))
+#+end_src
+**** Ox-Latex
+#+begin_src elisp :tangle "config.el"
+(use-package! ox-latex
+  :config
+  ;; code here will run after the package is loaded
+  (setq org-latex-pdf-process
+        '("pdflatex -interaction nonstopmode -output-directory %o %f"
+          "pdflatex -interaction nonstopmode -output-directory %o %f"
+          "pdflatex -interaction nonstopmode -output-directory %o %f"))
+  (setq org-latex-with-hyperref nil) ;; stop org adding hypersetup{author..} to latex export
+  ;; (setq org-latex-prefer-user-labels t)
+
+  ;; deleted unwanted file extensions after latexMK
+  (setq org-latex-logfiles-extensions
+        (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf" "acn" "acr" "alg" "glg" "gls" "ist"))))
+
+(after! org
+  ;; deleted unwanted file extensions after latexMK
+  (setq org-latex-logfiles-extensions
+        (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf" "acn" "acr" "alg" "glg" "gls" "ist")))
+
+  (use-package! ox-extra
+    :config
+    (ox-extras-activate '(latex-header-blocks ignore-headlines))))
 #+end_src
 **** Org Fancy Priorities
 #+begin_src elisp :tangle "config.el"
@@ -1147,44 +1168,47 @@ The main package here is mu4e
 ;; on the command line, then restart Emacs for the changes to take effect -- or
 ;; use 'M-x doom/reload'.
 (package! exec-path-from-shell)
-(package! org-bullets)
+(package! smooth-scrolling)
 (package! beacon)
-(package! org-ref)
 (package! ivy-bibtex)
-(package! spacemacs-theme)
 (package! tree-sitter)
 (package! tree-sitter-langs)
-(package! tsc)
-(package! org-ol-tree
-  :recipe (:host github :repo "Townk/org-ol-tree" :branch "main"))
+
+;; Nice sticky header for functions
 (package! topsy
   :recipe (:host github :repo "alphapapa/topsy.el" :branch "master"))
-(package! nano-theme
-  :recipe (:host github :repo "rougier/nano-theme" :branch "master"))
-(package! org-auto-tangle)
-(package! org-sticky-header)
-(package! smooth-scrolling)
+
 (package! olivetti)
+
+;; Align tables
 (package! valign)
-(package! poet-theme)
-(package! dap-mode)
+
+;;; Themes
+;; (package! poet-theme)
+;; (package! modus-themes)
+;; (package! solo-jazz-theme)
+;; (package! srcery-theme)
+;; (package! tron-legacy-theme)
+
+;; Show colors
 (package! rainbow-mode)
-(package! modus-themes)
-(package! solo-jazz-theme)
-(package! srcery-theme)
+
+;; Org related
 (package! org-download)
+(package! org-bullets)
+(package! org-ref)
 (package! org-roam-ui)
 (package! org-noter)
 (package! org-roam-bibtex)
-(package! explain-pause-mode)
-(package! tron-legacy-theme)
-(package! svg-tag-mode)
+(package! org-auto-tangle)
+(package! org-sticky-header)
 (package! org-preview
   :recipe (:host github :repo "karthink/org-preview" :branch "master"))
-(package! bespoke-themes
-  :recipe (:host github :repo "mclear-tools/bespoke-themes" :branch "main"))
-(package! 0x0
-  :recipe (:host gitlab :repo "willvaughn/emacs-0x0"))
+(package! org-ol-tree
+  :recipe (:host github :repo "Townk/org-ol-tree" :branch "main"))
+
+;; Debug
+;; (package! explain-pause-mode)
 #+end_src
 
 * Templates

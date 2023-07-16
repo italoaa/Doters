@@ -1,5 +1,4 @@
 (setq use-package-compute-statistics nil)
-(setq nand2tetris-core-base-dir "~/Downloads/")
 
 (server-start)
 ;; (setq gc-cons-threshold (100000000))
@@ -21,9 +20,9 @@
 
 
 (setq doom-theme 'doom-gruvbox
-      doom-font (font-spec :family "Monaco" :size 16 :height 181 :weight 'light)
-      doom-variable-pitch-font (font-spec :family "Monaco" :size 18)
-      doom-big-font (font-spec :family "Monaco" :size 24))
+      doom-font (font-spec :family "FiraCode Nerd Font" :size 16 :height 181 :weight 'light)
+      doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font" :size 18)
+      doom-big-font (font-spec :family "FiraCode Nerd Font" :size 24))
 
 (setq +snippets-dir "~/Personal/Programing/Emacs/Snippets/")
 
@@ -294,20 +293,6 @@
         company-box--height 50
         ))
 
-(use-package! bespoke-themes
-  :config
-  ;; Set evil cursor colors
-  (setq bespoke-set-evil-cursors t)
-  ;; Set use of italics
-  (setq bespoke-set-italic-comments t
-        bespoke-set-italic-keywords t)
-  ;; Set variable pitch
-  (setq bespoke-set-variable-pitch t)
-  ;; Set initial theme variant
-  (setq bespoke-set-theme 'dark)
-  ;; Load theme
-  )
-
 ;; we installed this with homebrew
 (setq mu4e-mu-binary (executable-find "mu"))
 
@@ -561,15 +546,7 @@
 
 (use-package! ox-hugo
   :init
-  (setq org-hugo-base-dir (concat org-directory "/Hugo/"))
-  :config
-  (defun italo/Publish/Hugo ()
-    (interactive)
-    (setq default-directory org-roam-directory)
-    (shell-command "PubHugo")
-    (hugcis/publish-lines (concat org-roam-directory "list.txt"))
-    (setq default-directory org-hugo-base-dir)
-    (shell-command "hugo -D;hugo server"))
+  (setq org-hugo-base-dir (concat org-directory "/personal/")) ;; The path to hugo site
   )
 
 (use-package! org-roam-ui
@@ -601,28 +578,77 @@
 
 (after! ox-latex
   (add-to-list 'org-latex-classes
-               '("org-plain-latex"
-               "\\documentclass{article}
-           [NO-DEFAULT-PACKAGES]
-           [PACKAGES]
-           [EXTRA]"
-               ("\\section{%s}" . "\\section*{%s}")
-               ("\\subsection{%s}" . "\\subsection*{%s}")
-               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-               ("\\paragraph{%s}" . "\\paragraph*{%s}")
-               ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
+               '("altacv" "\\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+                    % Change the page layout if you need to
+                    \\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 
-(use-package! svg-tag-mode
-  :after org
+                    % Use roboto and lato for fonts
+                    \\renewcommand{\\familydefault}{\\sfdefault}
+
+                    % Change the colours if you want to
+                    \\definecolor{SlateGrey}{HTML}{2E2E2E}
+                    \\definecolor{LightGrey}{HTML}{666666}
+                    \\definecolor{DarkPastelRed}{HTML}{450808}
+                    \\definecolor{PastelRed}{HTML}{8F0D0D}
+                    \\definecolor{GoldenEarth}{HTML}{E7D192}
+                    \\colorlet{name}{black}
+                    \\colorlet{tagline}{PastelRed}
+                    \\colorlet{heading}{DarkPastelRed}
+                    \\colorlet{headingrule}{GoldenEarth}
+                    \\colorlet{subheading}{PastelRed}
+                    \\colorlet{accent}{PastelRed}
+                    \\colorlet{emphasis}{SlateGrey}
+                    \\colorlet{body}{LightGrey}
+
+                    % Change some fonts, if necessary
+                    \\renewcommand{\\namefont}{\\Huge\\rmfamily\\bfseries}
+                    \\renewcommand{\\personalinfofont}{\\footnotesize}
+                    \\renewcommand{\\cvsectionfont}{\\LARGE\\rmfamily\\bfseries}
+                    \\renewcommand{\\cvsubsectionfont}{\\large\\bfseries}
+
+                    % Change the bullets for itemize and rating marker
+                    % for \cvskill if you want to
+                    \\renewcommand{\\itemmarker}{{\\small\\textbullet}}
+                    \\renewcommand{\\ratingmarker}{\\faCircle}
+                    "
+
+                    ("\\cvsection{%s}" . "\\cvsection*{%s}")
+                    ("\\cvevent{%s}" . "\\cvevent*{%s}")
+               )
+               '("org-plain-latex"
+                    "\\documentclass{article}
+                        [NO-DEFAULT-PACKAGES]
+                        [PACKAGES]
+                        [EXTRA]"
+                    ("\\section{%s}" . "\\section*{%s}")
+                    ("\\subsection{%s}" . "\\subsection*{%s}")
+                    ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                    ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
+               )))
+
+(use-package! ox-latex
   :config
-  (setq svg-tag-tags
-        '(
-          ("\\(:[A-Z]+:\\)" . ((lambda (tag)
-                                 (svg-tag-make tag :beg 1 :end -1))))
-          ("\\(=[A-Z]+=\\)" . ((lambda (tag)
-                                 (svg-tag-make tag :beg 1 :end -1))))
-        )
-  ))
+  ;; code here will run after the package is loaded
+  (setq org-latex-pdf-process
+        '("pdflatex -interaction nonstopmode -output-directory %o %f"
+          "pdflatex -interaction nonstopmode -output-directory %o %f"
+          "pdflatex -interaction nonstopmode -output-directory %o %f"))
+  (setq org-latex-with-hyperref nil) ;; stop org adding hypersetup{author..} to latex export
+  ;; (setq org-latex-prefer-user-labels t)
+
+  ;; deleted unwanted file extensions after latexMK
+  (setq org-latex-logfiles-extensions
+        (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf" "acn" "acr" "alg" "glg" "gls" "ist"))))
+
+(after! org
+  ;; deleted unwanted file extensions after latexMK
+  (setq org-latex-logfiles-extensions
+        (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf" "acn" "acr" "alg" "glg" "gls" "ist")))
+
+  (use-package! ox-extra
+    :config
+    (ox-extras-activate '(latex-header-blocks ignore-headlines))))
 
 (after! org-fancy-priorities
   (setq org-fance-priorities-list '("■","■","■")))

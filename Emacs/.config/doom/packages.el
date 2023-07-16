@@ -5,41 +5,44 @@
 ;; on the command line, then restart Emacs for the changes to take effect -- or
 ;; use 'M-x doom/reload'.
 (package! exec-path-from-shell)
-(package! org-bullets)
+(package! smooth-scrolling)
 (package! beacon)
-(package! org-ref)
 (package! ivy-bibtex)
-(package! spacemacs-theme)
 (package! tree-sitter)
 (package! tree-sitter-langs)
-(package! tsc)
-(package! org-ol-tree
-  :recipe (:host github :repo "Townk/org-ol-tree" :branch "main"))
+
+;; Nice sticky header for functions
 (package! topsy
   :recipe (:host github :repo "alphapapa/topsy.el" :branch "master"))
-(package! nano-theme
-  :recipe (:host github :repo "rougier/nano-theme" :branch "master"))
-(package! org-auto-tangle)
-(package! org-sticky-header)
-(package! smooth-scrolling)
+
 (package! olivetti)
+
+;; Align tables
 (package! valign)
-(package! poet-theme)
-(package! dap-mode)
+
+;;; Themes
+;; (package! poet-theme)
+;; (package! modus-themes)
+;; (package! solo-jazz-theme)
+;; (package! srcery-theme)
+;; (package! tron-legacy-theme)
+
+;; Show colors
 (package! rainbow-mode)
-(package! modus-themes)
-(package! solo-jazz-theme)
-(package! srcery-theme)
+
+;; Org related
 (package! org-download)
+(package! org-bullets)
+(package! org-ref)
 (package! org-roam-ui)
 (package! org-noter)
 (package! org-roam-bibtex)
-(package! explain-pause-mode)
-(package! tron-legacy-theme)
-(package! svg-tag-mode)
+(package! org-auto-tangle)
+(package! org-sticky-header)
 (package! org-preview
   :recipe (:host github :repo "karthink/org-preview" :branch "master"))
-(package! bespoke-themes
-  :recipe (:host github :repo "mclear-tools/bespoke-themes" :branch "main"))
-(package! 0x0
-  :recipe (:host gitlab :repo "willvaughn/emacs-0x0"))
+(package! org-ol-tree
+  :recipe (:host github :repo "Townk/org-ol-tree" :branch "main"))
+
+;; Debug
+;; (package! explain-pause-mode)
