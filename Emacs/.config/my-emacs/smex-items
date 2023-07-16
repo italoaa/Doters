@@ -1,0 +1,24 @@
+
+;; ----- smex-history -----
+(
+ switch-window
+ evil-delete-buffer
+ describe-key
+ evil-leader/set-key
+ describe-variable
+ evil-mode
+ customize-themes
+)
+
+;; ----- smex-data -----
+(
+ (org-mode . 1)
+ (evil-mode . 5)
+ (evil-delete-buffer . 8)
+ (load-theme . 1)
+ (customize-themes . 1)
+ (switch-window . 3)
+ (describe-variable . 3)
+ (describe-key . 4)
+ (evil-leader/set-key . 1)
+)

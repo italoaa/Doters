@@ -24,5 +24,6 @@ configstore/
 efm-languageserver
 iterm2/
 id*
+elpa/
 *.pub
 urls
