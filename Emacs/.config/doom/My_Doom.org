@@ -282,6 +282,11 @@ Some variable's used all over the config
 (defvar Dropbox-dir "~/Personal/Dropbox"
   "Path the the directory of dropbox")
 
+;; Themes
+;; Spacegrey    Grey and contrast code
+;; Miramare     greeny code and creamy text
+;; FlatWhite    to highlight instead of changing the color of text
+;; Gruvbox      to groove
 
 (setq doom-theme 'doom-gruvbox
       doom-font (font-spec :family "FiraCode Nerd Font" :size 16 :height 181 :weight 'light)
