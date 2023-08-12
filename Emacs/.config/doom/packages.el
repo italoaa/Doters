@@ -6,8 +6,8 @@
 ;; use 'M-x doom/reload'.
 (package! exec-path-from-shell)
 (package! smooth-scrolling)
-(package! beacon)
-(package! ivy-bibtex)
+;; (package! beacon)
+;; (package! ivy-bibtex)
 (package! tree-sitter)
 (package! tree-sitter-langs)
 
@@ -28,15 +28,15 @@
 ;; (package! tron-legacy-theme)
 
 ;; Show colors
-(package! rainbow-mode)
+;; (package! rainbow-mode)
 
 ;; Org related
 (package! org-download)
 (package! org-bullets)
-(package! org-ref)
+;; (package! org-ref)
 (package! org-roam-ui)
-(package! org-noter)
-(package! org-roam-bibtex)
+;; (package! org-noter)
+;; (package! org-roam-bibtex)
 (package! org-auto-tangle)
 (package! org-sticky-header)
 (package! org-preview

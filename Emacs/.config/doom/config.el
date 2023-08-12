@@ -24,7 +24,7 @@
 ;; FlatWhite    to highlight instead of changing the color of text
 ;; Gruvbox      to groove
 
-(setq doom-theme 'doom-gruvbox
+(setq doom-theme 'doom-spacegrey
       doom-font (font-spec :family "FiraCode Nerd Font" :size 16 :height 181 :weight 'light)
       doom-variable-pitch-font (font-spec :family "FiraCode Nerd Font" :size 18)
       doom-big-font (font-spec :family "FiraCode Nerd Font" :size 24))
@@ -244,7 +244,7 @@
     )
   )
 
-(beacon-mode 1)
+;; (beacon-mode 1) it is currently uninstalled
 
 (use-package! ssh-deploy
   :after hydra
@@ -472,15 +472,15 @@
                                     ))
                                     ;; (file "~/.doom.d/templates/bibnote.org")
 
-(setq! orb-note-actions-interface 'hydra)
+;; (setq! orb-note-actions-interface 'hydra)
 
-(use-package! org-roam-bibtex
-  :after org-roam
-  :config
-  (setq orb-preformat-keywords '("citekey" "title" "url" "author-or-editor" "date" "file")
-        orb-roam-ref-format 'org-ref-v3
-        orb-process-file-keyword t
-        orb-attached-file-extensions '("pdf")))
+;; (use-package! org-roam-bibtex
+;;   :after org-roam
+;;   :config
+;;   (setq orb-preformat-keywords '("citekey" "title" "url" "author-or-editor" "date" "file")
+;;         orb-roam-ref-format 'org-ref-v3
+;;         orb-process-file-keyword t
+;;         orb-attached-file-extensions '("pdf")))
 
 (use-package! org-ol-tree
   :after org
@@ -506,45 +506,45 @@
   :after org
   :hook (org-mode . org-sticky-header-mode))
 
-(use-package! org-ref
-  :after org
-  :init
-  (setq bibtex-autokey-year-length 4
-    bibtex-autokey-name-year-separator "-"
-    bibtex-autokey-year-title-separator "-"
-    bibtex-autokey-titleword-separator "-"
-    bibtex-autokey-titlewords 2
-    bibtex-autokey-titlewords-stretch 1
-    bibtex-autokey-titleword-length 5
-    bibtex-completion-pdf-field "file"
-    bibtex-completion-pdf-symbol "⌘"
-    bibtex-completion-notes-symbol "✎"
-    )
-  (setq org-latex-pdf-process (list "latexmk -f -pdf -%latex -interaction=nonstopmode -bibtex -output-directory=%o %f"))
+;; (use-package! org-ref
+;;   :after org
+;;   :init
+;;   (setq bibtex-autokey-year-length 4
+;;     bibtex-autokey-name-year-separator "-"
+;;     bibtex-autokey-year-title-separator "-"
+;;     bibtex-autokey-titleword-separator "-"
+;;     bibtex-autokey-titlewords 2
+;;     bibtex-autokey-titlewords-stretch 1
+;;     bibtex-autokey-titleword-length 5
+;;     bibtex-completion-pdf-field "file"
+;;     bibtex-completion-pdf-symbol "⌘"
+;;     bibtex-completion-notes-symbol "✎"
+;;     )
+;;   (setq org-latex-pdf-process (list "latexmk -f -pdf -%latex -interaction=nonstopmode -bibtex -output-directory=%o %f"))
 
-  (setq bibtex-completion-display-formats
-    '((article       . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} ${journal:40}")
-      (inbook        . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} Chapter ${chapter:32}")
-      (incollection  . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
-      (inproceedings . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
-      (t             . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*}")))
+;;   (setq bibtex-completion-display-formats
+;;     '((article       . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} ${journal:40}")
+;;       (inbook        . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} Chapter ${chapter:32}")
+;;       (incollection  . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
+;;       (inproceedings . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
+;;       (t             . "${=has-pdf=:1}${=has-note=:1} ${=type=:3} ${year:4} ${author:36} ${title:*}")))
 
-  (setq org-ref-insert-link-function 'org-ref-insert-link-hydra/body
-      org-ref-insert-cite-function 'org-ref-cite-insert-ivy
-      org-ref-csl-default-style (concat org-directory "/templates/harvard-university-of-leeds.csl")
-      org-ref-insert-label-function 'org-ref-insert-label-link
-      org-ref-insert-ref-function 'org-ref-insert-ref-link
-      org-ref-cite-onclick-function (lambda (_) (org-ref-citation-hydra/body)))
-  )
+;;   (setq org-ref-insert-link-function 'org-ref-insert-link-hydra/body
+;;       org-ref-insert-cite-function 'org-ref-cite-insert-ivy
+;;       org-ref-csl-default-style (concat org-directory "/templates/harvard-university-of-leeds.csl")
+;;       org-ref-insert-label-function 'org-ref-insert-label-link
+;;       org-ref-insert-ref-function 'org-ref-insert-ref-link
+;;       org-ref-cite-onclick-function (lambda (_) (org-ref-citation-hydra/body)))
+;;   )
 
-(setq bibtex-completion-bibliography (concat org-roam-directory "references/Library.bib")
-      bibtex-completion-library-path (concat org-roam-directory "references/sources/")
-)
+;; (setq bibtex-completion-bibliography (concat org-roam-directory "references/Library.bib")
+;;       bibtex-completion-library-path (concat org-roam-directory "references/sources/")
+;; )
 
-(use-package! org-noter
-  :after org
-  :config
-  (setq org-noter-notes-search-path (concat org-roam-directory "references/sources/")))
+;; (use-package! org-noter
+;;   :after org
+;;   :config
+;;   (setq org-noter-notes-search-path (concat org-roam-directory "references/sources/")))
 
 (use-package! org-auto-tangle
   :hook (org-mode . org-auto-tangle-mode))

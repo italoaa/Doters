@@ -15,14 +15,14 @@
        doom              ; what makes DOOM look the way it does
        doom-dashboard    ; a nifty splash screen for Emacs
        ;;doom-quit         ; DOOM quit-message prompts when you quit Emacs
-       (emoji +unicode)  ; 🙂
+       ;; (emoji +unicode)  ; 🙂
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
-       hydra
+       ;; hydra
        indent-guides     ; highlighted indent columns
        ligatures         ; ligatures and symbols to make your code pretty again
        ;;minimap           ; show a map of the code on the side
        modeline           ; snazzy, Atom-inspired modeline, plus API
-       nav-flash         ; blink cursor line after big motions
+       ;; nav-flash         ; blink cursor line after big motions
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
         (popup
@@ -44,7 +44,7 @@
        (format +onsave)  ; automated prettiness
        ;;god               ; run Emacs commands without modifier keys
        ;;lispy             ; vim for lisp, for people who don't like vim
-       multiple-cursors  ; editing in many places at once
+       ;; multiple-cursors  ; editing in many places at once
        ;;objed             ; text object editing for the innocent
        ;;parinfer          ; turn lisp into python, sort of
        ;;rotate-text       ; cycle region at point between text candidates
@@ -53,7 +53,7 @@
 
        :emacs
        (dired +icons)             ; making dired pretty [functional]
-       electric          ; smarter, keyword-based electric-indent
+       ;; electric          ; smarter, keyword-based electric-indent
        ;;ibuffer         ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
@@ -76,7 +76,7 @@
        ;;docker
        ;;editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
-       (eval +overlay)     ; run code, run (also, repls)
+       ;; (eval +overlay)     ; run code, run (also, repls)
        ;;gist              ; interacting with github gists
        lookup              ; navigate your code and its documentation
        (lsp +peek)               ; M-x vscode
@@ -101,7 +101,8 @@
         +lsp)       ; drown in parentheses
        (go +lsp)         ; the hipster dialect
        json              ; At least it ain't XML
-       (javascript +lsp)        ; all(hope(abandon(ye(who(enter(here))))))
+       ;; (javascript +lsp)        ; all(hope(abandon(ye(who(enter(here))))))
+       (javascript)        ; all(hope(abandon(ye(who(enter(here))))))
        (latex +dvipng)             ; writing papers in Emacs has never been so fun
        lua               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
@@ -127,7 +128,7 @@
        (rust
         +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        (sh +lsp +fish)                ; she sells {ba,z,fi}sh shells on the C xor
-       web               ; the tubes
+       ;; web               ; the tubes
        yaml              ; JSON, but readable
 
        ;;zig               ; C, but simpler
@@ -174,7 +175,7 @@
        ;;(ruby +rails)     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
 
        :email
-       (mu4e +org +gmail)
+       ;; (mu4e +org +gmail)
        ;;notmuch
        ;;(wanderlust +gmail)
 
