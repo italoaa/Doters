@@ -27,3 +27,5 @@ id*
 elpa/
 *.pub
 urls
+elpaca/
+url/

@@ -120,11 +120,8 @@
        (java +lsp +meghanda)
        php               ; perl's insecure younger brother
        (python
-        +conda
         +lsp
-        +pyright
-        +pyenv
-        +poetry)
+        +pyright)
        (rust
         +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        (sh +lsp +fish)                ; she sells {ba,z,fi}sh shells on the C xor

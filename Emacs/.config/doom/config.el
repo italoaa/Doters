@@ -1,6 +1,5 @@
 (setq use-package-compute-statistics nil)
 
-(server-start)
 ;; (setq gc-cons-threshold (100000000))
 ;; (setq gc-cons-percentage 0.5)
 ;; (run-with-idle-timer 5 t #'garbage-collect)

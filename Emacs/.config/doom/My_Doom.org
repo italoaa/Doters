@@ -175,11 +175,8 @@ This file describes all the packages that I want preinstalled by doom.
        (java +lsp +meghanda)
        php               ; perl's insecure younger brother
        (python
-        +conda
         +lsp
-        +pyright
-        +pyenv
-        +poetry)
+        +pyright)
        (rust
         +lsp)              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        (sh +lsp +fish)                ; she sells {ba,z,fi}sh shells on the C xor
@@ -260,7 +257,6 @@ Some variables to see what is making emacs slow.
 #+end_src
 ** Garbage collection
 #+begin_src elisp :tangle "config.el"
-(server-start)
 ;; (setq gc-cons-threshold (100000000))
 ;; (setq gc-cons-percentage 0.5)
 ;; (run-with-idle-timer 5 t #'garbage-collect)
