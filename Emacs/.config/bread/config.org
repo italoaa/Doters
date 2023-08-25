@@ -23,7 +23,8 @@ This is the step where we set up the environment for our bread. We are going to 
 #+end_src
 
 * Packages
-** Evil
+** Editor
+*** Evil
 #+begin_src emacs-lisp
 ;; Expands to: (elpaca evil (use-package evil :demand t))
 (use-package evil
@@ -40,9 +41,134 @@ This is the step where we set up the environment for our bread. We are going to 
   :config
   (evil-collection-init))
 #+end_src
-** Olivetti
+*** Doom-themes
 #+begin_src emacs-lisp
-(use-package! olivetti
+(use-package doom-themes
+  :demand t
+  :config
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
+  ;; Enable custom neotree theme (all-the-icons must be installed!)
+  ;; (doom-themes-neotree-config)
+  ;; or for treemacs users
+  ;; (setq doom-themes-treemacs-theme "doom-atom") ; use "doom-colors" for less minimal icon theme
+  ;; (doom-themes-treemacs-config)
+  ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))
+
+;; Use elpaca to load the theme to ensure doom-themes is laoded
+(elpaca nil (load-theme 'doom-spacegrey t))
+#+end_src
+
+*** Smartparens
+#+begin_src emacs-lisp
+(use-package smartparens
+  :diminish smartparens-mode
+  :defer 1
+  :config
+  ;; Load default smartparens rules for various languages
+  (require 'smartparens-config)
+  (setq sp-max-prefix-length 25)
+  (setq sp-max-pair-length 4)
+  (setq sp-highlight-pair-overlay nil
+        sp-highlight-wrap-overlay nil
+        sp-highlight-wrap-tag-overlay nil)
+
+  (with-eval-after-load 'evil
+    (setq sp-show-pair-from-inside t)
+    (setq sp-cancel-autoskip-on-backward-movement nil)
+    (setq sp-pair-overlay-keymap (make-sparse-keymap)))
+
+  (let ((unless-list '(sp-point-before-word-p
+                       sp-point-after-word-p
+                       sp-point-before-same-p)))
+    (sp-pair "'"  nil :unless unless-list)
+    (sp-pair "\"" nil :unless unless-list))
+
+  ;; In lisps ( should open a new form if before another parenthesis
+  (sp-local-pair sp-lisp-modes "(" ")" :unless '(:rem sp-point-before-same-p))
+
+  ;; Don't do square-bracket space-expansion where it doesn't make sense to
+  (sp-local-pair '(emacs-lisp-mode org-mode markdown-mode gfm-mode)
+                 "[" nil :post-handlers '(:rem ("| " "SPC")))
+
+
+  (dolist (brace '("(" "{" "["))
+    (sp-pair brace nil
+             :post-handlers '(("||\n[i]" "RET") ("| " "SPC"))
+             ;; Don't autopair opening braces if before a word character or
+             ;; other opening brace. The rationale: it interferes with manual
+             ;; balancing of braces, and is odd form to have s-exps with no
+             ;; whitespace in between, e.g. ()()(). Insert whitespace if
+             ;; genuinely want to start a new form in the middle of a word.
+             :unless '(sp-point-before-word-p sp-point-before-same-p)))
+  (smartparens-global-mode t))
+
+#+end_src
+*** Projectile
+#+begin_src emacs-lisp
+(use-package projectile
+  :config
+  (projectile-mode 1))
+#+end_src
+*** Dired
+#+begin_src emacs-lisp
+(use-package dired-open
+  :config
+  (setq dired-open-extensions '(("mkv" . "mpv")
+                                ("mp4" . "mpv"))))
+
+(with-eval-after-load 'dired
+  (with-eval-after-load 'evil
+    ;;(define-key dired-mode-map (kbd "M-p") 'peep-dired)
+    (evil-define-key 'normal dired-mode-map (kbd "h") 'dired-up-directory)
+    (evil-define-key 'normal dired-mode-map (kbd "l") 'dired-open-file) ; use dired-find-file instead if not using dired-open package
+    (evil-define-key 'normal peep-dired-mode-map (kbd "j") 'peep-dired-next-file)
+    (evil-define-key 'normal peep-dired-mode-map (kbd "k") 'peep-dired-prev-file)))
+
+(use-package peep-dired
+  :after dired
+  :hook (evil-normalize-keymaps . peep-dired-hook))
+#+end_src
+*** Diminish
+#+begin_src emacs-lisp
+(use-package diminish)
+#+end_src
+*** magit
+#+begin_src emacs-lisp
+(use-package magit)
+#+end_src
+** Visual
+*** Dashboard
+#+begin_src emacs-lisp
+(use-package dashboard
+  :demand t
+  :init
+  (setq initial-buffer-choice 'dashboard-open)
+  (setq dashboard-set-heading-icons t)
+  (setq dashboard-set-file-icons t)
+  (setq dashboard-banner-logo-title "Fresh Baked Bread")
+  ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
+  (setq dashboard-startup-banner (concat user-emacs-directory "bread-logo.png"))  ;; use custom image as banner
+  (setq dashboard-center-content t)
+  (setq dashboard-items '((recents . 5)
+                          (agenda . 5 )
+                          (bookmarks . 3)
+                          (projects . 3)
+                          (registers . 3)))
+  :custom
+  (dashboard-modify-heading-icons '((recents . "file-text")
+                            (bookmarks . "book")))
+  :config
+  (dashboard-setup-startup-hook))
+
+#+end_src
+*** Olivetti
+#+begin_src emacs-lisp
+(use-package olivetti
   :after org
   :init
   (setq olivetti-body-width 140)
@@ -50,7 +176,55 @@ This is the step where we set up the environment for our bread. We are going to 
   :config
   (display-line-numbers-mode 0))
 #+end_src
-** General
+*** All the icons
+#+begin_src emacs-lisp
+(use-package all-the-icons
+  :demand t
+  :if (display-graphic-p))
+
+(use-package all-the-icons-dired
+  :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
+#+end_src
+*** Doom modeline
+#+begin_src emacs-lisp
+(use-package doom-modeline
+  :demand t
+  :init (doom-modeline-mode 1)
+  :config
+  (setq doom-modeline-height 35      ;; sets modeline height
+        doom-modeline-bar-width 5    ;; sets right bar width
+        doom-modeline-persp-name t   ;; adds perspective name to modeline
+        doom-modeline-persp-icon t)) ;; adds folder icon next to persp name
+
+#+end_src
+*** Rainbow mode
+#+begin_src emacs-lisp
+(use-package rainbow-mode
+  :diminish
+  :hook org-mode prog-mode)
+#+end_src
+*** which-key
+#+begin_src emacs-lisp
+(use-package which-key
+  :init
+  (which-key-mode 1)
+  :diminish
+  :config
+  (setq which-key-side-window-location 'bottom
+        which-key-sort-order #'which-key-key-order-alpha
+        which-key-allow-imprecise-window-fit nil
+        which-key-sort-uppercase-first nil
+        which-key-add-column-padding 1
+        which-key-max-display-columns nil
+        which-key-min-display-lines 6
+        which-key-side-window-slot -10
+        which-key-side-window-max-height 0.25
+        which-key-idle-delay 0.8
+        which-key-max-description-length 25
+        which-key-allow-imprecise-window-fit nil
+        which-key-separator " → " ))
+#+end_src
+** General (keybindings)
 The keybindings of emacs is like the flour of the bread. Because I come from doom emacs these follow the keybindings from DT's configuration who is also a doom emacs user! [[https://gitlab.com/dwt1/configuring-emacs/-/blob/main/06-cleaning-up-the-config/config.org?ref_type=heads#evil][Original config]].
 
 #+begin_src emacs-lisp
@@ -59,7 +233,7 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   (general-evil-setup)
 
   ;; set up 'SPC' as the global leader key
-  (general-create-definer dt/leader-keys
+  (general-create-definer flour/leader-keys
     :states '(normal insert visual emacs)
     :keymaps 'override
     :prefix "SPC" ;; set leader
@@ -171,6 +345,10 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "t v" '(vterm-toggle :wk "Toggle vterm"))
 
   (flour/leader-keys
+   "f" '(:ignore t :wk "File")
+   "f s" #'save-buffer)
+
+  (flour/leader-keys
     "w" '(:ignore t :wk "Windows")
     ;; Window splits
     "w c" '(evil-window-delete :wk "Close window")
@@ -190,16 +368,8 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "w L" '(buf-move-right :wk "Buffer move right"))
 )
 #+end_src
-** All the icons
-#+begin_src emacs-lisp
-(use-package all-the-icons
-  :ensure t
-  :if (display-graphic-p))
-
-(use-package all-the-icons-dired
-  :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
-#+end_src
-** Company
+** Completion and lsp
+*** Company
 #+begin_src emacs-lisp
 (use-package company
   :defer 2
@@ -210,6 +380,10 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   (company-minimum-prefix-length 2)
   (company-show-numbers t)
   (company-tooltip-align-annotations 't)
+
+  ;; Auto complete with C-SPC
+  ;; (evil-define-key 'insert dired-mode-map (kbd "C-SPC") 'company-complete-common)
+
   (global-company-mode t))
 
 (use-package company-box
@@ -217,65 +391,7 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   :diminish
   :hook (company-mode . company-box-mode))
 #+end_src
-** Dashboard
-#+begin_src emacs-lisp
-(use-package dashboard
-  :ensure t
-  :init
-  (setq initial-buffer-choice 'dashboard-open)
-  (setq dashboard-set-heading-icons t)
-  (setq dashboard-set-file-icons t)
-  (setq dashboard-banner-logo-title "Fresh Baked Bread")
-  ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
-  (setq dashboard-startup-banner (concat user-emacs-directory "bread-logo.png"))  ;; use custom image as banner
-  (setq dashboard-center-content t)
-  (setq dashboard-items '((recents . 5)
-                          (agenda . 5 )
-                          (bookmarks . 3)
-                          (projects . 3)
-                          (registers . 3)))
-  :custom
-  (dashboard-modify-heading-icons '((recents . "file-text")
-                            (bookmarks . "book")))
-  :config
-  (dashboard-setup-startup-hook))
-
-#+end_src
-** Projectile
-#+begin_src emacs-lisp
-(use-package projectile
-  :config
-  (projectile-mode 1))
-#+end_src
-** Diminish
-#+begin_src emacs-lisp
-(use-package diminish)
-#+end_src
-** Dired
-#+begin_src emacs-lisp
-(use-package dired-open
-  :config
-  (setq dired-open-extensions '(("mkv" . "mpv")
-                                ("mp4" . "mpv"))))
-
-(use-package peep-dired
-  :after dired
-  :hook (evil-normalize-keymaps . peep-dired-hook)
-  :config
-    (evil-define-key 'normal dired-mode-map (kbd "h") 'dired-up-directory)
-    (evil-define-key 'normal dired-mode-map (kbd "l") 'dired-open-file)
-    (evil-define-key 'normal peep-dired-mode-map (kbd "j") 'peep-dired-next-file)
-    (evil-define-key 'normal peep-dired-mode-map (kbd "k") 'peep-dired-prev-file) )
-#+end_src
-** FlyCheck
-#+begin_src emacs-lisp
-(use-package flycheck
-  :ensure t
-  :defer t
-  :diminish
-  :init (global-flycheck-mode))
-#+end_src
-** Ivy
+*** Ivy
 #+begin_src emacs-lisp
 (use-package counsel
   :after ivy
@@ -296,12 +412,12 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   (ivy-mode))
 
 (use-package all-the-icons-ivy-rich
-  :ensure t
+  :demand t
   :init (all-the-icons-ivy-rich-mode 1))
 
 (use-package ivy-rich
   :after ivy
-  :ensure t
+  :demand t
   :init (ivy-rich-mode 1) ;; this gets us descriptions in M-x.
   :custom
   (ivy-virtual-abbreviate 'full
@@ -312,48 +428,45 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
                                'ivy-rich-switch-buffer-transformer))
 
 #+end_src
-** Doom modeline
+*** Ivy-precient
 #+begin_src emacs-lisp
-(use-package doom-modeline
-  :ensure t
-  :init (doom-modeline-mode 1)
-  :config
-  (setq doom-modeline-height 35      ;; sets modeline height
-        doom-modeline-bar-width 5    ;; sets right bar width
-        doom-modeline-persp-name t   ;; adds perspective name to modeline
-        doom-modeline-persp-icon t)) ;; adds folder icon next to persp name
-
+(use-package ivy-prescient)
 #+end_src
-** Rainbow mode
+*** lsp
 #+begin_src emacs-lisp
-(use-package rainbow-mode
-  :diminish
-  :hook org-mode prog-mode)
-#+end_src
-** which-key
-#+begin_src emacs-lisp
-(use-package which-key
+(use-package lsp-mode
   :init
-  (which-key-mode 1)
-  :diminish
-  :config
-  (setq which-key-side-window-location 'bottom
-        which-key-sort-order #'which-key-key-order-alpha
-        which-key-allow-imprecise-window-fit nil
-        which-key-sort-uppercase-first nil
-        which-key-add-column-padding 1
-        which-key-max-display-columns nil
-        which-key-min-display-lines 6
-        which-key-side-window-slot -10
-        which-key-side-window-max-height 0.25
-        which-key-idle-delay 0.8
-        which-key-max-description-length 25
-        which-key-allow-imprecise-window-fit nil
-        which-key-separator " → " ))
+  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+  (setq lsp-keymap-prefix "C-c l")
+  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+         (python-mode . lsp)
+         (rust-mode . lsp)
+         ;; if you want which-key integration
+         (lsp-mode . lsp-enable-which-key-integration))
+  :commands lsp)
 #+end_src
+**** lsp-ivy
+#+begin_src emacs-lisp
+(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+#+end_src
+**** TODO dap-mode
+#+begin_src emacs-lisp
 
+#+end_src
+** Writing
+*** FlyCheck
+#+begin_src emacs-lisp
+(use-package flycheck
+  :demand t
+  :defer t
+  :diminish
+  :init (global-flycheck-mode))
+#+end_src
 * Emacs
 #+begin_src emacs-lisp
+;; Correct indentation ;)
+(add-hook 'rust-mode-hook
+          (lambda () (setq indent-tabs-mode nil)))
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -363,30 +476,214 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 
 (setq display-line-numbers-type 'relative)
 (setq scroll-margin 8)
+
+;; I prefer cmd key for meta
+(setq mac-option-key-is-meta nil
+      mac-command-key-is-meta t
+      mac-command-modifier 'meta
+      mac-option-modifier 'none)
 #+end_src
 * Main variables
 #+begin_src emacs-lisp
-(setq user-full-name "Italo Amaya Arlotti"
-      user-mail-address "italoamaya@icloud.com")
-
 (defvar Dropbox-dir "~/Personal/Dropbox"
   "Path the the directory of dropbox")
 
+(setq user-full-name "Italo Amaya Arlotti"
+      user-mail-address "italoamaya@icloud.com"
+      org-directory (concat user-emacs-directory "/test-org"))
+#+end_src
+** Fonts
+#+begin_src emacs-lisp
+(set-face-attribute 'default nil
+  :font "FiraCode Nerd Font"
+  :height 160
+  :weight 'medium)
+(set-face-attribute 'variable-pitch nil
+  :font "FiraCode Nerd Font"
+  :height 160
+  :weight 'medium)
+(set-face-attribute 'fixed-pitch nil
+  :font "FiraCode Nerd Font"
+  :height 160
+  :weight 'medium)
+;; Makes commented text and keywords italics.
+;; This is working in emacsclient but not emacs.
+;; Your font must have an italic face available.
+(set-face-attribute 'font-lock-comment-face nil
+  :slant 'italic)
+(set-face-attribute 'font-lock-keyword-face nil
+  :slant 'italic)
 
+;; Uncomment the following line if line spacing needs adjusting.
+(setq-default line-spacing 0.12)
+
+;; Needed if using emacsclient. Otherwise, your fonts will be smaller than expected.
+(add-to-list 'default-frame-alist '(font . "FiraCode Nerd Font-16"))
+;; changes certain keywords to symbols, such as lamda!
+(setq global-prettify-symbols-mode t)
 #+end_src
 
 * Org mode
+** Variables
 #+begin_src emacs-lisp
+(let* ((variable-tuple
+        (cond
+         ((x-list-fonts "Monaco")         '(:font "Monaco"))
+         ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
+         ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
+         ((x-list-fonts "Verdana")         '(:font "Verdana"))
+         ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
+         (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
+       (base-font-color     (face-foreground 'default nil 'default))
+       (headline           `(:inherit default :weight bold)))
+
+  (custom-theme-set-faces
+   'user
+   `(org-level-8 ((t (,@headline ,@variable-tuple))))
+   `(org-level-7 ((t (,@headline ,@variable-tuple))))
+   `(org-level-6 ((t (,@headline ,@variable-tuple))))
+   `(org-level-5 ((t (,@headline ,@variable-tuple))))
+   `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
+   `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
+   `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
+   `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
+   `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
+
+(setq org-hide-emphasis-markers t)
+
+(eval-after-load 'org-indent '(diminish 'org-indent-mode))
+
+(electric-indent-mode -1)
+(setq org-edit-src-content-indentation 0)
+
+(add-hook 'org-mode-hook 'org-indent-mode)
+
 (require 'org-tempo)
 #+end_src
-* Task list [0/9]
-** TODO org-roam
-** TODO org-download
-** TODO org bullets
-** TODO magit
+** org roam
+#+begin_src emacs-lisp
+(setq org-roam-directory (concat org-directory "/roam/"))
+(add-to-list 'display-buffer-alist
+             '("\\*org-roam\\*"
+               (display-buffer-in-direction)
+               (direction . right)
+               (window-width . 0.33)
+               (window-height . fit-window-to-buffer)))
+
+(setq org-roam-capture-templates '(
+                                   ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
+                                    :unnarrowed t)
+                                   ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ComputerProcessors|DataBases|DiscreteMaths|}:\n")
+                                    :unnarrowed t)
+                                   ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity}:\n")
+                                    :unnarrowed t)
+                                   ("r" "ref" plain "%?" :target
+                                    (file+head "references/${citekey}.org" "#+title: ${title}\n")
+                                    :unarrowed t)
+                                   ("n" "ref + noter" plain "%?":target
+                                    (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
+                                    :unarrowed t)
+                                    ))
+#+end_src
+** Evil org
+#+begin_src emacs-lisp
+(use-package evil-org
+  :demand t
+  :after org
+  :hook (org-mode . (lambda () evil-org-mode))
+  :config
+  (require 'evil-org-agenda)
+  (evil-org-agenda-set-keys))
+#+end_src
+** org download
+#+begin_src emacs-lisp
+(use-package org-download
+    :after org
+    :defer nil
+    :custom
+    (org-download-method 'directory)
+    (org-download-image-dir "files")
+    (org-download-heading-lvl nil)
+    (org-download-timestamp "%Y%m%d-%H%M%S_")
+    (org-download-image-org-width 300)
+    (org-download-screenshot-method "/usr/local/bin/pngpaste %s")
+    :config
+    (require 'org-download)
+    (org-download-enable))
+#+end_src
+** org appear
+#+begin_src emacs-lisp
+(use-package org-appear
+  :commands (org-appear-mode)
+  :hook (org-mode . org-appear-mode)
+  :init
+  (setq org-hide-emphasis-markers t        ;; A default setting that needs to be    t for org-appear
+        org-appear-autoemphasis t        ;; Enable org-appear on emphasis (bold, italics, etc)
+        org-appear-autolinks nil        ;; Don't enable on links
+        org-appear-autosubmarkers t))    ;; Enable on subscript and superscript
+#+end_src
+** org bullets
+#+begin_src emacs-lisp
+(use-package org-bullets
+    :hook (org-mode . org-bullets-mode)
+    :custom
+    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+    (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
+#+end_src
+* Languages [0/2]
+** Rust [0/3]
+#+begin_src emacs-lisp
+(use-package rust-mode
+  :config
+  (setq rust-format-on-save t))
+
+(add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
+#+end_src
+*** TODO Rustic
+*** TODO Keybindings
+- rust-dbg-wrap-or-unwrap
+- rust-toggle-mutability
+*** TODO Config
+~rust-cargo-default-arguments~ set additional cargo args used for check,compile,run,test
+** Treesitter
+#+begin_src emacs-lisp
+(use-package tree-sitter
+  :config
+  (require 'tree-sitter-langs)
+  (global-tree-sitter-mode)
+  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
+
+(use-package tree-sitter-langs)
+#+end_src
+** TODO Python [0/1]
+#+begin_src emacs-lisp
+(use-package lsp-pyright
+  :demand t
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp))))  ; or lsp-deferred
+#+end_src
+*** TODO Config
+|----------------------------------------+-----+----------------------------------------|
+| pyright.disableLanguageServices        | via | lsp-pyright-disable-language-services  |
+| pyright.disableOrganizeImports         | via | lsp-pyright-disable-organize-imports   |
+| python.analysis.autoImportCompletions  | via | lsp-pyright-auto-import-completions    |
+| python.analysis.useLibraryCodeForTypes | via | lsp-pyright-use-library-code-for-types |
+| python.analysis.typeshedPaths          | via | lsp-pyright-typeshed-paths             |
+| python.analysis.diagnosticMode         | via | lsp-pyright-diagnostic-mode            |
+| python.analysis.typeCheckingMode       | via | lsp-pyright-typechecking-mode          |
+| python.analysis.logLevel               | via | lsp-pyright-log-level                  |
+| python.analysis.autoSearchPaths        | via | lsp-pyright-auto-search-paths          |
+| python.analysis.extraPaths             | via | lsp-pyright-extra-paths                |
+| python.venvPath                        | via | lsp-pyright-venv-path                  |
+|----------------------------------------+-----+----------------------------------------|
+
+** TODO C
+* Task list [0/1]
 ** TODO pdf view
-** TODO lsp
-** TODO dap mode
-** TODO Languages [0/3]
-*** TODO Rust
-*** TODO Python
+#+begin_src emacs-lisp
+
+#+end_src
