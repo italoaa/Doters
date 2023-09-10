@@ -16,7 +16,7 @@ alias sp speedtest
 
 alias o. "open ."
 alias l "exa --group-directories-first"
-alias ls "exa --icons --group-directories-first --long"
+alias ls "exa --icons --group-directories-first --long --all"
 alias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
 alias ll "exa --icons --group-directories-first --long --all --group --header"
 alias lg "exa --icons --group-directories-first --long --all --group --header --git"

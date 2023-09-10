@@ -459,6 +459,9 @@
                                    ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ComputerProcessors|DataBases|DiscreteMaths|}:\n")
                                     :unnarrowed t)
+                                   ("e" "Comptia Exam note" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:CyberSecurity:sec+:\n")
+                                    :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity}:\n")
                                     :unnarrowed t)
@@ -468,8 +471,8 @@
                                    ("n" "ref + noter" plain "%?":target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
                                     :unarrowed t)
-                                    ))
-                                    ;; (file "~/.doom.d/templates/bibnote.org")
+                                   ))
+;; (file "~/.doom.d/templates/bibnote.org")
 
 ;; (setq! orb-note-actions-interface 'hydra)
 

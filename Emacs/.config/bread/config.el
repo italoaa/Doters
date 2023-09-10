@@ -15,8 +15,11 @@
   :init
   (setq evil-want-integration t
         evil-want-keybinding nil
+        evil-want-C-u-scroll t
         evil-vsplit-window-right t
         evil-split-window-below t)
+
+  (setq evil-undo-system 'undo-redo)
   (evil-mode))
 
 (use-package evil-collection
@@ -40,8 +43,14 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
+;; Themes
+;; Spacegrey    Grey and contrast code
+;; Miramare     greeny code and creamy text
+;; FlatWhite    to highlight instead of changing the color of text
+;; Gruvbox      to groove
+
 ;; Use elpaca to load the theme to ensure doom-themes is laoded
-(elpaca nil (load-theme 'doom-one t))
+(elpaca nil (load-theme 'doom-spacegrey t))
 
 (use-package smartparens
   :diminish smartparens-mode
@@ -85,6 +94,15 @@
              :unless '(sp-point-before-word-p sp-point-before-same-p)))
   (smartparens-global-mode t))
 
+(use-package undo-tree
+  :config
+  (setq undo-tree-auto-save-history t)
+  (setq undo-tree-enable-undo-in-region nil)
+  (setq undo-tree-history-directory-alist '(("." . "~/.config/bread/undo")))
+  (define-key evil-normal-state-map (kbd "u") 'undo-tree-undo)
+  (define-key evil-normal-state-map (kbd "C-r") 'undo-tree-redo)
+  (global-undo-tree-mode 1))
+
 (use-package projectile
   :config
   (projectile-mode 1))
@@ -93,6 +111,8 @@
   :config
   (setq dired-open-extensions '(("mkv" . "mpv")
                                 ("mp4" . "mpv"))))
+
+(add-hook 'dired-mode-hook 'auto-revert-mode)
 
 (with-eval-after-load 'dired
   (with-eval-after-load 'evil
@@ -110,6 +130,10 @@
 
 (use-package magit)
 
+(use-package hl-todo
+  :config
+  (global-hl-todo-mode))
+
 (use-package dashboard
   :demand t
   :init
@@ -121,10 +145,8 @@
   (setq dashboard-startup-banner (concat user-emacs-directory "bread-logo.png"))  ;; use custom image as banner
   (setq dashboard-center-content t)
   (setq dashboard-items '((recents . 5)
-                          (agenda . 5 )
-                          (bookmarks . 3)
                           (projects . 3)
-                          (registers . 3)))
+                          ))
   :custom
   (dashboard-modify-heading-icons '((recents . "file-text")
                             (bookmarks . "book")))
@@ -152,8 +174,15 @@
   :config
   (setq doom-modeline-height 35      ;; sets modeline height
         doom-modeline-bar-width 5    ;; sets right bar width
+        doom-modeline-buffer-file-name-style 'file-name
         doom-modeline-persp-name t   ;; adds perspective name to modeline
-        doom-modeline-persp-icon t)) ;; adds folder icon next to persp name
+        doom-modeline-persp-icon nil
+        doom-modeline-major-mode-color-icon t
+        doom-modeline-modal t)) ;; adds folder icon next to persp name
+
+;; How to display icons correctly?
+
+;; nerd-icons are necessary. Then run M-x nerd-icons-install-fonts to install the resource fonts. On Windows, the fonts should be installed manually. nerd-icons supports both GUI and TUI.
 
 (use-package rainbow-mode
   :diminish
@@ -194,6 +223,8 @@
     "." '(find-file :wk "Find file")
     "f c" '((lambda () (interactive) (find-file "~/.config/emacs/config.org")) :wk "Edit emacs config")
     "f r" '(counsel-recentf :wk "Find recent files")
+    "j" '(next-buffer :wk "next buffer")
+    "k" '(previous-buffer :wk "next buffer")
     "TAB TAB" '(comment-line :wk "Comment lines"))
 
   (flour/leader-keys
@@ -292,11 +323,17 @@
     "t l" '(display-line-numbers-mode :wk "Toggle line numbers")
     "t r" '(rainbow-mode :wk "Toggle rainbow mode")
     "t t" '(visual-line-mode :wk "Toggle truncated lines")
-    "t v" '(vterm-toggle :wk "Toggle vterm"))
+    "t v" '(vterm-toggle :wk "Toggle vterm")
+    "t i" '(org-toggle-inline-images :wk "toggle inline images"))
 
   (flour/leader-keys
    "f" '(:ignore t :wk "File")
    "f s" #'save-buffer)
+
+  (flour/leader-keys
+    "n" '(:ignore t :wk "Roam notes")
+    "n i" '(org-roam-node-insert :wk "Insert node at point")
+    "n f" '(org-roam-node-find :wk "Find node"))
 
   (flour/leader-keys
     "w" '(:ignore t :wk "Windows")
@@ -316,7 +353,18 @@
     "w J" '(buf-move-down :wk "Buffer move down")
     "w K" '(buf-move-up :wk "Buffer move up")
     "w L" '(buf-move-right :wk "Buffer move right"))
+
+  (flour/leader-keys
+    "g" '(:ignore t :wk "Git")
+    "g g" '(magit :wk "Magit"))
+
+;;   (general-define-key
+;;    :state '(normal vis)
+;;    "u" '(nil)
+;;    "C-r" 'undo-tree-redo)
 )
+
+;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
 
 (use-package company
   :defer 2
@@ -354,7 +402,10 @@
   (setq ivy-count-format "(%d/%d) ")
   (setq enable-recursive-minibuffers t)
   :config
+  (setq ivy-initial-inputs-alist nil)
   (ivy-mode))
+
+(elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
 
 (use-package all-the-icons-ivy-rich
   :demand t
@@ -372,7 +423,9 @@
   (ivy-set-display-transformer 'ivy-switch-buffer
                                'ivy-rich-switch-buffer-transformer))
 
-(use-package ivy-prescient)
+(use-package ivy-prescient
+  :config
+  (ivy-prescient-mode))
 
 (use-package lsp-mode
   :init
@@ -388,6 +441,14 @@
 (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 
 
+
+(use-package yasnippet
+  :demand t
+  :config
+  (yas-global-mode 1)
+  (yas-minor-mode-on))
+(use-package yasnippet-snippets
+  :demand t)
 
 (use-package flycheck
   :demand t
@@ -419,7 +480,7 @@
 
 (setq user-full-name "Italo Amaya Arlotti"
       user-mail-address "italoamaya@icloud.com"
-      org-directory (concat user-emacs-directory "/test-org"))
+      org-directory (concat Dropbox-dir "/Bak/Org"))
 
 (set-face-attribute 'default nil
   :font "FiraCode Nerd Font"
@@ -450,13 +511,13 @@
 (setq global-prettify-symbols-mode t)
 
 (let* ((variable-tuple
-        (cond
-         ((x-list-fonts "Monaco")         '(:font "Monaco"))
-         ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
-         ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
-         ((x-list-fonts "Verdana")         '(:font "Verdana"))
-         ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
-         (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
+	(cond
+	 ((x-list-fonts "Monaco")         '(:font "Monaco"))
+	 ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
+	 ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
+	 ((x-list-fonts "Verdana")         '(:font "Verdana"))
+	 ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
+	 (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
        (base-font-color     (face-foreground 'default nil 'default))
        (headline           `(:inherit default :weight bold)))
 
@@ -474,6 +535,13 @@
 
 (setq org-hide-emphasis-markers t)
 
+;; Unbind RET for going to links
+;; (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil)
+(setq org-return-follows-link t)
+
+;; Opens file links in the same window
+(add-to-list 'org-link-frame-setup '(file . find-file))
+
 (eval-after-load 'org-indent '(diminish 'org-indent-mode))
 
 (electric-indent-mode -1)
@@ -483,6 +551,9 @@
 
 (require 'org-tempo)
 
+(use-package org-roam
+  :config
+  (org-roam-db-autosync-mode 1))
 (setq org-roam-directory (concat org-directory "/roam/"))
 (add-to-list 'display-buffer-alist
              '("\\*org-roam\\*"
@@ -501,13 +572,16 @@
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity}:\n")
                                     :unnarrowed t)
+                                   ("e" "Comptia Exam note" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:CyberSecurity:sec+:\n")
+                                    :unnarrowed t)
                                    ("r" "ref" plain "%?" :target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n")
                                     :unarrowed t)
                                    ("n" "ref + noter" plain "%?":target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
                                     :unarrowed t)
-                                    ))
+                                   ))
 
 (use-package evil-org
   :demand t
@@ -548,7 +622,9 @@
 
 (use-package rust-mode
   :config
-  (setq rust-format-on-save t))
+  (setq rust-format-on-save t
+	rust-rustfmt-bin "/Users/italo/.cargo/bin/rustfmt"
+	rust-cargo-bin "/Users/italo/.cargo/bin/cargo"))
 
 (add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
 
@@ -560,12 +636,15 @@
 
 (use-package tree-sitter-langs)
 
+(elpaca (ts-fold :type git :host github :repo "emacs-tree-sitter/ts-fold"))
+(elpaca nil (global-ts-fold-mode 1))
+
 (use-package lsp-pyright
   :demand t
   :hook (python-mode . (lambda ()
                           (require 'lsp-pyright)
                           (lsp))))  ; or lsp-deferred
 
-
+(use-package emmet-mode)
 
 

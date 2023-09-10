@@ -2,6 +2,7 @@
 #+AUTHOR: Italo Amaya
 #+Description: This is my personal emacs config. I have called it bread :) it used DT's config to start out and make my own. url: https://gitlab.com/dwt1/configuring-emacs/
 
+
 * Setup
 This is the step where we set up the environment for our bread. We are going to abstract away some setup so that the configuration file is easier to read
 ** Import modules directory
@@ -32,8 +33,11 @@ This is the step where we set up the environment for our bread. We are going to 
   :init
   (setq evil-want-integration t
         evil-want-keybinding nil
+        evil-want-C-u-scroll t
         evil-vsplit-window-right t
         evil-split-window-below t)
+
+  (setq evil-undo-system 'undo-redo)
   (evil-mode))
 
 (use-package evil-collection
@@ -59,8 +63,15 @@ This is the step where we set up the environment for our bread. We are going to 
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
+;; Themes
+;; Spacegrey    Grey and contrast code
+;; Miramare     greeny code and creamy text
+;; FlatWhite    to highlight instead of changing the color of text
+;; Gruvbox      to groove
+
 ;; Use elpaca to load the theme to ensure doom-themes is laoded
 (elpaca nil (load-theme 'doom-spacegrey t))
+
 #+end_src
 
 *** Smartparens
@@ -108,6 +119,18 @@ This is the step where we set up the environment for our bread. We are going to 
   (smartparens-global-mode t))
 
 #+end_src
+
+*** undo-tree
+#+begin_src emacs-lisp
+(use-package undo-tree
+  :config
+  (setq undo-tree-auto-save-history t)
+  (setq undo-tree-enable-undo-in-region nil)
+  (setq undo-tree-history-directory-alist '(("." . "~/.config/bread/undo")))
+  (define-key evil-normal-state-map (kbd "u") 'undo-tree-undo)
+  (define-key evil-normal-state-map (kbd "C-r") 'undo-tree-redo)
+  (global-undo-tree-mode 1))
+#+end_src
 *** Projectile
 #+begin_src emacs-lisp
 (use-package projectile
@@ -120,6 +143,8 @@ This is the step where we set up the environment for our bread. We are going to 
   :config
   (setq dired-open-extensions '(("mkv" . "mpv")
                                 ("mp4" . "mpv"))))
+
+(add-hook 'dired-mode-hook 'auto-revert-mode)
 
 (with-eval-after-load 'dired
   (with-eval-after-load 'evil
@@ -141,6 +166,13 @@ This is the step where we set up the environment for our bread. We are going to 
 #+begin_src emacs-lisp
 (use-package magit)
 #+end_src
+*** hl-todo
+#+begin_src emacs-lisp
+(use-package hl-todo
+  :config
+  (global-hl-todo-mode))
+
+#+end_src
 ** Visual
 *** Dashboard
 #+begin_src emacs-lisp
@@ -155,10 +187,8 @@ This is the step where we set up the environment for our bread. We are going to 
   (setq dashboard-startup-banner (concat user-emacs-directory "bread-logo.png"))  ;; use custom image as banner
   (setq dashboard-center-content t)
   (setq dashboard-items '((recents . 5)
-                          (agenda . 5 )
-                          (bookmarks . 3)
                           (projects . 3)
-                          (registers . 3)))
+                          ))
   :custom
   (dashboard-modify-heading-icons '((recents . "file-text")
                             (bookmarks . "book")))
@@ -193,9 +223,15 @@ This is the step where we set up the environment for our bread. We are going to 
   :config
   (setq doom-modeline-height 35      ;; sets modeline height
         doom-modeline-bar-width 5    ;; sets right bar width
+        doom-modeline-buffer-file-name-style 'file-name
         doom-modeline-persp-name t   ;; adds perspective name to modeline
-        doom-modeline-persp-icon t)) ;; adds folder icon next to persp name
+        doom-modeline-persp-icon nil
+        doom-modeline-major-mode-color-icon t
+        doom-modeline-modal t)) ;; adds folder icon next to persp name
 
+;; How to display icons correctly?
+
+;; nerd-icons are necessary. Then run M-x nerd-icons-install-fonts to install the resource fonts. On Windows, the fonts should be installed manually. nerd-icons supports both GUI and TUI.
 #+end_src
 *** Rainbow mode
 #+begin_src emacs-lisp
@@ -244,6 +280,8 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "." '(find-file :wk "Find file")
     "f c" '((lambda () (interactive) (find-file "~/.config/emacs/config.org")) :wk "Edit emacs config")
     "f r" '(counsel-recentf :wk "Find recent files")
+    "j" '(next-buffer :wk "next buffer")
+    "k" '(previous-buffer :wk "next buffer")
     "TAB TAB" '(comment-line :wk "Comment lines"))
 
   (flour/leader-keys
@@ -342,11 +380,17 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "t l" '(display-line-numbers-mode :wk "Toggle line numbers")
     "t r" '(rainbow-mode :wk "Toggle rainbow mode")
     "t t" '(visual-line-mode :wk "Toggle truncated lines")
-    "t v" '(vterm-toggle :wk "Toggle vterm"))
+    "t v" '(vterm-toggle :wk "Toggle vterm")
+    "t i" '(org-toggle-inline-images :wk "toggle inline images"))
 
   (flour/leader-keys
    "f" '(:ignore t :wk "File")
    "f s" #'save-buffer)
+
+  (flour/leader-keys
+    "n" '(:ignore t :wk "Roam notes")
+    "n i" '(org-roam-node-insert :wk "Insert node at point")
+    "n f" '(org-roam-node-find :wk "Find node"))
 
   (flour/leader-keys
     "w" '(:ignore t :wk "Windows")
@@ -366,7 +410,18 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "w J" '(buf-move-down :wk "Buffer move down")
     "w K" '(buf-move-up :wk "Buffer move up")
     "w L" '(buf-move-right :wk "Buffer move right"))
+
+  (flour/leader-keys
+    "g" '(:ignore t :wk "Git")
+    "g g" '(magit :wk "Magit"))
+
+;;   (general-define-key
+;;    :state '(normal vis)
+;;    "u" '(nil)
+;;    "C-r" 'undo-tree-redo)
 )
+
+;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
 #+end_src
 ** Completion and lsp
 *** Company
@@ -409,7 +464,10 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   (setq ivy-count-format "(%d/%d) ")
   (setq enable-recursive-minibuffers t)
   :config
+  (setq ivy-initial-inputs-alist nil)
   (ivy-mode))
+
+(elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
 
 (use-package all-the-icons-ivy-rich
   :demand t
@@ -430,7 +488,9 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 #+end_src
 *** Ivy-precient
 #+begin_src emacs-lisp
-(use-package ivy-prescient)
+(use-package ivy-prescient
+  :config
+  (ivy-prescient-mode))
 #+end_src
 *** lsp
 #+begin_src emacs-lisp
@@ -452,6 +512,16 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 **** TODO dap-mode
 #+begin_src emacs-lisp
 
+#+end_src
+*** ya-snippets
+#+begin_src emacs-lisp
+(use-package yasnippet
+  :demand t
+  :config
+  (yas-global-mode 1)
+  (yas-minor-mode-on))
+(use-package yasnippet-snippets
+  :demand t)
 #+end_src
 ** Writing
 *** FlyCheck
@@ -490,7 +560,7 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 
 (setq user-full-name "Italo Amaya Arlotti"
       user-mail-address "italoamaya@icloud.com"
-      org-directory (concat user-emacs-directory "/test-org"))
+      org-directory (concat Dropbox-dir "/Bak/Org"))
 #+end_src
 ** Fonts
 #+begin_src emacs-lisp
@@ -526,42 +596,52 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 * Org mode
 ** Variables
 #+begin_src emacs-lisp
-(let* ((variable-tuple
-        (cond
-         ((x-list-fonts "Monaco")         '(:font "Monaco"))
-         ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
-         ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
-         ((x-list-fonts "Verdana")         '(:font "Verdana"))
-         ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
-         (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
-       (base-font-color     (face-foreground 'default nil 'default))
-       (headline           `(:inherit default :weight bold)))
+  (let* ((variable-tuple
+	  (cond
+	   ((x-list-fonts "Monaco")         '(:font "Monaco"))
+	   ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
+	   ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
+	   ((x-list-fonts "Verdana")         '(:font "Verdana"))
+	   ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
+	   (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
+	 (base-font-color     (face-foreground 'default nil 'default))
+	 (headline           `(:inherit default :weight bold)))
 
-  (custom-theme-set-faces
-   'user
-   `(org-level-8 ((t (,@headline ,@variable-tuple))))
-   `(org-level-7 ((t (,@headline ,@variable-tuple))))
-   `(org-level-6 ((t (,@headline ,@variable-tuple))))
-   `(org-level-5 ((t (,@headline ,@variable-tuple))))
-   `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
-   `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
-   `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
-   `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
-   `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
+    (custom-theme-set-faces
+     'user
+     `(org-level-8 ((t (,@headline ,@variable-tuple))))
+     `(org-level-7 ((t (,@headline ,@variable-tuple))))
+     `(org-level-6 ((t (,@headline ,@variable-tuple))))
+     `(org-level-5 ((t (,@headline ,@variable-tuple))))
+     `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
+     `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
+     `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
+     `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
+     `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
 
-(setq org-hide-emphasis-markers t)
+  (setq org-hide-emphasis-markers t)
 
-(eval-after-load 'org-indent '(diminish 'org-indent-mode))
+  ;; Unbind RET for going to links
+  ;; (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil)
+  (setq org-return-follows-link t)
 
-(electric-indent-mode -1)
-(setq org-edit-src-content-indentation 0)
+  ;; Opens file links in the same window
+  (add-to-list 'org-link-frame-setup '(file . find-file))
 
-(add-hook 'org-mode-hook 'org-indent-mode)
+  (eval-after-load 'org-indent '(diminish 'org-indent-mode))
 
-(require 'org-tempo)
+  (electric-indent-mode -1)
+  (setq org-edit-src-content-indentation 0)
+
+  (add-hook 'org-mode-hook 'org-indent-mode)
+
+  (require 'org-tempo)
 #+end_src
 ** org roam
 #+begin_src emacs-lisp
+(use-package org-roam
+  :config
+  (org-roam-db-autosync-mode 1))
 (setq org-roam-directory (concat org-directory "/roam/"))
 (add-to-list 'display-buffer-alist
              '("\\*org-roam\\*"
@@ -580,13 +660,16 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity}:\n")
                                     :unnarrowed t)
+                                   ("e" "Comptia Exam note" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:CyberSecurity:sec+:\n")
+                                    :unnarrowed t)
                                    ("r" "ref" plain "%?" :target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n")
                                     :unarrowed t)
                                    ("n" "ref + noter" plain "%?":target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
                                     :unarrowed t)
-                                    ))
+                                   ))
 #+end_src
 ** Evil org
 #+begin_src emacs-lisp
@@ -638,7 +721,9 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 #+begin_src emacs-lisp
 (use-package rust-mode
   :config
-  (setq rust-format-on-save t))
+  (setq rust-format-on-save t
+	rust-rustfmt-bin "/Users/italo/.cargo/bin/rustfmt"
+	rust-cargo-bin "/Users/italo/.cargo/bin/cargo"))
 
 (add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
 #+end_src
@@ -657,6 +742,9 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
 
 (use-package tree-sitter-langs)
+
+(elpaca (ts-fold :type git :host github :repo "emacs-tree-sitter/ts-fold"))
+(elpaca nil (global-ts-fold-mode 1))
 #+end_src
 ** TODO Python [0/1]
 #+begin_src emacs-lisp
@@ -681,9 +769,13 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 | python.venvPath                        | via | lsp-pyright-venv-path                  |
 |----------------------------------------+-----+----------------------------------------|
 
-** TODO C
-* Task list [0/1]
+** TODO html
+#+begin_src emacs-lisp
+(use-package emmet-mode)
+#+end_src
+* Task list [0/2]
 ** TODO pdf view
 #+begin_src emacs-lisp
 
 #+end_src
+** TODO Swiper
