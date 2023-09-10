@@ -1,1 +1,1 @@
-("~/Personal/Programing/Repos/github.com/italoaa/seguro/" "~/Doters/")
+("~/Personal/Programing/learning/Rust/leetcode/aternating_strings/" "~/Library/CloudStorage/Dropbox/Bak/Org/roam/" "~/Personal/Programing/Repos/github.com/italoaa/seguro/" "~/Doters/" "~/.config/emacs/")
