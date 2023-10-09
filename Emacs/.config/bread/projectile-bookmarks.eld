@@ -1,1 +1,1 @@
-("~/Personal/Programing/learning/Rust/leetcode/aternating_strings/" "~/Library/CloudStorage/Dropbox/Bak/Org/roam/" "~/Personal/Programing/Repos/github.com/italoaa/seguro/" "~/Doters/" "~/.config/emacs/")
+("~/Doters/" "~/Personal/Dropbox/Bak/Org/roam/" "~/Doters/Emacs/.config/bread/elpaca/repos/dap-mode/" "~/Personal/My Stuff/Education/y2/UI/01/" "~/Doters/Emacs/.config/bread/elpaca/repos/yasnippet-snippets/" "/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/" "~/.config/emacs/")
