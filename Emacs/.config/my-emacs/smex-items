@@ -2,12 +2,12 @@
 ;; ----- smex-history -----
 (
  switch-window
- evil-delete-buffer
  describe-key
  evil-leader/set-key
  describe-variable
  evil-mode
  customize-themes
+ org-mode
 )
 
 ;; ----- smex-data -----

@@ -12,6 +12,7 @@ This is the step where we set up the environment for our bread. We are going to 
 ** Elpaca
 #+begin_src emacs-lisp
 (require 'elpaca-setup)
+(require 'floatbuf)
 #+end_src
 ** Backups
 #+begin_src emacs-lisp
@@ -135,7 +136,11 @@ This is the step where we set up the environment for our bread. We are going to 
 #+begin_src emacs-lisp
 (use-package projectile
   :config
+    (setq projectile-completion-system 'ivy)
   (projectile-mode 1))
+
+(use-package ag)
+(use-package rg)
 #+end_src
 *** Dired
 #+begin_src emacs-lisp
@@ -172,6 +177,23 @@ This is the step where we set up the environment for our bread. We are going to 
   :config
   (global-hl-todo-mode))
 
+#+end_src
+*** Vterm
+#+begin_src emacs-lisp
+(use-package vterm
+  :init
+  (setq vterm-shell "/usr/local/bin/fish"))
+
+#+end_src
+*** Exec path
+#+begin_src emacs-lisp
+(use-package exec-path-from-shell
+ :custom
+ (shell-file-name "/usr/local/bin/fish" "This is necessary because some Emacs install overwrite this variable")
+ (exec-path-from-shell-variables '("PATH" "MANPATH" "PKG_CONFIG_PATH") "This adds PKG_CONFIG_PATH to the list of variables to grab. I prefer to set the list explicitly so I know exactly what is getting pulled in.")
+ :init
+ (if (string-equal system-type "darwin")
+    (exec-path-from-shell-initialize)))
 #+end_src
 ** Visual
 *** Dashboard
@@ -268,21 +290,40 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   :config
   (general-evil-setup)
 
-  ;; set up 'SPC' as the global leader key
+  ;; THis is to go up and down in wrapped lines
+  (evil-global-set-key 'motion "j" 'evil-next-visual-line)
+  (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
+
+  ;; set up 'RET' as a secondary menu
+  (general-create-definer flour/ret-keys
+    :states '(normal)
+    :keymaps 'override
+    :prefix "RET"
+    :global-prefix "C-RET")
+
+  (flour/ret-keys
+    "l" '(org-latex-preview :wk "preview latex fragments")
+    "RET" '(flyspell-auto-correct-word :wk "flyspell Correct word")
+    "o" '(org-open-at-point :wk "org open at point")
+    "i" '(org-toggle-inline-images :wk "Show inline images")
+    "x" '(org-babel-execute-src-block :wk "Execute a src code block")
+    )
+
   (general-create-definer flour/leader-keys
     :states '(normal insert visual emacs)
     :keymaps 'override
     :prefix "SPC" ;; set leader
-    :global-prefix "M-SPC") ;; access leader in insert mode
+    :global-prefix "C-SPC") ;; access leader in insert mode
 
   (flour/leader-keys
-    "SPC" '(counsel-M-x :wk "Counsel M-x")
+    "SPC" '(find-file :wk "Projectile find file")
     "." '(find-file :wk "Find file")
     "f c" '((lambda () (interactive) (find-file "~/.config/emacs/config.org")) :wk "Edit emacs config")
     "f r" '(counsel-recentf :wk "Find recent files")
     "j" '(next-buffer :wk "next buffer")
     "k" '(previous-buffer :wk "next buffer")
     "TAB TAB" '(comment-line :wk "Comment lines"))
+
 
   (flour/leader-keys
     "b" '(:ignore t :wk "Bookmarks/Buffers")
@@ -319,7 +360,7 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "e r" '(eval-region :wk "Evaluate elisp in region")
     "e s" '(eshell :which-key "Eshell"))
 
- (flour/leader-keys
+  (flour/leader-keys
     "h" '(:ignore t :wk "Help")
     "h a" '(counsel-apropos :wk "Apropos")
     "h b" '(describe-bindings :wk "Describe bindings")
@@ -380,16 +421,21 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "t l" '(display-line-numbers-mode :wk "Toggle line numbers")
     "t r" '(rainbow-mode :wk "Toggle rainbow mode")
     "t t" '(visual-line-mode :wk "Toggle truncated lines")
-    "t v" '(vterm-toggle :wk "Toggle vterm")
     "t i" '(org-toggle-inline-images :wk "toggle inline images"))
 
   (flour/leader-keys
-   "f" '(:ignore t :wk "File")
-   "f s" #'save-buffer)
+    "f" '(:ignore t :wk "File")
+    "f s" #'save-buffer)
 
   (flour/leader-keys
     "n" '(:ignore t :wk "Roam notes")
     "n i" '(org-roam-node-insert :wk "Insert node at point")
+    "n u" '(org-roam-ui-open :wk "Insert node at point")
+    "n p" '(org-download-clipboard :wk "Paste Image from clipboard")
+    "n a" '(org-roam-alias-add :wk "Add an alias")
+    "n t" '(org-roam-tag-add :wk "Add a tag")
+    "n T" '(org-roam-tag-remove :wk "Remove a tag")
+    "n A" '(org-roam-alias-remove :wk "Remove an alias")
     "n f" '(org-roam-node-find :wk "Find node"))
 
   (flour/leader-keys
@@ -415,11 +461,11 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "g" '(:ignore t :wk "Git")
     "g g" '(magit :wk "Magit"))
 
-;;   (general-define-key
-;;    :state '(normal vis)
-;;    "u" '(nil)
-;;    "C-r" 'undo-tree-redo)
-)
+  ;;   (general-define-key
+  ;;    :state '(normal vis)
+  ;;    "u" '(nil)
+  ;;    "C-r" 'undo-tree-redo)
+  )
 
 ;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
 #+end_src
@@ -461,6 +507,7 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   :diminish
   :custom
   (setq ivy-use-virtual-buffers t)
+  (setq ivy-use-selectable-prompt t)
   (setq ivy-count-format "(%d/%d) ")
   (setq enable-recursive-minibuffers t)
   :config
@@ -468,6 +515,8 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   (ivy-mode))
 
 (elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
+(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+
 
 (use-package all-the-icons-ivy-rich
   :demand t
@@ -509,9 +558,16 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 #+begin_src emacs-lisp
 (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 #+end_src
-**** TODO dap-mode
+**** dap-mode
 #+begin_src emacs-lisp
-
+(use-package dap-mode
+  :after lsp-mode
+  :commands dap-debug
+  :hook ((python-mode . dap-ui-mode)
+	 (python-mode . dap-mode))
+  :config
+  (require 'dap-python)
+  (setq dap-python-debugger 'debugpy))
 #+end_src
 *** ya-snippets
 #+begin_src emacs-lisp
@@ -546,6 +602,9 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 
 (setq display-line-numbers-type 'relative)
 (setq scroll-margin 8)
+(setq indent-tabs-mode nil)
+(setq tab-width 4)
+
 
 ;; I prefer cmd key for meta
 (setq mac-option-key-is-meta nil
@@ -596,46 +655,50 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 * Org mode
 ** Variables
 #+begin_src emacs-lisp
-  (let* ((variable-tuple
-	  (cond
-	   ((x-list-fonts "Monaco")         '(:font "Monaco"))
-	   ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
-	   ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
-	   ((x-list-fonts "Verdana")         '(:font "Verdana"))
-	   ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
-	   (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
-	 (base-font-color     (face-foreground 'default nil 'default))
-	 (headline           `(:inherit default :weight bold)))
+(let* ((variable-tuple
+	(cond
+	 ((x-list-fonts "Monaco")         '(:font "Monaco"))
+	 ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
+	 ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
+	 ((x-list-fonts "Verdana")         '(:font "Verdana"))
+	 ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
+	 (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
+       (base-font-color     (face-foreground 'default nil 'default))
+       (headline           `(:inherit default :weight bold)))
 
-    (custom-theme-set-faces
-     'user
-     `(org-level-8 ((t (,@headline ,@variable-tuple))))
-     `(org-level-7 ((t (,@headline ,@variable-tuple))))
-     `(org-level-6 ((t (,@headline ,@variable-tuple))))
-     `(org-level-5 ((t (,@headline ,@variable-tuple))))
-     `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
-     `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
-     `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
-     `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
-     `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
+  (custom-theme-set-faces
+   'user
+   `(org-level-8 ((t (,@headline ,@variable-tuple))))
+   `(org-level-7 ((t (,@headline ,@variable-tuple))))
+   `(org-level-6 ((t (,@headline ,@variable-tuple))))
+   `(org-level-5 ((t (,@headline ,@variable-tuple))))
+   `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
+   `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
+   `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
+   `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
+   `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
 
-  (setq org-hide-emphasis-markers t)
+(setq org-hide-emphasis-markers t)
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 
-  ;; Unbind RET for going to links
-  ;; (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil)
-  (setq org-return-follows-link t)
+;; Unbind RET for going to links
+(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
+(elpaca nil (setq org-return-follows-link t
+		  org-image-actual-width nil))
 
-  ;; Opens file links in the same window
-  (add-to-list 'org-link-frame-setup '(file . find-file))
+;; Opens file links in the same window
+(add-to-list 'org-link-frame-setup '(file . find-file))
 
-  (eval-after-load 'org-indent '(diminish 'org-indent-mode))
+(eval-after-load 'org-indent '(diminish 'org-indent-mode))
+(add-hook 'org-mode-hook 'turn-on-flyspell)
+(electric-indent-mode -1)
+(setq org-edit-src-content-indentation 0)
 
-  (electric-indent-mode -1)
-  (setq org-edit-src-content-indentation 0)
+(elpaca nil (setq org-return-follows-link  t))
 
-  (add-hook 'org-mode-hook 'org-indent-mode)
+(add-hook 'org-mode-hook 'org-indent-mode)
 
-  (require 'org-tempo)
+(require 'org-tempo)
 #+end_src
 ** org roam
 #+begin_src emacs-lisp
@@ -650,18 +713,20 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
                (window-width . 0.33)
                (window-height . fit-window-to-buffer)))
 
+;; Searching for nodes now includes a tag
+(setq org-roam-node-display-template
+      (concat "${title:*} "
+              (propertize "${tags:100}" 'face 'org-tag)))
+
 (setq org-roam-capture-templates '(
                                    ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming|Misc|}:\n")
                                     :unnarrowed t)
                                    ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ComputerProcessors|DataBases|DiscreteMaths|}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|SoftwareEngPrinciples|OperatingSystems|Algorithms|UserInterfaces|NumericalComputation|}:\n")
                                     :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity}:\n")
-                                    :unnarrowed t)
-                                   ("e" "Comptia Exam note" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:CyberSecurity:sec+:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
                                     :unnarrowed t)
                                    ("r" "ref" plain "%?" :target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n")
@@ -670,6 +735,16 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
                                     :unarrowed t)
                                    ))
+#+end_src
+** org Roam UI
+#+begin_src emacs-lisp
+(use-package org-roam-ui
+  :after org-roam
+  :config
+  (setq org-roam-ui-sync-theme t
+        org-roam-ui-follow t
+        org-roam-ui-update-on-save t
+        org-roam-ui-open-on-start t))
 #+end_src
 ** Evil org
 #+begin_src emacs-lisp
@@ -716,7 +791,15 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
     (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
 #+end_src
-* Languages [0/2]
+** org Babel
+#+begin_src emacs-lisp
+(org-babel-do-load-languages
+	     'org-babel-load-languages
+	     '((python . t) (emacs-lisp . t) (C . t)))
+
+(setq org-confirm-babel-evaluate nil)
+#+end_src
+* Languages 
 ** Rust [0/3]
 #+begin_src emacs-lisp
 (use-package rust-mode
@@ -746,30 +829,38 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 (elpaca (ts-fold :type git :host github :repo "emacs-tree-sitter/ts-fold"))
 (elpaca nil (global-ts-fold-mode 1))
 #+end_src
-** TODO Python [0/1]
+** C++
+#+begin_src emacs-lisp
+;;(use-package ccls
+;;  :hook ((c-mode c++-mode) . (lambda () (require 'ccls) (lsp))))
+#+end_src
+** Python
 #+begin_src emacs-lisp
 (use-package lsp-pyright
   :demand t
   :hook (python-mode . (lambda ()
                           (require 'lsp-pyright)
-                          (lsp))))  ; or lsp-deferred
-#+end_src
-*** TODO Config
-|----------------------------------------+-----+----------------------------------------|
-| pyright.disableLanguageServices        | via | lsp-pyright-disable-language-services  |
-| pyright.disableOrganizeImports         | via | lsp-pyright-disable-organize-imports   |
-| python.analysis.autoImportCompletions  | via | lsp-pyright-auto-import-completions    |
-| python.analysis.useLibraryCodeForTypes | via | lsp-pyright-use-library-code-for-types |
-| python.analysis.typeshedPaths          | via | lsp-pyright-typeshed-paths             |
-| python.analysis.diagnosticMode         | via | lsp-pyright-diagnostic-mode            |
-| python.analysis.typeCheckingMode       | via | lsp-pyright-typechecking-mode          |
-| python.analysis.logLevel               | via | lsp-pyright-log-level                  |
-| python.analysis.autoSearchPaths        | via | lsp-pyright-auto-search-paths          |
-| python.analysis.extraPaths             | via | lsp-pyright-extra-paths                |
-| python.venvPath                        | via | lsp-pyright-venv-path                  |
-|----------------------------------------+-----+----------------------------------------|
+                          (lsp))) ; or lsp-deferred
+  :config
+  (setq python-indent 4)) 
 
-** TODO html
+(use-package python-black
+  :demand t
+  :after python
+  :hook (python-mode . python-black-on-save-mode)
+  :config
+  (setq python-black-command "/usr/local/anaconda3/bin/black"
+	python-black-on-save-mode t))
+
+#+end_src
+*** Config
+#+begin_src emacs-lisp
+(setq python-shell-interpreter "/usr/local/anaconda3/bin/python3"
+      org-babel-python-command "/usr/local/anaconda3/bin/python3"
+      lsp-pyright-venv-path "/usr/local/anaconda3")
+#+end_src
+
+** html
 #+begin_src emacs-lisp
 (use-package emmet-mode)
 #+end_src

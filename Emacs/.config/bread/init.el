@@ -33,7 +33,9 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("ae426fc51c58ade49774264c17e666ea7f681d8cae62570630539be3d06fd964" default))
- '(inhibit-startup-screen t))
+ '(inhibit-startup-screen t)
+ '(org-agenda-files
+   '("/Users/italo/Personal/Dropbox/Bak/Org/roam/20231008152721-floating_point_number_systems.org")))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

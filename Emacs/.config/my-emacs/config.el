@@ -70,8 +70,13 @@
 (use-package evil-leader
   :ensure t
   :config
-  (evil-leader/set-leader " ")
   (global-evil-leader-mode))
+
+(use-package evil-collection
+  :after evil
+  :ensure t
+  :config
+  (evil-collecton-init))
 
 (use-package evil
   :ensure t
@@ -181,4 +186,5 @@
                          (require 'lsp-pyright)
                          (lsp))))
 
-
+(define-key evil-normal-state-map (kbd "SPC b k") 'evil-delete-buffer)
+(define-key evil-normal-state-map (kbd "SPC b k") 'evil-delete-buffer)

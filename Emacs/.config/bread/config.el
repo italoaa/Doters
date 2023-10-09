@@ -1,6 +1,7 @@
 (add-to-list 'load-path (concat user-emacs-directory "modules/"))
 
 (require 'elpaca-setup)
+(require 'floatbuf)
 
 (setq backup-by-copying t ; don't clobber symlinks
       backup-directory-alist '(("." . "~/.saves")) ; don't litter my fs tree
@@ -105,7 +106,11 @@
 
 (use-package projectile
   :config
+    (setq projectile-completion-system 'ivy)
   (projectile-mode 1))
+
+(use-package ag)
+(use-package rg)
 
 (use-package dired-open
   :config
@@ -133,6 +138,18 @@
 (use-package hl-todo
   :config
   (global-hl-todo-mode))
+
+(use-package vterm
+  :init
+  (setq vterm-shell "/usr/local/bin/fish"))
+
+(use-package exec-path-from-shell
+ :custom
+ (shell-file-name "/usr/local/bin/fish" "This is necessary because some Emacs install overwrite this variable")
+ (exec-path-from-shell-variables '("PATH" "MANPATH" "PKG_CONFIG_PATH") "This adds PKG_CONFIG_PATH to the list of variables to grab. I prefer to set the list explicitly so I know exactly what is getting pulled in.")
+ :init
+ (if (string-equal system-type "darwin")
+    (exec-path-from-shell-initialize)))
 
 (use-package dashboard
   :demand t
@@ -211,21 +228,40 @@
   :config
   (general-evil-setup)
 
-  ;; set up 'SPC' as the global leader key
+  ;; THis is to go up and down in wrapped lines
+  (evil-global-set-key 'motion "j" 'evil-next-visual-line)
+  (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
+
+  ;; set up 'RET' as a secondary menu
+  (general-create-definer flour/ret-keys
+    :states '(normal)
+    :keymaps 'override
+    :prefix "RET"
+    :global-prefix "C-RET")
+
+  (flour/ret-keys
+    "l" '(org-latex-preview :wk "preview latex fragments")
+    "RET" '(flyspell-auto-correct-word :wk "flyspell Correct word")
+    "o" '(org-open-at-point :wk "org open at point")
+    "i" '(org-toggle-inline-images :wk "Show inline images")
+    "x" '(org-babel-execute-src-block :wk "Execute a src code block")
+    )
+
   (general-create-definer flour/leader-keys
     :states '(normal insert visual emacs)
     :keymaps 'override
     :prefix "SPC" ;; set leader
-    :global-prefix "M-SPC") ;; access leader in insert mode
+    :global-prefix "C-SPC") ;; access leader in insert mode
 
   (flour/leader-keys
-    "SPC" '(counsel-M-x :wk "Counsel M-x")
+    "SPC" '(find-file :wk "Projectile find file")
     "." '(find-file :wk "Find file")
     "f c" '((lambda () (interactive) (find-file "~/.config/emacs/config.org")) :wk "Edit emacs config")
     "f r" '(counsel-recentf :wk "Find recent files")
     "j" '(next-buffer :wk "next buffer")
     "k" '(previous-buffer :wk "next buffer")
     "TAB TAB" '(comment-line :wk "Comment lines"))
+
 
   (flour/leader-keys
     "b" '(:ignore t :wk "Bookmarks/Buffers")
@@ -262,7 +298,7 @@
     "e r" '(eval-region :wk "Evaluate elisp in region")
     "e s" '(eshell :which-key "Eshell"))
 
- (flour/leader-keys
+  (flour/leader-keys
     "h" '(:ignore t :wk "Help")
     "h a" '(counsel-apropos :wk "Apropos")
     "h b" '(describe-bindings :wk "Describe bindings")
@@ -323,16 +359,21 @@
     "t l" '(display-line-numbers-mode :wk "Toggle line numbers")
     "t r" '(rainbow-mode :wk "Toggle rainbow mode")
     "t t" '(visual-line-mode :wk "Toggle truncated lines")
-    "t v" '(vterm-toggle :wk "Toggle vterm")
     "t i" '(org-toggle-inline-images :wk "toggle inline images"))
 
   (flour/leader-keys
-   "f" '(:ignore t :wk "File")
-   "f s" #'save-buffer)
+    "f" '(:ignore t :wk "File")
+    "f s" #'save-buffer)
 
   (flour/leader-keys
     "n" '(:ignore t :wk "Roam notes")
     "n i" '(org-roam-node-insert :wk "Insert node at point")
+    "n u" '(org-roam-ui-open :wk "Insert node at point")
+    "n p" '(org-download-clipboard :wk "Paste Image from clipboard")
+    "n a" '(org-roam-alias-add :wk "Add an alias")
+    "n t" '(org-roam-tag-add :wk "Add a tag")
+    "n T" '(org-roam-tag-remove :wk "Remove a tag")
+    "n A" '(org-roam-alias-remove :wk "Remove an alias")
     "n f" '(org-roam-node-find :wk "Find node"))
 
   (flour/leader-keys
@@ -358,11 +399,11 @@
     "g" '(:ignore t :wk "Git")
     "g g" '(magit :wk "Magit"))
 
-;;   (general-define-key
-;;    :state '(normal vis)
-;;    "u" '(nil)
-;;    "C-r" 'undo-tree-redo)
-)
+  ;;   (general-define-key
+  ;;    :state '(normal vis)
+  ;;    "u" '(nil)
+  ;;    "C-r" 'undo-tree-redo)
+  )
 
 ;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
 
@@ -399,6 +440,7 @@
   :diminish
   :custom
   (setq ivy-use-virtual-buffers t)
+  (setq ivy-use-selectable-prompt t)
   (setq ivy-count-format "(%d/%d) ")
   (setq enable-recursive-minibuffers t)
   :config
@@ -406,6 +448,8 @@
   (ivy-mode))
 
 (elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
+(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+
 
 (use-package all-the-icons-ivy-rich
   :demand t
@@ -440,7 +484,14 @@
 
 (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 
-
+(use-package dap-mode
+  :after lsp-mode
+  :commands dap-debug
+  :hook ((python-mode . dap-ui-mode)
+	 (python-mode . dap-mode))
+  :config
+  (require 'dap-python)
+  (setq dap-python-debugger 'debugpy))
 
 (use-package yasnippet
   :demand t
@@ -468,6 +519,9 @@
 
 (setq display-line-numbers-type 'relative)
 (setq scroll-margin 8)
+(setq indent-tabs-mode nil)
+(setq tab-width 4)
+
 
 ;; I prefer cmd key for meta
 (setq mac-option-key-is-meta nil
@@ -534,18 +588,22 @@
    `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
 
 (setq org-hide-emphasis-markers t)
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 
 ;; Unbind RET for going to links
-;; (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil)
-(setq org-return-follows-link t)
+(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
+(elpaca nil (setq org-return-follows-link t
+		  org-image-actual-width nil))
 
 ;; Opens file links in the same window
 (add-to-list 'org-link-frame-setup '(file . find-file))
 
 (eval-after-load 'org-indent '(diminish 'org-indent-mode))
-
+(add-hook 'org-mode-hook 'turn-on-flyspell)
 (electric-indent-mode -1)
 (setq org-edit-src-content-indentation 0)
+
+(elpaca nil (setq org-return-follows-link  t))
 
 (add-hook 'org-mode-hook 'org-indent-mode)
 
@@ -562,18 +620,20 @@
                (window-width . 0.33)
                (window-height . fit-window-to-buffer)))
 
+;; Searching for nodes now includes a tag
+(setq org-roam-node-display-template
+      (concat "${title:*} "
+              (propertize "${tags:100}" 'face 'org-tag)))
+
 (setq org-roam-capture-templates '(
                                    ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming|Misc|}:\n")
                                     :unnarrowed t)
                                    ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|ComputerProcessors|DataBases|DiscreteMaths|}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|SoftwareEngPrinciples|OperatingSystems|Algorithms|UserInterfaces|NumericalComputation|}:\n")
                                     :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity}:\n")
-                                    :unnarrowed t)
-                                   ("e" "Comptia Exam note" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:CyberSecurity:sec+:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
                                     :unnarrowed t)
                                    ("r" "ref" plain "%?" :target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n")
@@ -582,6 +642,14 @@
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
                                     :unarrowed t)
                                    ))
+
+(use-package org-roam-ui
+  :after org-roam
+  :config
+  (setq org-roam-ui-sync-theme t
+        org-roam-ui-follow t
+        org-roam-ui-update-on-save t
+        org-roam-ui-open-on-start t))
 
 (use-package evil-org
   :demand t
@@ -620,6 +688,12 @@
     (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
     (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
 
+(org-babel-do-load-languages
+	     'org-babel-load-languages
+	     '((python . t) (emacs-lisp . t) (C . t)))
+
+(setq org-confirm-babel-evaluate nil)
+
 (use-package rust-mode
   :config
   (setq rust-format-on-save t
@@ -639,11 +713,28 @@
 (elpaca (ts-fold :type git :host github :repo "emacs-tree-sitter/ts-fold"))
 (elpaca nil (global-ts-fold-mode 1))
 
+;;(use-package ccls
+;;  :hook ((c-mode c++-mode) . (lambda () (require 'ccls) (lsp))))
+
 (use-package lsp-pyright
   :demand t
   :hook (python-mode . (lambda ()
                           (require 'lsp-pyright)
-                          (lsp))))  ; or lsp-deferred
+                          (lsp))) ; or lsp-deferred
+  :config
+  (setq python-indent 4)) 
+
+(use-package python-black
+  :demand t
+  :after python
+  :hook (python-mode . python-black-on-save-mode)
+  :config
+  (setq python-black-command "/usr/local/anaconda3/bin/black"
+	python-black-on-save-mode t))
+
+(setq python-shell-interpreter "/usr/local/anaconda3/bin/python3"
+      org-babel-python-command "/usr/local/anaconda3/bin/python3"
+      lsp-pyright-venv-path "/usr/local/anaconda3")
 
 (use-package emmet-mode)
 

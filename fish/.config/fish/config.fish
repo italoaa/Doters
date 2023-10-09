@@ -15,11 +15,11 @@ alias sk 'skhd --restart-service'
 alias sp speedtest
 
 alias o. "open ."
-alias l "exa --group-directories-first"
-alias ls "exa --icons --group-directories-first --long --all"
-alias la "exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
-alias ll "exa --icons --group-directories-first --long --all --group --header"
-alias lg "exa --icons --group-directories-first --long --all --group --header --git"
+alias l "~/.cargo/bin/exa --group-directories-first"
+alias ls "~/.cargo/bin/exa --icons --group-directories-first --long --all"
+alias la "~/.cargo/bin/exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
+alias ll "~/.cargo/bin/exa --icons --group-directories-first --long --all --group --header"
+alias lg "~/.cargo/bin/exa --icons --group-directories-first --long --all --group --header --git"
 alias cl clear
 
 # PATH #
