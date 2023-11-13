@@ -13,6 +13,8 @@ hyper - t : /Users/italo/.config/yabai/toggle-bar.sh
 # hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
 hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e 'btm'
 hyper - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ncmpcpp'
+hyper - p : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ptpython'
+
 # This is one of my favourites
 hyper - c : /Users/italo/.config/Bin/fun/classic-radio.sh
 

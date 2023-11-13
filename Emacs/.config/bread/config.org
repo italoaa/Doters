@@ -1,6 +1,6 @@
 #+title: The Bread Recipe
 #+AUTHOR: Italo Amaya
-#+Description: This is my personal emacs config. I have called it bread :) it used DT's config to start out and make my own. url: https://gitlab.com/dwt1/configuring-emacs/
+#+Description: This is my personal emacs config. I have called it bread :) it used DT's configuration to start out and make my own. url: https://gitlab.com/dwt1/configuring-emacs/
 
 
 * Setup
@@ -12,7 +12,10 @@ This is the step where we set up the environment for our bread. We are going to 
 ** Elpaca
 #+begin_src emacs-lisp
 (require 'elpaca-setup)
-(require 'floatbuf)
+#+end_src
+** Secret
+#+begin_src emacs-lisp
+(require 'secret)
 #+end_src
 ** Backups
 #+begin_src emacs-lisp
@@ -45,6 +48,14 @@ This is the step where we set up the environment for our bread. We are going to 
   :after evil
   :config
   (evil-collection-init))
+#+end_src
+*** Perspective mode
+#+begin_src emacs-lisp
+(use-package perspective
+  :custom
+  (persp-suppress-no-prefix-key-warning t)
+  :init
+  (persp-mode))
 #+end_src
 *** Doom-themes
 #+begin_src emacs-lisp
@@ -195,6 +206,10 @@ This is the step where we set up the environment for our bread. We are going to 
  (if (string-equal system-type "darwin")
     (exec-path-from-shell-initialize)))
 #+end_src
+*** tramp
+#+begin_src emacs-lisp
+(setq tramp-default-method "ssh")
+#+end_src
 ** Visual
 *** Dashboard
 #+begin_src emacs-lisp
@@ -282,9 +297,34 @@ This is the step where we set up the environment for our bread. We are going to 
         which-key-allow-imprecise-window-fit nil
         which-key-separator " → " ))
 #+end_src
+*** Popper mode
+#+begin_src emacs-lisp
+(use-package popper
+  :ensure t ; or :straight t
+  :init
+  (setq popper-reference-buffers
+	'("\\*Messages\\*"
+	  "Output\\*$"
+	  "\\*Async Shell Command\\*"
+	  help-mode
+	  compilation-mode))
+  ;; Match eshell, shell, term and/or vterm buffers
+  (setq popper-reference-buffers
+	(append popper-reference-buffers
+		'("^\\*eshell.*\\*$" eshell-mode ;eshell as a popup
+		  "^\\*shell.*\\*$"  shell-mode  ;shell as a popup
+		  "^\\*term.*\\*$"   term-mode   ;term as a popup
+		  "^\\*vterm.*\\*$"  vterm-mode  ;vterm as a popup
+		  )))
+  
+  (setq popper-group-function #'popper-group-by-projectile) ; projectile projects
+  (setq popper-display-control t)  ;This is the DEFAULT behavior
+  (popper-mode +1)
+  (popper-echo-mode +1))                ; For echo area hints
+#+end_src
 ** General (keybindings)
 The keybindings of emacs is like the flour of the bread. Because I come from doom emacs these follow the keybindings from DT's configuration who is also a doom emacs user! [[https://gitlab.com/dwt1/configuring-emacs/-/blob/main/06-cleaning-up-the-config/config.org?ref_type=heads#evil][Original config]].
-
+ 
 #+begin_src emacs-lisp
 (use-package general
   :config
@@ -293,6 +333,8 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   ;; THis is to go up and down in wrapped lines
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
   (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
+  (evil-global-set-key 'normal (kbd "C-t") 'popper-toggle)
+  (evil-global-set-key 'normal (kbd "C-TAB") 'popper-cycle)
 
   ;; set up 'RET' as a secondary menu
   (general-create-definer flour/ret-keys
@@ -303,8 +345,8 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 
   (flour/ret-keys
     "l" '(org-latex-preview :wk "preview latex fragments")
-    "RET" '(flyspell-auto-correct-word :wk "flyspell Correct word")
-    "o" '(org-open-at-point :wk "org open at point")
+    "s" '(flyspell-auto-correct-word :wk "flyspell Correct word")
+    "RET" '(org-open-at-point :wk "org open at point")
     "i" '(org-toggle-inline-images :wk "Show inline images")
     "x" '(org-babel-execute-src-block :wk "Execute a src code block")
     )
@@ -313,17 +355,24 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     :states '(normal insert visual emacs)
     :keymaps 'override
     :prefix "SPC" ;; set leader
-    :global-prefix "C-SPC") ;; access leader in insert mode
+    :global-prefix "∫") ;; access leader in insert mode
 
   (flour/leader-keys
     "SPC" '(find-file :wk "Projectile find file")
+    "RET" '(evil-ret :wk "Evil ret")
     "." '(find-file :wk "Find file")
     "f c" '((lambda () (interactive) (find-file "~/.config/emacs/config.org")) :wk "Edit emacs config")
     "f r" '(counsel-recentf :wk "Find recent files")
     "j" '(next-buffer :wk "next buffer")
     "k" '(previous-buffer :wk "next buffer")
-    "TAB TAB" '(comment-line :wk "Comment lines"))
+    "/" '(comment-line :wk "Comment lines"))
 
+  (flour/leader-keys
+    "TAB" '(:ignore t :wk "Perspectives")
+    "TAB b" '(persp-ivy-switch-buffer :wk "Switch buffer")
+    "TAB l" '(persp-switch :wk "Switch Perspective")
+    "TAB k" '(persp-switch :wk "Kill Perspective")
+    )
 
   (flour/leader-keys
     "b" '(:ignore t :wk "Bookmarks/Buffers")
@@ -436,7 +485,18 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
     "n t" '(org-roam-tag-add :wk "Add a tag")
     "n T" '(org-roam-tag-remove :wk "Remove a tag")
     "n A" '(org-roam-alias-remove :wk "Remove an alias")
+    "n s" '(org-narrow-to-subtree :wk "Narrow focus to subtree")
+    "n w" '(widen :wk "Widen focus")
     "n f" '(org-roam-node-find :wk "Find node"))
+
+  (flour/leader-keys
+    "l" '(:ignore t :wk "Windows")
+    ;; Window splits
+    "l r" '(lsp-rename :wk "Lsp Rename")
+    "l R" '(lsp-find-references :wk "Lsp Find references")
+    "l d" '(lsp-find-definition :wk "Lsp Find definitioin")
+    "l D" '(lsp-find-declaration :wk "Lsp Find declaration")
+    )
 
   (flour/leader-keys
     "w" '(:ignore t :wk "Windows")
@@ -469,6 +529,9 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 
 ;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
 #+end_src
+
+#+RESULTS:
+
 ** Completion and lsp
 *** Company
 #+begin_src emacs-lisp
@@ -529,10 +592,10 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   :custom
   (ivy-virtual-abbreviate 'full
    ivy-rich-switch-buffer-align-virtual-buffer t
-   ivy-rich-path-style 'abbrev)
-  :config
-  (ivy-set-display-transformer 'ivy-switch-buffer
-                               'ivy-rich-switch-buffer-transformer))
+   ivy-rich-path-style 'abbrev))
+  ;; :config
+  ;; (ivy-set-display-transformer 'ivy-switch-buffer
+  ;;                              'ivy-rich-switch-buffer-transformer))
 
 #+end_src
 *** Ivy-precient
@@ -587,6 +650,20 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   :defer t
   :diminish
   :init (global-flycheck-mode))
+#+end_src
+*** AI
+#+begin_src emacs-lisp
+(use-package org-ai
+  :ensure t
+  :commands (org-ai-mode
+             org-ai-global-mode)
+  :init
+  (add-hook 'org-mode-hook #'org-ai-mode) ; enable org-ai in org-mode
+  (org-ai-global-mode) ; installs global keybindings on C-c M-a
+  :config
+  (setq org-ai-default-chat-model "gpt-3.5") ; if you are on the gpt-4 beta:
+  (org-ai-install-yasnippets)) ; if you are using yasnippet and want `ai` snippets
+
 #+end_src
 * Emacs
 #+begin_src emacs-lisp
@@ -679,8 +756,6 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
    `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
 
 (setq org-hide-emphasis-markers t)
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
-
 ;; Unbind RET for going to links
 (elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
 (elpaca nil (setq org-return-follows-link t
@@ -693,12 +768,22 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 (add-hook 'org-mode-hook 'turn-on-flyspell)
 (electric-indent-mode -1)
 (setq org-edit-src-content-indentation 0)
+(setq org-clock-sound (concat user-emacs-directory "bell.wav"))
 
 (elpaca nil (setq org-return-follows-link  t))
 
 (add-hook 'org-mode-hook 'org-indent-mode)
 
 (require 'org-tempo)
+#+end_src
+** org latex
+#+begin_src emacs-lisp
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
+(setq org-latex-pdf-process
+    '("pdflatex -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -interaction nonstopmode -output-directory %o %f"))
+(setq org-latex-with-hyperref nil) ;; stop org adding hypersetup{author..} to latex export
 #+end_src
 ** org roam
 #+begin_src emacs-lisp
@@ -720,10 +805,10 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 
 (setq org-roam-capture-templates '(
                                    ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming|Misc|}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
                                     :unnarrowed t)
-                                   ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|SoftwareEngPrinciples|OperatingSystems|Algorithms|UserInterfaces|NumericalComputation|}:\n")
+                                   ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" 
+				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|SoftwareEngPrinciples|OperatingSystems|Algorithms|UserInterfaces|NumericalComputation|}:\n")
                                     :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
@@ -831,6 +916,9 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
 #+end_src
 ** C++
 #+begin_src emacs-lisp
+(add-hook 'c-mode-hook 'lsp)
+(add-hook 'c++-mode-hook 'lsp)
+
 ;;(use-package ccls
 ;;  :hook ((c-mode c++-mode) . (lambda () (require 'ccls) (lsp))))
 #+end_src

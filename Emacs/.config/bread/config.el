@@ -1,7 +1,6 @@
 (add-to-list 'load-path (concat user-emacs-directory "modules/"))
 
 (require 'elpaca-setup)
-(require 'floatbuf)
 
 (setq backup-by-copying t ; don't clobber symlinks
       backup-directory-alist '(("." . "~/.saves")) ; don't litter my fs tree
@@ -27,6 +26,12 @@
   :after evil
   :config
   (evil-collection-init))
+
+(use-package perspective
+  :custom
+  (persp-suppress-no-prefix-key-warning t)
+  :init
+  (persp-mode))
 
 (use-package doom-themes
   :demand t
@@ -151,6 +156,8 @@
  (if (string-equal system-type "darwin")
     (exec-path-from-shell-initialize)))
 
+(setq tramp-default-method "ssh")
+
 (use-package dashboard
   :demand t
   :init
@@ -231,6 +238,11 @@
   ;; THis is to go up and down in wrapped lines
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
   (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
+  ;; Dont know how to get tab to indent
+  ;; (general-define-key
+  ;;  :states 'insert
+  ;;  :keymaps 'org-mode-map
+  ;;  "TAB" 'indent-for-tab-command)
 
   ;; set up 'RET' as a secondary menu
   (general-create-definer flour/ret-keys
@@ -241,8 +253,8 @@
 
   (flour/ret-keys
     "l" '(org-latex-preview :wk "preview latex fragments")
-    "RET" '(flyspell-auto-correct-word :wk "flyspell Correct word")
-    "o" '(org-open-at-point :wk "org open at point")
+    "s" '(flyspell-auto-correct-word :wk "flyspell Correct word")
+    "RET" '(org-open-at-point :wk "org open at point")
     "i" '(org-toggle-inline-images :wk "Show inline images")
     "x" '(org-babel-execute-src-block :wk "Execute a src code block")
     )
@@ -251,17 +263,24 @@
     :states '(normal insert visual emacs)
     :keymaps 'override
     :prefix "SPC" ;; set leader
-    :global-prefix "C-SPC") ;; access leader in insert mode
+    :global-prefix "∫") ;; access leader in insert mode
 
   (flour/leader-keys
     "SPC" '(find-file :wk "Projectile find file")
+    "RET" '(evil-ret :wk "Evil ret")
     "." '(find-file :wk "Find file")
     "f c" '((lambda () (interactive) (find-file "~/.config/emacs/config.org")) :wk "Edit emacs config")
     "f r" '(counsel-recentf :wk "Find recent files")
     "j" '(next-buffer :wk "next buffer")
     "k" '(previous-buffer :wk "next buffer")
-    "TAB TAB" '(comment-line :wk "Comment lines"))
+    "/" '(comment-line :wk "Comment lines"))
 
+  (flour/leader-keys
+    "TAB" '(:ignore t :wk "Perspectives")
+    "TAB b" '(persp-ivy-switch-buffer :wk "Switch buffer")
+    "TAB l" '(persp-switch :wk "Switch Perspective")
+    "TAB k" '(persp-switch :wk "Kill Perspective")
+    )
 
   (flour/leader-keys
     "b" '(:ignore t :wk "Bookmarks/Buffers")
@@ -374,7 +393,18 @@
     "n t" '(org-roam-tag-add :wk "Add a tag")
     "n T" '(org-roam-tag-remove :wk "Remove a tag")
     "n A" '(org-roam-alias-remove :wk "Remove an alias")
+    "n s" '(org-narrow-to-subtree :wk "Narrow focus to subtree")
+    "n w" '(widen :wk "Widen focus")
     "n f" '(org-roam-node-find :wk "Find node"))
+
+  (flour/leader-keys
+    "l" '(:ignore t :wk "Windows")
+    ;; Window splits
+    "l r" '(lsp-rename :wk "Lsp Rename")
+    "l R" '(lsp-find-references :wk "Lsp Find references")
+    "l d" '(lsp-find-definition :wk "Lsp Find definitioin")
+    "l D" '(lsp-find-declaration :wk "Lsp Find declaration")
+    )
 
   (flour/leader-keys
     "w" '(:ignore t :wk "Windows")
@@ -462,10 +492,10 @@
   :custom
   (ivy-virtual-abbreviate 'full
    ivy-rich-switch-buffer-align-virtual-buffer t
-   ivy-rich-path-style 'abbrev)
-  :config
-  (ivy-set-display-transformer 'ivy-switch-buffer
-                               'ivy-rich-switch-buffer-transformer))
+   ivy-rich-path-style 'abbrev))
+  ;; :config
+  ;; (ivy-set-display-transformer 'ivy-switch-buffer
+  ;;                              'ivy-rich-switch-buffer-transformer))
 
 (use-package ivy-prescient
   :config
@@ -588,8 +618,6 @@
    `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
 
 (setq org-hide-emphasis-markers t)
-(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
-
 ;; Unbind RET for going to links
 (elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
 (elpaca nil (setq org-return-follows-link t
@@ -602,12 +630,20 @@
 (add-hook 'org-mode-hook 'turn-on-flyspell)
 (electric-indent-mode -1)
 (setq org-edit-src-content-indentation 0)
+(setq org-clock-sound (concat user-emacs-directory "bell.wav"))
 
 (elpaca nil (setq org-return-follows-link  t))
 
 (add-hook 'org-mode-hook 'org-indent-mode)
 
 (require 'org-tempo)
+
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
+(setq org-latex-pdf-process
+    '("pdflatex -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -interaction nonstopmode -output-directory %o %f"))
+(setq org-latex-with-hyperref nil) ;; stop org adding hypersetup{author..} to latex export
 
 (use-package org-roam
   :config
@@ -627,10 +663,10 @@
 
 (setq org-roam-capture-templates '(
                                    ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming|Misc|}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
                                     :unnarrowed t)
-                                   ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|SoftwareEngPrinciples|OperatingSystems|Algorithms|UserInterfaces|NumericalComputation|}:\n")
+                                   ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" 
+				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|SoftwareEngPrinciples|OperatingSystems|Algorithms|UserInterfaces|NumericalComputation|}:\n")
                                     :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
@@ -712,6 +748,9 @@
 
 (elpaca (ts-fold :type git :host github :repo "emacs-tree-sitter/ts-fold"))
 (elpaca nil (global-ts-fold-mode 1))
+
+(add-hook 'c-mode-hook 'lsp)
+(add-hook 'c++-mode-hook 'lsp)
 
 ;;(use-package ccls
 ;;  :hook ((c-mode c++-mode) . (lambda () (require 'ccls) (lsp))))

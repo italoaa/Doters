@@ -429,8 +429,6 @@
 (setq org-directory "/Users/italo/Personal/Programing/Emacs/Org"
       org-ellipsis " ▾ "
       org-clock-sound (concat doom-private-dir "bell.wav")
-      org-agenda-files (directory-files-recursively (concat org-directory "/Agenda/") "org$")
-      +org-capture-todo-file (concat org-directory "/Agenda/todo.org")
       org-startup-with-inline-images t
       org-startup-folded nil
       org-clock-clocktable-default-properties '(:maxlevel 4)
