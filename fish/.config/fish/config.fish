@@ -15,6 +15,7 @@ alias sk 'skhd --restart-service'
 alias sp speedtest
 
 alias o. "open ."
+alias bp "ptpython"
 alias l "~/.cargo/bin/exa --group-directories-first"
 alias ls "~/.cargo/bin/exa --icons --group-directories-first --long --all"
 alias la "~/.cargo/bin/exa --icons --group-directories-first --long --all --group --header --binary --links --inode --blocks"
