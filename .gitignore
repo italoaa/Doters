@@ -28,6 +28,6 @@ elpa/
 *.pub
 urls
 elpaca/
-url/
+*/url/*.*
 undo/
 secret.el
