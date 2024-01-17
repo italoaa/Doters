@@ -12,7 +12,7 @@ hyper - t : /Users/italo/.config/yabai/toggle-bar.sh
 # hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
 # hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
 hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e 'btm'
-hyper - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ncmpcpp'
+hyper - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Music" -e 'ncmpcpp'
 hyper - p : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ptpython'
 
 # This is one of my favourites
