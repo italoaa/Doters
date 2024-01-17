@@ -741,6 +741,43 @@ tab-indent."
 #+begin_src emacs-lisp
 ;; (use-package jinx
 ;;  :hook (emacs-startup . global-jinx-mode))
+*** AI
+#+begin_src emacs-lisp
+(use-package org-ai
+  :ensure t
+  :commands (org-ai-mode
+             org-ai-global-mode)
+  :init
+  (add-hook 'org-mode-hook #'org-ai-mode) ; enable org-ai in org-mode
+  (org-ai-global-mode) ; installs global keybindings on C-c M-a
+  :config
+  (setq org-ai-default-chat-model "gpt-3.5") ; if you are on the gpt-4 beta:
+  (org-ai-install-yasnippets)) ; if you are using yasnippet and want `ai` snippets
+
+#+end_src
+* Emacs
+#+begin_src emacs-lisp
+;; Correct indentation ;)
+(add-hook 'rust-mode-hook
+          (lambda () (setq indent-tabs-mode nil)))
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+(global-display-line-numbers-mode 1)
+(global-visual-line-mode t)
+
+(setq display-line-numbers-type 'relative)
+(setq scroll-margin 8)
+(setq indent-tabs-mode nil)
+(setq tab-width 4)
+
+
+;; I prefer cmd key for meta
+(setq mac-option-key-is-meta nil
+      mac-command-key-is-meta t
+      mac-command-modifier 'meta
+      mac-option-modifier 'none)
 #+end_src
 *** AI
 #+begin_src emacs-lisp
@@ -843,7 +880,7 @@ Still does not work
   "Path the the directory of dropbox")
 
 (setq user-full-name "Italo Amaya Arlotti"
-      user-mail-address "italoamaya@me.com"
+      user-mail-address "italoamaya@icloud.com"
       org-directory (concat Dropbox-dir "/Bak/Org"))
 #+end_src
 ** Fonts
@@ -1037,7 +1074,6 @@ Still does not work
 (org-babel-do-load-languages
 	     'org-babel-load-languages
 	     '((shell . t) (python . t) (emacs-lisp . t) (C . t)))
-
 (setq org-confirm-babel-evaluate nil)
 #+end_src
 * Languages 
@@ -1113,3 +1149,4 @@ Still does not work
 #+begin_src emacs-lisp
 
 #+end_src
+** TODO Swiper
