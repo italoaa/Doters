@@ -3,8 +3,8 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/org/Agenda/index.org")
- (front-context-string . "** TODO How to s")
- (rear-context-string . "[Exam content]]\n")
- (position . 1214))
+ (filename . "~/Personal/Dropbox/Bak/Org/roam/20231020175953-sorting.org")
+ (front-context-string . "* Main\n\n\n* Refer")
+ (rear-context-string . "Sci:Algorithms:\n")
+ (position . 129))
 )

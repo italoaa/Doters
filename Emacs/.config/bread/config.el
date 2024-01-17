@@ -1,9 +1,6 @@
 (add-to-list 'load-path (concat user-emacs-directory "modules/"))
-(add-to-list 'load-path (concat user-emacs-directory "modules/mu4e/"))
 
 (require 'elpaca-setup)
-
-(require 'secret)
 
 (setq backup-by-copying t ; don't clobber symlinks
       backup-directory-alist '(("." . "~/.saves")) ; don't litter my fs tree
@@ -11,47 +8,6 @@
       kept-new-versions 6
       kept-old-versions 2
       version-control t)
-
-;; Correct indentation ;)
-(add-hook 'rust-mode-hook
-          (lambda () (setq indent-tabs-mode nil)))
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-
-(global-display-line-numbers-mode 1)
-(global-visual-line-mode t)
-
-(setq display-line-numbers-type 'relative)
-(setq scroll-margin 8)
-(setq indent-tabs-mode nil)
-(setq tab-width 4)
-
-
-;; I prefer cmd key for meta
-(setq mac-option-key-is-meta nil
-      mac-command-key-is-meta t
-      mac-command-modifier 'meta
-      mac-option-modifier 'none)
-
-
-
-(defun kill-all-except-dashboard-and-essential ()
-  "Kill all buffers except the dashboard, *scratch*, and *Messages*, prompting to save unsaved buffers with y or n."
-  (interactive)
-  (dolist (buffer (buffer-list))
-    (with-current-buffer buffer
-      ;; Check if the buffer is neither the dashboard, *scratch*, nor *Messages*.
-      (when (and (not (eq major-mode 'dashboard-mode))
-                 (not (equal (buffer-name) "*scratch*"))
-                 (not (equal (buffer-name) "*Messages*")))
-        ;; If the buffer is modified, prompt to save it using y-or-n-p.
-        (when (and (buffer-modified-p)
-                   (buffer-file-name))
-          (if (y-or-n-p (format "Save buffer %s before killing? (y/n) " (buffer-name)))
-              (save-buffer)
-            (set-buffer-modified-p nil)))
-        (kill-buffer buffer)))))
 
 ;; Expands to: (elpaca evil (use-package evil :demand t))
 (use-package evil
@@ -76,8 +32,6 @@
   (persp-suppress-no-prefix-key-warning t)
   :init
   (persp-mode))
-
-(use-package ef-themes)
 
 (use-package doom-themes
   :demand t
@@ -223,11 +177,6 @@
   :config
   (dashboard-setup-startup-hook))
 
-(defun transparency (value)
-  "Sets the transparency of the frame window. 0=transparent/100=opaque"
-  (interactive "nTransparency Value 0 - 100 opaque:")
-  (set-frame-parameter (selected-frame) 'alpha value))
-
 (use-package olivetti
   :after org
   :init
@@ -282,36 +231,6 @@
         which-key-allow-imprecise-window-fit nil
         which-key-separator " → " ))
 
-(use-package popper
-  :ensure t ; or :straight t
-  :init
-  (setq popper-reference-buffers
-	'("\\*Messages\\*"
-	  "Output\\*$"
-	  "\\*Async Shell Command\\*"
-	  help-mode
-	  compilation-mode))
-  ;; Match eshell, shell, term and/or vterm buffers
-  (setq popper-reference-buffers
-	(append popper-reference-buffers
-		'("^\\*eshell.*\\*$" eshell-mode ;eshell as a popup
-		  "^\\*shell.*\\*$"  shell-mode  ;shell as a popup
-		  "^\\*term.*\\*$"   term-mode   ;term as a popup
-		  "^\\*vterm.*\\*$"  vterm-mode  ;vterm as a popup
-		  )))
-  
-  (setq popper-group-function #'popper-group-by-projectile) ; projectile projects
-  (setq popper-display-control t)  ;This is the DEFAULT behavior
-  (popper-mode +1)
-  (popper-echo-mode +1)
-  :config
-  (add-to-list 'display-buffer-alist
-	       '("\\*Compilation\\*"
-		 (display-buffer-in-side-window)
-		 (side . right)
-		 (window-width . 80)))
-  )
-
 (use-package general
   :config
   (general-evil-setup)
@@ -319,30 +238,18 @@
   ;; THis is to go up and down in wrapped lines
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
   (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
-  (evil-global-set-key 'normal (kbd "C-t") 'popper-toggle)
-  (evil-global-set-key 'insert (kbd "C-t") 'popper-toggle)
-  (evil-global-set-key 'normal (kbd "C-<tab>") 'popper-cycle)
-
-  (defun rk/copilot-tab ()
-    "Tab command that will complet with copilot if a completion is
-available. Otherwise will try company, yasnippet or normal
-tab-indent."
-    (interactive)
-    (or (copilot-accept-completion)
-        (indent-for-tab-command)))
-
-  (evil-define-key 'insert copilot-mode-map (kbd "ç") 'copilot-accept-completion)
-  (evil-define-key 'insert copilot-mode-map (kbd "<tab>") #'rk/copilot-tab)
-
-  (general-def mu4e-headers-mode-map
-    "r" '(mu4e-view-mark-for-read :wk "Mark as read"))
+  ;; Dont know how to get tab to indent
+  ;; (general-define-key
+  ;;  :states 'insert
+  ;;  :keymaps 'org-mode-map
+  ;;  "TAB" 'indent-for-tab-command)
 
   ;; set up 'RET' as a secondary menu
   (general-create-definer flour/ret-keys
     :states '(normal)
-    :keymaps 'org-mode-map
+    :keymaps 'override
     :prefix "RET"
-    :glbal-prefix "C-RET")
+    :global-prefix "C-RET")
 
   (flour/ret-keys
     "l" '(org-latex-preview :wk "preview latex fragments")
@@ -362,13 +269,10 @@ tab-indent."
     "SPC" '(find-file :wk "Projectile find file")
     "RET" '(evil-ret :wk "Evil ret")
     "." '(find-file :wk "Find file")
-    "f c" '((lambda () (interactive) (find-file "~/.config/bread/config.org")) :wk "Edit emacs config")
+    "f c" '((lambda () (interactive) (find-file "~/.config/emacs/config.org")) :wk "Edit emacs config")
     "f r" '(counsel-recentf :wk "Find recent files")
     "j" '(next-buffer :wk "next buffer")
     "k" '(previous-buffer :wk "next buffer")
-    "c" '(compile :wk "compile")
-    "x" '(org-capture :wk "Org capture")
-    "s" '(ff-find-other-file :wk "next buffer")
     "/" '(comment-line :wk "Comment lines"))
 
   (flour/leader-keys
@@ -385,7 +289,7 @@ tab-indent."
     "b d" '(bookmark-delete :wk "Delete bookmark")
     "b i" '(ibuffer :wk "Ibuffer")
     "b k" '(kill-this-buffer :wk "Kill this buffer")
-    "b K" '(kill-all-except-dashboard-and-essential :wk "Kill All except escential")
+    "b K" '(kill-some-buffers :wk "Kill multiple buffers")
     "b l" '(list-bookmarks :wk "List bookmarks")
     "b m" '(bookmark-set :wk "Set bookmark")
     "b n" '(next-buffer :wk "Next buffer")
@@ -633,103 +537,33 @@ tab-indent."
   :diminish
   :init (global-flycheck-mode))
 
-;; (use-package jinx
-;;  :hook (emacs-startup . global-jinx-mode))
+;; Correct indentation ;)
+(add-hook 'rust-mode-hook
+          (lambda () (setq indent-tabs-mode nil)))
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
 
-(use-package org-ai
-  :ensure t
-  :commands (org-ai-mode
-             org-ai-global-mode)
-  :init
-  (add-hook 'org-mode-hook #'org-ai-mode) ; enable org-ai in org-mode
-  (org-ai-global-mode) ; installs global keybindings on C-c M-a
-  :config
-  ;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
-  (setq org-ai-image-directory (concat org-directory "/images"))
-  (org-ai-install-yasnippets)) ; if you are using yasnippet and want `ai` snippets
+(global-display-line-numbers-mode 1)
+(global-visual-line-mode t)
 
-(use-package copilot
-  :elpaca (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
-  :ensure t
-  :config
-  (add-hook 'prog-mode-hook 'copilot-mode))
+(setq display-line-numbers-type 'relative)
+(setq scroll-margin 8)
+(setq indent-tabs-mode nil)
+(setq tab-width 4)
 
-;; (elpaca nil (
 
-;; 	     (setq mu4e-mu-version "1.10.8")
-;; 	     (require 'mu4e)
-;; 	     (setq mu4e-update-interval 900
-;; 		   mu4e-sent-folder "~/Mail/gmail/Sent Mail"
-;; 		   mail-user-agent 'mu4e-user-agent
-;; 		   mu4e-org-support t
-;; 		   mu4e-mu-version "1.10.8"
-;; 		   message-mail-user-agent 'mu4e-user-agent
-;; 		   mu4e-maildir (expand-file-name "~/Mail/")
-;; 		   mu4e-attachment-dir "~/Mail/Attach"
-;; 		   mu4e-completing-read-function 'completing-read
-;; 		   mu4e-compose-signature-auto-include nil
-;; 		   mu4e-use-fancy-chars t
-;; 		   mu4e-view-show-addresses t
-;; 		   mu4e-view-show-images t
-;; 		   mu4e-sent-messages-behavior 'sent
-;; 		   mu4e-get-mail-command "mbsync -a"
-;; 		   mu4e-change-filenames-when-moving t
-;; 		   mu4e-confirm-quit nil
-;; 		   mu4e-html2text-command  'mu4e-shr2text
-;; 		   mu4e-context-policy 'pick-first
-;; 		   mu4e-compose-context-policy 'always-ask)
-;; 	     (setq mu4e-contexts
-;; 		   (list
-;; 		    (make-mu4e-context
-;; 		     :name "gmail"
-;; 		     :enter-func (lambda () (mu4e-message "Entering Gmail context"))
-;; 		     :leave-func (lambda () (mu4e-message "Leaving Gmail context"))
-;; 		     :match-func (lambda (msg)
-;; 				   (when msg
-;; 				     (mu4e-message-contact-field-matches
-;; 				      msg '(:from :to :cc :bcc) "italoamaya03@gmail.com")))
-;; 		     :vars `((user-mail-address .  "italoamaya03@gmail.com")
-;; 			     (user-full-name . "Italo Amaya")
-;; 			     (mu4e-compose-format-flowed . t)
-;; 			     (message-send-mail-function . smtpmail-send-it)
-;; 			     (smtpmail-smtp-user . "italoamaya03")
-;; 			     (smtpmail-auth-credentials . (expand-file-name "~/.authinfo.gpg"))
-;; 			     (smtpmail-smtp-server . "smtp.gmail.com")
-;; 			     (smtpmail-smtp-service . 587)
-;; 			     (smtpmail-debug-info . t)
-;; 			     (smtpmail-debug-verbose . t)))
-;; 		    (make-mu4e-context
-;; 		     :name "icloud"
-;; 		     :enter-func (lambda () (mu4e-message "Entering iCloud context"))
-;; 		     :leave-func (lambda () (mu4e-message "Leaving iCloud context"))
-;; 		     :match-func (lambda (msg)
-;; 				   (when msg
-;; 				     (mu4e-message-contact-field-matches
-;; 				      msg '(:from :to :cc :bcc) "italoamaya@me.com")))
-;; 		     :vars `((user-mail-address .  "italoamaya@me.com")
-;; 			     (user-full-name . "Italo Amaya")
-;; 			     (mu4e-compose-format-flowed . t)
-;; 			     (message-send-mail-function . smtpmail-send-it)
-;; 			     (smtpmail-smtp-user . "italoamaya")
-;; 			     (smtpmail-auth-credentials . (expand-file-name "~/.authinfo.gpg"))
-;; 			     ;; Assuming iCloud SMTP settings
-;; 			     (smtpmail-smtp-server . "smtp.mail.me.com")
-;; 			     (smtpmail-smtp-service . 587)
-;; 			     (smtpmail-debug-info . t)
-;; 			     (smtpmail-debug-verbose . t)))))
-;; 	     (defun +mu4e-view-settings ()
-;; 	       "Settings for mu4e-view-mode."
-;; 	       (visual-line-mode)
-;; 	       (olivetti-mode)
-;; 	       (variable-pitch-mode))
-;; 	     (add-hook 'mu4e-view-mode-hook #'+mu4e-view-settings)
-;; 	     ))
+;; I prefer cmd key for meta
+(setq mac-option-key-is-meta nil
+      mac-command-key-is-meta t
+      mac-command-modifier 'meta
+      mac-option-modifier 'none)
 
 (defvar Dropbox-dir "~/Personal/Dropbox"
   "Path the the directory of dropbox")
 
 (setq user-full-name "Italo Amaya Arlotti"
-      user-mail-address "italoamaya@me.com"
+      user-mail-address "italoamaya@icloud.com"
       org-directory (concat Dropbox-dir "/Bak/Org"))
 
 (set-face-attribute 'default nil
@@ -801,14 +635,8 @@ tab-indent."
 (elpaca nil (setq org-return-follows-link  t))
 
 (add-hook 'org-mode-hook 'org-indent-mode)
+
 (require 'org-tempo)
-
-(setq org-agenda-directory (concat org-directory "/Agenda/"))
-(setq org-agenda-files '("~/org/Agenda/index.org"))
-
-(setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/org/Agenda/index.org" "Tasks")
-         "* TODO %?\n  %i\n  %a")))
 
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 (setq org-latex-pdf-process
@@ -898,7 +726,7 @@ tab-indent."
 
 (org-babel-do-load-languages
 	     'org-babel-load-languages
-	     '((shell . t) (python . t) (emacs-lisp . t) (C . t)))
+	     '((python . t) (emacs-lisp . t) (C . t)))
 
 (setq org-confirm-babel-evaluate nil)
 

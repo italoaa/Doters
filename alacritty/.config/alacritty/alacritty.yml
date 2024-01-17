@@ -12,7 +12,7 @@ window:
   title: Alacritty
   dynamic_title: false
   history: 1000
-  opacity: 0.80
+  opacity: 1.00
 font:
   normal:
     family: FiraCode Nerd Font

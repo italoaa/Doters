@@ -1,10 +1,10 @@
-sw_volume: 80
+sw_volume: 100
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: pause
-current: 54
-time: 192.705000
-random: 1
+current: 0
+time: 2361.972000
+random: 0
 repeat: 0
 single: 0
 consume: 1
@@ -12,60 +12,5 @@ crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:playlists/Mix - Orgbit Friday Night/AK - Wanderlust.mp3
-1:playlists/Mix - Orgbit Friday Night/AVAION - Keep On Dancing (Official Video).mp3
-2:playlists/Mix - Orgbit Friday Night/AVAION - Pieces (Official Video).mp3
-3:playlists/Mix - Orgbit Friday Night/Awake.mp3
-4:playlists/Mix - Orgbit Friday Night/BICEP ｜ GLUE (Official Video).mp3
-5:playlists/Mix - Orgbit Friday Night/Birdy - Keeping Your Head Up (Official Music Video).mp3
-6:playlists/Mix - Orgbit Friday Night/Blakey, JONES - Prism of Love feat. JONES.mp3
-7:playlists/Mix - Orgbit Friday Night/Call Me at Midnight.mp3
-8:playlists/Mix - Orgbit Friday Night/Clouds.mp3
-9:playlists/Mix - Orgbit Friday Night/Dancing Thing.mp3
-10:playlists/Mix - Orgbit Friday Night/David Kushner - Daylight (Official Music Video).mp3
-11:playlists/Mix - Orgbit Friday Night/Elderbrook - Numb.mp3
-12:playlists/Mix - Orgbit Friday Night/flora cash - You're Somebody Else (Lyric Video).mp3
-13:playlists/Mix - Orgbit Friday Night/Foreign 2.mp3
-14:playlists/Mix - Orgbit Friday Night/Franbroon - Moment (lyrics).mp3
-15:playlists/Mix - Orgbit Friday Night/Fred again.. - Dermot (See Yourself In My Eyes).mp3
-16:playlists/Mix - Orgbit Friday Night/Glass Animals - Heat Waves (Official Video).mp3
-17:playlists/Mix - Orgbit Friday Night/HAEVN - Trade It For The Night (Lyric Video) with Neco Novellas.mp3
-18:playlists/Mix - Orgbit Friday Night/Haux - Homegrown.mp3
-19:playlists/Mix - Orgbit Friday Night/Headache.mp3
-20:playlists/Mix - Orgbit Friday Night/Je te laisserai des mots.mp3
-21:playlists/Mix - Orgbit Friday Night/Kenya Grace - Strangers (Official Lyric Video).mp3
-22:playlists/Mix - Orgbit Friday Night/Labrinth – Forever (Official Audio) ｜ euphoria (Original Score from the HBO Series).mp3
-23:playlists/Mix - Orgbit Friday Night/LAGOS & Danny Ocean - Mónaco (Video Oficial).mp3
-24:playlists/Mix - Orgbit Friday Night/Lord Huron - The Night We Met (Official Audio).mp3
-25:playlists/Mix - Orgbit Friday Night/M83 'Midnight City' Official video.mp3
-26:playlists/Mix - Orgbit Friday Night/Mallrat x The Chainsmokers - Wish On An Eyelash, Pt. 2.mp3
-27:playlists/Mix - Orgbit Friday Night/Miguel - Sure Thing (sped up lyrics).mp3
-28:playlists/Mix - Orgbit Friday Night/MILO J - UNA BALA ft. Peso Pluma (Video Oficial).mp3
-29:playlists/Mix - Orgbit Friday Night/Mr.Kitty - After Dark.mp3
-30:playlists/Mix - Orgbit Friday Night/Oh Wonder - Technicolour Beat.mp3
-31:playlists/Mix - Orgbit Friday Night/øneheart x reidenshi - snowfall.mp3
-32:playlists/Mix - Orgbit Friday Night/orbit - 3AMstillalive_Demo_120422_4.mp3
-33:playlists/Mix - Orgbit Friday Night/orbit - Around The World (Cover) ⧸ Summer Diary 2022.mp3
-34:playlists/Mix - Orgbit Friday Night/orbit - Blind Eyed (Dream diary).mp3
-35:playlists/Mix - Orgbit Friday Night/orbit - DarkTimes ⧸ BlueFlower (Dream diary).mp3
-36:playlists/Mix - Orgbit Friday Night/orbit - Follow Don't Follow (Music Video).mp3
-37:playlists/Mix - Orgbit Friday Night/orbit - Friday Night (Dream diary).mp3
-38:playlists/Mix - Orgbit Friday Night/orbit - Missing the Moon (Lyric Video).mp3
-39:playlists/Mix - Orgbit Friday Night/orbit - Time In The Afternoon (Diary 4).mp3
-40:playlists/Mix - Orgbit Friday Night/Petit Biscuit - Sunset Lover (Official Video).mp3
-41:playlists/Mix - Orgbit Friday Night/pikito.mp3
-42:playlists/Mix - Orgbit Friday Night/Riptide.mp3
-43:playlists/Mix - Orgbit Friday Night/ROSALÍA - BAGDAD (Cap.7： Liturgia).mp3
-44:playlists/Mix - Orgbit Friday Night/RÜFÜS DU SOL - On My Knees (Official Music Video).mp3
-45:playlists/Mix - Orgbit Friday Night/shallou - You and Me ｜ Nomad Series.mp3
-46:playlists/Mix - Orgbit Friday Night/Somebody Else (Ambient Cover).mp3
-47:playlists/Mix - Orgbit Friday Night/Swedish House Mafia and Connie Constance - Heaven Takes You Home (Connies Lens).mp3
-48:playlists/Mix - Orgbit Friday Night/SYML - Where's My Love (Acoustic).mp3
-49:playlists/Mix - Orgbit Friday Night/The Blaze - EYES (Live Performance filmed by Blogothèque).mp3
-50:playlists/Mix - Orgbit Friday Night/The Blaze - TERRITORY (Official Video).mp3
-51:playlists/Mix - Orgbit Friday Night/Time To Turn It Right - JÄMO Remix [Nelly Furtado, Hans Zimmer, Fred again.., Swedish House Mafia].mp3
-52:playlists/Mix - Orgbit Friday Night/Tinlicker & Helsloot - Because You Move Me (Official Music Video).mp3
-53:playlists/Mix - Orgbit Friday Night/Tourist - We Stayed Up All Night (feat. Ardyn) (Official Music Video).mp3
-54:playlists/Mix - Orgbit Friday Night/Years & Years - Desire (Gryffin Remix).mp3
-55:playlists/Mix - Orgbit Friday Night/You & Me - Disclosure (Flume Remix) (slow+reverb).mp3
+0:Drum-n-Bass/(5 Hours) Best Liquid Drum and Bass mix [Study _ Chill DnB] [mbNi5L3QOCA].mp3
 playlist_end

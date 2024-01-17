@@ -57,9 +57,7 @@ yabai -m rule --add app="^Microsoft Outlook$" manage=off
 yabai -m rule --add app="^Music$" manage=off
 yabai -m rule --add app="^Greenshot$" manage=off
 yabai -m rule --add app="^LastPass$" manage=off
-yabai -m rule --add title='^Menu$' manage=off layer=normal sticky=on border=on #Custom launcher
-yabai -m rule --add title='^Music$' manage=off layer=normal sticky=on border=on #Custom launcher
-yabai -m rule --add title='^Face Flick$' manage=off layer=normal sticky=on border=on #Custom launcher
+yabai -m rule --add title='^Menu$' manage=off layer=above sticky=on border=on #Custom launcher
 
 ## Some random global settings
 # yabai -m config focus_follows_mouse          autoraise
