@@ -78,6 +78,10 @@ This is the step where we set up the environment for our bread. We are going to 
 
 #+end_src
 * Packages
+** Nano
+#+begin_src emacs-lisp
+(message "before nano")
+#+end_src
 ** Editor
 *** Evil
 #+begin_src emacs-lisp
