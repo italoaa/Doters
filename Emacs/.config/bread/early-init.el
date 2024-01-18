@@ -22,5 +22,8 @@
 ;; This will allow elpaca to be the primary package manager
 (setq package-enable-at-startup nil)
 
+;; Unecorated round frame
+(add-to-list 'default-frame-alist '(undecorated-round . t))
+
 (provide 'early-init)
 ;;; early-init.el ends here

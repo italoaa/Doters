@@ -1,6 +1,25 @@
+;; Remove the tilte bar
 (add-to-list 'load-path (concat user-emacs-directory "modules/"))
 (add-to-list 'load-path (concat user-emacs-directory "modules/mu4e/"))
 (add-to-list 'load-path (concat user-emacs-directory "modules/nano-emacs/"))
+
+;; Settings for nano
+(setq nano-font-size 16)
+
+(require 'nano-faces)
+(require 'nano-theme)
+(require 'nano-theme-dark)
+(require 'nano-theme-light)
+
+;; set the theme to dark
+(nano-theme-set-dark)
+(call-interactively 'nano-refresh-theme)
+
+(require 'nano-modeline)
+(require 'nano-layout)
+(require 'nano-colors)
+(require 'nano-writer)
+(set-scroll-bar-mode nil)
 
 (require 'elpaca-setup)
 
@@ -13,12 +32,17 @@
       kept-old-versions 2
       version-control t)
 
+(add-to-list 'default-frame-alist '(undecorated . t))
+
+(when (< emacs-major-version 29)
+  (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-silent)
+  (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-purify))
 ;; Correct indentation ;)
 (add-hook 'rust-mode-hook
           (lambda () (setq indent-tabs-mode nil)))
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-(scroll-bar-mode -1)
+(set-scroll-bar-mode nil)
 
 (global-display-line-numbers-mode 1)
 (global-visual-line-mode t)
@@ -103,7 +127,7 @@
 ;; Gruvbox      to groove
 
 ;; Use elpaca to load the theme to ensure doom-themes is laoded
-(elpaca nil (load-theme 'doom-spacegrey t))
+;; (elpaca nil (load-theme 'doom-spacegrey t))
 
 (use-package smartparens
   :diminish smartparens-mode
@@ -158,7 +182,6 @@
 
 (use-package projectile
   :config
-    (setq projectile-completion-system 'ivy)
   (projectile-mode 1))
 
 (use-package ag)
@@ -208,7 +231,7 @@
 (use-package dashboard
   :demand t
   :init
-  (setq initial-buffer-choice 'dashboard-open)
+  ;; (setq initial-buffer-choice 'dashboard-open)
   (setq dashboard-set-heading-icons t)
   (setq dashboard-set-file-icons t)
   (setq dashboard-banner-logo-title "Fresh Baked Bread")
@@ -221,8 +244,9 @@
   :custom
   (dashboard-modify-heading-icons '((recents . "file-text")
                             (bookmarks . "book")))
-  :config
-  (dashboard-setup-startup-hook))
+  ;;:config
+  ;;(dashboard-setup-startup-hook)
+)
 
 (defun transparency (value)
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
@@ -233,7 +257,7 @@
   :after org
   :init
   (setq olivetti-body-width 140)
-  :hook (org-mode . olivetti-mode)
+  ;; :hook (org-mode . olivetti-mode)
   :config
   (display-line-numbers-mode 0))
 
@@ -246,7 +270,7 @@
 
 (use-package doom-modeline
   :demand t
-  :init (doom-modeline-mode 1)
+  ;; :init (doom-modeline-mode 1)
   :config
   (setq doom-modeline-height 35      ;; sets modeline height
         doom-modeline-bar-width 5    ;; sets right bar width
@@ -313,6 +337,8 @@
 		 (window-width . 80)))
   )
 
+(elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
+(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 (use-package general
   :config
   (general-evil-setup)
@@ -323,6 +349,10 @@
   (evil-global-set-key 'normal (kbd "C-t") 'popper-toggle)
   (evil-global-set-key 'insert (kbd "C-t") 'popper-toggle)
   (evil-global-set-key 'normal (kbd "C-<tab>") 'popper-cycle)
+  ;; Auto complete with C-SPC
+  (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
+  (elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
+  (elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
   (defun rk/copilot-tab ()
     "Tab command that will complet with copilot if a completion is
@@ -534,69 +564,190 @@ tab-indent."
 
 ;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
 
+(use-package jinx
+  :hook (emacs-startup . global-jinx-mode))
+
+(use-package cape
+  ;; Bind dedicated completion commands
+  ;; Alternative prefix keys: C-c p, M-p, M-+, ...
+  ;;:bind (("C-c p p" . completion-at-point) ;; capf
+  ;;       ("C-c p t" . complete-tag)        ;; etags
+  ;;       ("C-c p d" . cape-dabbrev)        ;; or dabbrev-completion
+  ;;       ("C-c p h" . cape-history)
+  ;;       ("C-c p f" . cape-file)
+  ;;       ("C-c p k" . cape-keyword)
+  ;;       ("C-c p s" . cape-elisp-symbol)
+  ;;       ("C-c p e" . cape-elisp-block)
+  ;;       ("C-c p a" . cape-abbrev)
+  ;;       ("C-c p l" . cape-line)
+  ;;       ("C-c p w" . cape-dict)
+  ;;       ("C-c p :" . cape-emoji)
+  ;;       ("C-c p \\" . cape-tex)
+  ;;       ("C-c p _" . cape-tex)
+  ;;       ("C-c p ^" . cape-tex)
+  ;;       ("C-c p &" . cape-sgml)
+  ;;       ("C-c p r" . cape-rfc1345))
+  :init
+  ;; Add to the global default value of `completion-at-point-functions' which is
+  ;; used by `completion-at-point'.  The order of the functions matters, the
+  ;; first function returning a result wins.  Note that the list of buffer-local
+  ;; completion functions takes precedence over the global list.
+  (add-to-list 'completion-at-point-functions #'cape-dabbrev)
+  (add-to-list 'completion-at-point-functions #'cape-file)
+  (add-to-list 'completion-at-point-functions #'cape-elisp-block)
+  ;;(add-to-list 'completion-at-point-functions #'cape-history)
+  ;;(add-to-list 'completion-at-point-functions #'cape-keyword)
+  ;;(add-to-list 'completion-at-point-functions #'cape-tex)
+  ;;(add-to-list 'completion-at-point-functions #'cape-sgml)
+  ;;(add-to-list 'completion-at-point-functions #'cape-rfc1345)
+  ;;(add-to-list 'completion-at-point-functions #'cape-abbrev)
+  ;;(add-to-list 'completion-at-point-functions #'cape-dict)
+  ;;(add-to-list 'completion-at-point-functions #'cape-elisp-symbol)
+  ;;(add-to-list 'completion-at-point-functions #'cape-line)
+)
+
+(use-package vertico
+  :init
+  (vertico-mode)
+
+  ;; Different scroll margin
+  ;; (setq vertico-scroll-margin 0)
+
+  ;; Show more candidates
+  ;; (setq vertico-count 20)
+
+  ;; Grow and shrink the Vertico minibuffer
+  (setq vertico-resize t)
+
+  ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
+  ;; (setq vertico-cycle t)
+  )
+
+(use-package nano-vertico
+ :elpaca (:host github :repo "rougier/nano-vertico" :files ("nano-vertico.el"))
+ :ensure t
+ :config
+ ;; (nano-vertico-mode 1)
+)
+
+(use-package consult
+  ;; Enable automatic preview at point in the *Completions* buffer. This is
+  ;; relevant when you use the default completion UI.
+  :hook (completion-list-mode . consult-preview-at-point-mode)
+
+  ;; The :init configuration is always executed (Not lazy)
+  :init
+
+  ;; Optionally configure the register formatting. This improves the register
+  ;; preview for `consult-register', `consult-register-load',
+  ;; `consult-register-store' and the Emacs built-ins.
+  (setq register-preview-delay 0.5
+        register-preview-function #'consult-register-format)
+
+  ;; Optionally tweak the register preview window.
+  ;; This adds thin lines, sorting and hides the mode line of the window.
+  (advice-add #'register-preview :override #'consult-register-window)
+
+  ;; Use Consult to select xref locations with preview
+  (setq xref-show-xrefs-function #'consult-xref
+        xref-show-definitions-function #'consult-xref)
+
+  ;; Configure other variables and modes in the :config section,
+  ;; after lazily loading the package.
+  :config
+
+  ;; Optionally configure preview. The default value
+  ;; is 'any, such that any key triggers the preview.
+  ;; (setq consult-preview-key 'any)
+  ;; (setq consult-preview-key "M-.")
+  ;; (setq consult-preview-key '("S-<down>" "S-<up>"))
+  ;; For some commands and buffer sources it is useful to configure the
+  ;; :preview-key on a per-command basis using the `consult-customize' macro.
+  (consult-customize
+   consult-theme :preview-key '(:debounce 0.2 any)
+   consult-ripgrep consult-git-grep consult-grep
+   consult-bookmark consult-recent-file consult-xref
+   consult--source-bookmark consult--source-file-register
+   consult--source-recent-file consult--source-project-recent-file
+   ;; :preview-key "M-."
+   :preview-key '(:debounce 0.4 any))
+
+  ;; Optionally configure the narrowing key.
+  ;; Both < and C-+ work reasonably well.
+  (setq consult-narrow-key "<") ;; "C-+"
+
+  ;; Optionally make narrowing help available in the minibuffer.
+  ;; You may want to use `embark-prefix-help-command' or which-key instead.
+  ;; (define-key consult-narrow-map (vconcat consult-narrow-key "?") #'consult-narrow-help)
+
+  ;; By default `consult-project-function' uses `project-root' from project.el.
+  ;; Optionally configure a different project root function.
+  (autoload 'projectile-project-root "projectile")
+  (setq consult-project-function (lambda (_) (projectile-project-root)))
+  )
+
+;; Enable rich annotations using the Marginalia package
+(use-package marginalia
+  ;; Bind `marginalia-cycle' locally in the minibuffer.  To make the binding
+  ;; available in the *Completions* buffer, add it to the
+  ;; `completion-list-mode-map'.
+  ;; :bind (:map minibuffer-local-map
+  ;;       ("M-A" . marginalia-cycle))
+
+  ;; The :init section is always executed.
+  :init
+
+  ;; Marginalia must be activated in the :init section of use-package such that
+  ;; the mode gets enabled right away. Note that this forces loading the
+  ;; package.
+  (marginalia-mode))
+
+(use-package orderless
+  :init
+  ;; Configure a custom style dispatcher (see the Consult wiki)
+  ;; (setq orderless-style-dispatchers '(+orderless-consult-dispatch orderless-affix-dispatch)
+  ;;       orderless-component-separator #'orderless-escapable-split-on-space)
+  (setq completion-styles '(orderless basic)
+        completion-category-defaults nil
+        completion-category-overrides '((file (styles partial-completion)))))
+
 (use-package company
   :defer 2
   :diminish
+  :config
+  (setq company-backends
+        '((company-capf company-dabbrev-code company-keywords)
+          company-files
+          company-dabbrev
+          company-bbdb
+          company-semantic
+          company-cmake
+          company-clang
+          (company-gtags company-etags)
+          company-oddmuse))
   :custom
   (company-begin-commands '(self-insert-command))
-  (company-idle-delay .1)
+  (company-idle-delay 0)
   (company-minimum-prefix-length 2)
   (company-show-numbers t)
   (company-tooltip-align-annotations 't)
-
-  ;; Auto complete with C-SPC
-  ;; (evil-define-key 'insert dired-mode-map (kbd "C-SPC") 'company-complete-common)
+  ;; Different scroll margin
+  ;; (setq vertico-scroll-margin 0)
 
   (global-company-mode t))
 
 (use-package company-box
   :after company
   :diminish
-  :hook (company-mode . company-box-mode))
+  :hook (company-mode-hook . company-box-mode))
 
-(use-package counsel
-  :after ivy
-  :diminish
-  :config (counsel-mode))
-
-(use-package ivy
-  :bind
-  ;; ivy-resume resumes the last Ivy-based completion.
-  (("C-c C-r" . ivy-resume)
-   ("C-x B" . ivy-switch-buffer-other-window))
-  :diminish
-  :custom
-  (setq ivy-use-virtual-buffers t)
-  (setq ivy-use-selectable-prompt t)
-  (setq ivy-count-format "(%d/%d) ")
-  (setq enable-recursive-minibuffers t)
-  :config
-  (setq ivy-initial-inputs-alist nil)
-  (ivy-mode))
-
-(elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
-(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
-
-
-(use-package all-the-icons-ivy-rich
+(use-package yasnippet
   :demand t
-  :init (all-the-icons-ivy-rich-mode 1))
-
-(use-package ivy-rich
-  :after ivy
-  :demand t
-  :init (ivy-rich-mode 1) ;; this gets us descriptions in M-x.
-  :custom
-  (ivy-virtual-abbreviate 'full
-   ivy-rich-switch-buffer-align-virtual-buffer t
-   ivy-rich-path-style 'abbrev))
-  ;; :config
-  ;; (ivy-set-display-transformer 'ivy-switch-buffer
-  ;;                              'ivy-rich-switch-buffer-transformer))
-
-(use-package ivy-prescient
   :config
-  (ivy-prescient-mode))
+  (yas-global-mode 1)
+  (yas-minor-mode-on))
+(use-package yasnippet-snippets
+  :demand t)
 
 (use-package lsp-mode
   :init
@@ -609,7 +760,7 @@ tab-indent."
          (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
 
-(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+;;(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 
 (use-package dap-mode
   :after lsp-mode
@@ -620,22 +771,11 @@ tab-indent."
   (require 'dap-python)
   (setq dap-python-debugger 'debugpy))
 
-(use-package yasnippet
-  :demand t
-  :config
-  (yas-global-mode 1)
-  (yas-minor-mode-on))
-(use-package yasnippet-snippets
-  :demand t)
-
 (use-package flycheck
   :demand t
   :defer t
   :diminish
   :init (global-flycheck-mode))
-
-;; (use-package jinx
-;;  :hook (emacs-startup . global-jinx-mode))
 
 (use-package org-ai
   :ensure t
@@ -761,48 +901,48 @@ tab-indent."
 ;; changes certain keywords to symbols, such as lamda!
 (setq global-prettify-symbols-mode t)
 
-(let* ((variable-tuple
-	(cond
-	 ((x-list-fonts "Monaco")         '(:font "Monaco"))
-	 ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
-	 ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
-	 ((x-list-fonts "Verdana")         '(:font "Verdana"))
-	 ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
-	 (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
-       (base-font-color     (face-foreground 'default nil 'default))
-       (headline           `(:inherit default :weight bold)))
+;; (let* ((variable-tuple
+;; 	(cond
+;; 	 ((x-list-fonts "Monaco")         '(:font "Monaco"))
+;; 	 ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
+;; 	 ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
+;; 	 ((x-list-fonts "Verdana")         '(:font "Verdana"))
+;; 	 ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
+;; 	 (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
+;;        (base-font-color     (face-foreground 'default nil 'default))
+;;        (headline           `(:inherit default :weight bold)))
 
-  (custom-theme-set-faces
-   'user
-   `(org-level-8 ((t (,@headline ,@variable-tuple))))
-   `(org-level-7 ((t (,@headline ,@variable-tuple))))
-   `(org-level-6 ((t (,@headline ,@variable-tuple))))
-   `(org-level-5 ((t (,@headline ,@variable-tuple))))
-   `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
-   `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
-   `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
-   `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
-   `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
+;;   (custom-theme-set-faces
+;;    'user
+;;    `(org-level-8 ((t (,@headline ,@variable-tuple))))
+;;    `(org-level-7 ((t (,@headline ,@variable-tuple))))
+;;    `(org-level-6 ((t (,@headline ,@variable-tuple))))
+;;    `(org-level-5 ((t (,@headline ,@variable-tuple))))
+;;    `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
+;;    `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
+;;    `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
+;;    `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
+;;    `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
 
-(setq org-hide-emphasis-markers t)
-;; Unbind RET for going to links
-(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
-(elpaca nil (setq org-return-follows-link t
-		  org-image-actual-width nil))
+;; (setq org-hide-emphasis-markers t)
+;; ;; Unbind RET for going to links
+;; (elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
+;; (elpaca nil (setq org-return-follows-link t
+;; 		  org-image-actual-width nil))
 
-;; Opens file links in the same window
-(add-to-list 'org-link-frame-setup '(file . find-file))
+;; ;; Opens file links in the same window
+;; (add-to-list 'org-link-frame-setup '(file . find-file))
 
-(eval-after-load 'org-indent '(diminish 'org-indent-mode))
-(add-hook 'org-mode-hook 'turn-on-flyspell)
-(electric-indent-mode -1)
-(setq org-edit-src-content-indentation 0)
-(setq org-clock-sound (concat user-emacs-directory "bell.wav"))
+;; (eval-after-load 'org-indent '(diminish 'org-indent-mode))
+;; (add-hook 'org-mode-hook 'turn-on-flyspell)
+;; (electric-indent-mode -1)
+;; (setq org-edit-src-content-indentation 0)
+;; (setq org-clock-sound (concat user-emacs-directory "bell.wav"))
 
-(elpaca nil (setq org-return-follows-link  t))
+;; (elpaca nil (setq org-return-follows-link  t))
 
-(add-hook 'org-mode-hook 'org-indent-mode)
-(require 'org-tempo)
+;; (add-hook 'org-mode-hook 'org-indent-mode)
+;; (require 'org-tempo)
 
 (setq org-agenda-directory (concat org-directory "/Agenda/"))
 (setq org-agenda-files '("~/org/Agenda/index.org"))
@@ -891,17 +1031,22 @@ tab-indent."
         org-appear-autolinks nil        ;; Don't enable on links
         org-appear-autosubmarkers t))    ;; Enable on subscript and superscript
 
-(use-package org-bullets
-    :hook (org-mode . org-bullets-mode)
-    :custom
-    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-    (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
+;;(use-package org-bullets
+;;    :hook (org-mode . org-bullets-mode)
+;;    :custom
+;;    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;;    (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
 
 (org-babel-do-load-languages
 	     'org-babel-load-languages
 	     '((shell . t) (python . t) (emacs-lisp . t) (C . t)))
 
 (setq org-confirm-babel-evaluate nil)
+
+(use-package org-modern
+  :after org
+  :config
+  (global-org-modern-mode))
 
 (use-package rust-mode
   :config
@@ -949,5 +1094,11 @@ tab-indent."
       lsp-pyright-venv-path "/usr/local/anaconda3")
 
 (use-package emmet-mode)
+
+(set-scroll-bar-mode nil)
+
+;; End the config loading with the splash screen
+
+(elpaca nil (run-with-idle-timer 0.5 nil (lambda() (require 'nano-splash))))
 
 
