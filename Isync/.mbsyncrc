@@ -1,21 +1,20 @@
 IMAPAccount icloud
 Host imap.mail.me.com
 User italoamaya
-PassCmd "security find-generic-password -s mu4e-icloud -a italoamaya -w"
+PassCmd "gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.authinfo.gpg | grep 'machine imap.mail.me.com' | awk '{print $6}'"
 Port 993
 SSLType IMAPS
 SSLVersions TLSv1.2
 AuthMechs PLAIN
-SystemCertificates no
-CertificateFile ~/.maildir/certificates/root-certificates.pem
+SystemCertificates yes
 
 IMAPStore icloud-remote
 Account icloud
 
 MaildirStore icloud-local
 SubFolders Verbatim
-Path ~/.maildir/icloud/
-Inbox ~/.maildir/icloud/INBOX
+Path ~/Mail/icloud/
+Inbox ~/Mail/icloud/INBOX
 
 Channel icloud
 Far :icloud-remote:
@@ -31,21 +30,20 @@ SyncState *
 IMAPAccount gmail
 Host imap.gmail.com
 User italoamaya03@gmail.com
-PassCmd "security find-generic-password -s mu4e-gmail -a italoamaya03 -w"
+PassCmd "gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.authinfo.gpg | awk '/machine imap.gmail.com/{print $6}'"
 Port 993
 SSLType IMAPS
 SSLVersions TLSv1.2
 AuthMechs PLAIN
-SystemCertificates no
-CertificateFile ~/.maildir/certificates/root-certificates.pem
+SystemCertificates yes
 
 IMAPStore gmail-remote
 Account gmail
 
 MaildirStore gmail-local
 SubFolders Verbatim
-Path ~/.maildir/gmail/
-Inbox ~/.maildir/gmail/INBOX
+Path ~/Mail/gmail/
+Inbox ~/Mail/gmail/INBOX
 
 Channel gmail
 Far :gmail-remote:

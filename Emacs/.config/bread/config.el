@@ -18,7 +18,8 @@
 (require 'nano-modeline)
 (require 'nano-layout)
 (require 'nano-colors)
-(require 'nano-writer)
+(require 'nano-command)
+(require 'nano-minibuffer)
 (set-scroll-bar-mode nil)
 
 (require 'elpaca-setup)
@@ -31,8 +32,6 @@
       kept-new-versions 6
       kept-old-versions 2
       version-control t)
-
-(add-to-list 'default-frame-alist '(undecorated . t))
 
 (when (< emacs-major-version 29)
   (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-silent)
@@ -1098,7 +1097,6 @@ tab-indent."
 (set-scroll-bar-mode nil)
 
 ;; End the config loading with the splash screen
-
-(elpaca nil (run-with-idle-timer 0.5 nil (lambda() (require 'nano-splash))))
+(elpaca nil (require 'nano-splash))
 
 

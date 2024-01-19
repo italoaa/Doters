@@ -34,7 +34,8 @@ This is the step where we set up the environment for our bread. We are going to 
 (require 'nano-modeline)
 (require 'nano-layout)
 (require 'nano-colors)
-(require 'nano-writer)
+(require 'nano-command)
+;; (require 'nano-minibuffer)
 (set-scroll-bar-mode nil)
 #+end_src
 ** Elpaca
@@ -57,8 +58,6 @@ This is the step where we set up the environment for our bread. We are going to 
 
 * Emacs
 #+begin_src emacs-lisp
-(add-to-list 'default-frame-alist '(undecorated . t))
-
 (when (< emacs-major-version 29)
   (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-silent)
   (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-purify))
