@@ -24,7 +24,6 @@ yabai -m rule --add app="^System Preferences$" sticky=on  manage=off
 yabai -m rule --add app="^Karabiner-Elements$" sticky=on  manage=off
 yabai -m rule --add app="^Karabiner-EventViewer$" sticky=on  manage=off
 yabai -m rule --add app="^Finder$" sticky=on manage=off
-yabai -m rule --add app="^Emacs$" title="childEmacs" manage=off # This rule makes that childframes of emacs are not managed (company works now)
 yabai -m rule --add app="^Keka$" sticky=on  manage=off
 yabai -m rule --add app="^Alfred Preferences$" sticky=on  manage=off
 yabai -m rule --add app="^Disk Utility$" sticky=on  manage=off

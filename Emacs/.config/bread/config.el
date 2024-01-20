@@ -16,10 +16,10 @@
 (call-interactively 'nano-refresh-theme)
 
 (require 'nano-modeline)
-(require 'nano-layout)
 (require 'nano-colors)
+(require 'nano-layout)
 (require 'nano-command)
-(require 'nano-minibuffer)
+;; (require 'nano-minibuffer)
 (set-scroll-bar-mode nil)
 
 (require 'elpaca-setup)
@@ -39,7 +39,7 @@
 ;; Correct indentation ;)
 (add-hook 'rust-mode-hook
           (lambda () (setq indent-tabs-mode nil)))
-(menu-bar-mode -1)
+(menu-bar-mode t)
 (tool-bar-mode -1)
 (set-scroll-bar-mode nil)
 
@@ -314,6 +314,7 @@
 	  "Output\\*$"
 	  "\\*Async Shell Command\\*"
 	  help-mode
+	  fundamental-mode
 	  compilation-mode))
   ;; Match eshell, shell, term and/or vterm buffers
   (setq popper-reference-buffers
@@ -336,8 +337,6 @@
 		 (window-width . 80)))
   )
 
-(elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
-(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 (use-package general
   :config
   (general-evil-setup)
@@ -350,7 +349,7 @@
   (evil-global-set-key 'normal (kbd "C-<tab>") 'popper-cycle)
   ;; Auto complete with C-SPC
   (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
-  (elpaca nil (global-set-key "\C-s" 'swiper)) ;; Use swiper
+  (elpaca nil (global-set-key "\C-s" 'consult-line)) ;; Use swiper
   (elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
   (defun rk/copilot-tab ()
@@ -900,48 +899,20 @@ tab-indent."
 ;; changes certain keywords to symbols, such as lamda!
 (setq global-prettify-symbols-mode t)
 
-;; (let* ((variable-tuple
-;; 	(cond
-;; 	 ((x-list-fonts "Monaco")         '(:font "Monaco"))
-;; 	 ((x-list-fonts "Source Sans Pro") '(:font "Source Sans Pro"))
-;; 	 ((x-list-fonts "Lucida Grande")   '(:font "Lucida Grande"))
-;; 	 ((x-list-fonts "Verdana")         '(:font "Verdana"))
-;; 	 ((x-family-fonts "Sans Serif")    '(:family "Sans Serif"))
-;; 	 (nil (warn "Cannot find a Sans Serif Font.  Install Source Sans Pro."))))
-;;        (base-font-color     (face-foreground 'default nil 'default))
-;;        (headline           `(:inherit default :weight bold)))
+;; Unbind RET for going to links
+(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
+(elpaca nil (setq org-return-follows-link t
+                  org-image-actual-width nil))
 
-;;   (custom-theme-set-faces
-;;    'user
-;;    `(org-level-8 ((t (,@headline ,@variable-tuple))))
-;;    `(org-level-7 ((t (,@headline ,@variable-tuple))))
-;;    `(org-level-6 ((t (,@headline ,@variable-tuple))))
-;;    `(org-level-5 ((t (,@headline ,@variable-tuple))))
-;;    `(org-level-4 ((t (,@headline ,@variable-tuple :height 1.1))))
-;;    `(org-level-3 ((t (,@headline ,@variable-tuple :height 1.25))))
-;;    `(org-level-2 ((t (,@headline ,@variable-tuple :height 1.5))))
-;;    `(org-level-1 ((t (,@headline ,@variable-tuple :height 1.75))))
-;;    `(org-document-title ((t (,@headline ,@variable-tuple :height 2.0 :underline nil))))))
+;; Opens file links in the same window
+(add-to-list 'org-link-frame-setup '(file . find-file))
 
-;; (setq org-hide-emphasis-markers t)
-;; ;; Unbind RET for going to links
-;; (elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
-;; (elpaca nil (setq org-return-follows-link t
-;; 		  org-image-actual-width nil))
+(eval-after-load 'org-indent '(diminish 'org-indent-mode))
+(setq org-edit-src-content-indentation 0)
+(setq org-clock-sound (concat user-emacs-directory "bell.wav"))
 
-;; ;; Opens file links in the same window
-;; (add-to-list 'org-link-frame-setup '(file . find-file))
 
-;; (eval-after-load 'org-indent '(diminish 'org-indent-mode))
-;; (add-hook 'org-mode-hook 'turn-on-flyspell)
-;; (electric-indent-mode -1)
-;; (setq org-edit-src-content-indentation 0)
-;; (setq org-clock-sound (concat user-emacs-directory "bell.wav"))
-
-;; (elpaca nil (setq org-return-follows-link  t))
-
-;; (add-hook 'org-mode-hook 'org-indent-mode)
-;; (require 'org-tempo)
+(require 'org-tempo)
 
 (setq org-agenda-directory (concat org-directory "/Agenda/"))
 (setq org-agenda-files '("~/org/Agenda/index.org"))
