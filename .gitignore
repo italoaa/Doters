@@ -1,5 +1,5 @@
 plugin/
-tramp/
+tramp
 .DS_Store
 nvim/
 neovim/
