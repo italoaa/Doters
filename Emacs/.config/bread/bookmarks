@@ -2,9 +2,16 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored"
+(("org-refile-last-stored"
  (filename . "~/org/Agenda/index.org")
- (front-context-string . "** TODO How to s")
- (rear-context-string . "[Exam content]]\n")
- (position . 1214))
+ (front-context-string . "** DONE Go throu")
+ (rear-context-string . "tions \n\n\n* Done\n")
+ (position . 1756)
+ (last-modified 26034 48590 980556 0))
+("org-capture-last-stored"
+ (filename . "~/Personal/Dropbox/Bak/Org/roam/20240302115627-socket.org")
+ (front-context-string . "* Main\nA socket ")
+ (rear-context-string . "mpSci:Networks:\n")
+ (position . 126)
+ (last-modified 26083 5342 32543 0))
 )

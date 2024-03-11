@@ -1,55 +1,13 @@
 sw_volume: 100
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: play
-current: 0
-time: 21.286000
-random: 0
+state: stop
+random: 1
 repeat: 0
 single: 0
 consume: 1
-crossfade: 5
+crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/07 - Sereno fantastico.flac
-1:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/08 - Transatlantico art deco.flac
-2:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/09 - Caspa de estrellas.flac
-3:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/10 - Crimen, divina, productor.flac
-4:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/11 - Pubis angelical (vocal).flac
-5:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/12 - Pubis angelical (vocal II).flac
-6:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/13 - Futuro pobre.flac
-7:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/14 - Tribunas del futuro pobre.flac
-8:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/15 - Todos los pubis juntos.flac
-9:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/16 - Yendo de la cama al living.flac
-10:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/17 - Superheroes.flac
-11:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/18 - No bombardeen Buenos Aires.flac
-12:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/19 - Vos tambien estabas verde.flac
-13:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/20 - Yo no quiero volverme tan loco.flac
-14:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/21 - Cancion de dos por tres.flac
-15:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/22 - Peluca telefonica.flac
-16:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/23 - Inconsciente colectivo.flac
-17:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/01 - Operacion densa.flac
-18:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/02 - Despertar de mambo.flac
-19:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/03 - Rejas electrificadas.flac
-20:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/04 - Pubis angelical.flac
-21:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/05 - Monoculo fantastico.flac
-22:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/06 - All I do the whole night through (Fred Brown).flac
-23:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/07 - Sereno fantastico.flac
-24:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/08 - Transatlantico art deco.flac
-25:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/09 - Caspa de estrellas.flac
-26:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/10 - Crimen, divina, productor.flac
-27:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/11 - Pubis angelical (vocal).flac
-28:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/12 - Pubis angelical (vocal II).flac
-29:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/13 - Futuro pobre.flac
-30:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/14 - Tribunas del futuro pobre.flac
-31:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/15 - Todos los pubis juntos.flac
-32:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/16 - Yendo de la cama al living.flac
-33:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/17 - Superheroes.flac
-34:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/18 - No bombardeen Buenos Aires.flac
-35:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/19 - Vos tambien estabas verde.flac
-36:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/20 - Yo no quiero volverme tan loco.flac
-37:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/21 - Cancion de dos por tres.flac
-38:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/22 - Peluca telefonica.flac
-39:charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/23 - Inconsciente colectivo.flac
 playlist_end

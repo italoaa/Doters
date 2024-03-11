@@ -15,10 +15,14 @@
 (nano-theme-set-dark)
 (call-interactively 'nano-refresh-theme)
 
+;; End the config loading with the splash screen
+(require 'nano-splash)
+
 (require 'nano-modeline)
 (require 'nano-colors)
 (require 'nano-layout)
 (require 'nano-command)
+;; (require 'nano-agenda)
 ;; (require 'nano-minibuffer)
 (set-scroll-bar-mode nil)
 
@@ -33,9 +37,9 @@
       kept-old-versions 2
       version-control t)
 
-(when (< emacs-major-version 29)
-  (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-silent)
-  (advice-add 'pcomplete-completions-at-point :around #'cape-wrap-purify))
+(recentf-mode)
+(elpaca nil (setq mu4e-mu-version "1.10.8"))
+
 ;; Correct indentation ;)
 (add-hook 'rust-mode-hook
           (lambda () (setq indent-tabs-mode nil)))
@@ -227,6 +231,10 @@
 
 (setq tramp-default-method "ssh")
 
+
+
+(use-package ein)
+
 (use-package dashboard
   :demand t
   :init
@@ -314,7 +322,6 @@
 	  "Output\\*$"
 	  "\\*Async Shell Command\\*"
 	  help-mode
-	  fundamental-mode
 	  compilation-mode))
   ;; Match eshell, shell, term and/or vterm buffers
   (setq popper-reference-buffers
@@ -323,6 +330,7 @@
 		  "^\\*shell.*\\*$"  shell-mode  ;shell as a popup
 		  "^\\*term.*\\*$"   term-mode   ;term as a popup
 		  "^\\*vterm.*\\*$"  vterm-mode  ;vterm as a popup
+		  "^\\*Org Babel Results*\\*$"  fundamental-mode  
 		  )))
   
   (setq popper-group-function #'popper-group-by-projectile) ; projectile projects
@@ -337,6 +345,14 @@
 		 (window-width . 80)))
   )
 
+(use-package svg-tag-mode)
+
+(use-package yeetube
+ :elpaca (:host github :repo "https://git.thanosapollo.org/yeetube"))
+
+(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+
+
 (use-package general
   :config
   (general-evil-setup)
@@ -349,7 +365,8 @@
   (evil-global-set-key 'normal (kbd "C-<tab>") 'popper-cycle)
   ;; Auto complete with C-SPC
   (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
-  (elpaca nil (global-set-key "\C-s" 'consult-line)) ;; Use swiper
+  (evil-global-set-key 'normal "\C-s" 'consult-line)
+  (elpaca nil (global-set-key "\C-s" '(message "helo")))
   (elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
   (defun rk/copilot-tab ()
@@ -392,7 +409,8 @@ tab-indent."
     "RET" '(evil-ret :wk "Evil ret")
     "." '(find-file :wk "Find file")
     "f c" '((lambda () (interactive) (find-file "~/.config/bread/config.org")) :wk "Edit emacs config")
-    "f r" '(counsel-recentf :wk "Find recent files")
+    "f r" '(consult-recent-file :wk "Find recent files")
+    "f b" '(consult-buffer :wk "Find buffer")
     "j" '(next-buffer :wk "next buffer")
     "k" '(previous-buffer :wk "next buffer")
     "c" '(compile :wk "compile")
@@ -424,6 +442,16 @@ tab-indent."
     "b s" '(basic-save-buffer :wk "Save buffer")
     "b S" '(save-some-buffers :wk "Save multiple buffers")
     "b w" '(bookmark-save :wk "Save current bookmarks to bookmark file"))
+
+  (flour/leader-keys
+    "y" '(:ignore t :wk "Yeetube")
+    "y RET" '(yeetube-play :wk "Play video")
+    "y d" '(yeetube-download-video :wk "Download video")
+    "y b" '(yeetube-play-saved-video :wk "Play saved video")
+    "y B" '(yeetube-save-video :wk "Save video")
+    "y x" '(yeetube-remove-saved-video :wk "Remove saved video")
+    "y /" '(yeetube-search :wk "Search")
+    "y 0" '(yeetube-toggle-video :wk "Toggle video"))
 
   (flour/leader-keys
     "d" '(:ignore t :wk "Dired")
@@ -725,8 +753,8 @@ tab-indent."
           company-oddmuse))
   :custom
   (company-begin-commands '(self-insert-command))
-  (company-idle-delay 0)
-  (company-minimum-prefix-length 2)
+  (company-idle-delay 0.3)
+  (company-minimum-prefix-length 3)
   (company-show-numbers t)
   (company-tooltip-align-annotations 't)
   ;; Different scroll margin
@@ -751,6 +779,7 @@ tab-indent."
   :init
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
   (setq lsp-keymap-prefix "C-c l")
+  (setq lsp-headerline-breadcrumb-enable nil)
   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
          (python-mode . lsp)
          (rust-mode . lsp)
@@ -793,76 +822,60 @@ tab-indent."
   :config
   (add-hook 'prog-mode-hook 'copilot-mode))
 
-;; (elpaca nil (
+;; Nano is wierd
+;; (require 'nano-mu4e)
+(require 'mu4e)
 
-;; 	     (setq mu4e-mu-version "1.10.8")
-;; 	     (require 'mu4e)
-;; 	     (setq mu4e-update-interval 900
-;; 		   mu4e-sent-folder "~/Mail/gmail/Sent Mail"
-;; 		   mail-user-agent 'mu4e-user-agent
-;; 		   mu4e-org-support t
-;; 		   mu4e-mu-version "1.10.8"
-;; 		   message-mail-user-agent 'mu4e-user-agent
-;; 		   mu4e-maildir (expand-file-name "~/Mail/")
-;; 		   mu4e-attachment-dir "~/Mail/Attach"
-;; 		   mu4e-completing-read-function 'completing-read
-;; 		   mu4e-compose-signature-auto-include nil
-;; 		   mu4e-use-fancy-chars t
-;; 		   mu4e-view-show-addresses t
-;; 		   mu4e-view-show-images t
-;; 		   mu4e-sent-messages-behavior 'sent
-;; 		   mu4e-get-mail-command "mbsync -a"
-;; 		   mu4e-change-filenames-when-moving t
-;; 		   mu4e-confirm-quit nil
-;; 		   mu4e-html2text-command  'mu4e-shr2text
-;; 		   mu4e-context-policy 'pick-first
-;; 		   mu4e-compose-context-policy 'always-ask)
-;; 	     (setq mu4e-contexts
-;; 		   (list
-;; 		    (make-mu4e-context
-;; 		     :name "gmail"
-;; 		     :enter-func (lambda () (mu4e-message "Entering Gmail context"))
-;; 		     :leave-func (lambda () (mu4e-message "Leaving Gmail context"))
-;; 		     :match-func (lambda (msg)
-;; 				   (when msg
-;; 				     (mu4e-message-contact-field-matches
-;; 				      msg '(:from :to :cc :bcc) "italoamaya03@gmail.com")))
-;; 		     :vars `((user-mail-address .  "italoamaya03@gmail.com")
-;; 			     (user-full-name . "Italo Amaya")
-;; 			     (mu4e-compose-format-flowed . t)
-;; 			     (message-send-mail-function . smtpmail-send-it)
-;; 			     (smtpmail-smtp-user . "italoamaya03")
-;; 			     (smtpmail-auth-credentials . (expand-file-name "~/.authinfo.gpg"))
-;; 			     (smtpmail-smtp-server . "smtp.gmail.com")
-;; 			     (smtpmail-smtp-service . 587)
-;; 			     (smtpmail-debug-info . t)
-;; 			     (smtpmail-debug-verbose . t)))
-;; 		    (make-mu4e-context
-;; 		     :name "icloud"
-;; 		     :enter-func (lambda () (mu4e-message "Entering iCloud context"))
-;; 		     :leave-func (lambda () (mu4e-message "Leaving iCloud context"))
-;; 		     :match-func (lambda (msg)
-;; 				   (when msg
-;; 				     (mu4e-message-contact-field-matches
-;; 				      msg '(:from :to :cc :bcc) "italoamaya@me.com")))
-;; 		     :vars `((user-mail-address .  "italoamaya@me.com")
-;; 			     (user-full-name . "Italo Amaya")
-;; 			     (mu4e-compose-format-flowed . t)
-;; 			     (message-send-mail-function . smtpmail-send-it)
-;; 			     (smtpmail-smtp-user . "italoamaya")
-;; 			     (smtpmail-auth-credentials . (expand-file-name "~/.authinfo.gpg"))
-;; 			     ;; Assuming iCloud SMTP settings
-;; 			     (smtpmail-smtp-server . "smtp.mail.me.com")
-;; 			     (smtpmail-smtp-service . 587)
-;; 			     (smtpmail-debug-info . t)
-;; 			     (smtpmail-debug-verbose . t)))))
-;; 	     (defun +mu4e-view-settings ()
-;; 	       "Settings for mu4e-view-mode."
-;; 	       (visual-line-mode)
-;; 	       (olivetti-mode)
-;; 	       (variable-pitch-mode))
-;; 	     (add-hook 'mu4e-view-mode-hook #'+mu4e-view-settings)
-;; 	     ))
+;; Set up some common mu4e variables
+(setq mail-user-agent 'mu4e-user-agent
+      mu4e-maildir "/Users/italo/Mail/"
+      mu4e-get-mail-command "mbsync gmail; mbsync icloud")
+
+;; Contexts
+(setq mu4e-contexts
+      `(
+      ,(make-mu4e-context
+	   :name "Gmail"
+	   :enter-func (lambda () (mu4e-message "Entering Gmail context"))
+	   :leave-func (lambda () (mu4e-message "Leaving Gmail context"))
+	   :vars '( ( user-mail-address . "italoamaya03@gmail.com")
+		    ( user-full-name . "Italo Amaya" )
+		    ( mu4e-compose-signature . "Italo Amaya")
+		    ( mu4e-drafts-folder . "/gmail/[Gmail]/Drafts")
+		    ( mu4e-sent-folder . "/gmail/[Gmail]/Sent Mail")
+		    ( mu4e-trash-folder . "/gmail/[Gmail]/Trash")
+		    ( mu4e-refile-folder . "/gmail/[Gmail]/All Mail")
+		    )
+	   :match-func (lambda (msg)
+			 (when msg
+			   (mu4e-message-contact-field-matches msg :to "italoamaya03@gmail.com"))))
+	 ,(make-mu4e-context
+	   :name "iCloud"
+	   :enter-func (lambda () (mu4e-message "Entering iCloud context"))
+	   :leave-func (lambda () (mu4e-message "Leaving iCloud context"))
+	   :vars '( ( user-mail-address . "italoamaya@me.com")
+		    ( user-full-name . "Italo Amaya" )
+		    ( mu4e-compose-signature . "Italo Amaya")
+		    ( mu4e-drafts-folder . "/icloud/Drafts")
+		    ( mu4e-sent-folder . "/icloud/Sent Messages")
+		    ( mu4e-trash-folder . "/icloud/Deleted Messages")
+		    ( mu4e-refile-folder . "/icloud/Archive")
+		    )
+	   :match-func (lambda (msg)
+			 (when msg
+			   (mu4e-message-contact-field-matches msg :to "italoamaya@me.com"))))
+
+	 )
+      )
+;; (setq mu4e-dashboard-file (concat mu4e-maildir "mu4e-dashboard.org"))
+
+(use-package elfeed
+  :config
+  (setq elfeed-feeds
+	'("https://sachachua.com/blog/category/emacs-news/feed/index.xml"
+	  "https://irreal.org/blog/?feed=rss2"
+	  "https://protesilaos.com/news.xml"
+	  )))
 
 (defvar Dropbox-dir "~/Personal/Dropbox"
   "Path the the directory of dropbox")
@@ -870,34 +883,6 @@ tab-indent."
 (setq user-full-name "Italo Amaya Arlotti"
       user-mail-address "italoamaya@me.com"
       org-directory (concat Dropbox-dir "/Bak/Org"))
-
-(set-face-attribute 'default nil
-  :font "FiraCode Nerd Font"
-  :height 160
-  :weight 'medium)
-(set-face-attribute 'variable-pitch nil
-  :font "FiraCode Nerd Font"
-  :height 160
-  :weight 'medium)
-(set-face-attribute 'fixed-pitch nil
-  :font "FiraCode Nerd Font"
-  :height 160
-  :weight 'medium)
-;; Makes commented text and keywords italics.
-;; This is working in emacsclient but not emacs.
-;; Your font must have an italic face available.
-(set-face-attribute 'font-lock-comment-face nil
-  :slant 'italic)
-(set-face-attribute 'font-lock-keyword-face nil
-  :slant 'italic)
-
-;; Uncomment the following line if line spacing needs adjusting.
-(setq-default line-spacing 0.12)
-
-;; Needed if using emacsclient. Otherwise, your fonts will be smaller than expected.
-(add-to-list 'default-frame-alist '(font . "FiraCode Nerd Font-16"))
-;; changes certain keywords to symbols, such as lamda!
-(setq global-prettify-symbols-mode t)
 
 ;; Unbind RET for going to links
 (elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
@@ -907,19 +892,28 @@ tab-indent."
 ;; Opens file links in the same window
 (add-to-list 'org-link-frame-setup '(file . find-file))
 
-(eval-after-load 'org-indent '(diminish 'org-indent-mode))
+(setq org-startup-indented t)
 (setq org-edit-src-content-indentation 0)
 (setq org-clock-sound (concat user-emacs-directory "bell.wav"))
 
 
 (require 'org-tempo)
+(require 'org-habit)
+(add-to-list 'org-modules 'org-habit)
 
-(setq org-agenda-directory (concat org-directory "/Agenda/"))
-(setq org-agenda-files '("~/org/Agenda/index.org"))
+(setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/gcal.org" "~/org/Agenda/habits.org"))
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/org/Agenda/index.org" "Tasks")
          "* TODO %?\n  %i\n  %a")))
+
+(require 'epa-file)
+(setq epg-pinentry-mode 'loopback)
+(epa-file-enable)
+(setq epg-gpg-program "/usr/local/bin/gpg")
+(setq plstore-cache-passphrase-for-symmetric-encryption t)
+
+(use-package org-gcal)
 
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 (setq org-latex-pdf-process
@@ -942,14 +936,14 @@ tab-indent."
 ;; Searching for nodes now includes a tag
 (setq org-roam-node-display-template
       (concat "${title:*} "
-              (propertize "${tags:100}" 'face 'org-tag)))
+              (propertize "${tags:50}" 'face 'org-tag)))
 
 (setq org-roam-capture-templates '(
                                    ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
                                     :unnarrowed t)
                                    ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" 
-				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|SoftwareEngPrinciples|OperatingSystems|Algorithms|UserInterfaces|NumericalComputation|}:\n")
+				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|DataMining|Networks|FoLang&FinAutomata|ArtificialIntelligence|Algorithms|CompilerDesign|}:\n")
                                     :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
@@ -1008,8 +1002,8 @@ tab-indent."
 ;;    (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
 
 (org-babel-do-load-languages
-	     'org-babel-load-languages
-	     '((shell . t) (python . t) (emacs-lisp . t) (C . t)))
+ 'org-babel-load-languages
+ '((shell . t) (python . t) (emacs-lisp . t) (C . t)))
 
 (setq org-confirm-babel-evaluate nil)
 
@@ -1017,6 +1011,10 @@ tab-indent."
   :after org
   :config
   (global-org-modern-mode))
+
+(use-package org-present)
+
+(use-package ob-async)
 
 (use-package rust-mode
   :config
@@ -1026,16 +1024,7 @@ tab-indent."
 
 (add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
 
-(use-package tree-sitter
-  :config
-  (require 'tree-sitter-langs)
-  (global-tree-sitter-mode)
-  (add-hook 'tree-sitter-after-on-hook #'tree-sitter-hl-mode))
-
-(use-package tree-sitter-langs)
-
-(elpaca (ts-fold :type git :host github :repo "emacs-tree-sitter/ts-fold"))
-(elpaca nil (global-ts-fold-mode 1))
+(require 'treesit)
 
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c++-mode-hook 'lsp)
@@ -1065,9 +1054,10 @@ tab-indent."
 
 (use-package emmet-mode)
 
-(set-scroll-bar-mode nil)
+(use-package yaml-mode)
 
-;; End the config loading with the splash screen
-(elpaca nil (require 'nano-splash))
+(use-package csv-mode)
+
+(set-scroll-bar-mode nil)
 
 
