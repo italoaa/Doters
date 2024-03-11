@@ -1,4 +1,6 @@
 plugin/
+tramp/
+.DS_Store
 nvim/
 neovim/
 dein
