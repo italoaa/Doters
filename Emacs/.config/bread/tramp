@@ -1,6 +1,0 @@
-;; -*- emacs-lisp -*- <23/10/13 16:27:30 /Users/italo/.config/bread/tramp>
-;; Tramp connection history.  Don't change this file.
-;; Run `M-x tramp-cleanup-all-connections' instead.
-
-(((tramp-file-name "ssh" "sc22iaa" nil "remote-access.leeds.ac.uk" nil nil nil)
-  nil))
