@@ -13,6 +13,7 @@
 
 ;; set the theme to dark
 (nano-theme-set-dark)
+;;(nano-theme-set-light)
 (call-interactively 'nano-refresh-theme)
 
 ;; End the config loading with the splash screen
@@ -330,7 +331,6 @@
 		  "^\\*shell.*\\*$"  shell-mode  ;shell as a popup
 		  "^\\*term.*\\*$"   term-mode   ;term as a popup
 		  "^\\*vterm.*\\*$"  vterm-mode  ;vterm as a popup
-		  "^\\*Org Babel Results*\\*$"  fundamental-mode  
 		  )))
   
   (setq popper-group-function #'popper-group-by-projectile) ; projectile projects
@@ -348,7 +348,9 @@
 (use-package svg-tag-mode)
 
 (use-package yeetube
- :elpaca (:host github :repo "https://git.thanosapollo.org/yeetube"))
+ :elpaca (:host github :repo "https://git.thanosapollo.org/yeetube")
+ :config
+ )
 
 (elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
@@ -392,7 +394,7 @@ tab-indent."
 
   (flour/ret-keys
     "l" '(org-latex-preview :wk "preview latex fragments")
-    "s" '(flyspell-auto-correct-word :wk "flyspell Correct word")
+    "s" '(jinx-correct :wk "flyspell Correct word")
     "RET" '(org-open-at-point :wk "org open at point")
     "i" '(org-toggle-inline-images :wk "Show inline images")
     "x" '(org-babel-execute-src-block :wk "Execute a src code block")
@@ -512,7 +514,14 @@ tab-indent."
     "m i" '(org-toggle-item :wk "Org toggle item")
     "m t" '(org-todo :wk "Org todo")
     "m B" '(org-babel-tangle :wk "Org babel tangle")
-    "m T" '(org-todo-list :wk "Org todo list"))
+    "m T" '(org-todo-list :wk "Org todo list")
+
+    "m c" '(:ignore t :wk "Org Clock")
+    "m c i" '(org-clock-in :wk "Org clock in")
+    "m c o" '(org-clock-out :wk "Org clock out")
+    "m c g" '(org-clock-goto :wk "Org clock goto")
+    "m c r" '(org-clock-report :wk "Org clock report")
+  )
 
   (flour/leader-keys
     "m b" '(:ignore t :wk "Tables")
@@ -586,6 +595,8 @@ tab-indent."
   ;;    :state '(normal vis)
   ;;    "u" '(nil)
   ;;    "C-r" 'undo-tree-redo)
+
+(general-define-key)
   )
 
 ;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
@@ -752,13 +763,11 @@ tab-indent."
           (company-gtags company-etags)
           company-oddmuse))
   :custom
-  (company-begin-commands '(self-insert-command))
-  (company-idle-delay 0.3)
   (company-minimum-prefix-length 3)
   (company-show-numbers t)
   (company-tooltip-align-annotations 't)
   ;; Different scroll margin
-  ;; (setq vertico-scroll-margin 0)
+  ;;(setq vertico-scroll-margin 0)
 
   (global-company-mode t))
 
@@ -829,6 +838,7 @@ tab-indent."
 ;; Set up some common mu4e variables
 (setq mail-user-agent 'mu4e-user-agent
       mu4e-maildir "/Users/italo/Mail/"
+      mu4e-mu-version "1.12.1"
       mu4e-get-mail-command "mbsync gmail; mbsync icloud")
 
 ;; Contexts
@@ -899,6 +909,7 @@ tab-indent."
 
 (require 'org-tempo)
 (require 'org-habit)
+(require 'ox-extra)
 (add-to-list 'org-modules 'org-habit)
 
 (setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/gcal.org" "~/org/Agenda/habits.org"))
@@ -1010,6 +1021,8 @@ tab-indent."
 (use-package org-modern
   :after org
   :config
+  (set-face-attribute 'org-modern-label nil
+                      :height 150))
   (global-org-modern-mode))
 
 (use-package org-present)
@@ -1025,12 +1038,16 @@ tab-indent."
 (add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
 
 (require 'treesit)
+(add-to-list 'treesit-language-source-alist
+	     '(typescript . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")))
+(add-to-list 'treesit-language-source-alist
+	     '(tsx . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")))
 
 (add-hook 'c-mode-hook 'lsp)
+
 (add-hook 'c++-mode-hook 'lsp)
 
-;;(use-package ccls
-;;  :hook ((c-mode c++-mode) . (lambda () (require 'ccls) (lsp))))
+(use-package fancy-compilation)
 
 (use-package lsp-pyright
   :demand t
@@ -1056,8 +1073,49 @@ tab-indent."
 
 (use-package yaml-mode)
 
+(use-package dockerfile-mode)
+(use-package docker-compose-mode)
+
 (use-package csv-mode)
 
+(use-package typescript-mode
+  :after tree-sitter
+  :config
+  ;; we choose this instead of tsx-mode so that eglot can automatically figure out language for server
+  ;; see https://github.com/joaotavora/eglot/issues/624 and https://github.com/joaotavora/eglot#handling-quirky-servers
+  (define-derived-mode typescriptreact-mode typescript-mode
+    "TypeScript TSX")
+
+  ;; use our derived mode for tsx files
+  (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . typescriptreact-mode))
+  ;; by default, typescript-mode is mapped to the treesitter typescript parser
+  ;; use our derived mode to map both .tsx AND .ts -> typescriptreact-mode -> treesitter tsx
+  (add-to-list 'tree-sitter-major-mode-language-alist '(typescriptreact-mode . tsx)))
+
+(use-package css-in-js-mode :elpaca (:host github :repo "orzechowskid/tree-sitter-css-in-js"))
+
+(use-package coverlay
+  :after css-in-js-mode)
+
+(use-package origami
+  :after coverlay
+  :config
+  ;; Configuration
+  (require 'tsx-mode)
+  (tsx-mode t)
+  (add-to-list 'auto-mode-alist '("\\.[jt]s[x]?\\'" . tsx-mode)))
+
+(use-package prettier-js
+  :config
+  ;; Apply this prettier-js-mode to js, ts, tsx
+  (add-hook 'typescript-mode-hook 'prettier-js-mode)
+  (add-hook 'typescriptreact-mode-hook 'prettier-js-mode)
+  (add-hook 'js-mode-hook 'prettier-js-mode)
+  )
+
 (set-scroll-bar-mode nil)
+
+;; Recognize .vm files as .txt files
+(add-to-list 'auto-mode-alist '("\\.vm\\'" . text-mode))
 
 

@@ -4,14 +4,14 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-refile-last-stored"
  (filename . "~/org/Agenda/index.org")
- (front-context-string . "** DONE Go throu")
- (rear-context-string . "tions \n\n\n* Done\n")
- (position . 1756)
- (last-modified 26034 48590 980556 0))
+ (front-context-string . "** Done\n*** DONE")
+ (rear-context-string . "*Main][Main]]\n\n\n")
+ (position . 1782)
+ (last-modified 26107 10632 486647 0))
 ("org-capture-last-stored"
- (filename . "~/Personal/Dropbox/Bak/Org/roam/20240302115627-socket.org")
- (front-context-string . "* Main\nA socket ")
- (rear-context-string . "mpSci:Networks:\n")
- (position . 126)
- (last-modified 26083 5342 32543 0))
+ (filename . "~/org/Agenda/index.org")
+ (front-context-string . "** TODO Finish t")
+ (rear-context-string . "self.\n\n\n* Tasks\n")
+ (position . 93)
+ (last-modified 26107 10581 674708 0))
 )

@@ -130,6 +130,28 @@ key_bindings:
   
   
 schemes:
+  Nano : &Nano
+    primary:
+      background :  "#2E3440"
+      foreground : "#ECEFF4"
+    normal:
+      black : "#434C5E" 
+      red : "#D08770"
+      green : "#A3BE8C"
+      yellow : "#EBCB8B"
+      blue : "#81A1C1"
+      magenta : "#B48EAD"
+      cyan : "#88C0D0"
+      white : "#ECEFF4"
+    bright:
+      black : "#252931" 
+      red : "#DE5852"
+      green : "#7eca9c"
+      yellow : "#ebcb8b"
+      blue : "#519ABA"
+      magenta : "#B48EAD"
+      cyan : "#88C0D0"
+      white : "#ECEFF4"
   Mine : &Mine
     primary:
       background :  "#1b1f27"
@@ -322,4 +344,4 @@ schemes:
       magenta: '#d3869b'
       cyan:    '#89b482'
       white:   '#dfbf8e'
-colors: *Gruvbox
+colors: *Nano
