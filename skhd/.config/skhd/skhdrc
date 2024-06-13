@@ -7,13 +7,16 @@ ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 ## open terminal
 hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
 hyper - m : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu"
+# hyper - t : /Users/italo/.config/yabai/toggle-bar.sh
+# hyper - l : /Users/italo/.config/Bin/emacs/light.sh
+# hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
+# hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
 hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e 'btm'
 hyper - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ncmpcpp'
-hyper - p : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ptpython'
-hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'rioki'
+hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t 'Rioki' --working-directory "/Users/italo/personal/Media/Movies/" -e '/Users/italo/.config/Bin/rioki'
 
 # This is one of my favourites
-# hyper - c : /Users/italo/.config/Bin/fun/classic-radio.sh
+hyper - c : /Users/italo/.config/Bin/fun/classic-radio.sh
 
 # focus
 # alt - h : yabai -m window --focus west

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+MEDIA_FOLDER="/Users/italo/Personal/Media/Movies/"
+MOVIES_FOLDER="/Users/italo/Personal/Media/Movies/movies/"
+TV_FOLDER="/Users/italo/Personal/Media/Movies/tv/"
+
+echo " ______     __     ______     __  __     __    
+/\  == \   /\ \   /\  __ \   /\ \/ /    /\ \   
+\ \  __<   \ \ \  \ \ \/\ \  \ \  _'-.  \ \ \  
+ \ \_\ \_\  \ \_\  \ \_____\  \ \_\ \_\  \ \_\ 
+  \/_/ /_/   \/_/   \/_____/   \/_/\/_/   \/_/ 
+                                               "
+echo "Do you want to watch a movie or a TV show?"
+select choice in "Movie" "Show"; do
+    case "$choice" in
+        "Movie" )
+            # Code to handle movie selection goes here
+	    find "$MOVIES_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname "*.iso" \) | awk -F/ '{print $NF}' | fzf --prompt="Select a Movie > " | xargs -I {} find "$MOVIES_FOLDER" -type f -name "{}" | xargs -I {} mpv "{}"
+            break;;
+        "Show" )
+	    find "$TV_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname "*.iso" \) | awk -F/ '{print $NF}' | fzf --prompt="Select a Movie > " | xargs -I {} find "$TV_FOLDER" -type f -name "{}" | xargs -I {} mpv "{}"
+            break;;
+        * )
+            echo "Invalid selection."
+            ;;
+    esac
+done
