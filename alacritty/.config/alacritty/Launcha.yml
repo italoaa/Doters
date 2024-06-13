@@ -10,7 +10,7 @@ window:
   decorations: buttonless
   title: Btm
   dynamic_title: false
-  startup_mode: Maximized
+  startup_mode: Windowed
   history: 1000
   opacity: 0.96
 font:

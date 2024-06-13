@@ -1,2 +1,0 @@
-windows=$(yabai -m query --windows --space | jq -r .[] )
-

@@ -12,8 +12,8 @@
 (require 'nano-theme-light)
 
 ;; set the theme to dark
-(nano-theme-set-dark)
-;;(nano-theme-set-light)
+;; (nano-theme-set-dark)
+(nano-theme-set-light)
 (call-interactively 'nano-refresh-theme)
 
 ;; End the config loading with the splash screen
@@ -52,7 +52,7 @@
 (global-visual-line-mode t)
 
 (setq display-line-numbers-type 'relative)
-(setq scroll-margin 8)
+(setq scroll-margin 2)
 (setq indent-tabs-mode nil)
 (setq tab-width 4)
 
@@ -63,7 +63,18 @@
       mac-command-modifier 'meta
       mac-option-modifier 'none)
 
+(setq user-full-name "Italo Amaya Arlotti"
+      user-mail-address "italoamaya@me.com")
 
+;; Common directories
+(setq gnus-home-directory "/Users/italo/"
+      config-dir (concat gnus-home-directory ".config/")
+      drop-dir (concat gnus-home-directory "Personal/Dropbox/")
+      org-directory (concat drop-dir "Bak/Org")
+      bread-dir (concat config-dir "bread/")
+      repos-dir (concat gnus-home-directory "Personal/Programming/Repos/")
+      github-dir (concat repos-dir "github.com/")
+      italoaa-dir (concat github-dir "italoaa/"))
 
 (defun kill-all-except-dashboard-and-essential ()
   "Kill all buffers except the dashboard, *scratch*, and *Messages*, prompting to save unsaved buffers with y or n."
@@ -94,6 +105,11 @@
 
   (setq evil-undo-system 'undo-redo)
   (evil-mode))
+
+(use-package evil-surround
+  :ensure t
+  :config
+  (global-evil-surround-mode 1))
 
 (use-package evil-collection
   :after evil
@@ -236,6 +252,8 @@
 
 (use-package ein)
 
+(use-package restclient)
+
 (use-package dashboard
   :demand t
   :init
@@ -362,13 +380,15 @@
   ;; THis is to go up and down in wrapped lines
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
   (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
+
+  ;; Popper
   (evil-global-set-key 'normal (kbd "C-t") 'popper-toggle)
   (evil-global-set-key 'insert (kbd "C-t") 'popper-toggle)
   (evil-global-set-key 'normal (kbd "C-<tab>") 'popper-cycle)
+
   ;; Auto complete with C-SPC
   (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
   (evil-global-set-key 'normal "\C-s" 'consult-line)
-  (elpaca nil (global-set-key "\C-s" '(message "helo")))
   (elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
   (defun rk/copilot-tab ()
@@ -410,9 +430,6 @@ tab-indent."
     "SPC" '(find-file :wk "Projectile find file")
     "RET" '(evil-ret :wk "Evil ret")
     "." '(find-file :wk "Find file")
-    "f c" '((lambda () (interactive) (find-file "~/.config/bread/config.org")) :wk "Edit emacs config")
-    "f r" '(consult-recent-file :wk "Find recent files")
-    "f b" '(consult-buffer :wk "Find buffer")
     "j" '(next-buffer :wk "next buffer")
     "k" '(previous-buffer :wk "next buffer")
     "c" '(compile :wk "compile")
@@ -425,6 +442,14 @@ tab-indent."
     "TAB b" '(persp-ivy-switch-buffer :wk "Switch buffer")
     "TAB l" '(persp-switch :wk "Switch Perspective")
     "TAB k" '(persp-switch :wk "Kill Perspective")
+    )
+
+  (flour/leader-keys
+    "f R" '((lambda () (interactive) (find-file italoaa-dir)) :wk "Find Project")
+    "f C" '((lambda () (interactive) (find-file config-dir)) :wk "Find Config")
+    "f c" '((lambda () (interactive) (find-file "~/.config/bread/config.org")) :wk "Edit emacs config")
+    "f r" '(consult-recent-file :wk "Find recent files")
+    "f b" '(consult-buffer :wk "Find buffer")
     )
 
   (flour/leader-keys
@@ -521,7 +546,7 @@ tab-indent."
     "m c o" '(org-clock-out :wk "Org clock out")
     "m c g" '(org-clock-goto :wk "Org clock goto")
     "m c r" '(org-clock-report :wk "Org clock report")
-  )
+    )
 
   (flour/leader-keys
     "m b" '(:ignore t :wk "Tables")
@@ -596,7 +621,7 @@ tab-indent."
   ;;    "u" '(nil)
   ;;    "C-r" 'undo-tree-redo)
 
-(general-define-key)
+  (general-define-key)
   )
 
 ;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
@@ -887,13 +912,6 @@ tab-indent."
 	  "https://protesilaos.com/news.xml"
 	  )))
 
-(defvar Dropbox-dir "~/Personal/Dropbox"
-  "Path the the directory of dropbox")
-
-(setq user-full-name "Italo Amaya Arlotti"
-      user-mail-address "italoamaya@me.com"
-      org-directory (concat Dropbox-dir "/Bak/Org"))
-
 ;; Unbind RET for going to links
 (elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
 (elpaca nil (setq org-return-follows-link t
@@ -914,9 +932,22 @@ tab-indent."
 
 (setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/gcal.org" "~/org/Agenda/habits.org"))
 
+(setq meditations-dir (concat org-directory "/meditations/"))
+
+;; Function to generate the file path with title
+(defun generate-meditation-file-path ()
+  (let* ((title (read-string "Title: ")) ; Prompt for the title
+         (formatted-title (replace-regexp-in-string " " "_" title)) ; Replace spaces with underscores
+         (filename (concat (format-time-string "%Y-%m-%d_") formatted-title ".org"))) ; Correctly format filename
+    (expand-file-name filename meditations-dir))) ; Return full path
+
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/org/Agenda/index.org" "Tasks")
-         "* TODO %?\n  %i\n  %a")))
+         "* TODO %?\n  %i\n  %a")
+        ("m" "Meditation Entry" plain (file generate-meditation-file-path)
+         "#+title: %?\nEntered on %U\n\n%i\n" :empty-lines 1)
+	)
+)
 
 (require 'epa-file)
 (setq epg-pinentry-mode 'loopback)
@@ -1022,10 +1053,19 @@ tab-indent."
   :after org
   :config
   (set-face-attribute 'org-modern-label nil
-                      :height 150))
+                      :height 150)
   (global-org-modern-mode))
 
 (use-package org-present)
+
+(use-package org-journal
+  :config
+  (setq org-journal-date-prefix "#+TITLE: "
+        org-journal-dir (concat org-directory "/journal/")
+        org-journal-date-format "%a, %d-%m-%Y"
+        org-journal-file-format "%d-%m-%Y.org"
+        org-journal-time-prefix "* ")
+  )
 
 (use-package ob-async)
 
@@ -1071,6 +1111,8 @@ tab-indent."
 
 (use-package emmet-mode)
 
+(use-package lua-mode)
+
 (use-package yaml-mode)
 
 (use-package dockerfile-mode)
@@ -1078,40 +1120,7 @@ tab-indent."
 
 (use-package csv-mode)
 
-(use-package typescript-mode
-  :after tree-sitter
-  :config
-  ;; we choose this instead of tsx-mode so that eglot can automatically figure out language for server
-  ;; see https://github.com/joaotavora/eglot/issues/624 and https://github.com/joaotavora/eglot#handling-quirky-servers
-  (define-derived-mode typescriptreact-mode typescript-mode
-    "TypeScript TSX")
 
-  ;; use our derived mode for tsx files
-  (add-to-list 'auto-mode-alist '("\\.tsx?\\'" . typescriptreact-mode))
-  ;; by default, typescript-mode is mapped to the treesitter typescript parser
-  ;; use our derived mode to map both .tsx AND .ts -> typescriptreact-mode -> treesitter tsx
-  (add-to-list 'tree-sitter-major-mode-language-alist '(typescriptreact-mode . tsx)))
-
-(use-package css-in-js-mode :elpaca (:host github :repo "orzechowskid/tree-sitter-css-in-js"))
-
-(use-package coverlay
-  :after css-in-js-mode)
-
-(use-package origami
-  :after coverlay
-  :config
-  ;; Configuration
-  (require 'tsx-mode)
-  (tsx-mode t)
-  (add-to-list 'auto-mode-alist '("\\.[jt]s[x]?\\'" . tsx-mode)))
-
-(use-package prettier-js
-  :config
-  ;; Apply this prettier-js-mode to js, ts, tsx
-  (add-hook 'typescript-mode-hook 'prettier-js-mode)
-  (add-hook 'typescriptreact-mode-hook 'prettier-js-mode)
-  (add-hook 'js-mode-hook 'prettier-js-mode)
-  )
 
 (set-scroll-bar-mode nil)
 

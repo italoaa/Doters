@@ -1,0 +1,19 @@
+#+title:  
+#+filetags: :Job:
+#+description: alksjdlkasjdfo
+#+role: 
+
+- Job description
+- Role
+- Website
+- Location
+- Deadline
+- Link to Job post
+- What is appealing
+- What are they looking for
+- Date of Application Submitted
+- Succesfull?
+- The process of application ( online questions, numerical test , interview, etc. )
+
+
+

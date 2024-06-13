@@ -13,4 +13,5 @@
  (magit-remote
   ("-f"))
  (magit-reset nil)
- (magit-stash nil))
+ (magit-stash nil)
+ (magit-tag nil))
