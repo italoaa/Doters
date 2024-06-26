@@ -1,17 +1,19 @@
 #!/usr/bin/env sh
-## HYPER == SHIFT + CMD + ALT + OPTION
-
 ## Quickly restart the yabai launch agent
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 ## open terminal
-hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
-hyper - m : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu"
-# hyper - t : /Users/italo/.config/yabai/toggle-bar.sh
+hyper - return : alacritty
+hyper - m : alacritty -t "Menu"
+
+# The leyendary one liner
+# config-file-path="/Users/italo/.config/bread/config.org"
+hyper - t : grep -q 'nano-theme-set-light' "/Users/italo/.config/bread/config.org" && sed -i '' 's/nano-theme-set-light/nano-theme-set-dark/g' "/Users/italo/.config/bread/config.org" || sed -i '' 's/nano-theme-set-dark/nano-theme-set-light/g' "/Users/italo/.config/bread/config.org"
+
 # hyper - l : /Users/italo/.config/Bin/emacs/light.sh
 # hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
 # hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
-hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" --config-file ~/.config/alacritty/Launcha.yml -e 'btm'
+hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'btm'
 hyper - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ncmpcpp'
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t 'Rioki' --working-directory "/Users/italo/personal/Media/Movies/" -e '/Users/italo/.config/Bin/rioki'
 

@@ -10,6 +10,7 @@ echo " ______     __     ______     __  __     __
  \ \_\ \_\  \ \_\  \ \_____\  \ \_\ \_\  \ \_\ 
   \/_/ /_/   \/_/   \/_____/   \/_/\/_/   \/_/ 
                                                "
+
 echo "Do you want to watch a movie or a TV show?"
 select choice in "Movie" "Show"; do
     case "$choice" in
@@ -18,7 +19,7 @@ select choice in "Movie" "Show"; do
 	    find "$MOVIES_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname "*.iso" \) | awk -F/ '{print $NF}' | fzf --prompt="Select a Movie > " | xargs -I {} find "$MOVIES_FOLDER" -type f -name "{}" | xargs -I {} mpv "{}"
             break;;
         "Show" )
-	    find "$TV_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname "*.iso" \) | awk -F/ '{print $NF}' | fzf --prompt="Select a Movie > " | xargs -I {} find "$TV_FOLDER" -type f -name "{}" | xargs -I {} mpv "{}"
+	    find "$TV_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname "*.iso" \) | awk -F/ '{print $NF}' | fzf --prompt="Select a Tv Show > " | xargs -I {} find "$TV_FOLDER" -type f -name "{}" | xargs -I {} mpv "{}"
             break;;
         * )
             echo "Invalid selection."

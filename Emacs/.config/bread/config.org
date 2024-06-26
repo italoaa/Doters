@@ -4,6 +4,24 @@
 
 * Setup
 This is the step where we set up the environment for our bread. We are going to abstract away some setup so that the configuration file is easier to read
+
+** Install on mac
+This config is made for emacs-plus@30 compiled by:
+#+begin_src sh :noeval
+brew install emacs-plus@30 --with-mailutils --with-imagemagick --with-native-comp
+#+end_src
+
+I edited the formulae in homebrew and commented the env and the inject path. This allowed it to compile
+#+begin_src 
+on_macos do
+    # env :std
+end
+
+# inject PATH to Info.plist
+# inject_path
+
+#+end_src
+
 ** Import modules directory
 #+begin_src emacs-lisp
 ;; Remove the tilte bar
@@ -22,9 +40,7 @@ This is the step where we set up the environment for our bread. We are going to 
 (require 'nano-theme-dark)
 (require 'nano-theme-light)
 
-;; set the theme to dark
-;; (nano-theme-set-dark)
-(nano-theme-set-light)
+(nano-theme-set-dark)
 (call-interactively 'nano-refresh-theme)
 
 ;; End the config loading with the splash screen
@@ -60,7 +76,7 @@ This is the step where we set up the environment for our bread. We are going to 
 * Emacs and personal Functions
 #+begin_src emacs-lisp
 (recentf-mode)
-(elpaca nil (setq mu4e-mu-version "1.10.8"))
+;;(elpaca nil (setq mu4e-mu-version "1.10.8"))
 
 ;; Correct indentation ;)
 (add-hook 'rust-mode-hook
@@ -150,10 +166,6 @@ This is the step where we set up the environment for our bread. We are going to 
   (persp-suppress-no-prefix-key-warning t)
   :init
   (persp-mode))
-#+end_src
-*** Ef-Themes
-#+begin_src emacs-lisp
-;; (use-package ef-themes)
 #+end_src
 *** Doom-themes
 #+begin_src emacs-lisp
@@ -308,59 +320,17 @@ This is the step where we set up the environment for our bread. We are going to 
 (setq tramp-default-method "ssh")
 #+end_src
 
-*** Folding
+*** TODO Folding
 #+begin_src emacs-lisp
-
-#+end_src
-*** EIN
-#+begin_src emacs-lisp
-(use-package ein)
-#+end_src
-*** Rest Client
-#+begin_src emacs-lisp
-(use-package restclient)
-
+;; Add hook to use hs mode
 #+end_src
 ** Visual
-*** Dashboard
-#+begin_src emacs-lisp
-(use-package dashboard
-  :demand t
-  :init
-  ;; (setq initial-buffer-choice 'dashboard-open)
-  (setq dashboard-set-heading-icons t)
-  (setq dashboard-set-file-icons t)
-  (setq dashboard-banner-logo-title "Fresh Baked Bread")
-  ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
-  (setq dashboard-startup-banner (concat user-emacs-directory "bread-logo.png"))  ;; use custom image as banner
-  (setq dashboard-center-content t)
-  (setq dashboard-items '((recents . 5)
-                          (projects . 3)
-                          ))
-  :custom
-  (dashboard-modify-heading-icons '((recents . "file-text")
-                            (bookmarks . "book")))
-  ;;:config
-  ;;(dashboard-setup-startup-hook)
-)
-
-#+end_src
 *** trasparency
 #+begin_src emacs-lisp
 (defun transparency (value)
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-#+end_src
-*** Olivetti
-#+begin_src emacs-lisp
-(use-package olivetti
-  :after org
-  :init
-  (setq olivetti-body-width 140)
-  ;; :hook (org-mode . olivetti-mode)
-  :config
-  (display-line-numbers-mode 0))
 #+end_src
 *** All the icons
 #+begin_src emacs-lisp
@@ -370,24 +340,6 @@ This is the step where we set up the environment for our bread. We are going to 
 
 (use-package all-the-icons-dired
   :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
-#+end_src
-*** Doom modeline
-#+begin_src emacs-lisp
-(use-package doom-modeline
-  :demand t
-  ;; :init (doom-modeline-mode 1)
-  :config
-  (setq doom-modeline-height 35      ;; sets modeline height
-        doom-modeline-bar-width 5    ;; sets right bar width
-        doom-modeline-buffer-file-name-style 'file-name
-        doom-modeline-persp-name t   ;; adds perspective name to modeline
-        doom-modeline-persp-icon nil
-        doom-modeline-major-mode-color-icon t
-        doom-modeline-modal t)) ;; adds folder icon next to persp name
-
-;; How to display icons correctly?
-
-;; nerd-icons are necessary. Then run M-x nerd-icons-install-fonts to install the resource fonts. On Windows, the fonts should be installed manually. nerd-icons supports both GUI and TUI.
 #+end_src
 *** Rainbow mode
 #+begin_src emacs-lisp
@@ -416,8 +368,8 @@ This is the step where we set up the environment for our bread. We are going to 
         which-key-allow-imprecise-window-fit nil
         which-key-separator " → " ))
 #+end_src
-*** Popper mode
-#+begin_src emacs-lisp
+*** Popper mode DISABLED
+#+begin_src text
 (use-package popper
   :ensure t ; or :straight t
   :init
@@ -455,7 +407,7 @@ This is the step where we set up the environment for our bread. We are going to 
 *** Yeetube
 #+begin_src emacs-lisp
 (use-package yeetube
- :elpaca (:host github :repo "https://git.thanosapollo.org/yeetube")
+ :ensure (:host github :repo "https://git.thanosapollo.org/yeetube")
  :config
  )
 #+end_src
@@ -466,7 +418,7 @@ This is the step where we set up the environment for our bread. We are going to 
 The keybindings of emacs is like the flour of the bread. Because I come from doom emacs these follow the keybindings from DT's configuration who is also a doom emacs user! [[https://gitlab.com/dwt1/configuring-emacs/-/blob/main/06-cleaning-up-the-config/config.org?ref_type=heads#evil][Original config]].
  
 #+begin_src emacs-lisp
-(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
 
 (use-package general
@@ -485,7 +437,7 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   ;; Auto complete with C-SPC
   (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
   (evil-global-set-key 'normal "\C-s" 'consult-line)
-  (elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+  ;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
   (defun rk/copilot-tab ()
     "Tab command that will complet with copilot if a completion is
@@ -554,7 +506,7 @@ tab-indent."
     "b C" '(clone-indirect-buffer-other-window :wk "Clone indirect buffer in new window")
     "b d" '(bookmark-delete :wk "Delete bookmark")
     "b i" '(ibuffer :wk "Ibuffer")
-    "b k" '(kill-this-buffer :wk "Kill this buffer")
+    "b k" '(kill-buffer :wk "Kill this buffer")
     "b K" '(kill-all-except-dashboard-and-essential :wk "Kill All except escential")
     "b l" '(list-bookmarks :wk "List bookmarks")
     "b m" '(bookmark-set :wk "Set bookmark")
@@ -778,23 +730,14 @@ tab-indent."
 (use-package vertico
   :init
   (vertico-mode)
-
-  ;; Different scroll margin
-  ;; (setq vertico-scroll-margin 0)
-
-  ;; Show more candidates
-  ;; (setq vertico-count 20)
-
   ;; Grow and shrink the Vertico minibuffer
   (setq vertico-resize t)
-
   ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
   ;; (setq vertico-cycle t)
   )
 
 (use-package nano-vertico
- :elpaca (:host github :repo "rougier/nano-vertico" :files ("nano-vertico.el"))
- :ensure t
+ :ensure (:host github :repo "rougier/nano-vertico" :files ("nano-vertico.el"))
  :config
  ;; (nano-vertico-mode 1)
 )
@@ -880,8 +823,8 @@ tab-indent."
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
 #+end_src
-*** Company
-#+begin_src emacs-lisp
+*** Company DISABLE
+#+begin_src text
 (use-package company
   :defer 2
   :diminish
@@ -951,7 +894,7 @@ tab-indent."
   (setq dap-python-debugger 'debugpy))
 #+end_src
 ** Writing
-*** FlyCheck
+*** TODO FlyCheck
 #+begin_src emacs-lisp
 (use-package flycheck
   :demand t
@@ -959,8 +902,8 @@ tab-indent."
   :diminish
   :init (global-flycheck-mode))
 #+end_src
-*** AI
-#+begin_src emacs-lisp
+*** AI DISABLED
+#+begin_src text
 (use-package org-ai
   :ensure t
   :commands (org-ai-mode
@@ -974,8 +917,7 @@ tab-indent."
   (org-ai-install-yasnippets)) ; if you are using yasnippet and want `ai` snippets
 
 (use-package copilot
-  :elpaca (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
-  :ensure t
+  :ensure (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
   :config
   (add-hook 'prog-mode-hook 'copilot-mode))
 #+end_src
@@ -1048,9 +990,9 @@ Still does not work
 ** Variables
 #+begin_src emacs-lisp
 ;; Unbind RET for going to links
-(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
-(elpaca nil (setq org-return-follows-link t
-                  org-image-actual-width nil))
+;;(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
+;;(elpaca nil (setq org-return-follows-link t
+;;                  org-image-actual-width nil))
 
 ;; Opens file links in the same window
 (add-to-list 'org-link-frame-setup '(file . find-file))
@@ -1154,16 +1096,6 @@ Still does not work
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
 #+end_src
-** Evil org
-#+begin_src emacs-lisp
-(use-package evil-org
-  :demand t
-  :after org
-  :hook (org-mode . (lambda () evil-org-mode))
-  :config
-  (require 'evil-org-agenda)
-  (evil-org-agenda-set-keys))
-#+end_src
 ** org download
 #+begin_src emacs-lisp
 (use-package org-download
@@ -1235,6 +1167,10 @@ Still does not work
 #+begin_src emacs-lisp
 (use-package ob-async)
 #+end_src
+** ob nix
+#+begin_src emacs-lisp
+;; (use-package ob-nixn)
+#+end_src
 * Languages 
 ** Rust [0/3]
 #+begin_src emacs-lisp
@@ -1293,7 +1229,11 @@ Still does not work
       org-babel-python-command "/usr/local/anaconda3/bin/python3"
       lsp-pyright-venv-path "/usr/local/anaconda3")
 #+end_src
-
+** Nix
+#+begin_src emacs-lisp
+(use-package nix-mode)
+  
+#+end_src
 ** html
 #+begin_src emacs-lisp
 (use-package emmet-mode)
@@ -1315,18 +1255,10 @@ Still does not work
 #+begin_src emacs-lisp
 (use-package csv-mode)
 #+end_src
-** TSX :FIXME:
-#+begin_src emacs-lisp
-#+end_src
 * Ends
 #+begin_src emacs-lisp
 (set-scroll-bar-mode nil)
 
 ;; Recognize .vm files as .txt files
 (add-to-list 'auto-mode-alist '("\\.vm\\'" . text-mode))
-#+end_src
-* Task list [0/1]
-** TODO pdf view
-#+begin_src emacs-lisp
-
 #+end_src

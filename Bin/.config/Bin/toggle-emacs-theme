@@ -1,0 +1,6 @@
+#!/bin/sh
+
+emacs-config="/Users/italo/.config/bread/config.org"
+
+sed -i '' 's/nano-theme-set-dark/nano-theme-set-light/' "$config_file_path"
+

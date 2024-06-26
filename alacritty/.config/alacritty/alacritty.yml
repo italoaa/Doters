@@ -31,7 +31,6 @@ font:
 
 
   size: 16.0
-  AppleFontSmoothing: true
 
 draw_bold_text_with_bright_colors: true
 
@@ -55,11 +54,6 @@ live_config_reload: true
 shell:
   program: /usr/local/bin/fish
 working_directory: /Users/italo/
-
-colors:
-  primary:
-    background: '#282c34'
-    foreground: '#bbc2cf'
 
 key_bindings:
   - { key: V,        mods: Command, action: Paste                        }

@@ -11,9 +11,7 @@
 (require 'nano-theme-dark)
 (require 'nano-theme-light)
 
-;; set the theme to dark
-;; (nano-theme-set-dark)
-(nano-theme-set-light)
+(nano-theme-set-dark)
 (call-interactively 'nano-refresh-theme)
 
 ;; End the config loading with the splash screen
@@ -39,7 +37,7 @@
       version-control t)
 
 (recentf-mode)
-(elpaca nil (setq mu4e-mu-version "1.10.8"))
+;;(elpaca nil (setq mu4e-mu-version "1.10.8"))
 
 ;; Correct indentation ;)
 (add-hook 'rust-mode-hook
@@ -121,8 +119,6 @@
   (persp-suppress-no-prefix-key-warning t)
   :init
   (persp-mode))
-
-;; (use-package ef-themes)
 
 (use-package doom-themes
   :demand t
@@ -248,44 +244,12 @@
 
 (setq tramp-default-method "ssh")
 
-
-
-(use-package ein)
-
-(use-package restclient)
-
-(use-package dashboard
-  :demand t
-  :init
-  ;; (setq initial-buffer-choice 'dashboard-open)
-  (setq dashboard-set-heading-icons t)
-  (setq dashboard-set-file-icons t)
-  (setq dashboard-banner-logo-title "Fresh Baked Bread")
-  ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
-  (setq dashboard-startup-banner (concat user-emacs-directory "bread-logo.png"))  ;; use custom image as banner
-  (setq dashboard-center-content t)
-  (setq dashboard-items '((recents . 5)
-                          (projects . 3)
-                          ))
-  :custom
-  (dashboard-modify-heading-icons '((recents . "file-text")
-                            (bookmarks . "book")))
-  ;;:config
-  ;;(dashboard-setup-startup-hook)
-)
+;; Add hook to use hs mode
 
 (defun transparency (value)
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-
-(use-package olivetti
-  :after org
-  :init
-  (setq olivetti-body-width 140)
-  ;; :hook (org-mode . olivetti-mode)
-  :config
-  (display-line-numbers-mode 0))
 
 (use-package all-the-icons
   :demand t
@@ -293,22 +257,6 @@
 
 (use-package all-the-icons-dired
   :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
-
-(use-package doom-modeline
-  :demand t
-  ;; :init (doom-modeline-mode 1)
-  :config
-  (setq doom-modeline-height 35      ;; sets modeline height
-        doom-modeline-bar-width 5    ;; sets right bar width
-        doom-modeline-buffer-file-name-style 'file-name
-        doom-modeline-persp-name t   ;; adds perspective name to modeline
-        doom-modeline-persp-icon nil
-        doom-modeline-major-mode-color-icon t
-        doom-modeline-modal t)) ;; adds folder icon next to persp name
-
-;; How to display icons correctly?
-
-;; nerd-icons are necessary. Then run M-x nerd-icons-install-fonts to install the resource fonts. On Windows, the fonts should be installed manually. nerd-icons supports both GUI and TUI.
 
 (use-package rainbow-mode
   :diminish
@@ -333,44 +281,14 @@
         which-key-allow-imprecise-window-fit nil
         which-key-separator " → " ))
 
-(use-package popper
-  :ensure t ; or :straight t
-  :init
-  (setq popper-reference-buffers
-	'("\\*Messages\\*"
-	  "Output\\*$"
-	  "\\*Async Shell Command\\*"
-	  help-mode
-	  compilation-mode))
-  ;; Match eshell, shell, term and/or vterm buffers
-  (setq popper-reference-buffers
-	(append popper-reference-buffers
-		'("^\\*eshell.*\\*$" eshell-mode ;eshell as a popup
-		  "^\\*shell.*\\*$"  shell-mode  ;shell as a popup
-		  "^\\*term.*\\*$"   term-mode   ;term as a popup
-		  "^\\*vterm.*\\*$"  vterm-mode  ;vterm as a popup
-		  )))
-  
-  (setq popper-group-function #'popper-group-by-projectile) ; projectile projects
-  (setq popper-display-control t)  ;This is the DEFAULT behavior
-  (popper-mode +1)
-  (popper-echo-mode +1)
-  :config
-  (add-to-list 'display-buffer-alist
-	       '("\\*Compilation\\*"
-		 (display-buffer-in-side-window)
-		 (side . right)
-		 (window-width . 80)))
-  )
-
 (use-package svg-tag-mode)
 
 (use-package yeetube
- :elpaca (:host github :repo "https://git.thanosapollo.org/yeetube")
+ :ensure (:host github :repo "https://git.thanosapollo.org/yeetube")
  :config
  )
 
-(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
 
 (use-package general
@@ -389,7 +307,7 @@
   ;; Auto complete with C-SPC
   (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
   (evil-global-set-key 'normal "\C-s" 'consult-line)
-  (elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+  ;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
   (defun rk/copilot-tab ()
     "Tab command that will complet with copilot if a completion is
@@ -458,7 +376,7 @@ tab-indent."
     "b C" '(clone-indirect-buffer-other-window :wk "Clone indirect buffer in new window")
     "b d" '(bookmark-delete :wk "Delete bookmark")
     "b i" '(ibuffer :wk "Ibuffer")
-    "b k" '(kill-this-buffer :wk "Kill this buffer")
+    "b k" '(kill-buffer :wk "Kill this buffer")
     "b K" '(kill-all-except-dashboard-and-essential :wk "Kill All except escential")
     "b l" '(list-bookmarks :wk "List bookmarks")
     "b m" '(bookmark-set :wk "Set bookmark")
@@ -671,23 +589,14 @@ tab-indent."
 (use-package vertico
   :init
   (vertico-mode)
-
-  ;; Different scroll margin
-  ;; (setq vertico-scroll-margin 0)
-
-  ;; Show more candidates
-  ;; (setq vertico-count 20)
-
   ;; Grow and shrink the Vertico minibuffer
   (setq vertico-resize t)
-
   ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
   ;; (setq vertico-cycle t)
   )
 
 (use-package nano-vertico
- :elpaca (:host github :repo "rougier/nano-vertico" :files ("nano-vertico.el"))
- :ensure t
+ :ensure (:host github :repo "rougier/nano-vertico" :files ("nano-vertico.el"))
  :config
  ;; (nano-vertico-mode 1)
 )
@@ -773,34 +682,6 @@ tab-indent."
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
 
-(use-package company
-  :defer 2
-  :diminish
-  :config
-  (setq company-backends
-        '((company-capf company-dabbrev-code company-keywords)
-          company-files
-          company-dabbrev
-          company-bbdb
-          company-semantic
-          company-cmake
-          company-clang
-          (company-gtags company-etags)
-          company-oddmuse))
-  :custom
-  (company-minimum-prefix-length 3)
-  (company-show-numbers t)
-  (company-tooltip-align-annotations 't)
-  ;; Different scroll margin
-  ;;(setq vertico-scroll-margin 0)
-
-  (global-company-mode t))
-
-(use-package company-box
-  :after company
-  :diminish
-  :hook (company-mode-hook . company-box-mode))
-
 (use-package yasnippet
   :demand t
   :config
@@ -837,24 +718,6 @@ tab-indent."
   :defer t
   :diminish
   :init (global-flycheck-mode))
-
-(use-package org-ai
-  :ensure t
-  :commands (org-ai-mode
-             org-ai-global-mode)
-  :init
-  (add-hook 'org-mode-hook #'org-ai-mode) ; enable org-ai in org-mode
-  (org-ai-global-mode) ; installs global keybindings on C-c M-a
-  :config
-  ;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
-  (setq org-ai-image-directory (concat org-directory "/images"))
-  (org-ai-install-yasnippets)) ; if you are using yasnippet and want `ai` snippets
-
-(use-package copilot
-  :elpaca (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
-  :ensure t
-  :config
-  (add-hook 'prog-mode-hook 'copilot-mode))
 
 ;; Nano is wierd
 ;; (require 'nano-mu4e)
@@ -913,9 +776,9 @@ tab-indent."
 	  )))
 
 ;; Unbind RET for going to links
-(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
-(elpaca nil (setq org-return-follows-link t
-                  org-image-actual-width nil))
+;;(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
+;;(elpaca nil (setq org-return-follows-link t
+;;                  org-image-actual-width nil))
 
 ;; Opens file links in the same window
 (add-to-list 'org-link-frame-setup '(file . find-file))
@@ -1006,14 +869,6 @@ tab-indent."
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
 
-(use-package evil-org
-  :demand t
-  :after org
-  :hook (org-mode . (lambda () evil-org-mode))
-  :config
-  (require 'evil-org-agenda)
-  (evil-org-agenda-set-keys))
-
 (use-package org-download
     :after org
     :defer nil
@@ -1069,6 +924,8 @@ tab-indent."
 
 (use-package ob-async)
 
+;; (use-package ob-nixn)
+
 (use-package rust-mode
   :config
   (setq rust-format-on-save t
@@ -1109,6 +966,8 @@ tab-indent."
       org-babel-python-command "/usr/local/anaconda3/bin/python3"
       lsp-pyright-venv-path "/usr/local/anaconda3")
 
+(use-package nix-mode)
+
 (use-package emmet-mode)
 
 (use-package lua-mode)
@@ -1120,11 +979,7 @@ tab-indent."
 
 (use-package csv-mode)
 
-
-
 (set-scroll-bar-mode nil)
 
 ;; Recognize .vm files as .txt files
 (add-to-list 'auto-mode-alist '("\\.vm\\'" . text-mode))
-
-

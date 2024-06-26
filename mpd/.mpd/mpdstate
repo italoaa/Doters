@@ -1,9 +1,9 @@
-sw_volume: 100
+sw_volume: 44
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: pause
 current: 0
-time: 159.569000
+time: 62.311000
 random: 0
 repeat: 0
 single: 0
@@ -12,16 +12,14 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 09 Morning Avalanche.mp3
-1:Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles - 01 Change The Beat(le).mp3
-2:Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles  - 02 A Day In The Melody.mp3
-3:Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles - 03 Lovespit.mp3
-4:Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles - 04 Come Together, Ladies.mp3
-5:Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles - 05 Fill in the Blank (Outro).mp3
-6:Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 01 gold sand beaches.mp3
-7:Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 02 911dawn.mp3
-8:Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 04 captain justice.mp3
-9:Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 05 monsoon again.mp3
-10:Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 06 rose tinted ice cream.mp3
-11:Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 03 a bored dedication.mp3
+0:Fishmans/Studio Albums/[1992-2] King Master George/07. なんてったの.mp3
+1:Fishmans/Studio Albums/[1992-2] King Master George/08. ハンバーグ.mp3
+2:Fishmans/Studio Albums/[1992-2] King Master George/09. 100ミリちょっとの.mp3
+3:Fishmans/Studio Albums/[1992-2] King Master George/10. 頼りない天使.mp3
+4:Fishmans/Studio Albums/[1992-2] King Master George/11. トナカイ.mp3
+5:Fishmans/Studio Albums/[1992-2] King Master George/12. 君だけがダイヤモンド.mp3
+6:Fishmans/Studio Albums/[1992-2] King Master George/13. 雨男憎まれる.mp3
+7:Fishmans/Studio Albums/[1992-2] King Master George/14. 土曜日の夜.mp3
+8:Fishmans/Studio Albums/[1992-2] King Master George/15. 曲目紹介.mp3
+9:Fishmans/Studio Albums/[1992-2] King Master George/16. 教育.mp3
 playlist_end

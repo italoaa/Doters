@@ -1,6 +1,9 @@
 plugin/
 tramp
 .DS_Store
+.cache
+eln-cache
+#*#
 nvim/
 neovim/
 dein
