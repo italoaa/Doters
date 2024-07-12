@@ -91,6 +91,20 @@
             (set-buffer-modified-p nil)))
         (kill-buffer buffer)))))
 
+
+;; Enable indentation+completion using the TAB key.
+;; `completion-at-point' is often bound to M-TAB.
+(setq tab-always-indent 'complete)
+
+;; Emacs 30 and newer: Disable Ispell completion function. As an alternative,
+;; try `cape-dict'.
+(setq text-mode-ispell-word-completion nil)
+
+;; Emacs 28 and newer: Hide commands in M-x which do not apply to the current
+;; mode.  Corfu commands are hidden, since they are not used via M-x. This
+;; setting is useful beyond Corfu.
+(setq read-extended-command-predicate #'command-completion-default-include-p)
+
 ;; Expands to: (elpaca evil (use-package evil :demand t))
 (use-package evil
   :demand t
@@ -288,8 +302,10 @@
  :config
  )
 
-;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+(use-package dirvish)
 
+;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+;;(elpaca nil (define-key evil-insert-state-map (kbd "ESC ESC ESC") 'evil-force-normal-state))
 
 (use-package general
   :config
@@ -586,6 +602,36 @@ tab-indent."
   ;;(add-to-list 'completion-at-point-functions #'cape-line)
 )
 
+(use-package corfu
+  ;; Optional customizations
+  :custom
+  (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
+  (corfu-auto t)                 ;; Enable auto completion
+  ;; (corfu-separator ?\s)          ;; Orderless field separator
+  ;; (corfu-quit-at-boundary nil)   ;; Never quit at completion boundary
+  ;; (corfu-quit-no-match nil)      ;; Never quit, even if there is no match
+  ;; (corfu-preview-current nil)    ;; Disable current candidate preview
+  ;; (corfu-preselect 'prompt)      ;; Preselect the prompt
+  ;; (corfu-on-exact-match nil)     ;; Configure handling of exact matches
+  ;; (corfu-scroll-margin 5)        ;; Use scroll margin
+
+  ;; Enable Corfu only for certain modes.
+  ;; :hook ((prog-mode . corfu-mode)
+  ;;        (shell-mode . corfu-mode)
+  ;;        (eshell-mode . corfu-mode))
+
+  ;; Recommended: Enable Corfu globally.  This is recommended since Dabbrev can
+  ;; be used globally (M-/).  See also the customization variable
+  ;; `global-corfu-modes' to exclude certain modes.
+  :init
+  (global-corfu-mode))
+
+;;(evil-collection-corfu-setup)
+;;(defvar my-override-keymap-alist '())
+;;  (add-to-ordered-list 'emulation-mode-map-alists 'my-override-keymap-alist 0)
+;;  (add-hook 'my-override-keymap-alist
+;;            `(completion-in-region-mode . ,(define-keymap "<escape>" ;;#'evil-collection-corfu-quit-and-escape)))
+
 (use-package vertico
   :init
   (vertico-mode)
@@ -690,34 +736,30 @@ tab-indent."
 (use-package yasnippet-snippets
   :demand t)
 
-(use-package lsp-mode
-  :init
-  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-  (setq lsp-keymap-prefix "C-c l")
-  (setq lsp-headerline-breadcrumb-enable nil)
-  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
-         (python-mode . lsp)
-         (rust-mode . lsp)
-         ;; if you want which-key integration
-         (lsp-mode . lsp-enable-which-key-integration))
-  :commands lsp)
-
 ;;(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
-
-(use-package dap-mode
-  :after lsp-mode
-  :commands dap-debug
-  :hook ((python-mode . dap-ui-mode)
-	 (python-mode . dap-mode))
-  :config
-  (require 'dap-python)
-  (setq dap-python-debugger 'debugpy))
 
 (use-package flycheck
   :demand t
   :defer t
   :diminish
   :init (global-flycheck-mode))
+
+(use-package org-ai
+  :ensure t
+  :commands (org-ai-mode
+             org-ai-global-mode)
+  :init
+  (add-hook 'org-mode-hook #'org-ai-mode) ; enable org-ai in org-mode
+  (org-ai-global-mode) ; installs global keybindings on C-c M-a
+  :config
+  ;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
+  (setq org-ai-image-directory (concat org-directory "/images"))
+  (org-ai-install-yasnippets)) ; if you are using yasnippet and want `ai` snippets
+
+(use-package copilot
+  :ensure (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
+  :config
+  (add-hook 'prog-mode-hook 'copilot-mode))
 
 ;; Nano is wierd
 ;; (require 'nano-mu4e)
@@ -845,10 +887,10 @@ tab-indent."
 
 (setq org-roam-capture-templates '(
                                    ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|Finance|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
                                     :unnarrowed t)
                                    ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" 
-				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|DataMining|Networks|FoLang&FinAutomata|ArtificialIntelligence|Algorithms|CompilerDesign|}:\n")
+				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|IndividualProject|SecureComputing|MachineLearning|ComputerGraphics|}:\n")
                                     :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
@@ -945,22 +987,6 @@ tab-indent."
 (add-hook 'c++-mode-hook 'lsp)
 
 (use-package fancy-compilation)
-
-(use-package lsp-pyright
-  :demand t
-  :hook (python-mode . (lambda ()
-                          (require 'lsp-pyright)
-                          (lsp))) ; or lsp-deferred
-  :config
-  (setq python-indent 4)) 
-
-(use-package python-black
-  :demand t
-  :after python
-  :hook (python-mode . python-black-on-save-mode)
-  :config
-  (setq python-black-command "/usr/local/anaconda3/bin/black"
-	python-black-on-save-mode t))
 
 (setq python-shell-interpreter "/usr/local/anaconda3/bin/python3"
       org-babel-python-command "/usr/local/anaconda3/bin/python3"

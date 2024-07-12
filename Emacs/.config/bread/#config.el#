@@ -1,37 +1,8 @@
-#+title: The Bread Recipe
-#+AUTHOR: Italo Amaya
-#+Description: This is my personal emacs config. I have called it bread :) I used DT's configuration to start out and make my own. Now this configuration has code of rougier/nano-emacs which looked so nice I decided to implement it in my configuration and from everywhere.
-
-* Setup
-This is the step where we set up the environment for our bread. We are going to abstract away some setup so that the configuration file is easier to read
-
-** Install on mac
-This config is made for emacs-plus@30 compiled by:
-#+begin_src sh :noeval
-brew install emacs-plus@30 --with-mailutils --with-imagemagick --with-native-comp
-#+end_src
-
-I edited the formulae in homebrew and commented the env and the inject path. This allowed it to compile
-#+begin_src 
-on_macos do
-    # env :std
-end
-
-# inject PATH to Info.plist
-# inject_path
-
-#+end_src
-
-** Import modules directory
-#+begin_src emacs-lisp
 ;; Remove the tilte bar
 (add-to-list 'load-path (concat user-emacs-directory "modules/"))
 (add-to-list 'load-path (concat user-emacs-directory "modules/mu4e/"))
 (add-to-list 'load-path (concat user-emacs-directory "modules/nano-emacs/"))
-#+end_src
 
-** Nano
-#+begin_src emacs-lisp
 ;; Settings for nano
 (setq nano-font-size 16)
 
@@ -40,7 +11,9 @@ end
 (require 'nano-theme-dark)
 (require 'nano-theme-light)
 
-(nano-theme-set-dark)
+;; set the theme to dark
+;; (nano-theme-set-dark)
+(nano-theme-set-light)
 (call-interactively 'nano-refresh-theme)
 
 ;; End the config loading with the splash screen
@@ -53,30 +26,20 @@ end
 ;; (require 'nano-agenda)
 ;; (require 'nano-minibuffer)
 (set-scroll-bar-mode nil)
-#+end_src
 
-** Elpaca
-#+begin_src emacs-lisp
 (require 'elpaca-setup)
-#+end_src
-** Secret
-#+begin_src emacs-lisp
+
 (require 'secret)
-#+end_src
-** Backups
-#+begin_src emacs-lisp
+
 (setq backup-by-copying t ; don't clobber symlinks
       backup-directory-alist '(("." . "~/.saves")) ; don't litter my fs tree
       delete-old-versions t
       kept-new-versions 6
       kept-old-versions 2
       version-control t)
-#+end_src
 
-* Emacs and personal Functions
-#+begin_src emacs-lisp
 (recentf-mode)
-;;(elpaca nil (setq mu4e-mu-version "1.10.8"))
+(elpaca nil (setq mu4e-mu-version "1.10.8"))
 
 ;; Correct indentation ;)
 (add-hook 'rust-mode-hook
@@ -130,26 +93,6 @@ end
             (set-buffer-modified-p nil)))
         (kill-buffer buffer)))))
 
-
-;; Enable indentation+completion using the TAB key.
-;; `completion-at-point' is often bound to M-TAB.
-(setq tab-always-indent 'complete)
-
-;; Emacs 30 and newer: Disable Ispell completion function. As an alternative,
-;; try `cape-dict'.
-(setq text-mode-ispell-word-completion nil)
-
-;; Emacs 28 and newer: Hide commands in M-x which do not apply to the current
-;; mode.  Corfu commands are hidden, since they are not used via M-x. This
-;; setting is useful beyond Corfu.
-(setq read-extended-command-predicate #'command-completion-default-include-p)
-
-#+end_src
-
-* Packages
-** Editor
-*** Evil
-#+begin_src emacs-lisp
 ;; Expands to: (elpaca evil (use-package evil :demand t))
 (use-package evil
   :demand t
@@ -172,17 +115,15 @@ end
   :after evil
   :config
   (evil-collection-init))
-#+end_src
-*** Perspective mode
-#+begin_src emacs-lisp
+
 (use-package perspective
   :custom
   (persp-suppress-no-prefix-key-warning t)
   :init
   (persp-mode))
-#+end_src
-*** Doom-themes
-#+begin_src emacs-lisp
+
+;; (use-package ef-themes)
+
 (use-package doom-themes
   :demand t
   :config
@@ -208,10 +149,6 @@ end
 ;; Use elpaca to load the theme to ensure doom-themes is laoded
 ;; (elpaca nil (load-theme 'doom-spacegrey t))
 
-#+end_src
-
-*** Smartparens
-#+begin_src emacs-lisp
 (use-package smartparens
   :diminish smartparens-mode
   :defer 1
@@ -254,10 +191,6 @@ end
              :unless '(sp-point-before-word-p sp-point-before-same-p)))
   (smartparens-global-mode t))
 
-#+end_src
-
-*** undo-tree
-#+begin_src emacs-lisp
 (use-package undo-tree
   :config
   (setq undo-tree-auto-save-history t)
@@ -266,18 +199,14 @@ end
   (define-key evil-normal-state-map (kbd "u") 'undo-tree-undo)
   (define-key evil-normal-state-map (kbd "C-r") 'undo-tree-redo)
   (global-undo-tree-mode 1))
-#+end_src
-*** Projectile
-#+begin_src emacs-lisp
+
 (use-package projectile
   :config
   (projectile-mode 1))
 
 (use-package ag)
 (use-package rg)
-#+end_src
-*** Dired
-#+begin_src emacs-lisp
+
 (use-package dired-open
   :config
   (setq dired-open-extensions '(("mkv" . "mpv")
@@ -296,31 +225,19 @@ end
 (use-package peep-dired
   :after dired
   :hook (evil-normalize-keymaps . peep-dired-hook))
-#+end_src
-*** Diminish
-#+begin_src emacs-lisp
+
 (use-package diminish)
-#+end_src
-*** magit
-#+begin_src emacs-lisp
+
 (use-package magit)
-#+end_src
-*** hl-todo
-#+begin_src emacs-lisp
+
 (use-package hl-todo
   :config
   (global-hl-todo-mode))
 
-#+end_src
-*** Vterm
-#+begin_src emacs-lisp
 (use-package vterm
   :init
   (setq vterm-shell "/usr/local/bin/fish"))
 
-#+end_src
-*** Exec path
-#+begin_src emacs-lisp
 (use-package exec-path-from-shell
  :custom
  (shell-file-name "/usr/local/bin/fish" "This is necessary because some Emacs install overwrite this variable")
@@ -328,41 +245,75 @@ end
  :init
  (if (string-equal system-type "darwin")
     (exec-path-from-shell-initialize)))
-#+end_src
-*** tramp
-#+begin_src emacs-lisp
-(setq tramp-default-method "ssh")
-#+end_src
 
-*** TODO Folding
-#+begin_src emacs-lisp
-;; Add hook to use hs mode
-#+end_src
-** Visual
-*** trasparency
-#+begin_src emacs-lisp
+(setq tramp-default-method "ssh")
+
+
+
+(use-package ein)
+
+(use-package restclient)
+
+(use-package dashboard
+  :demand t
+  :init
+  ;; (setq initial-buffer-choice 'dashboard-open)
+  (setq dashboard-set-heading-icons t)
+  (setq dashboard-set-file-icons t)
+  (setq dashboard-banner-logo-title "Fresh Baked Bread")
+  ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
+  (setq dashboard-startup-banner (concat user-emacs-directory "bread-logo.png"))  ;; use custom image as banner
+  (setq dashboard-center-content t)
+  (setq dashboard-items '((recents . 5)
+                          (projects . 3)
+                          ))
+  :custom
+  (dashboard-modify-heading-icons '((recents . "file-text")
+                            (bookmarks . "book")))
+  ;;:config
+  ;;(dashboard-setup-startup-hook)
+)
+
 (defun transparency (value)
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-#+end_src
-*** All the icons
-#+begin_src emacs-lisp
+
+(use-package olivetti
+  :after org
+  :init
+  (setq olivetti-body-width 140)
+  ;; :hook (org-mode . olivetti-mode)
+  :config
+  (display-line-numbers-mode 0))
+
 (use-package all-the-icons
   :demand t
   :if (display-graphic-p))
 
 (use-package all-the-icons-dired
   :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
-#+end_src
-*** Rainbow mode
-#+begin_src emacs-lisp
+
+(use-package doom-modeline
+  :demand t
+  ;; :init (doom-modeline-mode 1)
+  :config
+  (setq doom-modeline-height 35      ;; sets modeline height
+        doom-modeline-bar-width 5    ;; sets right bar width
+        doom-modeline-buffer-file-name-style 'file-name
+        doom-modeline-persp-name t   ;; adds perspective name to modeline
+        doom-modeline-persp-icon nil
+        doom-modeline-major-mode-color-icon t
+        doom-modeline-modal t)) ;; adds folder icon next to persp name
+
+;; How to display icons correctly?
+
+;; nerd-icons are necessary. Then run M-x nerd-icons-install-fonts to install the resource fonts. On Windows, the fonts should be installed manually. nerd-icons supports both GUI and TUI.
+
 (use-package rainbow-mode
   :diminish
   :hook org-mode prog-mode)
-#+end_src
-*** which-key
-#+begin_src emacs-lisp
+
 (use-package which-key
   :init
   (which-key-mode 1)
@@ -381,9 +332,7 @@ end
         which-key-max-description-length 25
         which-key-allow-imprecise-window-fit nil
         which-key-separator " → " ))
-#+end_src
-*** Popper mode DISABLED
-#+begin_src text
+
 (use-package popper
   :ensure t ; or :straight t
   :init
@@ -413,30 +362,16 @@ end
 		 (side . right)
 		 (window-width . 80)))
   )
-#+end_src
-*** Svg tag mode
-#+begin_src emacs-lisp
+
 (use-package svg-tag-mode)
-#+end_src
-*** Yeetube
-#+begin_src emacs-lisp
+
 (use-package yeetube
- :ensure (:host github :repo "https://git.thanosapollo.org/yeetube")
+ :elpaca (:host github :repo "https://git.thanosapollo.org/yeetube")
  :config
  )
-#+end_src
 
-#+RESULTS:
-*** Dirvish
-#+begin_src emacs-lisp
-(use-package dirvish)
-#+end_src
-** General (keybindings)
-The keybindings of emacs is like the flour of the bread. Because I come from doom emacs these follow the keybindings from DT's configuration who is also a doom emacs user! [[https://gitlab.com/dwt1/configuring-emacs/-/blob/main/06-cleaning-up-the-config/config.org?ref_type=heads#evil][Original config]].
- 
-#+begin_src emacs-lisp
-;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
-;;(elpaca nil (define-key evil-insert-state-map (kbd "ESC ESC ESC") 'evil-force-normal-state))
+(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+
 
 (use-package general
   :config
@@ -454,7 +389,7 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   ;; Auto complete with C-SPC
   (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
   (evil-global-set-key 'normal "\C-s" 'consult-line)
-  ;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
+  (elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
   (defun rk/copilot-tab ()
     "Tab command that will complet with copilot if a completion is
@@ -523,7 +458,7 @@ tab-indent."
     "b C" '(clone-indirect-buffer-other-window :wk "Clone indirect buffer in new window")
     "b d" '(bookmark-delete :wk "Delete bookmark")
     "b i" '(ibuffer :wk "Ibuffer")
-    "b k" '(kill-buffer :wk "Kill this buffer")
+    "b k" '(kill-this-buffer :wk "Kill this buffer")
     "b K" '(kill-all-except-dashboard-and-essential :wk "Kill All except escential")
     "b l" '(list-bookmarks :wk "List bookmarks")
     "b m" '(bookmark-set :wk "Set bookmark")
@@ -690,24 +625,10 @@ tab-indent."
   )
 
 ;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
-#+end_src
 
-#+RESULTS:
-
-** Programming
-
-*** TODO C-xrefactory
-
-*** TODO Format-all
-
-** Completion
-*** Jinx
-#+begin_src emacs-lisp
 (use-package jinx
   :hook (emacs-startup . global-jinx-mode))
-#+end_src
-*** Cape
-#+begin_src emacs-lisp
+
 (use-package cape
   ;; Bind dedicated completion commands
   ;; Alternative prefix keys: C-c p, M-p, M-+, ...
@@ -747,52 +668,26 @@ tab-indent."
   ;;(add-to-list 'completion-at-point-functions #'cape-line)
 )
 
-#+end_src
-*** Corfu
-#+begin_src emacs-lisp
-(use-package corfu
-  ;; Optional customizations
-  :custom
-  (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
-  (corfu-auto t)                 ;; Enable auto completion
-  ;; (corfu-separator ?\s)          ;; Orderless field separator
-  ;; (corfu-quit-at-boundary nil)   ;; Never quit at completion boundary
-  ;; (corfu-quit-no-match nil)      ;; Never quit, even if there is no match
-  ;; (corfu-preview-current nil)    ;; Disable current candidate preview
-  ;; (corfu-preselect 'prompt)      ;; Preselect the prompt
-  ;; (corfu-on-exact-match nil)     ;; Configure handling of exact matches
-  ;; (corfu-scroll-margin 5)        ;; Use scroll margin
-
-  ;; Enable Corfu only for certain modes.
-  ;; :hook ((prog-mode . corfu-mode)
-  ;;        (shell-mode . corfu-mode)
-  ;;        (eshell-mode . corfu-mode))
-
-  ;; Recommended: Enable Corfu globally.  This is recommended since Dabbrev can
-  ;; be used globally (M-/).  See also the customization variable
-  ;; `global-corfu-modes' to exclude certain modes.
-  :init
-  (global-corfu-mode))
-
-;;(evil-collection-corfu-setup)
-;;(defvar my-override-keymap-alist '())
-;;  (add-to-ordered-list 'emulation-mode-map-alists 'my-override-keymap-alist 0)
-;;  (add-hook 'my-override-keymap-alist
-;;            `(completion-in-region-mode . ,(define-keymap "<escape>" ;;#'evil-collection-corfu-quit-and-escape)))
-#+end_src
-*** Vertico consult and marginalia 
-#+begin_src emacs-lisp
 (use-package vertico
   :init
   (vertico-mode)
+
+  ;; Different scroll margin
+  ;; (setq vertico-scroll-margin 0)
+
+  ;; Show more candidates
+  ;; (setq vertico-count 20)
+
   ;; Grow and shrink the Vertico minibuffer
   (setq vertico-resize t)
+
   ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
   ;; (setq vertico-cycle t)
   )
 
 (use-package nano-vertico
- :ensure (:host github :repo "rougier/nano-vertico" :files ("nano-vertico.el"))
+ :elpaca (:host github :repo "rougier/nano-vertico" :files ("nano-vertico.el"))
+ :ensure t
  :config
  ;; (nano-vertico-mode 1)
 )
@@ -877,9 +772,7 @@ tab-indent."
   (setq completion-styles '(orderless basic)
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
-#+end_src
-*** Company DISABLE
-#+begin_src text
+
 (use-package company
   :defer 2
   :diminish
@@ -908,9 +801,6 @@ tab-indent."
   :diminish
   :hook (company-mode-hook . company-box-mode))
 
-#+end_src
-*** ya-snippets
-#+begin_src emacs-lisp
 (use-package yasnippet
   :demand t
   :config
@@ -918,9 +808,7 @@ tab-indent."
   (yas-minor-mode-on))
 (use-package yasnippet-snippets
   :demand t)
-#+end_src
-*** lsp DISABLED
-#+begin_src TEXT
+
 (use-package lsp-mode
   :init
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
@@ -932,13 +820,9 @@ tab-indent."
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
-#+end_src
-**** lsp-ivy
-#+begin_src emacs-lisp
+
 ;;(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
-#+end_src
-**** dap-mode
-#+begin_src TEXT
+
 (use-package dap-mode
   :after lsp-mode
   :commands dap-debug
@@ -947,18 +831,13 @@ tab-indent."
   :config
   (require 'dap-python)
   (setq dap-python-debugger 'debugpy))
-#+end_src
-** Writing
-*** TODO FlyCheck
-#+begin_src emacs-lisp
+
 (use-package flycheck
   :demand t
   :defer t
   :diminish
   :init (global-flycheck-mode))
-#+end_src
-*** AI DISABLED
-#+begin_src emacs-lisp
+
 (use-package org-ai
   :ensure t
   :commands (org-ai-mode
@@ -972,13 +851,11 @@ tab-indent."
   (org-ai-install-yasnippets)) ; if you are using yasnippet and want `ai` snippets
 
 (use-package copilot
-  :ensure (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
+  :elpaca (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
+  :ensure t
   :config
   (add-hook 'prog-mode-hook 'copilot-mode))
-#+end_src
-** Email
-Still does not work
-#+begin_src emacs-lisp
+
 ;; Nano is wierd
 ;; (require 'nano-mu4e)
 (require 'mu4e)
@@ -1026,13 +903,7 @@ Still does not work
 	 )
       )
 ;; (setq mu4e-dashboard-file (concat mu4e-maildir "mu4e-dashboard.org"))
-#+end_src
 
-#+RESULTS:
-: my-mu4e
-
-** RSS
-#+begin_src emacs-lisp
 (use-package elfeed
   :config
   (setq elfeed-feeds
@@ -1040,14 +911,11 @@ Still does not work
 	  "https://irreal.org/blog/?feed=rss2"
 	  "https://protesilaos.com/news.xml"
 	  )))
-#+end_src
-* Org mode
-** Variables
-#+begin_src emacs-lisp
+
 ;; Unbind RET for going to links
-;;(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
-;;(elpaca nil (setq org-return-follows-link t
-;;                  org-image-actual-width nil))
+(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
+(elpaca nil (setq org-return-follows-link t
+                  org-image-actual-width nil))
 
 ;; Opens file links in the same window
 (add-to-list 'org-link-frame-setup '(file . find-file))
@@ -1062,13 +930,6 @@ Still does not work
 (require 'ox-extra)
 (add-to-list 'org-modules 'org-habit)
 
-#+end_src
-
-#+RESULTS:
-: org-tempo
-
-** Org Agenda
-#+begin_src emacs-lisp
 (setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/gcal.org" "~/org/Agenda/habits.org"))
 
 (setq meditations-dir (concat org-directory "/meditations/"))
@@ -1095,18 +956,14 @@ Still does not work
 (setq plstore-cache-passphrase-for-symmetric-encryption t)
 
 (use-package org-gcal)
-#+end_src
-** org latex
-#+begin_src emacs-lisp
+
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 (setq org-latex-pdf-process
     '("pdflatex -interaction nonstopmode -output-directory %o %f"
         "pdflatex -interaction nonstopmode -output-directory %o %f"
         "pdflatex -interaction nonstopmode -output-directory %o %f"))
 (setq org-latex-with-hyperref nil) ;; stop org adding hypersetup{author..} to latex export
-#+end_src
-** org roam
-#+begin_src emacs-lisp
+
 (use-package org-roam
   :config
   (org-roam-db-autosync-mode 1))
@@ -1125,10 +982,10 @@ Still does not work
 
 (setq org-roam-capture-templates '(
                                    ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|Finance|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
                                     :unnarrowed t)
                                    ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" 
-				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|IndividualProject|SecureComputing|MachineLearning|ComputerGraphics|}:\n")
+				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|DataMining|Networks|FoLang&FinAutomata|ArtificialIntelligence|Algorithms|CompilerDesign|}:\n")
                                     :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
                                     (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
@@ -1140,9 +997,7 @@ Still does not work
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
                                     :unarrowed t)
                                    ))
-#+end_src
-** org Roam UI
-#+begin_src emacs-lisp
+
 (use-package org-roam-ui
   :after org-roam
   :config
@@ -1150,9 +1005,7 @@ Still does not work
         org-roam-ui-follow t
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
-#+end_src
-** org download
-#+begin_src emacs-lisp
+
 (use-package org-download
     :after org
     :defer nil
@@ -1166,9 +1019,7 @@ Still does not work
     :config
     (require 'org-download)
     (org-download-enable))
-#+end_src
-** org appear
-#+begin_src emacs-lisp
+
 (use-package org-appear
   :commands (org-appear-mode)
   :hook (org-mode . org-appear-mode)
@@ -1177,38 +1028,28 @@ Still does not work
         org-appear-autoemphasis t        ;; Enable org-appear on emphasis (bold, italics, etc)
         org-appear-autolinks nil        ;; Don't enable on links
         org-appear-autosubmarkers t))    ;; Enable on subscript and superscript
-#+end_src
-** org bullets
-#+begin_src emacs-lisp
+
 ;;(use-package org-bullets
 ;;    :hook (org-mode . org-bullets-mode)
 ;;    :custom
 ;;    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 ;;    (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
-#+end_src
-** org Babel
-#+begin_src emacs-lisp
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((shell . t) (python . t) (emacs-lisp . t) (C . t)))
 
 (setq org-confirm-babel-evaluate nil)
-#+end_src
-** org modern
-#+begin_src emacs-lisp
+
 (use-package org-modern
   :after org
   :config
   (set-face-attribute 'org-modern-label nil
                       :height 150)
   (global-org-modern-mode))
-#+end_src
-** org present
-#+begin_src emacs-lisp
+
 (use-package org-present)
-#+end_src
-** org journal
-#+begin_src emacs-lisp
+
 (use-package org-journal
   :config
   (setq org-journal-date-prefix "#+TITLE: "
@@ -1217,18 +1058,9 @@ Still does not work
         org-journal-file-format "%d-%m-%Y.org"
         org-journal-time-prefix "* ")
   )
-#+end_src
-** ob Async
-#+begin_src emacs-lisp
+
 (use-package ob-async)
-#+end_src
-** ob nix
-#+begin_src emacs-lisp
-;; (use-package ob-nixn)
-#+end_src
-* Languages 
-** Rust [0/3]
-#+begin_src emacs-lisp
+
 (use-package rust-mode
   :config
   (setq rust-format-on-save t
@@ -1236,31 +1068,19 @@ Still does not work
 	rust-cargo-bin "/Users/italo/.cargo/bin/cargo"))
 
 (add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
-#+end_src
-*** TODO Rustic
-*** TODO Keybindings
-- rust-dbg-wrap-or-unwrap
-- rust-toggle-mutability
-*** TODO Config
-~rust-cargo-default-arguments~ set additional cargo args used for check,compile,run,test
-** Treesitter
-#+begin_src emacs-lisp
+
 (require 'treesit)
 (add-to-list 'treesit-language-source-alist
 	     '(typescript . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")))
 (add-to-list 'treesit-language-source-alist
 	     '(tsx . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")))
-#+end_src
-** C++
-#+begin_src emacs-lisp
+
 (add-hook 'c-mode-hook 'lsp)
 
 (add-hook 'c++-mode-hook 'lsp)
 
 (use-package fancy-compilation)
-#+end_src
-** Python
-#+begin_src text
+
 (use-package lsp-pyright
   :demand t
   :hook (python-mode . (lambda ()
@@ -1277,43 +1097,26 @@ Still does not work
   (setq python-black-command "/usr/local/anaconda3/bin/black"
 	python-black-on-save-mode t))
 
-#+end_src
-*** Config
-#+begin_src emacs-lisp
 (setq python-shell-interpreter "/usr/local/anaconda3/bin/python3"
       org-babel-python-command "/usr/local/anaconda3/bin/python3"
       lsp-pyright-venv-path "/usr/local/anaconda3")
-#+end_src
-** Nix
-#+begin_src emacs-lisp
-(use-package nix-mode)
-  
-#+end_src
-** html
-#+begin_src emacs-lisp
+
 (use-package emmet-mode)
-#+end_src
-** Lua
-#+begin_src emacs-lisp
+
 (use-package lua-mode)
-#+end_src
-** Yaml
-#+begin_src emacs-lisp
+
 (use-package yaml-mode)
-#+end_src
-** Docker
-#+begin_src emacs-lisp
+
 (use-package dockerfile-mode)
 (use-package docker-compose-mode)
-#+end_src
-** Csv
-#+begin_src emacs-lisp
+
 (use-package csv-mode)
-#+end_src
-* Ends
-#+begin_src emacs-lisp
+
+
+
 (set-scroll-bar-mode nil)
 
 ;; Recognize .vm files as .txt files
 (add-to-list 'auto-mode-alist '("\\.vm\\'" . text-mode))
-#+end_src
+
+

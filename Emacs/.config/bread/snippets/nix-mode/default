@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: default
+# key: default
+# --
+{ pkgs, lib, hostname, inputs, system, ... }:
+{
+}

@@ -118,3 +118,1251 @@ Jun 26 17:47 : player: played "Fishmans/Studio Albums/[1992-2] King Master Georg
 Jun 26 17:53 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/04. 影ドロボウ.mp3"
 Jun 26 17:54 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/05. ダイビング.mp3"
 Jun 26 17:58 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/06. ミネラルウォーター.mp3"
+Jun 27 06:26 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/07. なんてったの.mp3"
+Jun 27 09:12 : config: inotify: auto_update was disabled. enable during compilation phase
+Jun 27 09:12 : config: option 'auto_resample' on line 26 was not recognized
+Jun 27 09:12 : config: option 'use_mmap' on line 27 was not recognized
+Jun 27 09:16 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/07. なんてったの.mp3"
+Jun 27 09:17 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/08. ハンバーグ.mp3"
+Jun 27 09:21 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/09. 100ミリちょっとの.mp3"
+Jun 27 09:26 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/10. 頼りない天使.mp3"
+Jun 27 09:32 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/11. トナカイ.mp3"
+Jun 27 09:32 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/12. 君だけがダイヤモンド.mp3"
+Jun 27 09:34 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/13. 雨男憎まれる.mp3"
+Jun 28 17:33 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/14. 土曜日の夜.mp3"
+Jun 28 17:37 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/15. 曲目紹介.mp3"
+Jun 28 17:37 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/16. 教育.mp3"
+Jun 28 17:38 : player: played "Aventura/Aventura - Dile Al Amor [0XCot42qTvA].mp3"
+Jun 28 17:45 : player: played "Jacques-Greene/Jacques Greene - Another Girl (Official).mp3"
+Jun 29 09:57 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Jun 29 09:57 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jun 29 09:57 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Jun 29 10:01 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Jun 29 10:06 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Jun 29 10:09 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/03 Smilin' Days, Summer Holiday.mp3"
+Jun 29 10:28 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Jun 29 10:33 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Jun 29 10:37 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/06 Just Thing.mp3"
+Jun 29 11:51 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/07 太平洋.mp3"
+Jun 29 11:55 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/08 パラダイス.mp3"
+Jun 29 12:00 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/09 うまく歩けないよ.mp3"
+Jun 29 12:03 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/10 1, 2, 3, 4,.mp3"
+Jun 29 12:08 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/11 Walkin'.mp3"
+Jun 29 12:10 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/12 スー・パー.mp3"
+Jun 29 12:16 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/13 いかれたBaby (Remix).mp3"
+Jun 29 14:00 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Jun 29 14:00 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jun 29 14:00 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Jun 29 14:00 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jun 29 14:01 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Jun 29 14:01 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Jun 29 14:01 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jun 29 14:01 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Jun 29 14:06 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Jun 29 14:11 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Jun 29 14:12 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Jun 29 14:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 29 14:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 29 14:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 29 14:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 29 14:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 29 14:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Jun 29 14:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 29 14:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 29 14:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 29 14:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 29 14:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 29 14:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Jun 29 14:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 29 14:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 29 14:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 29 14:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 29 14:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 29 14:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Jun 29 14:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 29 14:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 29 14:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 29 14:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 29 14:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 29 14:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Jun 29 14:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Jun 29 14:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Jun 29 14:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Jun 29 14:17 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/06 Just Thing.mp3"
+Jun 29 14:21 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Jun 29 14:25 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/07 太平洋.mp3"
+Jun 29 14:29 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/08 パラダイス.mp3"
+Jun 29 14:33 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/09 うまく歩けないよ.mp3"
+Jun 29 14:37 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/10 1, 2, 3, 4,.mp3"
+Jun 30 14:11 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 30 14:11 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 30 14:11 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 30 14:11 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jun 30 14:11 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jun 30 14:11 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Jun 30 14:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Jun 30 14:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Jun 30 14:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Jun 30 16:24 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/11 Walkin'.mp3"
+Jun 30 16:28 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Jun 30 16:30 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Jun 30 16:30 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jun 30 16:30 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Jun 30 16:34 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Jul 01 09:18 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/06 Just Thing.mp3"
+Jul 01 10:48 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 01 Lamp in Toyko feat. Haruka Nakamura.mp3"
+Jul 01 10:53 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 02 Kick Blessings.mp3"
+Jul 01 10:56 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 03 I Gotcha Mic.mp3"
+Jul 01 11:27 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 04 Stars.mp3"
+Jul 01 11:27 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Jul 01 11:27 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jul 01 11:27 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Jul 01 11:31 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Jul 01 11:39 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Jul 01 12:11 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/03 Smilin' Days, Summer Holiday.mp3"
+Jul 01 12:15 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Jul 01 12:19 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Jul 01 16:06 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/07 太平洋.mp3"
+Jul 01 16:11 : player: played "mashup/dile que ya te cansaste, que algo mejor encontraste 🤍 [zVVovAr4Nus].mp3"
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/12 - アイデンティティ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/07 - 『バッハの旋律を夜に聴いたせいです。』.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/09 - すばらしくてNice Choice.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/13 - ナイトフィッシングイズグッド.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/08 - ルーキー.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/03 - 流線.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/05 - Just Thing.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/02 - モノクロトウキョー.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/01 - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/10 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/06 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/11 - アルクアラウンド.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-A] Earth × Heart Live 2012 (MP3)/04 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/04 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/14 いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/08 感謝 (驚).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/03 Running Man.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/15 Baby Piano Mix.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/05 エヴリデイ・エヴリナイト.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/06 Oh! Organ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/10 Blue Summer.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/01 Oh! Crime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/12 オアシスへようこそ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/16 Oh! Cry.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/07 Thank You.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/13 チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/11 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/09 ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-A] Oh! Mountain (Original)/02 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-2] Fishmans & 山崎まさよし - 05.11.22 LONG SEASON Live @Shibuya-AX/02 - Part 2.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-2] Fishmans & 山崎まさよし - 05.11.22 LONG SEASON Live @Shibuya-AX/04 - Part 4.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-2] Fishmans & 山崎まさよし - 05.11.22 LONG SEASON Live @Shibuya-AX/03 - Part 3.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-2] Fishmans & 山崎まさよし - 05.11.22 LONG SEASON Live @Shibuya-AX/01 - Part 1.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/16 - Walkin'.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/09 - ウインナーソーセージ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/08 - ごきげんいかがですか.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/11 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/01 - Little Flapper.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/07 - くつ下.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/10 - ピアノ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/04 - Good Morning.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/06 - Blue Summer.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/14 - ひっくりかえってた２人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/05 - もう言わないで.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/03 - いつまでも.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/15 - 今日はちょっと.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/12 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/13 - Go Go Clubですれ違い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-3] Live 91.08.21 @心斎橋CLUB QUATTRO/02 - He's Running.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-B] 23.11.02 Long Season 2023 ~ Space Shower TV (Video)/long season 2023 full.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-B] 21.04.21 Live 'Time Passes and the Future is Now' (Full Video)/フィッシュマンズ　おかげさまでデビュー30周年！_デビュー記念日4_21に緊急無料配信イベント_“Time passes and the future is now_ 開催決定！.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1990] 90.11.18 市川Club Gio/03 - ピアノ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1990] 90.11.18 市川Club Gio/01 - いなごが飛んでる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1990] 90.11.18 市川Club Gio/05 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1990] 90.11.18 市川Club Gio/02 - あの娘が眠ってる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1990] 90.11.18 市川Club Gio/04 - Special Night - Interview.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2012-1-B] Earth × Heart Live 2012 (Video)/MUSIC STYLE JAPAN Fishmans x Sakanaction FULL CONCERT.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/03 - いなごが飛んでる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/11 - Blue Summer.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/18 - 感謝(驚).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/10 - 救われる気持ち.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/02 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/08 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/19 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/14 - 100ミリちょっとの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/07 - Running Man.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/20 - MC2.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/09 - 疲れない人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/22 - Smilin' Days, Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/13 - MC1.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/06 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/05 - いい言葉ちょうだい.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/04 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/15 - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/21 - Just Thing.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/23 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/12 - Happy Man.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/17 - オアシスへようこそ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/01 - Oh! Crime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-A] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Audio)/16 - 気分.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/15 - I Dub Fish.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/14 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/02 - いなごが飛んでる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/18 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/04 - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/16 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/10 - 救われる気持ち.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/06 - Just Thing.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/01 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/13 - 忘れちゃうひととき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/11 - In The Flight.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/09 - Melody.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/03 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/12 - Future.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/08 - My Life.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/05 - Thank You.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/07 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-2] 20.06.14 @Super Dommune ~ AR Live Invisibility/17 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1987] 時間/06 - パチンコ野郎の唄.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1987] 時間/02 - わかるまい！.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1987] 時間/01 - ワンマンバス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1987] 時間/03 - 最高傑作.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1987] 時間/07 - It's Be Alright.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1987] 時間/05 - ひっこみじあんの恋物語.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1987] 時間/04 - いなごの唄.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/04 - Thank You.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/05 - 幸せ者.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/14 - Long Season.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/08 - In The Flight.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/09 - Walking in the Rhythm.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/10 - Smilin' Days, Summer Holiday.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/12 - ゆらめき In The Air.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/07 - ひこうき.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/06 - 頼りない天使.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/11 - Melody.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/01 - Oh Slime.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/13 - いかれたBaby.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/03 - なんてったの.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/02 - ナイトクルージング.flac
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-B] 記憶の増大 (Video)/Full Video part 2 - Selections from 98.12.28.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-B] 記憶の増大 (Video)/Full Video part 1 - Original Live Recordings.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-B] 記憶の増大 (Video)/Full Video part 3 -  Long Season from 96.12.26.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-01 Oh Crime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-06 エヴリデイ・エヴリナイト.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-07 Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-05 バックビートにのっかって.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-02 Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/2-01 ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-10 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-08 Smilin' Days,Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-04 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-03 なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/2-02 Long Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2016-1] Long Season '96~7 - 96.12.26 Akasaka Blitz/1-09 すばらしくてNice Choice.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-C] The Long Season Revue (Movie)/The Movie 2-1.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-C] The Long Season Revue (Movie)/The Movie 1-1.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-C] The Long Season Revue (Movie)/The Movie 3-1.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/01 - I Dub Fish.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/13 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/14 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/04 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/02 - Magic Love.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/08 - Baby Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/16 - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/09 - Just Thing.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/11 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/17 - 新しい人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/03 - エヴリデイ・エヴリナイト.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/12 - A Piece Of Future.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/05 - 感謝（驚）.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/15 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/18 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/07 - Walking In The Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/10 - Dub Medley ～土曜日の夜／Smilin' Days Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-A] 2011.5.3 @日比谷野音 Live (MP3, Split)/06 - In The Flight.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-B] 8月の現状 (Vinyl Rip)/2 - ナイトクルージング2.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-B] 8月の現状 (Vinyl Rip)/1 - ナイトクルージング1.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-B] 8月の現状 (Vinyl Rip)/3 - ずっと前.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-B] 8月の現状 (Vinyl Rip)/6 - 静かな朝.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-B] 8月の現状 (Vinyl Rip)/5 - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-B] 8月の現状 (Vinyl Rip)/8 - 新しい人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-B] 8月の現状 (Vinyl Rip)/4 - Just Thing.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-B] 8月の現状 (Vinyl Rip)/7 - バックビートにのっかって.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-B] 22.09.11 Wind Parade 22 (Video)/windparade full video.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/04 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/06 - バックビートにのっかって.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/07 - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/09 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/10 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/02 - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/11 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/13 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/12 - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/05 - ずっと前.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/08 - Walking in the Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/03 - 静かな朝.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-A] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (MP3)/01 - Oh! Crime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-B] 若いながらも歴史あり 96.3.2@新宿Liquid Room (Video)/full concert stereo.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-B] 若いながらも歴史あり 96.3.2@新宿Liquid Room (Video)/universal logo.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/98.12.27 Oh Slime (found by @FAC_73 on twitter).mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/06 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/07 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/02 - Smilin' Days, Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/10 - Pokka Pokka.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/09 - Future.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/04 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/05 - すばらしくてNice Choice.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/03 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/11 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/08 - Long Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-3-A] 23.11.02 Long Season 2023 ~ Space Shower TV (Audio)/01 - Magic Love.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-B] 1997.12.12 Live in Liquid Room (Video)/FISHMANS LIVE 1997.12.12 Shinjuku LIQUID Room.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-B] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Video)/history of fishmans night 2.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/06 - レテの子.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/10 - あの娘が眠ってる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/01 - Open.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/07 - Buzzle Bee Ride.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/18 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/09 - POLY LIFE MULTI SOUL.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/11 - Oh Slime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/08 - Waters.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/19 - Just Thing.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/20 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/17 - ゆらめき in the Air.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/03 - 魚の骨、鳥の羽根.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/15 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/14 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/02 - わたしのすがた.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/13 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/05 - TWNKL.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/16 - Melody.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/04 - Yellow Magus.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/21 - Close.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-3-A] 02.19.19 闘魂2019 @Zepp Tokyo (MP3)/12 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/9.smilin'day,summer Holiday(pod)-21.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/6.バックビートにのっかって(キセル)-18.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/16.walking In The Rhythm(ua)-8.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/7.baby Blue(pod)-19.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/1.go Go Round This World!(フィッシュマンズ)-1.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/20.ナイトクルージング(ハナレグミ)-13.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/19.magic Love(ハナレグミ)-11.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/13.むらさきの空から(pocopen)-5.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/21.いかれたbaby(ハナレグミ)-14.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/15.just Thing(pocopen)-7.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/3.いい言葉ちょうだい(原田郁子)-15.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/2.weather Report(原田郁子)-12.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/11.melody(蔡忠浩)-3.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/17.新しい人(ua)-9.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/12.感謝(驚)(蔡忠浩)-4.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/14.あの娘が眠ってる(pocopen)-6.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/10.忘れちゃうひととき(蔡忠浩)-2.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/8.なんてったの(pod)-20.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/4.エヴリデイ・エヴリナイト(原田郁子)-16.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/5.in The Flight(キセル)-17.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-B] The Long Season Revue (Concert Video)/18.頼りない天使(ua)-10.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/04 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/02 - Smilin' Days, Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/14 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/18 - 新しい人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/12 - 気分.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/15 - オアシスへようこそ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/07 - Baby Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/08 - 忘れちゃうひととき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/01 - Oh! Slime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/09 - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/13 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/06 - Slow Days.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/10 - すばらしくてNice Choice.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/03 - Thank You.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/11 - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/16 - 感謝(驚).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/05 - ずっと前.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/若いながらも歴史あり 96.3.2@新宿Liquid Room (Fan Edit)/17 - ナイトクルージング.mp3
+Jul 02 05:50 : ffmpeg/flv: Missing AMF_END_OF_OBJECT in AMF_DATA_TYPE_MIXEDARRAY, found 0
+Jul 02 05:50 : ffmpeg/flv: Missing AMF_END_OF_OBJECT in AMF_DATA_TYPE_MIXEDARRAY, found 0
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-1-B] 97.12.12 @Shinjuku Liquid Room ~ Broadcast 20.3.6 @SSTV (Video)/アンコールアワー FISHMANS特集.flv
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/D2 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/D3 - Baby Piano Mix.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/C2 - オアシスへようこそ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/A2 - 土曜日の夜 [Dub].mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/A5 - Oh! Organ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/C1 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/A4 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/A1 - Oh! Dub [Dub].mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/B2 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/D1 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/D4 - Oh! Cry.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/A3 - Running Man.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/B1 - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1995-B] Oh! Mountain (Vinyl Rip)/B3 - Blue Summer.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/07 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/01 - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/11 - Long Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/09 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/03 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/15 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/06 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/05 - Melody.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-A] Long Season 2016 - 16.07.24 Zepp Tokyo (Audio)/13 - 新しい人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-1-A] 2022.1.7 俺たちの決起集会 (MP3)/06 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-1-A] 2022.1.7 俺たちの決起集会 (MP3)/04 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-1-A] 2022.1.7 俺たちの決起集会 (MP3)/07 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-1-A] 2022.1.7 俺たちの決起集会 (MP3)/03 - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-1-A] 2022.1.7 俺たちの決起集会 (MP3)/05 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-1-A] 2022.1.7 俺たちの決起集会 (MP3)/01 - Long Season (Rally Mix).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-1-A] 2022.1.7 俺たちの決起集会 (MP3)/02 - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2024-2-B] Long Season 2016 - 16.07.24 Zepp Tokyo (Video)/ls2016.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/02 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/09 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/08 - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/04 - Comment from Michio 'dARTs' Sekiguchi.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/05 - あの娘が眠ってる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/01 - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/03 - Comment from Yuzuru Kashiwabara.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/10 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/06 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-1-A] 21.04.21 Live 'Time Passes and the Future is Now' (Concert Audio)/07 - Walking in the Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/05 - In The Flight (Kicell).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/21 - いかれたBaby (Hanaregumi).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/12 - 感謝(驚) (蔡忠浩).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/04 - エヴリデイ・エヴリナイト (Ikuko Harada).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/07 - Baby Blue (POD).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/22 - Long Season (山崎将義).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/17 - 新しい人 (UA).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/16 - Walking In The Rhythm (UA).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/06 - バックビートにのっかって (Kicell).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/01 - Go Go Round This World! (Fishmans).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/18 - 頼りない天使 (UA).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/08 - なんてったの (POD).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/10 - 忘れちゃうひととき (蔡忠浩).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/14 - あの娘が眠ってる (pocopen).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/19 - Magic Love (Hanaregumi).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/20 - ナイトクルージング (Hanaregumi).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/09 - Smilin' Days, Summer Holiday (POD).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/13 - むらさきの空から (pocopen).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/15 - Just Thing (pocopen).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/11 - Melody (蔡忠浩).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/02 - Weather Report (Ikuko Harada).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2020-3] 05.11.22-28 @Long Season Revue/03 - いい言葉ちょうだい (Ikuko Harada).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-2-B] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Video)/history of fishmans night 1.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-B] In Space Shower TV Episode.1 (Video)/01 - Episode.1 FULL.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-2-B] In Space Shower TV Episode.2 (Video)/03 - LONG SEASON THE VIDEO ~Quiet Version~.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-2-B] In Space Shower TV Episode.2 (Video)/01 - SWEET LOVE SHOWER’96.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-2-B] In Space Shower TV Episode.2 (Video)/02 - 音楽玉手箱~Looking for LONG SEASON~.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/01 - Sound&Vision #193 - Fishtoron ’98.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/04 - Sound&Vision #196 - それはただの気分さ(Studio Live).m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/06 - Walking in the 奥田イズム - 土曜日の夜.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/02 - Sound&Vision #194 - Lucha Libre観戦.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/05 - Walking in the 奥田イズム - なんてったの.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/12 - Copyright Warning.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/09 - Walking in the 奥田イズム - 夜の想い.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/10 - Walking in the 奥田イズム - Season.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/03 - Sound&Vision #195 - Dub大会.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/11 - Station ID 1.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/08 - Walking in the 奥田イズム - Sunny Blue.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-B] In Space Shower TV Episode.3 (Video)/07 - Walking in the 奥田イズム - バックビートにのっかって.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-A] In Space Shower TV Episode.3 (MP3)/02 - Sound&Vision #196 - それはただの気分さ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-A] In Space Shower TV Episode.3 (MP3)/03 - Walking in the 奥田イズム - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-A] In Space Shower TV Episode.3 (MP3)/08 - Walking in the 奥田イズム - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-A] In Space Shower TV Episode.3 (MP3)/06 - Walking in the 奥田イズム - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-A] In Space Shower TV Episode.3 (MP3)/01 - Sound&Vision #195 - Walking in the Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-A] In Space Shower TV Episode.3 (MP3)/05 - Walking in the 奥田イズム - バックビートにのっかって.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-A] In Space Shower TV Episode.3 (MP3)/04 - Walking in the 奥田イズム - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-3-A] In Space Shower TV Episode.3 (MP3)/07 - Walking in the 奥田イズム - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/01 - あの娘が眠ってる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/04 - それはたぶん (未CD化).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/06 - パラダイス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/09 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/05 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/13 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/07 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/08 - むらさきの空から.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/14 - 100ミリちょっとの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/03 - つきすぎたモンキー (未CD化).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/12 - ウインナーソーセージ (未CD化).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/15 - Future.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/11 - いなごが飛んでる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/10 - Walkin'.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-1-A] In Space Shower TV Episode.1 (MP3)/02 - いつまでも (未CD化).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-2-A] In Space Shower TV Episode.2 (MP3)/03 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-2-A] In Space Shower TV Episode.2 (MP3)/01 - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-2-A] In Space Shower TV Episode.2 (MP3)/02 - Baby Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-2-A] In Space Shower TV Episode.2 (MP3)/04 - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/_In Space Shower TV Episodes/[2007-2-A] In Space Shower TV Episode.2 (MP3)/05 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-B] 23.09.09~10 Wind Parade '23 (Video)/full video stereo.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1988] Live in 1988/05 - Happy Man (Take 2).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1988] Live in 1988/06 - ワンマンバス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1988] Live in 1988/02 - Happy Man (Take 1).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1988] Live in 1988/04 - Special Night.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1988] Live in 1988/01 - Intro-Peter Gunn Theme.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1988] Live in 1988/03 - Ska.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-1-B] 2022.1.7 俺たちの決起集会 (Video)/フィッシュマンズ　2022 新春 YouTube配信　“俺たちの決起集会”.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/2-01 ゆらめき In The Air.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-02 ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-07 ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-04 Thank You.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-09 Walking In The Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-11 Melody.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-06 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/2-03 Long Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-05 幸せ者.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-01 Oh Slime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-08 In The Flight.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-03 なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/2-02 いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-10 Smilin’ Days, Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/15 - Pokka Pokka.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/13 - Long Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/09 - すばらしくてNice Choice.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/07 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/01 - Opening (Mirror Ball - Buffalo Daughter).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/03 - Magic Love.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/08 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/17 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/14 - Future.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/04 - Baby Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/06 - Smilin' Days, Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/10 - Walking in the Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/11 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/02 - A Piece of Future.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/16 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/05 - バックビートにのっかって.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-1] 23.10.24 Long Season 2023/12 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-B] 98.12.28 Otokotachi no Wakare (Video)/full concert stereo.m4v
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-B] 98.12.28 Otokotachi no Wakare (Video)/universal logo.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/15 - カネコアヤノ - 祝日.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/10 - くるり - Everybody Feels the Same.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/03 - 折坂悠太 - 芳薬.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/18 - フィッシュマンズ - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/12 - くるり - 東京.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/11 - くるり - Intermission 2.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/07 - くるり - Intermission 1.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/05 - 折坂悠太 - 鯱.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/19 - フィッシュマンズ - Walking in the Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/08 - くるり - 琥珀色の街、上海蟹の朝.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/17 - フィッシュマンズ - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/22 - フィッシュマンズ - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/09 - くるり - ハイウエイ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/13 - カネコアヤノ - ごあいさつ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/14 - カネコアヤノ - 明け方.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/06 - 折坂悠太 - 爆発.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/01 - Introduction.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/20 - フィッシュマンズ - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/16 - カネコアヤノ - アーケード.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/02 - 折坂悠太 - 坂道.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/21 - フィッシュマンズ - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-5-A] 22.09.11 Wind Parade 22 (Audio)/04 - 折坂悠太 - 針の穴.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/07 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/08 - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/04 - オアシスへようこそ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/12 - 新しい人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/05 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/01 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/09 - In The Flight.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/06 - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/10 - Walking in the Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/02 - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/11 - ゆらめき in the Air.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-4] 21世紀の現状/03 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/04 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/06 - バックビートにのっかって.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/07 - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/09 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/10 - 夜の想い.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/02 - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/11 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/13 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/12 - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/05 - ずっと前.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/08 - Walking In The Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/03 - 静かな朝.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-1-A] 1997.12.12 Live in Liquid Room (MP3)/01 - Oh! Crime.mp3
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-D] 98.12.28 Otokotachi no Wakare (HD Video)/VTS_01_8.vob
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-D] 98.12.28 Otokotachi no Wakare (HD Video)/VTS_01_7.vob
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg: stream 0 : no PTS found at end of file, duration not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-D] 98.12.28 Otokotachi no Wakare (HD Video)/VTS_01_6.vob
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-D] 98.12.28 Otokotachi no Wakare (HD Video)/VTS_01_4.vob
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-D] 98.12.28 Otokotachi no Wakare (HD Video)/VTS_01_5.vob
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-D] 98.12.28 Otokotachi no Wakare (HD Video)/VTS_01_1.vob
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : ffmpeg/mpeg: stream 0 : no PTS found at end of file, duration not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-D] 98.12.28 Otokotachi no Wakare (HD Video)/VTS_01_2.vob
+Jul 02 05:50 : ffmpeg/mpeg2video: Invalid frame dimensions 0x0.
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1999-3-D] 98.12.28 Otokotachi no Wakare (HD Video)/VTS_01_3.vob
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-4] 1991.12.25 Ichikawa Club Gio/01 - あの娘が眠ってる.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-4] 1991.12.25 Ichikawa Club Gio/06 - Walkin'.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-4] 1991.12.25 Ichikawa Club Gio/07 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-4] 1991.12.25 Ichikawa Club Gio/08 - １００ミリちょっとの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-4] 1991.12.25 Ichikawa Club Gio/05 - X'mas Song.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-4] 1991.12.25 Ichikawa Club Gio/03 - Special Night.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-4] 1991.12.25 Ichikawa Club Gio/02 - いつまでも.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1991-4] 1991.12.25 Ichikawa Club Gio/04 - ウインナーソーセージ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/07 - 感謝(驚).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/01 - すばらしくてNice Choice.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/09 - 新しい人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/02 - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/05 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/03 - 気分.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/08 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/04 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 2/06 - オアシスへようこそ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/04 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/01 - Oh Slime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/02 - Smilin' Days, Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/07 - Baby Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/08 - 忘れちゃうひととき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/09 - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/06 - Slow Days.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/03 - Thank You.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2021-2] 2nd March 1996 at Shinjuku Liquid Room/Disc 1/05 - ずっと前.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/04 - 土曜日の夜.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/02 - Smilin' Days, Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/14 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/18 - 新しい人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/12 - 気分.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/15 - オアシスへようこそ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/07 - Baby Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/08 - 忘れちゃうひととき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/01 - Oh! Slime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/09 - Go Go Round This World!.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/13 - チャンス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/06 - Slow Days.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/10 - すばらしくてNice Choice.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/03 - Thank You.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/11 - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/16 - 感謝(驚).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/05 - ずっと前.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2005-4-A] 若いながらも歴史あり 96.3.2@新宿Liquid Room (MP3)/17 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/08 - フィッシュマンズ - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/16 - 七尾旅人 - Rollin' Rollin'.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/02 - cero - Poly Life Multi Soul.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/07 - Gezan - DNA.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/04 - ハナレグミ -音タイム.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/12 - Zazen Boys - Weekend.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/05 - ハナレグミ - 光と影.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/17 - サニーデイ・サービス - 風船讃歌.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/06 - Gezan - 誅犬.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/18 - サニーデイ・サービス - サマー・ソルジャー.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/03 - cero - Angelus Novus アンゲルス・ノーヴス.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/09 - フィッシュマンズ - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/13 - Zazen Boys - Crazy Days Crazy Feeling.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/10 - フィッシュマンズ - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/11 - Interlude Beat.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/15 - 七尾旅人 - Wonderful Life.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/14 - カネコアヤノ - やさしい生活.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2023-2-A] 23.09.09~10 Wind Parade '23 (Audio)/01 - Intro Beat.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/16 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/08 - MC2.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/06 - Baby Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/03 - Magic Love.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/04 - MC1.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/17 - 新しい人.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/02 - すばらしくてNice Choice.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/14 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/12 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/15 - MC3.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/09 - ずっと前.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/10 - In The Flight.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/13 - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/01 - A Piece of Future.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/05 - バックビートにのっかって.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/11 - Walking in the Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2022-3-A] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Audio)/07 - Slow Days.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/01 - Oh Slime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/02 - Weather Report.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/08 - Sore ha Tada no Kibun sa.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/09 - Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/07 - Zutto Mae.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/05 - Sunny Blue.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/03 - Naitokuruujingu.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/04 - Shizuka na Asa.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/11 - Atarashii Hito.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/10 - Just Thing.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[1998-2-A] 8月の現状 (Original)/06 - Bakku Biito ni Nokkatte.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-B] 2011.5.3 @日比谷野音 Live (Full Video)/Fish Live for USB.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-2-B] 2011.5.3 @日比谷野音 Live (Full Video)/Dub Medley.mp4
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/fishmans 19981227.wav
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/05 - In The Flight (Kicell).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/21 - いかれたBaby (Hanaregumi).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/12 - 感謝(驚) (蔡忠浩).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/04 - エヴリデイ・エヴリナイト (Ikuko Harada).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/07 - Baby Blue (POD).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/17 - 新しい人 (UA).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/16 - Walking In The Rhythm (UA).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/06 - バックビートにのっかって (Kicell).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/01 - Go Go Round This World! (Fishmans).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/18 - 頼りない天使 (UA).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/08 - なんてったの (POD).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/10 - 忘れちゃうひととき (蔡忠浩).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/14 - あの娘が眠ってる (pocopen).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/19 - Magic Love (Hanaregumi).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/20 - ナイトクルージング (Hanaregumi).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/09 - Smilin' Days, Summer Holiday (POD).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/13 - むらさきの空から (pocopen).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/15 - Just Thing (pocopen).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/11 - Melody (蔡忠浩).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/02 - Weather Report (Ikuko Harada).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2006-1-A] The Long Season Revue (Concert Audio)/03 - いい言葉ちょうだい (Ikuko Harada).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/10 - Smilin' Days, Summer Holiday.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/13 - いかれたBaby.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/01 - Oh Slime.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/02 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/05 - 幸せ者.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/07 - ひこうき.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/03 - なんてったの.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/12 - ゆらめき In The Air.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/14 - Long Season.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/09 - Walking In The Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/04 - Thank You.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/08 - In The Flight.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/06 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-2] 98.12.27 男達の別れ/11 - Melody.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/01 - Viderunt Omnes.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/02 - SEASON.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/03 - いい言葉ちょうだい.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/05 - Rollin' Rollin'.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/09 - ナイトクルージング.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/04 - エヴリデイ・エヴリナイ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/06 - 頼りない天使.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/07 - In the Flight - Walking in the Rhythm.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2011-1] Fishmans+ - 2011.3.28 LIVE@DOMMUNE!!!!!!!!!!/08 - なみだ と ほほえむ.mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/01 - Melody (95.12.15 @新宿LIQUID Room).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/03 - 感謝(驚) (96.3.2 @新宿LIQUID Room).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/05 - Go Go Round This World! (97.05.31 @神戸Chicken George).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/08 - Weather Report (in Tokyo Cool Camp) (97.08.13 @Rainbow Stage).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/02 - Slow Days (96.3.2 @新宿LIQUID Room).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/06 - すばらしくてNice Choice (97.06.07 @日比谷野外音).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/07 - ナイトクルージング (97.06.07 @日比谷野外音).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/09 - Weather Report (1997.12.12 @新宿LIQUID Room).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/04 - 新しい人 (96.3.2 @新宿LIQUID Room).mp3
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2000-2-A] 記憶の増大 (Audio)/10 - A Piece of Future (98.10.10 @日比谷野外音).mp3
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-03 むらさきの空から.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-05 Silver Chip.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-07 彼女はシスタ.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-02 土曜日の夜.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-04 チャンス.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/2-05 ひこうき.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-06 Windy Afternoon.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/2-04 A列車で行こう.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/2-06 Go Go Clubですれ違い.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-08 映画 (ゴム焼き).m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-09 何処かで.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/2-02 He_s Running.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/2-07 いい言葉ちょうだい.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/1-01 疲れない人.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/2-08 Future.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/2-03 おとなしかったのに.m4a
+Jul 02 05:50 : ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+Jul 02 05:50 : update: added Fishmans/Live Albums & Bootlegs/[2019-1] Shinji Sato - ニジマスナイト (Rainbow Trout Night)/2-01 RUNNING MAN.m4a
+Jul 02 05:50 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jul 02 05:50 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jul 02 05:50 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jul 02 05:50 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jul 02 05:50 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jul 02 05:50 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Jul 02 05:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Jul 02 05:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Jul 02 05:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Jul 02 05:53 : player: played "Fishmans/Live Albums & Bootlegs/[2022-3-B] 2022.3.2 History of Fishmans @Liquid Room~1995-1998 (Video)/history of fishmans night 2.mp4"
+Jul 02 05:59 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 01 double trouble.mp3"
+Jul 02 06:04 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 02 covert red.mp3"
+Jul 02 06:10 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 03 take it away.mp3"
+Jul 02 06:16 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 04 vice grip.mp3"
+Jul 02 09:25 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/13 - いかれたBaby.flac"
+Jul 02 09:26 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Jul 02 09:26 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jul 02 09:26 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Jul 02 09:26 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Jul 02 09:31 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-01 ずっと前.mp3"
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 14814275.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jul 02 09:37 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-02 Baby Blue.mp3"
+Jul 02 09:42 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-03 Slow Days.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 14254212.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jul 02 09:47 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-04 Sunny Blue.mp3"
+Jul 02 09:51 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-05 ナイトクルージング.mp3"
+Jul 03 09:39 : player: played "Kendric/Sing About Me, I'm Dying Of Thirst [75wmW7xjyog].mp3"
+Jul 03 09:50 : player: played "Kendric/Sing About Me, I'm Dying Of Thirst [75wmW7xjyog].mp3"
+Jul 03 09:53 : player: played "charly/Charly Garcia - Piano Bar - (flac)/01. Demoliendo Hoteles.flac"
+Jul 04 17:22 : player: played "charly/Charly Garcia - Piano Bar - (flac)/02. Promesas sobre el bidet.flac"
+Jul 04 17:27 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 01 nothing to lose.mp3"
+Jul 04 17:31 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 02 sinful love.mp3"
+Jul 04 17:36 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 03 grief.mp3"
+Jul 04 17:41 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 04 bittersweet.mp3"
+Jul 04 17:46 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 05 stay with me.mp3"
+Jul 04 17:50 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 06 interpolated.mp3"
+Jul 04 17:55 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 07 mystic haze.mp3"
+Jul 04 17:59 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 08 dancing.mp3"
+Jul 04 18:04 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 09 watching ghosts.mp3"
+Jul 04 18:10 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 10 fuming city.mp3"
+Jul 04 18:16 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/01 Pokka Pokka.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 21023638.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jul 04 18:25 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/02 Weather Report.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 12695783.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Jul 04 18:30 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/03 うしろ姿.mp3"
+Jul 04 18:36 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/04 In The Flight.mp3"
+Jul 05 07:47 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/06 バックビートにのっかって.mp3"
+Jul 05 07:51 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:52 : exception: No such song
+Jul 05 07:55 : player: played "nujabes/Spiritual-State-Flac/05 City Lights (feat. Pase Rock & Substantial).flac"
+Jul 05 09:30 : player: played "nujabes/Spiritual-State-Flac/01 Spiritual State (feat. Uyama Hiroto).flac"
+Jul 05 09:34 : player: played "nujabes/Spiritual-State-Flac/02 Sky Is Tumbling (feat. Cise Starr).flac"
+Jul 05 09:41 : player: played "nujabes/Spiritual-State-Flac/03 Gone Are the Days (feat. Uyama Hiroto).flac"
+Jul 05 09:44 : player: played "nujabes/Spiritual-State-Flac/04 Spiral.flac"
+Jul 05 09:47 : player: played "nujabes/Spiritual-State-Flac/05 City Lights (feat. Pase Rock & Substantial).flac"
+Jul 05 09:49 : player: played "nujabes/Spiritual-State-Flac/06 Color of Autumn.flac"
+Jul 05 09:54 : player: played "nujabes/Spiritual-State-Flac/07 Dawn on the Side.flac"
+Jul 07 10:44 : player: played "nujabes/Spiritual-State-Flac/08 Yes (feat. Pase Rock).flac"
+Jul 07 10:47 : player: played "nujabes/Spiritual-State-Flac/09 Rainyway Back Home.flac"
+Jul 07 10:51 : player: played "nujabes/Spiritual-State-Flac/10 Far Fowls.flac"
+Jul 07 10:53 : player: played "nujabes/Spiritual-State-Flac/11 Fellows.flac"
+Jul 07 10:57 : player: played "nujabes/Spiritual-State-Flac/12 Waiting for the Clouds (feat. Substantial).flac"
+Jul 07 11:01 : player: played "nujabes/Spiritual-State-Flac/13 Prayer.flac"
+Jul 07 11:06 : player: played "nujabes/Spiritual-State-Flac/14 Island (feat. Uyama Hiroto & Haruka Nakamura).flac"
+Jul 07 12:21 : player: played "nujabes/Spiritual-State-Flac/12 Waiting for the Clouds (feat. Substantial).flac"
+Jul 07 12:27 : player: played "nujabes/Spiritual-State-Flac/15 Spiritual State (Tribe Special Edition Mix).flac"
+Jul 07 12:31 : player: played "nujabes/Spiritual-State-Flac/16 Scorpion Dilemma.flac"
+Jul 07 12:37 : player: played "nujabes/Spiritual-State-Flac/01 Spiritual State (feat. Uyama Hiroto).flac"
+Jul 07 12:42 : player: played "nujabes/Spiritual-State-Flac/02 Sky Is Tumbling (feat. Cise Starr).flac"
+Jul 07 12:48 : player: played "nujabes/Spiritual-State-Flac/03 Gone Are the Days (feat. Uyama Hiroto).flac"
+Jul 07 12:51 : player: played "nujabes/Spiritual-State-Flac/04 Spiral.flac"
+Jul 07 12:57 : player: played "nujabes/Spiritual-State-Flac/05 City Lights (feat. Pase Rock & Substantial).flac"
+Jul 07 12:58 : player: played "nujabes/Spiritual-State-Flac/06 Color of Autumn.flac"
+Jul 07 13:03 : config: inotify: auto_update was disabled. enable during compilation phase
+Jul 07 13:03 : config: option 'auto_resample' on line 26 was not recognized
+Jul 07 13:03 : config: option 'use_mmap' on line 27 was not recognized
+Jul 07 17:38 : config: inotify: auto_update was disabled. enable during compilation phase
+Jul 07 17:38 : config: option 'auto_resample' on line 26 was not recognized
+Jul 07 17:38 : config: option 'use_mmap' on line 27 was not recognized
+Jul 08 17:14 : player: played "nujabes/Spiritual-State-Flac/07 Dawn on the Side.flac"
+Jul 08 17:22 : player: played "nujabes/Spiritual-State-Flac/08 Yes (feat. Pase Rock).flac"
+Jul 08 17:25 : player: played "nujabes/Spiritual-State-Flac/09 Rainyway Back Home.flac"
+Jul 08 17:30 : player: played "nujabes/Spiritual-State-Flac/10 Far Fowls.flac"
+Jul 08 17:32 : player: played "nujabes/Spiritual-State-Flac/11 Fellows.flac"
+Jul 09 19:05 : player: played "nujabes/Spiritual-State-Flac/12 Waiting for the Clouds (feat. Substantial).flac"
+Jul 09 19:09 : player: played "nujabes/Spiritual-State-Flac/13 Prayer.flac"
+Jul 09 19:14 : player: played "nujabes/Spiritual-State-Flac/14 Island (feat. Uyama Hiroto & Haruka Nakamura).flac"
+Jul 09 19:20 : player: played "nujabes/Spiritual-State-Flac/15 Spiritual State (Tribe Special Edition Mix).flac"
+Jul 09 19:24 : player: played "nujabes/Spiritual-State-Flac/16 Scorpion Dilemma.flac"
+Jul 10 17:29 : player: played "lofi/Charly García - MTV Unplugged (04_05_1995)-ocKhrA7P-BA.m4a"
+Jul 11 18:18 : config: inotify: auto_update was disabled. enable during compilation phase
+Jul 11 18:18 : config: option 'auto_resample' on line 26 was not recognized
+Jul 11 18:18 : config: option 'use_mmap' on line 27 was not recognized
