@@ -1366,3 +1366,32 @@ Jul 10 17:29 : player: played "lofi/Charly García - MTV Unplugged (04_05_1995)-
 Jul 11 18:18 : config: inotify: auto_update was disabled. enable during compilation phase
 Jul 11 18:18 : config: option 'auto_resample' on line 26 was not recognized
 Jul 11 18:18 : config: option 'use_mmap' on line 27 was not recognized
+Jul 12 07:48 : config: inotify: auto_update was disabled. enable during compilation phase
+Jul 12 07:48 : config: option 'auto_resample' on line 26 was not recognized
+Jul 12 07:48 : config: option 'use_mmap' on line 27 was not recognized
+Jul 15 10:01 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 01 Lamp in Toyko feat. Haruka Nakamura.mp3"
+Jul 15 10:05 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 02 Kick Blessings.mp3"
+Jul 15 10:08 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 03 I Gotcha Mic.mp3"
+Jul 15 10:12 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 04 Stars.mp3"
+Jul 15 10:15 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 01 Minced At Dawn.mp3"
+Jul 15 10:20 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 05 Mystery Of Madness ft. Czarface.mp3"
+Jul 15 10:22 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 06 Police Myself As Usual.mp3"
+Jul 16 20:25 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 07 The Mask (Interlude).mp3"
+Jul 16 20:30 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 01 nothing to lose.mp3"
+Jul 16 20:34 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 02 sinful love.mp3"
+Jul 16 20:39 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 03 grief.mp3"
+Jul 17 10:06 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 04 bittersweet.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Jul 17 10:15 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/01 - Part 1.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Jul 17 10:20 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/02 - Part 2.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Jul 17 10:27 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/03 - Part 3.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Jul 17 10:31 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/04 - Part 4.mp3"
+Jul 17 10:41 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/05 - Part 5.mp3"
+Jul 17 20:25 : exception: No such directory
+Jul 17 20:29 : player: played "Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 01 私の愛を表示します.mp3"
+Jul 17 20:34 : player: played "Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 02 必死の償還.mp3"
+Jul 18 07:17 : player: played "Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 03 催眠術をかけられた.mp3"

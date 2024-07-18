@@ -435,7 +435,6 @@ end
 The keybindings of emacs is like the flour of the bread. Because I come from doom emacs these follow the keybindings from DT's configuration who is also a doom emacs user! [[https://gitlab.com/dwt1/configuring-emacs/-/blob/main/06-cleaning-up-the-config/config.org?ref_type=heads#evil][Original config]].
  
 #+begin_src emacs-lisp
-;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 ;;(elpaca nil (define-key evil-insert-state-map (kbd "ESC ESC ESC") 'evil-force-normal-state))
 
 (use-package general
@@ -445,6 +444,7 @@ The keybindings of emacs is like the flour of the bread. Because I come from doo
   ;; THis is to go up and down in wrapped lines
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
   (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
+  (evil-global-set-key 'insert (kbd " ") 'org-roam-node-insert)
 
   ;; Popper
   (evil-global-set-key 'normal (kbd "C-t") 'popper-toggle)
@@ -748,8 +748,8 @@ tab-indent."
 )
 
 #+end_src
-*** Corfu
-#+begin_src emacs-lisp
+*** Corfu DISABLED
+#+begin_src text
 (use-package corfu
   ;; Optional customizations
   :custom
@@ -974,7 +974,8 @@ tab-indent."
 (use-package copilot
   :ensure (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
   :config
-  (add-hook 'prog-mode-hook 'copilot-mode))
+  ;;(add-hook 'prog-mode-hook 'copilot-mode)
+  )
 #+end_src
 ** Email
 Still does not work
@@ -1123,23 +1124,93 @@ Still does not work
       (concat "${title:*} "
               (propertize "${tags:50}" 'face 'org-tag)))
 
-(setq org-roam-capture-templates '(
-                                   ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|Finance|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
-                                    :unnarrowed t)
-                                   ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" 
-				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|IndividualProject|SecureComputing|MachineLearning|ComputerGraphics|}:\n")
-                                    :unnarrowed t)
-                                   ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
-                                    :unnarrowed t)
-                                   ("r" "ref" plain "%?" :target
-                                    (file+head "references/${citekey}.org" "#+title: ${title}\n")
-                                    :unarrowed t)
-                                   ("n" "ref + noter" plain "%?":target
-                                    (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
-                                    :unarrowed t)
-                                   ))
+(setq org-roam-capture-templates
+      '(("m" "Math")
+	("ms" "Statistics" plain "\n\n\n* Main\n%?\n\n* References\n"
+	 :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+			    "#+title: ${title}\n#+filetags: :Math:Statistics:\n")
+	 :unnarrowed t)
+	("mn" "Normal" plain "\n\n\n* Main\n%?\n\n* References\n"
+	 :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+			    "#+title: ${title}\n#+filetags: :Math:\n")
+	 :unnarrowed t)
+
+        ("p" "Physics" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Physics:\n")
+         :unnarrowed t)
+
+        ("f" "Finance" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Finance:\n")
+         :unnarrowed t)
+
+        ("e" "Economics" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Economics:\n")
+         :unnarrowed t)
+
+        ("j" "Job")
+        ("ji" "Interview" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Job:Interview:\n")
+         :unnarrowed t)
+        ("jc" "Company" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Job:Company:\n")
+         :unnarrowed t)
+        ("ja" "Application" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Job:Application:\n")
+         :unnarrowed t)
+        ("jn" "Networking" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Job:Networking:\n")
+         :unnarrowed t)
+
+        ("c" "CompSci")
+        ("cp" "Programming")
+        ("cpp" "Problem" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :CompSci:Programming:Problem:\n")
+         :unnarrowed t)
+        ("cpl" "Language" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :CompSci:Programming:Language:\n")
+         :unnarrowed t)
+        ("cc" "Cybersecurity" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :CompSci:Cybersecurity:\n")
+         :unnarrowed t)
+
+        ("ca" "AI")
+        ("cam" "Model" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :CompSci:AI:Model:\n")
+         :unnarrowed t)))
+
+;; Made by chat gpt I dont understand it but it works
+(defun add-university-tag-and-course ()
+  "Add the university tag and prompt user to select a course."
+  (interactive)
+  (let* ((filename (buffer-file-name)) ; Get the name of the current file
+         (course (completing-read "Select University Course: "
+                                  '("IndividualProject" "SecureComputing" "MachineLearning" "ComputerGraphics")
+                                  nil t))
+         (tag-to-add (concat "University:" course ":"))
+         (current-tags (save-excursion
+                         (goto-char (point-min))
+                         (when (re-search-forward "#\\+filetags:.*" nil t)
+                           (match-string 0)))))
+    (if (and filename (not (string-empty-p current-tags)))
+        (with-current-buffer (find-file-noselect filename)
+          (goto-char (point-min))
+          (if (re-search-forward "#\\+filetags:.*" nil t)
+              (replace-match (concat current-tags tag-to-add))
+            (goto-char (point-max))
+            (insert (concat "#+filetags: " tag-to-add "\n")))
+          (save-buffer))
+      (message "Not visiting a file or no tags found!"))))
 #+end_src
 ** org Roam UI
 #+begin_src emacs-lisp
@@ -1280,9 +1351,10 @@ Still does not work
 #+end_src
 *** Config
 #+begin_src emacs-lisp
-(setq python-shell-interpreter "/usr/local/anaconda3/bin/python3"
-      org-babel-python-command "/usr/local/anaconda3/bin/python3"
-      lsp-pyright-venv-path "/usr/local/anaconda3")
+(setq python-shell-interpreter (concat gnus-home-directory ".local/venv/ai/bin/python3")
+      python-shell-virtualenv-root (concat gnus-home-directory ".local/venv/ai/")
+      org-babel-python-command (concat gnus-home-directory ".local/venv/ai/bin/python3"))
+      ;; lsp-pyright-venv-path "/usr/local/anaconda3")
 #+end_src
 ** Nix
 #+begin_src emacs-lisp

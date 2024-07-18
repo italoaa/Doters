@@ -13,6 +13,7 @@ hyper - t : grep -q 'nano-theme-set-light' "/Users/italo/.config/bread/config.or
 # hyper - l : /Users/italo/.config/Bin/emacs/light.sh
 # hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
 # hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
+hyper - e : /Applications/Alacritty.app/Contents/MacOS/alacritty -e 'btm'
 hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'btm'
 hyper - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ncmpcpp'
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t 'Rioki' --working-directory "/Users/italo/personal/Media/Movies/" -e '/Users/italo/.config/Bin/rioki'

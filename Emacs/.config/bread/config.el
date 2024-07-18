@@ -304,7 +304,6 @@
 
 (use-package dirvish)
 
-;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 ;;(elpaca nil (define-key evil-insert-state-map (kbd "ESC ESC ESC") 'evil-force-normal-state))
 
 (use-package general
@@ -314,6 +313,7 @@
   ;; THis is to go up and down in wrapped lines
   (evil-global-set-key 'motion "j" 'evil-next-visual-line)
   (evil-global-set-key 'motion "k" 'evil-previous-visual-line)
+  (evil-global-set-key 'insert (kbd " ") 'org-roam-node-insert)
 
   ;; Popper
   (evil-global-set-key 'normal (kbd "C-t") 'popper-toggle)
@@ -602,36 +602,6 @@ tab-indent."
   ;;(add-to-list 'completion-at-point-functions #'cape-line)
 )
 
-(use-package corfu
-  ;; Optional customizations
-  :custom
-  (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
-  (corfu-auto t)                 ;; Enable auto completion
-  ;; (corfu-separator ?\s)          ;; Orderless field separator
-  ;; (corfu-quit-at-boundary nil)   ;; Never quit at completion boundary
-  ;; (corfu-quit-no-match nil)      ;; Never quit, even if there is no match
-  ;; (corfu-preview-current nil)    ;; Disable current candidate preview
-  ;; (corfu-preselect 'prompt)      ;; Preselect the prompt
-  ;; (corfu-on-exact-match nil)     ;; Configure handling of exact matches
-  ;; (corfu-scroll-margin 5)        ;; Use scroll margin
-
-  ;; Enable Corfu only for certain modes.
-  ;; :hook ((prog-mode . corfu-mode)
-  ;;        (shell-mode . corfu-mode)
-  ;;        (eshell-mode . corfu-mode))
-
-  ;; Recommended: Enable Corfu globally.  This is recommended since Dabbrev can
-  ;; be used globally (M-/).  See also the customization variable
-  ;; `global-corfu-modes' to exclude certain modes.
-  :init
-  (global-corfu-mode))
-
-;;(evil-collection-corfu-setup)
-;;(defvar my-override-keymap-alist '())
-;;  (add-to-ordered-list 'emulation-mode-map-alists 'my-override-keymap-alist 0)
-;;  (add-hook 'my-override-keymap-alist
-;;            `(completion-in-region-mode . ,(define-keymap "<escape>" ;;#'evil-collection-corfu-quit-and-escape)))
-
 (use-package vertico
   :init
   (vertico-mode)
@@ -759,7 +729,8 @@ tab-indent."
 (use-package copilot
   :ensure (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
   :config
-  (add-hook 'prog-mode-hook 'copilot-mode))
+  ;;(add-hook 'prog-mode-hook 'copilot-mode)
+  )
 
 ;; Nano is wierd
 ;; (require 'nano-mu4e)
@@ -893,7 +864,10 @@ tab-indent."
 				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|IndividualProject|SecureComputing|MachineLearning|ComputerGraphics|}:\n")
                                     :unnarrowed t)
                                    ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem}:\n")
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem|AI}:\n")
+                                    :unnarrowed t)
+                                   ("a" "AI" plain "\n\n\n* Main\n%?\n\n* References\n" :target
+                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:AI:%^{Select Further AI Topic|Model}:\n")
                                     :unnarrowed t)
                                    ("r" "ref" plain "%?" :target
                                     (file+head "references/${citekey}.org" "#+title: ${title}\n")
