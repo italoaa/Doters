@@ -216,7 +216,6 @@ Defaults to nil."
                          :background nano-color-highlight)))
 
 
-
 (defun nano-theme--buttons ()
   "Derive button faces from nano faces."
   ;; Buttons
@@ -483,7 +482,7 @@ function is a convenience wrapper used by `describe-package-1'."
     (set-face 'org-default                             'nano-face-faded)
     (set-face 'org-document-info                       'nano-face-faded)
     (set-face 'org-document-info-keyword               'nano-face-faded)
-    (set-face 'org-document-title                      'nano-face-faded)
+    ;; (set-face 'org-document-title                      'nano-face-faded) ;; i set my own face
     (set-face 'org-done                              'nano-face-default)
     (set-face 'org-drawer                              'nano-face-faded)
     (set-face 'org-ellipsis                            'nano-face-faded)
@@ -794,7 +793,6 @@ Calls \(nano-faces\) and \(nano-theme\) sequentially."
   (progn
     (nano-faces)
     (nano-theme)))
-
 
 (defun nano-toggle-theme ()
   "Function to interactively toggle between light and dark nano themes.

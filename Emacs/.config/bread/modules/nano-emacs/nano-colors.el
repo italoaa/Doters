@@ -124,6 +124,7 @@
 			    "#88C0D0" "#81A1C1" "#5E81AC" "#BF616A"
 			    "#D08770" "#EBCB8B" "#A3BE8C" "#B48EAD"))))
 
+
 (defun nord-color (color)
   (interactive)
   (let ((hue   (substring color 0 -2))

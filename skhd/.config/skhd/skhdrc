@@ -10,10 +10,7 @@ hyper - m : alacritty -t "Menu"
 # config-file-path="/Users/italo/.config/bread/config.org"
 hyper - t : grep -q 'nano-theme-set-light' "/Users/italo/.config/bread/config.org" && sed -i '' 's/nano-theme-set-light/nano-theme-set-dark/g' "/Users/italo/.config/bread/config.org" || sed -i '' 's/nano-theme-set-dark/nano-theme-set-light/g' "/Users/italo/.config/bread/config.org"
 
-# hyper - l : /Users/italo/.config/Bin/emacs/light.sh
-# hyper - b : open /Users/italo/Personal/AppData/Burp/burpsuite_community_1.7.33.jar
-# hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e "/Users/italo/Personal/Programing/Repos/github.com/italoaa/GhqSearch/ghqsearch"
-hyper - e : /Applications/Alacritty.app/Contents/MacOS/alacritty -e 'btm'
+hyper - e : emacsclient -c
 hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'btm'
 hyper - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ncmpcpp'
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t 'Rioki' --working-directory "/Users/italo/personal/Media/Movies/" -e '/Users/italo/.config/Bin/rioki'

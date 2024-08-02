@@ -1,9 +1,9 @@
-sw_volume: 30
+sw_volume: 100
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: pause
-current: 0
-time: 207.812000
+state: play
+current: 1
+time: 120.004000
 random: 0
 repeat: 0
 single: 0
@@ -12,23 +12,17 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 04 私たちをつなぐ愛.mp3
-1:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 05 美しい島.mp3
-2:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 06 瞬間的な損失.mp3
-3:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 07 ダイヤモンドのような目.mp3
-4:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 08 モーニングスター.mp3
-5:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 09 ここには何もありません.mp3
-6:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 10 タワーハウス.mp3
-7:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 11 得難いです.mp3
-8:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 12 あなたは落ち着く必要があります.mp3
-9:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 13 フェードアウト.mp3
-10:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 14 もう一度信じられますか.mp3
-11:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 15 イマジネーション.mp3
-12:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 16 島が行く場所.mp3
-13:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 17 さよならを言わないで.mp3
-14:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 18 ディスコナイト.mp3
-15:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 19 一歩近づく.mp3
-16:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 20 ヒーローになりたくない.mp3
-17:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 21 あなたの息をキャッチ.mp3
-18:Macroblank Discography (320kbps) 03:04:2023/ス​ロ​ー JAMS/Macroblank - スロー JAMS - 22 空飛ぶ霧.mp3
+0:Sylvan-Esso/Sylvan Esso - Hey Mami (Big Wild Remix) [Q_vXB_rBKkc].mp3
+1:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/02.-This Must Be Love.flac
+2:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/03.-Behind The Lines.flac
+3:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/04.-The Roof Is Leaking.flac
+4:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/05.-Droned.flac
+5:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/06.-Hand In Hand.flac
+6:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/07.-I Missed Again.flac
+7:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/08.-You Know What I Mean.flac
+8:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/09.-Thunder And Lightning.flac
+9:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/10.-I'm Not Moving.flac
+10:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/11.-If Leaving Me Is Easy.flac
+11:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/12.-Tomorrow Never Knows.flac
+12:Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/13.-Over The Rainbow.flac
 playlist_end

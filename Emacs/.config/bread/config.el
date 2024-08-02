@@ -4,26 +4,46 @@
 (add-to-list 'load-path (concat user-emacs-directory "modules/nano-emacs/"))
 
 ;; Settings for nano
-(setq nano-font-size 16)
+(setq nano-enabled t)
+;; Use an if statement if nano is enabled
+(if nano-enabled
+    (progn
+      (setq nano-font-size 16)
 
-(require 'nano-faces)
-(require 'nano-theme)
-(require 'nano-theme-dark)
-(require 'nano-theme-light)
+      (require 'nano-faces)
+      (require 'nano-theme)
+      (require 'nano-theme-dark)
+      (require 'nano-theme-light)
 
-(nano-theme-set-dark)
-(call-interactively 'nano-refresh-theme)
+      (nano-theme-set-dark)
+      (call-interactively 'nano-refresh-theme)
 
-;; End the config loading with the splash screen
-(require 'nano-splash)
+      ;; End the config loading with the splash screen
+      (require 'nano-splash)
 
-(require 'nano-modeline)
-(require 'nano-colors)
-(require 'nano-layout)
-(require 'nano-command)
-;; (require 'nano-agenda)
-;; (require 'nano-minibuffer)
-(set-scroll-bar-mode nil)
+      (require 'nano-modeline)
+      (require 'nano-colors)
+      (require 'nano-layout)
+      (require 'nano-command)
+      ;; (require 'nano-agenda)
+      ;; (require 'nano-minibuffer)
+      (set-scroll-bar-mode nil)
+      )
+  )
+
+;; Set the normal font size
+;;(setq default-font-size 18)
+;;(setq nano-font-size 16)
+;;(set-face-attribute 'default nil :height 130) ; For 12pt font
+
+
+;;(require 'nano-command)
+;;(require 'nano-theme-dark)
+;;(require 'nano-theme-light)
+;;(require 'nano-modeline)
+;;(require 'nano-splash)
+;;(require 'nano-faces)
+;;(require 'nano-layout)
 
 (require 'elpaca-setup)
 
@@ -37,6 +57,7 @@
       version-control t)
 
 (recentf-mode)
+(add-to-list 'default-frame-alist '(undecorated . t))
 ;;(elpaca nil (setq mu4e-mu-version "1.10.8"))
 
 ;; Correct indentation ;)
@@ -148,7 +169,13 @@
   ;; (setq doom-themes-treemacs-theme "doom-atom") ; use "doom-colors" for less minimal icon theme
   ;; (doom-themes-treemacs-config)
   ;; Corrects (and improves) org-mode's native fontification.
-  (doom-themes-org-config))
+  (doom-themes-org-config)
+
+  (if (not nano-enabled)
+      (load-theme 'doom-spacegrey t)
+    (set-face-attribute 'default nil :height 160) ; For 12pt font
+    )
+  )
 
 ;; Themes
 ;; Spacegrey    Grey and contrast code
@@ -157,7 +184,6 @@
 ;; Gruvbox      to groove
 
 ;; Use elpaca to load the theme to ensure doom-themes is laoded
-;; (elpaca nil (load-theme 'doom-spacegrey t))
 
 (use-package smartparens
   :diminish smartparens-mode
@@ -788,6 +814,21 @@ tab-indent."
 	  "https://protesilaos.com/news.xml"
 	  )))
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-document-title ((t (:inherit default :weight bold :font "Monaco" :height 2.0 :underline nil))))
+ '(org-level-1 ((t (:inherit default :weight bold :font "Monaco" :height 1.75))))
+ '(org-level-2 ((t (:inherit default :weight bold :font "Monaco" :height 1.5))))
+ '(org-level-3 ((t (:inherit default :weight bold :font "Monaco" :height 1.25))))
+ '(org-level-4 ((t (:inherit default :weight bold :font "Monaco" :height 1.1))))
+ '(org-level-5 ((t (:inherit default :weight bold :font "Monaco"))))
+ '(org-level-6 ((t (:inherit default :weight bold :font "Monaco"))))
+ '(org-level-7 ((t (:inherit default :weight bold :font "Monaco"))))
+ '(org-level-8 ((t (:inherit default :weight bold :font "Monaco")))))
+
 ;; Unbind RET for going to links
 ;;(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
 ;;(elpaca nil (setq org-return-follows-link t
@@ -803,6 +844,7 @@ tab-indent."
 
 (require 'org-tempo)
 (require 'org-habit)
+
 (require 'ox-extra)
 (add-to-list 'org-modules 'org-habit)
 
@@ -842,7 +884,10 @@ tab-indent."
 
 (use-package org-roam
   :config
-  (org-roam-db-autosync-mode 1))
+  (org-roam-db-autosync-mode 1)
+  (setq org-roam-completion-everywhere t)
+  )
+
 (setq org-roam-directory (concat org-directory "/roam/"))
 (add-to-list 'display-buffer-alist
              '("\\*org-roam\\*"
@@ -856,26 +901,108 @@ tab-indent."
       (concat "${title:*} "
               (propertize "${tags:50}" 'face 'org-tag)))
 
-(setq org-roam-capture-templates '(
-                                   ("d" "default" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :%^{Select Tag|Physics|Math|Finance|AppliedMaths|CompSci|Job|Programming|Misc|}:\n")
-                                    :unnarrowed t)
-                                   ("u" "uni" plain "\n\n\n* Main\n%?\n\n* References\n" 
-				    :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :University:%^{Select Tag|Physics|Math|AppliedMaths|CompSci|Programming}:%^{Select Uni Course|IndividualProject|SecureComputing|MachineLearning|ComputerGraphics|}:\n")
-                                    :unnarrowed t)
-                                   ("c" "CompSci" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:%^{Select Further CompSci Topic|CyberSecurity|Problem|AI}:\n")
-                                    :unnarrowed t)
-                                   ("a" "AI" plain "\n\n\n* Main\n%?\n\n* References\n" :target
-                                    (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n#+filetags: :CompSci:AI:%^{Select Further AI Topic|Model}:\n")
-                                    :unnarrowed t)
-                                   ("r" "ref" plain "%?" :target
-                                    (file+head "references/${citekey}.org" "#+title: ${title}\n")
-                                    :unarrowed t)
-                                   ("n" "ref + noter" plain "%?":target
-                                    (file+head "references/${citekey}.org" "#+title: ${title}\n\n\n* ${title}\n:PROPERTIES:\n:Custom_ID: ${citekey}\n:URL: ${url}\n:AUTHOR: ${author-or-editor}\n:NOTER_DOCUMENT: ${file}\n:END:")
-                                    :unarrowed t)
-                                   ))
+(setq org-roam-capture-templates
+      '(("m" "Math")
+	("ms" "Statistics" plain "\n\n\n* Main\n%?\n\n* References\n"
+	 :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+			    "#+title: ${title}\n#+filetags: :Math:Statistics:\n")
+	 :unnarrowed t)
+	("mn" "Normal" plain "\n\n\n* Main\n%?\n\n* References\n"
+	 :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+			    "#+title: ${title}\n#+filetags: :Math:\n")
+	 :unnarrowed t)
+
+        ("p" "Physics" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Physics:\n")
+         :unnarrowed t)
+
+        ("f" "Finance" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Finance:\n")
+         :unnarrowed t)
+
+        ("e" "Economics" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Economics:\n")
+         :unnarrowed t)
+
+        ("j" "Job")
+        ("ji" "Interview" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Job:Interview:\n")
+         :unnarrowed t)
+        ("jc" "Company" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Job:Company:\n")
+         :unnarrowed t)
+        ("ja" "Application" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Job:Application:\n")
+         :unnarrowed t)
+        ("jn" "Networking" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Job:Networking:\n")
+         :unnarrowed t)
+
+        ("c" "CompSci")
+            ("cp" "Programming")
+                ("cpp" "Problem" plain "\n\n\n* Main\n%?\n\n* References\n"
+                :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                    "#+title: ${title}\n#+filetags: :CompSci:Programming:Problem:\n")
+                :unnarrowed t)
+                ("cpl" "Language" plain "\n\n\n* Main\n%?\n\n* References\n"
+                :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                    "#+title: ${title}\n#+filetags: :CompSci:Programming:Language:\n")
+                :unnarrowed t)
+            ("cc" "Cybersecurity" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :CompSci:Cybersecurity:\n")
+            :unnarrowed t)
+
+        ("ca" "AI")
+            ("cam" "Machine Learning")
+                ("camm" "Model Note" plain "\n\n\n* Main\n%?\n\n* References\n"
+                :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                    "#+title: ${title}\n#+filetags: :CompSci:AI:MachineLearning:Model:\n")
+                :unnarrowed t)
+                ("camn" "Normal Machine Learning Note" plain "\n\n\n* Main\n%?\n\n* References\n"
+                :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                    "#+title: ${title}\n#+filetags: :CompSci:AI:MachineLearning:\n")
+                :unnarrowed t)
+            ("can" "Normal Model (no involving ML)" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :CompSci:AI:Model:\n")
+            :unnarrowed t)
+	("r" "Reasearch")
+            ("ra" "Article Analysis Note" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Research:Article:\n")
+            :unnarrowed t)
+        ))
+
+;; Made by chat gpt I dont understand it but it works
+(defun add-university-tag-and-course ()
+  "Add the university tag and prompt user to select a course."
+  (interactive)
+  (let* ((filename (buffer-file-name)) ; Get the name of the current file
+         (course (completing-read "Select University Course: "
+                                  '("IndividualProject" "SecureComputing" "MachineLearning" "ComputerGraphics")
+                                  nil t))
+         (tag-to-add (concat "University:" course ":"))
+         (current-tags (save-excursion
+                         (goto-char (point-min))
+                         (when (re-search-forward "#\\+filetags:.*" nil t)
+                           (match-string 0)))))
+    (if (and filename (not (string-empty-p current-tags)))
+        (with-current-buffer (find-file-noselect filename)
+          (goto-char (point-min))
+          (if (re-search-forward "#\\+filetags:.*" nil t)
+              (replace-match (concat current-tags tag-to-add))
+            (goto-char (point-max))
+            (insert (concat "#+filetags: " tag-to-add "\n")))
+          (save-buffer))
+      (message "Not visiting a file or no tags found!"))))
 
 (use-package org-roam-ui
   :after org-roam
@@ -938,6 +1065,8 @@ tab-indent."
         org-journal-time-prefix "* ")
   )
 
+(use-package ox-reveal)
+
 (use-package ob-async)
 
 ;; (use-package ob-nixn)
@@ -950,11 +1079,17 @@ tab-indent."
 
 (add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
 
-(require 'treesit)
-(add-to-list 'treesit-language-source-alist
-	     '(typescript . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")))
-(add-to-list 'treesit-language-source-alist
-	     '(tsx . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")))
+;; (require 'treesit)
+;; (add-to-list 'treesit-language-source-alist
+;; 	     '(typescript . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")))
+;; (add-to-list 'treesit-language-source-alist
+;; 	     '(tsx . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")))
+(use-package treesit-auto
+  :custom
+  (treesit-auto-install 'prompt)
+  :config
+  (treesit-auto-add-to-auto-mode-alist 'all)
+  (global-treesit-auto-mode))
 
 (add-hook 'c-mode-hook 'lsp)
 
@@ -962,9 +1097,10 @@ tab-indent."
 
 (use-package fancy-compilation)
 
-(setq python-shell-interpreter "/usr/local/anaconda3/bin/python3"
-      org-babel-python-command "/usr/local/anaconda3/bin/python3"
-      lsp-pyright-venv-path "/usr/local/anaconda3")
+(setq python-shell-interpreter (concat gnus-home-directory ".local/venv/ai/bin/python3")
+      python-shell-virtualenv-root (concat gnus-home-directory ".local/venv/ai/")
+      org-babel-python-command (concat gnus-home-directory ".local/venv/ai/bin/python3"))
+      ;; lsp-pyright-venv-path "/usr/local/anaconda3")
 
 (use-package nix-mode)
 
