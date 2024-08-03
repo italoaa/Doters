@@ -8,8 +8,8 @@
  (last-modified 26107 10632 486647 0))
 ("org-capture-last-stored"
  (filename
-  . "~/Personal/Dropbox/Bak/Org/roam/20240729124828-artificial_intelligence_taxonomy.org")
- (front-context-string . "* Main\nThis taxo")
- (rear-context-string . "s: :CompSci:AI:\n") (position . 135)
- (last-modified 26279 54912 39408 0))
+  . "~/Personal/Dropbox/Bak/Org/roam/20240802182744-org_reveal.org")
+ (front-context-string . "* Installing org")
+ (rear-context-string . "tags: :CompSci:\n") (position . 110)
+ (last-modified 26285 27544 155913 0))
 )

@@ -331,6 +331,7 @@
 (use-package dirvish)
 
 ;;(elpaca nil (define-key evil-insert-state-map (kbd "ESC ESC ESC") 'evil-force-normal-state))
+;;(global-set-key (kbd "") 'evil-collection-corfu-quit-and-escape)
 
 (use-package general
   :config
@@ -347,7 +348,7 @@
   (evil-global-set-key 'normal (kbd "C-<tab>") 'popper-cycle)
 
   ;; Auto complete with C-SPC
-  (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
+  ;; (evil-global-set-key 'insert (kbd "C-SPC") 'company-complete-common)
   (evil-global-set-key 'normal "\C-s" 'consult-line)
   ;;(elpaca nil (define-key evil-insert-state-map (kbd " ") 'org-roam-node-insert))
 
@@ -590,42 +591,29 @@ tab-indent."
   :hook (emacs-startup . global-jinx-mode))
 
 (use-package cape
-  ;; Bind dedicated completion commands
-  ;; Alternative prefix keys: C-c p, M-p, M-+, ...
-  ;;:bind (("C-c p p" . completion-at-point) ;; capf
-  ;;       ("C-c p t" . complete-tag)        ;; etags
-  ;;       ("C-c p d" . cape-dabbrev)        ;; or dabbrev-completion
-  ;;       ("C-c p h" . cape-history)
-  ;;       ("C-c p f" . cape-file)
-  ;;       ("C-c p k" . cape-keyword)
-  ;;       ("C-c p s" . cape-elisp-symbol)
-  ;;       ("C-c p e" . cape-elisp-block)
-  ;;       ("C-c p a" . cape-abbrev)
-  ;;       ("C-c p l" . cape-line)
-  ;;       ("C-c p w" . cape-dict)
-  ;;       ("C-c p :" . cape-emoji)
-  ;;       ("C-c p \\" . cape-tex)
-  ;;       ("C-c p _" . cape-tex)
-  ;;       ("C-c p ^" . cape-tex)
-  ;;       ("C-c p &" . cape-sgml)
-  ;;       ("C-c p r" . cape-rfc1345))
   :init
-  ;; Add to the global default value of `completion-at-point-functions' which is
-  ;; used by `completion-at-point'.  The order of the functions matters, the
-  ;; first function returning a result wins.  Note that the list of buffer-local
-  ;; completion functions takes precedence over the global list.
   (add-to-list 'completion-at-point-functions #'cape-dabbrev)
   (add-to-list 'completion-at-point-functions #'cape-file)
   (add-to-list 'completion-at-point-functions #'cape-elisp-block)
-  ;;(add-to-list 'completion-at-point-functions #'cape-history)
-  ;;(add-to-list 'completion-at-point-functions #'cape-keyword)
-  ;;(add-to-list 'completion-at-point-functions #'cape-tex)
-  ;;(add-to-list 'completion-at-point-functions #'cape-sgml)
-  ;;(add-to-list 'completion-at-point-functions #'cape-rfc1345)
-  ;;(add-to-list 'completion-at-point-functions #'cape-abbrev)
-  ;;(add-to-list 'completion-at-point-functions #'cape-dict)
-  ;;(add-to-list 'completion-at-point-functions #'cape-elisp-symbol)
-  ;;(add-to-list 'completion-at-point-functions #'cape-line)
+  (add-to-list 'completion-at-point-functions #'cape-history)
+  (add-to-list 'completion-at-point-functions #'cape-keyword)
+  (add-to-list 'completion-at-point-functions #'cape-tex)
+  (add-to-list 'completion-at-point-functions #'cape-sgml)
+  (add-to-list 'completion-at-point-functions #'cape-rfc1345)
+  (add-to-list 'completion-at-point-functions #'cape-abbrev)
+  (add-to-list 'completion-at-point-functions #'cape-dict)
+  (add-to-list 'completion-at-point-functions #'cape-elisp-symbol)
+  (add-to-list 'completion-at-point-functions #'cape-line)
+)
+
+(use-package corfu
+  ;; Optional customizations
+  :custom
+  (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
+  (corfu-auto t)                 ;; Enable auto completion
+  (corfu-auto-prefix 2)
+  (corfu-auto-delay 0.0)
+  ;; (global-corfu-mode)
 )
 
 (use-package vertico
