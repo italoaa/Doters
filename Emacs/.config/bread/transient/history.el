@@ -16,4 +16,5 @@
   ("-f"))
  (magit-reset nil)
  (magit-stash nil)
+ (magit-submodule nil)
  (magit-tag nil))

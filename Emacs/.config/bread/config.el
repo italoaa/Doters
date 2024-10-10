@@ -31,20 +31,6 @@
       )
   )
 
-;; Set the normal font size
-;;(setq default-font-size 18)
-;;(setq nano-font-size 16)
-;;(set-face-attribute 'default nil :height 130) ; For 12pt font
-
-
-;;(require 'nano-command)
-;;(require 'nano-theme-dark)
-;;(require 'nano-theme-light)
-;;(require 'nano-modeline)
-;;(require 'nano-splash)
-;;(require 'nano-faces)
-;;(require 'nano-layout)
-
 (require 'elpaca-setup)
 
 (require 'secret)
@@ -250,6 +236,11 @@
 
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
+(setq insert-directory-program "ls")  ;; Use exa instead of ls
+(setq dired-listing-switches "-lah")
+
+
+
 (with-eval-after-load 'dired
   (with-eval-after-load 'evil
     ;;(define-key dired-mode-map (kbd "M-p") 'peep-dired)
@@ -331,7 +322,7 @@
 (use-package dirvish)
 
 ;;(elpaca nil (define-key evil-insert-state-map (kbd "ESC ESC ESC") 'evil-force-normal-state))
-;;(global-set-key (kbd "") 'evil-collection-corfu-quit-and-escape)
+(global-set-key (kbd "C-<escape>") 'evil-collection-corfu-quit-and-escape)
 
 (use-package general
   :config
@@ -594,27 +585,40 @@ tab-indent."
   :init
   (add-to-list 'completion-at-point-functions #'cape-dabbrev)
   (add-to-list 'completion-at-point-functions #'cape-file)
-  (add-to-list 'completion-at-point-functions #'cape-elisp-block)
+  ;; (add-to-list 'completion-at-point-functions #'cape-elisp-block)
   (add-to-list 'completion-at-point-functions #'cape-history)
-  (add-to-list 'completion-at-point-functions #'cape-keyword)
-  (add-to-list 'completion-at-point-functions #'cape-tex)
-  (add-to-list 'completion-at-point-functions #'cape-sgml)
-  (add-to-list 'completion-at-point-functions #'cape-rfc1345)
-  (add-to-list 'completion-at-point-functions #'cape-abbrev)
-  (add-to-list 'completion-at-point-functions #'cape-dict)
-  (add-to-list 'completion-at-point-functions #'cape-elisp-symbol)
-  (add-to-list 'completion-at-point-functions #'cape-line)
+  ;; (add-to-list 'completion-at-point-functions #'cape-keyword)
+  ;; (add-to-list 'completion-at-point-functions #'cape-tex)
+  ;; (add-to-list 'completion-at-point-functions #'cape-sgml)
+  ;; (add-to-list 'completion-at-point-functions #'cape-rfc1345)
+  ;; (add-to-list 'completion-at-point-functions #'cape-abbrev)
+  ;; (add-to-list 'completion-at-point-functions #'cape-dict)
+  ;; (add-to-list 'completion-at-point-functions #'cape-elisp-symbol)
+  ;; (add-to-list 'completion-at-point-functions #'cape-line)
 )
 
 (use-package corfu
-  ;; Optional customizations
+  ;; Optionally use TAB for cycling, default is `corfu-complete'.
+  :bind (:map corfu-map
+              ("M-SPC"      . corfu-insert-separator)
+              ("TAB"        . corfu-next)
+              ([tab]        . corfu-next)
+              ("S-TAB"      . corfu-previous)
+              ([backtab]    . corfu-previous)
+              ("S-<return>" . corfu-insert)
+              ("<return>"        . nil))
   :custom
   (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
   (corfu-auto t)                 ;; Enable auto completion
   (corfu-auto-prefix 2)
-  (corfu-auto-delay 0.0)
-  ;; (global-corfu-mode)
-)
+  (corfu-auto-delay 0.8)
+  (corfu-popupinfo-delay '(0.5 . 0.2))
+  (corfu-preview-current 'insert) ; insert previewed candidate
+  (corfu-preselect 'prompt)
+  (corfu-on-exact-match nil)      ; Don't auto expand tempel snippets
+  :init
+  (global-corfu-mode)
+  )
 
 (use-package vertico
   :init
@@ -863,6 +867,28 @@ tab-indent."
 
 (use-package org-gcal)
 
+;; centering fragments
+(defun org-justify-fragment-overlay (beg end image &optional imagetype)
+  "Adjust the justification of a LaTeX fragment.
+The justification is set by :justify-display in
+`org-format-latex-options'. Only equations at the beginning of a
+line are justified."
+  (cond
+   ;; Centered justification
+   ((and (eq 'center (plist-get org-format-latex-options :justify-display))
+         (= beg (line-beginning-position)))
+    (let* ((ov (ov-at))
+           (disp (overlay-get ov 'display)))
+      (overlay-put ov 'line-prefix `(space :align-to (- center (0.5 . ,disp))))))
+   ;; Right justification
+   ((and (eq 'right (plist-get org-format-latex-options :justify-display))
+         (= beg (line-beginning-position)))
+    (let* ((img (create-image image 'imagemagick t))
+           (width (car (image-display-size (overlay-get (ov-at) 'display))))
+           (offset (floor (- (window-text-width) width (- (line-end-position) end)))))
+      (overlay-put (ov-at) 'before-string (make-string offset ? ))))))
+
+
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 (setq org-latex-pdf-process
     '("pdflatex -interaction nonstopmode -output-directory %o %f"
@@ -915,25 +941,33 @@ tab-indent."
                             "#+title: ${title}\n#+filetags: :Economics:\n")
          :unnarrowed t)
 
+        ("p" "Philosophy" plain "\n\n\n* Main\n%?\n\n* References\n"
+        :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Philosophy:\n")
+        :unnarrowed t)
         ("j" "Job")
-        ("ji" "Interview" plain "\n\n\n* Main\n%?\n\n* References\n"
-         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n#+filetags: :Job:Interview:\n")
-         :unnarrowed t)
-        ("jc" "Company" plain "\n\n\n* Main\n%?\n\n* References\n"
-         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n#+filetags: :Job:Company:\n")
-         :unnarrowed t)
-        ("ja" "Application" plain "\n\n\n* Main\n%?\n\n* References\n"
-         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n#+filetags: :Job:Application:\n")
-         :unnarrowed t)
-        ("jn" "Networking" plain "\n\n\n* Main\n%?\n\n* References\n"
-         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n#+filetags: :Job:Networking:\n")
-         :unnarrowed t)
+            ("ji" "Interview" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Job:Interview:\n")
+            :unnarrowed t)
+            ("jc" "Company" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Job:Company:\n")
+            :unnarrowed t)
+            ("ja" "Application" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Job:Application:\n")
+            :unnarrowed t)
+            ("jn" "Networking" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Job:Networking:\n")
+            :unnarrowed t)
 
         ("c" "CompSci")
+	    ("cn" "CompSci normal note" plain "\n\n\n* Main\n%?\n\n* References\n"
+                :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                    "#+title: ${title}\n#+filetags: :CompSci:\n")
+                :unnarrowed t)
             ("cp" "Programming")
                 ("cpp" "Problem" plain "\n\n\n* Main\n%?\n\n* References\n"
                 :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
@@ -962,10 +996,14 @@ tab-indent."
             :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                                 "#+title: ${title}\n#+filetags: :CompSci:AI:Model:\n")
             :unnarrowed t)
-	("r" "Reasearch")
+	("r" "Reasearch/Source")
             ("ra" "Article Analysis Note" plain "\n\n\n* Main\n%?\n\n* References\n"
             :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                                 "#+title: ${title}\n#+filetags: :Research:Article:\n")
+            :unnarrowed t)
+            ("rb" "Book Analysis Note" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Research:Book:\n")
             :unnarrowed t)
         ))
 
@@ -975,7 +1013,7 @@ tab-indent."
   (interactive)
   (let* ((filename (buffer-file-name)) ; Get the name of the current file
          (course (completing-read "Select University Course: "
-                                  '("IndividualProject" "SecureComputing" "MachineLearning" "ComputerGraphics")
+                                  '("IndividualProject" "SecureComputing" "MachineLearning" "ComputerGraphics" "GraphsAlgoComplxTheo")
                                   nil t))
          (tag-to-add (concat "University:" course ":"))
          (current-tags (save-excursion

@@ -1,13 +1,61 @@
 sw_volume: 100
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: stop
+state: play
+current: 0
+time: 106.296000
 random: 0
 repeat: 0
 single: 0
 consume: 1
-crossfade: 0
+crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 05 stay with me.mp3
+1:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 06 interpolated.mp3
+2:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 07 mystic haze.mp3
+3:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 08 dancing.mp3
+4:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 09 watching ghosts.mp3
+5:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 10 fuming city.mp3
+6:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 01 bounce back.mp3
+7:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 02 last breath.mp3
+8:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 03 confusion spell.mp3
+9:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 04 doubting spirit.mp3
+10:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 05 whispers.mp3
+11:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 06 slide and glide.mp3
+12:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 07 running out of time.mp3
+13:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 08 mind the gap.mp3
+14:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 09 in the night.mp3
+15:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 10 jungle hunt.mp3
+16:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 01 double trouble.mp3
+17:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 02 covert red.mp3
+18:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 03 take it away.mp3
+19:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 04 vice grip.mp3
+20:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 05 all i want.mp3
+21:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 06 faceless bandits.mp3
+22:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 07 laguna.mp3
+23:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 08 burned memory.mp3
+24:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 09 silent tears.mp3
+25:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 10 velvet.mp3
+26:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 01 can't fight it.mp3
+27:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 02 babylon.mp3
+28:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 03 secret wish.mp3
+29:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 04 alfredo.mp3
+30:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 05 no wonder.mp3
+31:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 06 lately.mp3
+32:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 07 two sided.mp3
+33:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 08 whistleblower.mp3
+34:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 09 fragmented minds.mp3
+35:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.4/Macroblank - RARE PSALMS COLLECTION VOL.4 - 10 balsalm boys.mp3
+36:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 01 break my trust.mp3
+37:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 02 falling apart.mp3
+38:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 03 enemy.mp3
+39:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 04 mischievous.mp3
+40:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 05 off guard.mp3
+41:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 06 transmission.mp3
+42:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 07 eye to eye.mp3
+43:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 08 aching soul.mp3
+44:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 09 soft evil within.mp3
+45:Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.5/Macroblank - RARE PSALMS COLLECTION VOL.5 - 10 吸収された.mp3
 playlist_end

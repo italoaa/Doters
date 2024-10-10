@@ -8,8 +8,8 @@
  (last-modified 26107 10632 486647 0))
 ("org-capture-last-stored"
  (filename
-  . "~/Personal/Dropbox/Bak/Org/roam/20240802182744-org_reveal.org")
- (front-context-string . "* Installing org")
- (rear-context-string . "tags: :CompSci:\n") (position . 110)
- (last-modified 26285 27544 155913 0))
+  . "~/Personal/Dropbox/Bak/Org/roam/20241008132246-plausible_reasoning.org")
+ (front-context-string . "* Main\nPlausible")
+ (rear-context-string . "tags: :Physics:\n") (position . 119)
+ (last-modified 26373 9503 668541 0))
 )

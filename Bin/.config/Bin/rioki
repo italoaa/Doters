@@ -15,11 +15,15 @@ echo "Do you want to watch a movie or a TV show?"
 select choice in "Movie" "Show"; do
     case "$choice" in
         "Movie" )
-            # Code to handle movie selection goes here
-	    find "$MOVIES_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname "*.iso" \) | awk -F/ '{print $NF}' | fzf --prompt="Select a Movie > " | xargs -I {} find "$MOVIES_FOLDER" -type f -name "{}" | xargs -I {} mpv "{}"
-            break;;
+	    # Code to handle movie selection goes here
+	    find "$MOVIES_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname '*.iso' \) -print0 | \
+		awk -F/ '{print $NF}' | fzf --prompt="Select a Movie > " | \
+		xargs -r -I {} find "$MOVIES_FOLDER" -type f -name "{}" -print0 | \
+		xargs -0 -I {} mpv "{}"
+	    break;;
         "Show" )
-	    find "$TV_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname "*.iso" \) | awk -F/ '{print $NF}' | fzf --prompt="Select a Tv Show > " | xargs -I {} find "$TV_FOLDER" -type f -name "{}" | xargs -I {} mpv "{}"
+	    find "$TV_FOLDER" -type f \( -iname '*.mp4' -o -iname '*.mkv' -o -iname "*.iso" \) | awk -F/ '{print $NF}' | fzf --prompt="Select a Tv Show > " | xargs -I {} find "$TV_FOLDER" -type f -name "{}" | xargs -0 -I {} mpv "{}"
+
             break;;
         * )
             echo "Invalid selection."

@@ -2,16 +2,18 @@
 ## Quickly restart the yabai launch agent
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
+hyper - y : /usr/local/bin/yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa" && sudo yabai --load-sa
+
 ## open terminal
-hyper - return : alacritty
-hyper - m : alacritty -t "Menu"
+hyper - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+hyper - m : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu"
 
 # The leyendary one liner
-# config-file-path="/Users/italo/.config/bread/config.org"
 hyper - t : grep -q 'nano-theme-set-light' "/Users/italo/.config/bread/config.org" && sed -i '' 's/nano-theme-set-light/nano-theme-set-dark/g' "/Users/italo/.config/bread/config.org" || sed -i '' 's/nano-theme-set-dark/nano-theme-set-light/g' "/Users/italo/.config/bread/config.org"
 
-hyper - e : emacsclient -c
-hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'btm'
+hyper - e : pgrep -x Emacs > /dev/null || emacs --daemon; emacsclient -c
+hyper - s : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -o 'window.startup_mode="Maximized"' -e 'btm' 
+
 hyper - n : /Applications/Alacritty.app/Contents/MacOS/alacritty -t "Menu" -e 'ncmpcpp'
 hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t 'Rioki' --working-directory "/Users/italo/personal/Media/Movies/" -e '/Users/italo/.config/Bin/rioki'
 

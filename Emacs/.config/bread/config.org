@@ -59,20 +59,6 @@ end
       (set-scroll-bar-mode nil)
       )
   )
-
-;; Set the normal font size
-;;(setq default-font-size 18)
-;;(setq nano-font-size 16)
-;;(set-face-attribute 'default nil :height 130) ; For 12pt font
-
-
-;;(require 'nano-command)
-;;(require 'nano-theme-dark)
-;;(require 'nano-theme-light)
-;;(require 'nano-modeline)
-;;(require 'nano-splash)
-;;(require 'nano-faces)
-;;(require 'nano-layout)
 #+end_src
 
 ** Elpaca
@@ -309,6 +295,11 @@ end
                                 ("mp4" . "mpv"))))
 
 (add-hook 'dired-mode-hook 'auto-revert-mode)
+
+(setq insert-directory-program "ls")  ;; Use exa instead of ls
+(setq dired-listing-switches "-lah")
+
+
 
 (with-eval-after-load 'dired
   (with-eval-after-load 'evil
@@ -738,16 +729,16 @@ tab-indent."
   :init
   (add-to-list 'completion-at-point-functions #'cape-dabbrev)
   (add-to-list 'completion-at-point-functions #'cape-file)
-  (add-to-list 'completion-at-point-functions #'cape-elisp-block)
+  ;; (add-to-list 'completion-at-point-functions #'cape-elisp-block)
   (add-to-list 'completion-at-point-functions #'cape-history)
-  (add-to-list 'completion-at-point-functions #'cape-keyword)
-  (add-to-list 'completion-at-point-functions #'cape-tex)
-  (add-to-list 'completion-at-point-functions #'cape-sgml)
-  (add-to-list 'completion-at-point-functions #'cape-rfc1345)
-  (add-to-list 'completion-at-point-functions #'cape-abbrev)
-  (add-to-list 'completion-at-point-functions #'cape-dict)
-  (add-to-list 'completion-at-point-functions #'cape-elisp-symbol)
-  (add-to-list 'completion-at-point-functions #'cape-line)
+  ;; (add-to-list 'completion-at-point-functions #'cape-keyword)
+  ;; (add-to-list 'completion-at-point-functions #'cape-tex)
+  ;; (add-to-list 'completion-at-point-functions #'cape-sgml)
+  ;; (add-to-list 'completion-at-point-functions #'cape-rfc1345)
+  ;; (add-to-list 'completion-at-point-functions #'cape-abbrev)
+  ;; (add-to-list 'completion-at-point-functions #'cape-dict)
+  ;; (add-to-list 'completion-at-point-functions #'cape-elisp-symbol)
+  ;; (add-to-list 'completion-at-point-functions #'cape-line)
 )
 
 #+end_src
@@ -772,6 +763,7 @@ tab-indent."
   (corfu-preview-current 'insert) ; insert previewed candidate
   (corfu-preselect 'prompt)
   (corfu-on-exact-match nil)      ; Don't auto expand tempel snippets
+  :init
   (global-corfu-mode)
   )
 #+end_src
@@ -973,6 +965,7 @@ tab-indent."
   ;;(add-hook 'prog-mode-hook 'copilot-mode)
   )
 #+end_src
+
 ** Email
 Still does not work
 #+begin_src emacs-lisp
@@ -1082,9 +1075,25 @@ Still does not work
 
 ** Org Agenda
 #+begin_src emacs-lisp
-(setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/gcal.org" "~/org/Agenda/habits.org"))
+(setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/project.org"))
 
 (setq meditations-dir (concat org-directory "/meditations/"))
+
+(setq org-columns-default-format
+      "%TODO %25ITEM %DEADLINE")
+
+(setq org-agenda-view-columns-initially t)
+
+(setq org-agenda-custom-commands
+      '(("p" "Projects agenda"
+	 ((agenda "" ((org-agenda-span 'week)
+		      (org-agenda-overriding-header "Weekly")))
+	  (tags-todo "+Graphics"
+		     ((org-agenda-overriding-header "Graphics Todos")))
+	  (tags-todo "+Individual"
+		     ((org-agenda-overriding-header "Dissertation Todos")))
+	  ))
+        ))
 
 ;; Function to generate the file path with title
 (defun generate-meditation-file-path ()
@@ -1096,10 +1105,26 @@ Still does not work
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/org/Agenda/index.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
+	("p" "Project Task")
+	("pg" "Graphics" entry (file+headline "~/org/Agenda/project.org" "Graphics")
+	 "* TODO %? :Graphics:\nDEADLINE: %^t\nSCHEDULED: %t\n%i\n %a"
+	 )
+	("pc" "Complex graphs" entry (file+headline "~/org/Agenda/project.org" "Complex graphs")
+	 "* TODO %? :ComplexGraphs:\nDEADLINE: %^t \n%i\n %a"
+	 )
+	("pi" "Individual project" entry (file+headline "~/org/Agenda/project.org" "Individual project")
+	 "* TODO %? :Individual:\nDEADLINE: %^t \n%i\n %a"
+	 )
+	("pm" "Machine learning project" entry (file+headline "~/org/Agenda/project.org" "Machine learning project")
+	 "* TODO %? :ML:\nDEADLINE: %^t \n%i\n %a"
+	 )
+	("ps" "Secure computing project" entry (file+headline "~/org/Agenda/project.org" "Secure computing project")
+	 "* TODO %? :SecureComp:\nDEADLINE: %^t \n%i\n %a"
+	 )
         ("m" "Meditation Entry" plain (file generate-meditation-file-path)
          "#+title: %?\nEntered on %U\n\n%i\n" :empty-lines 1)
 	)
-)
+      )
 
 (require 'epa-file)
 (setq epg-pinentry-mode 'loopback)
@@ -1109,6 +1134,10 @@ Still does not work
 
 (use-package org-gcal)
 #+end_src
+
+#+RESULTS:
+: [nil 26375 54209 347767 nil elpaca-process-queues nil nil 0 nil]
+
 ** org latex
 #+begin_src emacs-lisp
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
@@ -1118,7 +1147,8 @@ Still does not work
         "pdflatex -interaction nonstopmode -output-directory %o %f"))
 (setq org-latex-with-hyperref nil) ;; stop org adding hypersetup{author..} to latex export
 #+end_src
-** org roam
+
+** org roam and capture
 #+begin_src emacs-lisp
 (use-package org-roam
   :config
@@ -1165,25 +1195,33 @@ Still does not work
                             "#+title: ${title}\n#+filetags: :Economics:\n")
          :unnarrowed t)
 
+        ("p" "Philosophy" plain "\n\n\n* Main\n%?\n\n* References\n"
+        :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Philosophy:\n")
+        :unnarrowed t)
         ("j" "Job")
-        ("ji" "Interview" plain "\n\n\n* Main\n%?\n\n* References\n"
-         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n#+filetags: :Job:Interview:\n")
-         :unnarrowed t)
-        ("jc" "Company" plain "\n\n\n* Main\n%?\n\n* References\n"
-         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n#+filetags: :Job:Company:\n")
-         :unnarrowed t)
-        ("ja" "Application" plain "\n\n\n* Main\n%?\n\n* References\n"
-         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n#+filetags: :Job:Application:\n")
-         :unnarrowed t)
-        ("jn" "Networking" plain "\n\n\n* Main\n%?\n\n* References\n"
-         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
-                            "#+title: ${title}\n#+filetags: :Job:Networking:\n")
-         :unnarrowed t)
+            ("ji" "Interview" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Job:Interview:\n")
+            :unnarrowed t)
+            ("jc" "Company" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Job:Company:\n")
+            :unnarrowed t)
+            ("ja" "Application" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Job:Application:\n")
+            :unnarrowed t)
+            ("jn" "Networking" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Job:Networking:\n")
+            :unnarrowed t)
 
         ("c" "CompSci")
+	    ("cn" "CompSci normal note" plain "\n\n\n* Main\n%?\n\n* References\n"
+                :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                    "#+title: ${title}\n#+filetags: :CompSci:\n")
+                :unnarrowed t)
             ("cp" "Programming")
                 ("cpp" "Problem" plain "\n\n\n* Main\n%?\n\n* References\n"
                 :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
@@ -1212,10 +1250,14 @@ Still does not work
             :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                                 "#+title: ${title}\n#+filetags: :CompSci:AI:Model:\n")
             :unnarrowed t)
-	("r" "Reasearch")
+	("r" "Reasearch/Source")
             ("ra" "Article Analysis Note" plain "\n\n\n* Main\n%?\n\n* References\n"
             :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                                 "#+title: ${title}\n#+filetags: :Research:Article:\n")
+            :unnarrowed t)
+            ("rb" "Book Analysis Note" plain "\n\n\n* Main\n%?\n\n* References\n"
+            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                                "#+title: ${title}\n#+filetags: :Research:Book:\n")
             :unnarrowed t)
         ))
 
@@ -1225,7 +1267,7 @@ Still does not work
   (interactive)
   (let* ((filename (buffer-file-name)) ; Get the name of the current file
          (course (completing-read "Select University Course: "
-                                  '("IndividualProject" "SecureComputing" "MachineLearning" "ComputerGraphics")
+                                  '("IndividualProject" "SecureComputing" "MachineLearning" "ComputerGraphics" "GraphsAlgoComplxTheo")
                                   nil t))
          (tag-to-add (concat "University:" course ":"))
          (current-tags (save-excursion
@@ -1242,6 +1284,7 @@ Still does not work
           (save-buffer))
       (message "Not visiting a file or no tags found!"))))
 #+end_src
+
 ** org Roam UI
 #+begin_src emacs-lisp
 (use-package org-roam-ui
@@ -1267,6 +1310,10 @@ Still does not work
     :config
     (require 'org-download)
     (org-download-enable))
+#+end_src
+** org Zotero
+#+begin_src emacs-lisp
+(use-package zotxt)
 #+end_src
 ** org appear
 #+begin_src emacs-lisp

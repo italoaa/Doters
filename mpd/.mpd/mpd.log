@@ -1669,3 +1669,550 @@ Aug 02 18:22 : player: played "Phil Collins - Face Value (1981) (PBTHAL LP 24-96
 Aug 02 18:26 : player: played "Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/12.-Tomorrow Never Knows.flac"
 Aug 02 18:26 : player: played "Phil Collins - Face Value (1981) (PBTHAL LP 24-96) [FLAC]/13.-Over The Rainbow.flac"
 Aug 02 23:08 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Aug 03 10:15 : player: played "lofi/Joji - Chloe Burbank Vol. 1 (23 Track Album)-qOm-trHYlh8.m4a"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Aug 03 10:24 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/01 - Part 1.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Aug 03 10:29 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/02 - Part 2.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Aug 03 10:36 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/03 - Part 3.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Aug 03 10:41 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/04 - Part 4.mp3"
+Aug 03 10:51 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/05 - Part 5.mp3"
+Aug 03 10:58 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/01 Pokka Pokka.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 21023638.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Aug 03 13:27 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/02 Weather Report.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 12695783.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Aug 03 13:32 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/03 うしろ姿.mp3"
+Aug 03 13:38 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/04 In The Flight.mp3"
+Aug 03 13:43 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/05 Magic Love.mp3"
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 20409236.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Aug 03 13:51 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/06 バックビートにのっかって.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 31196778.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Aug 03 14:04 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/07 Walking In The Rhythm.mp3"
+Aug 03 15:31 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 01 bounce back.mp3"
+Aug 03 15:37 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 02 last breath.mp3"
+Aug 03 15:41 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 03 confusion spell.mp3"
+Aug 04 08:14 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 04 doubting spirit.mp3"
+Aug 04 08:20 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 05 whispers.mp3"
+Aug 04 08:24 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 06 slide and glide.mp3"
+Aug 04 08:29 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 07 running out of time.mp3"
+Aug 04 08:33 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 08 mind the gap.mp3"
+Aug 04 08:38 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 09 in the night.mp3"
+Aug 04 22:38 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 10 jungle hunt.mp3"
+Aug 05 07:32 : config: inotify: auto_update was disabled. enable during compilation phase
+Aug 05 07:32 : config: option 'auto_resample' on line 26 was not recognized
+Aug 05 07:32 : config: option 'use_mmap' on line 27 was not recognized
+Aug 05 07:41 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 01 深淵によって消費される.mp3"
+Aug 05 07:46 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 02 空の約束.mp3"
+Aug 05 07:51 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 03 私に慈悲を与える.mp3"
+Aug 05 07:55 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 04 同じになることはありません.mp3"
+Aug 05 13:30 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 05 現代のアーキタイプ.mp3"
+Aug 05 13:35 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 06 至福のソナタ.mp3"
+Aug 05 13:40 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 07 あなたがいなくなって.mp3"
+Aug 05 13:44 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 08 飛び去る.mp3"
+Aug 05 13:48 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 09 星を見せてあげましょう.mp3"
+Aug 05 13:54 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 10 私を連れ戻して.mp3"
+Aug 05 13:58 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 11 あなたと恋に.mp3"
+Aug 05 14:03 : player: played "Macroblank Discography (320kbps) 03:04:2023/ラストチャンス/Macroblank - ラストチャンス - 12 ワンモアナイト.mp3"
+Aug 07 07:22 : player: played "Macroblank Discography (320kbps) 03:04:2023/Tales of the Cypher/Macroblank - Tales of the Cypher - 01 スモークマンゴー.mp3"
+Aug 07 07:28 : player: played "Macroblank Discography (320kbps) 03:04:2023/Tales of the Cypher/Macroblank - Tales of the Cypher - 02 あなたの約束を破る.mp3"
+Aug 07 07:32 : player: played "Macroblank Discography (320kbps) 03:04:2023/Tales of the Cypher/Macroblank - Tales of the Cypher - 03 理由を教えて.mp3"
+Aug 07 07:37 : player: played "Macroblank Discography (320kbps) 03:04:2023/Tales of the Cypher/Macroblank - Tales of the Cypher - 04 忘れる.mp3"
+Aug 07 21:21 : player: played "Macroblank Discography (320kbps) 03:04:2023/Tales of the Cypher/Macroblank - Tales of the Cypher - 05 許すには遅すぎる.mp3"
+Aug 08 06:49 : config: inotify: auto_update was disabled. enable during compilation phase
+Aug 08 06:49 : config: option 'auto_resample' on line 26 was not recognized
+Aug 08 06:49 : config: option 'use_mmap' on line 27 was not recognized
+Aug 08 08:02 : player: played "Berlioz/Jazz is for ordinary People/berlioz - deep in it.mp3"
+Aug 08 08:05 : player: played "Berlioz/Jazz is for ordinary People/berlioz - jazz is for ordinary people.mp3"
+Aug 08 08:08 : player: played "Berlioz/Jazz is for ordinary People/berlioz - wash my sins away.mp3"
+Aug 08 08:11 : player: played "Berlioz/Jazz is for ordinary People/hot house.mp3"
+Aug 08 08:14 : player: played "Berlioz/Jazz is for ordinary People/r & r.mp3"
+Aug 08 08:19 : player: played "fred-again/Angie_(I've_Been_Lost)_.mp3"
+Aug 08 08:24 : player: played "Macroblank Discography (320kbps) 03:04:2023/OCCULT/Macroblank - OCCULT - 01 untitled.mp3"
+Aug 08 08:27 : player: played "Macroblank Discography (320kbps) 03:04:2023/OCCULT/Macroblank - OCCULT - 02 inner lights.mp3"
+Aug 08 08:58 : player: played "Drum-n-Bass/Mellow Breaks [l4fBd4AHySk].mp3"
+Aug 08 09:04 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 01 double trouble.mp3"
+Aug 08 09:10 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 02 covert red.mp3"
+Aug 08 14:02 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 03 take it away.mp3"
+Aug 08 14:08 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 04 vice grip.mp3"
+Aug 08 14:14 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 05 all i want.mp3"
+Aug 08 14:17 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.3/Macroblank - RARE PSALMS COLLECTION VOL.3 - 06 faceless bandits.mp3"
+Aug 08 14:42 : player: played "Drum-n-Bass/Mellow Breaks [l4fBd4AHySk].mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Aug 08 14:59 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/01 - Part 1.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Aug 08 15:05 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/02 - Part 2.mp3"
+Aug 09 08:52 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/03 - Part 3.mp3"
+Aug 09 08:58 : player: played "Macroblank Discography (320kbps) 03:04:2023/verdant halcyon/Macroblank - verdant halcyon - 01 it slips away.mp3"
+Aug 09 09:03 : player: played "Macroblank Discography (320kbps) 03:04:2023/verdant halcyon/Macroblank - verdant halcyon - 02 halcyon.mp3"
+Aug 09 09:10 : player: played "Macroblank Discography (320kbps) 03:04:2023/verdant halcyon/Macroblank - verdant halcyon - 03 nonchalant.mp3"
+Aug 09 09:14 : player: played "Macroblank Discography (320kbps) 03:04:2023/verdant halcyon/Macroblank - verdant halcyon - 04 inner circles.mp3"
+Aug 09 09:18 : player: played "Macroblank Discography (320kbps) 03:04:2023/verdant halcyon/Macroblank - verdant halcyon - 05 vegas century.mp3"
+Aug 09 09:19 : player: played "Drum-n-Bass/(5 Hours) Best Liquid Drum and Bass mix [Study _ Chill DnB] [mbNi5L3QOCA].mp3"
+Aug 09 09:24 : player: played "fred-again/Angie_(I've_Been_Lost)_.mp3"
+Aug 09 09:28 : player: played "fred-again/Baxter_(These_Are_My_Friends)_.mp3"
+Aug 09 09:34 : player: played "fred-again/Big_Hen_(Steal_My_Joy)_.mp3"
+Aug 09 09:43 : player: played "Two Door Cinema Club/[Cover] Two Door Cinema Club - Next Year.m4a"
+Aug 09 09:49 : player: played "playlists/Mix - Daughter: NPR Music Tiny Desk/Adele - When We Were Young (Live at The Church Studios) [DDWKuo3gXMQ].mp3"
+Aug 09 10:14 : player: played "playlists/Mix - Daughter: NPR Music Tiny Desk/Agnes Obel - The Curse (Berlin Live Session) [j1wgaFJ0750].mp3"
+Aug 09 10:27 : player: played "playlists/Mix - Daughter: NPR Music Tiny Desk/Alt-J： NPR Music Tiny Desk Concert [xKdp5uI8AC0].mp3"
+Aug 09 16:18 : player: played "playlists/Mix - Daughter: NPR Music Tiny Desk/alt-J： Tiny Desk Concert [8zHdLF3-coA].mp3"
+Aug 09 16:23 : player: played "Miri/Casa II.mp3"
+Aug 10 11:18 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 04 Stars.mp3"
+Aug 10 11:21 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 01 Minced At Dawn.mp3"
+Aug 10 11:26 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 01 Lamp in Toyko feat. Haruka Nakamura.mp3"
+Aug 10 11:30 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 02 Kick Blessings.mp3"
+Aug 10 11:34 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 03 I Gotcha Mic.mp3"
+Aug 10 11:37 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 05 Mystery Of Madness ft. Czarface.mp3"
+Aug 10 11:39 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 06 Police Myself As Usual.mp3"
+Aug 10 11:41 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 07 The Mask (Interlude).mp3"
+Aug 10 11:43 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 02 Voice of Captain Brunch.mp3"
+Aug 10 11:45 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 04 A Villain's Reflection.mp3"
+Aug 10 11:48 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 08 Modern Day Battlecry.mp3"
+Aug 11 19:08 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 09 Morning Avalanche.mp3"
+Aug 11 19:27 : player: played "Miri/Casa II.mp3"
+Aug 11 19:35 : player: played "mixing/mix-of-the-rapture/&ME, Black Coffee - The Rapture Pt.III.mp3"
+Aug 11 19:41 : player: played "mixing/mix-of-the-rapture/Adriatique & Marino Canal - Home (feat. Delhia De France).mp3"
+Aug 11 19:47 : player: played "mixing/mix-of-the-rapture/Alicia Keys - In Common (Black Coffee Remix - Official Audio).mp3"
+Aug 11 19:53 : player: played "mixing/mix-of-the-rapture/Anchor Point.mp3"
+Aug 11 19:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 11 19:55 : player: played "mixing/mix-of-the-rapture/Anima Ft. Sheera - Moon (Original Mix).mp3"
+Aug 11 19:59 : player: played "mashup/dile que ya te cansaste, que algo mejor encontraste 🤍 [zVVovAr4Nus].mp3"
+Aug 11 20:03 : player: played "Fishmans/Live Albums & Bootlegs/[1988] Live in 1988/01 - Intro-Peter Gunn Theme.mp3"
+Aug 11 22:18 : player: played "Fishmans/Live Albums & Bootlegs/[1988] Live in 1988/02 - Happy Man (Take 1).mp3"
+Aug 11 22:22 : player: played "Fishmans/others/宇宙日本世田谷/01 Pokka Pokka.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 21023638.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Aug 11 22:31 : player: played "Fishmans/others/宇宙日本世田谷/02 Weather Report.mp3"
+Aug 12 12:59 : player: played "Fishmans/others/宇宙日本世田谷/03 うしろ姿.mp3"
+Aug 13 11:23 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 01 Lamp in Toyko feat. Haruka Nakamura.mp3"
+Aug 13 11:27 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 02 Kick Blessings.mp3"
+Aug 13 11:31 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 03 I Gotcha Mic.mp3"
+Aug 13 11:35 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 04 Stars.mp3"
+Aug 13 11:38 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 01 Minced At Dawn.mp3"
+Aug 13 11:40 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 02 Voice of Captain Brunch.mp3"
+Aug 13 11:42 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 04 A Villain's Reflection.mp3"
+Aug 13 11:45 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 08 Modern Day Battlecry.mp3"
+Aug 13 11:49 : player: played "Altered/Altered Crates - Metaphorical Villainy/Metaphorical Villainy - Altered Crates - 09 Morning Avalanche.mp3"
+Aug 13 11:52 : player: played "Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles - 01 Change The Beat(le).mp3"
+Aug 13 11:53 : player: played "Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles  - 02 A Day In The Melody.mp3"
+Aug 13 11:55 : player: played "Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles - 03 Lovespit.mp3"
+Aug 13 11:58 : player: played "Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles - 04 Come Together, Ladies.mp3"
+Aug 13 11:59 : player: played "Altered/Altered Crates - Sgt. Dumile's Lonely Hearts Club Band/Sgt. Dumile's Lonely Hearts Club Band - MF DOOM & The Beatles - 05 Fill in the Blank (Outro).mp3"
+Aug 13 12:01 : player: played "Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 01 gold sand beaches.mp3"
+Aug 13 12:04 : player: played "Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 02 911dawn.mp3"
+Aug 13 12:05 : player: played "Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 04 captain justice.mp3"
+Aug 13 12:08 : player: played "Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 05 monsoon again.mp3"
+Aug 13 12:11 : player: played "Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 06 rose tinted ice cream.mp3"
+Aug 13 12:14 : player: played "Altered/Altered Crates & Flowervillain - Flowervillain I (Reprise)/Flowervillain I (Reprise) - Altered Crates & Flowervillain - 03 a bored dedication.mp3"
+Aug 13 15:45 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Aug 13 21:37 : player: played "mixes/get me home.m4a"
+Aug 13 21:37 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Aug 13 21:37 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Aug 13 21:37 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Aug 13 21:41 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Aug 13 21:46 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Aug 13 21:58 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/03 Smilin' Days, Summer Holiday.mp3"
+Aug 13 22:02 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Aug 13 22:06 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Aug 13 22:10 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/06 Just Thing.mp3"
+Aug 13 22:14 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/07 太平洋.mp3"
+Aug 13 22:19 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/08 パラダイス.mp3"
+Aug 13 22:24 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/09 うまく歩けないよ.mp3"
+Aug 13 22:27 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/10 1, 2, 3, 4,.mp3"
+Aug 13 22:32 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/11 Walkin'.mp3"
+Aug 13 22:35 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/12 スー・パー.mp3"
+Aug 13 22:41 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/13 いかれたBaby (Remix).mp3"
+Aug 13 22:48 : player: played "Crumb/Crumb - Locket [Official Video] [BqnG_Ei35JE].mp3"
+Aug 13 22:54 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/01 Weird Fishes-Arpeggi.flac"
+Aug 13 22:58 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/02 15 Step.flac"
+Aug 13 23:02 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/03 Bodysnatchers.flac"
+Aug 13 23:06 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Aug 14 00:13 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/05 The Gloaming.flac"
+Aug 14 08:26 : config: inotify: auto_update was disabled. enable during compilation phase
+Aug 14 08:26 : config: option 'auto_resample' on line 26 was not recognized
+Aug 14 08:26 : config: option 'use_mmap' on line 27 was not recognized
+Aug 14 08:38 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/05 The Gloaming.flac"
+Aug 14 08:39 : config: inotify: auto_update was disabled. enable during compilation phase
+Aug 14 08:39 : config: option 'auto_resample' on line 26 was not recognized
+Aug 14 08:39 : config: option 'use_mmap' on line 27 was not recognized
+Aug 14 09:21 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/05 The Gloaming.flac"
+Aug 14 09:25 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/06 Myxomatosis.flac"
+Aug 14 09:31 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/07 House of Cards.flac"
+Aug 14 09:34 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/08 Bangers & Mash.flac"
+Aug 14 09:39 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/09 Optimistic.flac"
+Aug 14 09:44 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/10 Reckoner.flac"
+Aug 14 09:49 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/11 Videotape.flac"
+Aug 14 09:54 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/12 Where I End and You Begin.flac"
+Aug 14 09:59 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/13 All I Need.flac"
+Aug 14 10:03 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/14 Go Slowly.flac"
+Aug 14 10:08 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/01 Weird Fishes-Arpeggi.flac"
+Aug 14 10:12 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/02 15 Step.flac"
+Aug 14 10:16 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/03 Bodysnatchers.flac"
+Aug 14 10:21 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Aug 14 10:24 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/05 The Gloaming.flac"
+Aug 14 10:28 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/06 Myxomatosis.flac"
+Aug 14 10:34 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/07 House of Cards.flac"
+Aug 14 18:36 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/08 Bangers & Mash.flac"
+Aug 14 18:45 : player: played "Macroblank Discography (320kbps) 03:04:2023/погребённый заживо/Macroblank - погребённый заживо - 01 луч под прикрытием.mp3"
+Aug 14 18:49 : player: played "Macroblank Discography (320kbps) 03:04:2023/погребённый заживо/Macroblank - погребённый заживо - 02 чэпмен.mp3"
+Aug 14 18:56 : player: played "Macroblank Discography (320kbps) 03:04:2023/погребённый заживо/Macroblank - погребённый заживо - 04 последнее желание.mp3"
+Aug 14 19:02 : player: played "Macroblank Discography (320kbps) 03:04:2023/погребённый заживо/Macroblank - погребённый заживо - 05 вход в коврик.mp3"
+Aug 14 19:07 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 01 adipose.mp3"
+Aug 14 19:12 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 02 blue moon.mp3"
+Aug 14 23:21 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 03 cult of tradition.mp3"
+Aug 15 09:11 : player: played "Macroblank Discography (320kbps) 03:04:2023/ブロックの周り ep/Macroblank - ブロックの周り ep - 01 それを取り戻す.mp3"
+Aug 15 09:17 : player: played "Macroblank Discography (320kbps) 03:04:2023/ブロックの周り ep/Macroblank - ブロックの周り ep - 02 ショールーム.mp3"
+Aug 15 09:21 : player: played "Macroblank Discography (320kbps) 03:04:2023/ブロックの周り ep/Macroblank - ブロックの周り ep - 03 最後のチャンス.mp3"
+Aug 15 09:26 : player: played "Macroblank Discography (320kbps) 03:04:2023/ブロックの周り ep/Macroblank - ブロックの周り ep - 04 スキニージーンズ.mp3"
+Aug 15 11:09 : player: played "Macroblank Discography (320kbps) 03:04:2023/ブロックの周り ep/Macroblank - ブロックの周り ep - 05 ルーズグリップ.mp3"
+Aug 15 11:14 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-01 ずっと前.mp3"
+Aug 15 11:15 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-02 Baby Blue.mp3"
+Aug 15 11:15 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Aug 15 11:15 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Aug 15 11:15 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Aug 15 11:15 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Aug 15 11:15 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Aug 15 11:15 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Aug 15 11:15 : update: added mixes/optimistic-japanese/フレデリック「オドループ」Music Video ｜ Frederic ＂oddloop＂.mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/おいしくるメロンパン「look at the sea」Music Video.mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/Playground.mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/就寝御礼 (Original Mix).mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/Hikari No Hou E.mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/Today I woke up more optimistic than usual ｜ Japanese playlist to start a good day.mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/No Buses - Girl (Official Video).mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/Good News Is Bad News(Official Video) − Helsinki Lambda Club.mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/SHISHAMO「中庭の少女たち」.mp3
+Aug 15 11:15 : update: added mixes/optimistic-japanese/Dramatic.mp3
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Aug 15 11:15 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Aug 15 11:15 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Aug 15 11:15 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Aug 15 11:15 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Aug 15 11:15 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Aug 15 11:15 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Aug 15 11:15 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Aug 15 11:15 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Aug 15 11:15 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 14814275.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Aug 15 11:22 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-02 Baby Blue.mp3"
+Aug 15 11:27 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-03 Slow Days.mp3"
+Aug 15 12:36 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-04 Sunny Blue.mp3"
+Aug 15 12:48 : player: played "U2/joshua_tree/Running to Stand Still de U2.mp3"
+Aug 15 12:53 : player: played "U2/joshua_tree/U2 - Red Hill Mining Town.mp3"
+Aug 15 12:57 : player: played "U2/joshua_tree/U2 Bullet the Blue Sky.mp3"
+Aug 15 13:03 : player: played "U2/joshua_tree/U2 Where The Streets Have No Name.mp3"
+Aug 16 13:14 : player: played "U2/joshua_tree/U2 With Or Without You.mp3"
+Aug 16 13:16 : player: played "extras/“Travelling Girl” from Avatar (Full Song) 👧🏼.mp3"
+Aug 16 13:45 : player: played "mixes/[VINYL SESSIONS] Dark Rainy Date [e5bM4WyewDA].mp3"
+Aug 16 16:08 : player: played "playlists/Ya-like-Jazz/Voyager - Crystl Kleer [Dubplate Mixcut].opus"
+Aug 16 16:14 : player: played "playlists/Ya-like-Jazz/DJ Pulse And The Jazz Cartel - Destiny.mp3"
+Aug 17 16:13 : player: played "playlists/Ya-like-Jazz/Ingrid Schroeder - Paint You Blue (Peshay's After Hours Mix).mp3"
+Aug 17 16:18 : player: played "Oasis acustics/Oasis - Whatever (Acoustic) HQ.mp3"
+Aug 17 16:26 : player: played "Oasis acustics/Oasis - The masterplan (acoustic).mp3"
+Aug 17 16:31 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 01 adipose.mp3"
+Aug 17 16:37 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 06 fever dream.mp3"
+Aug 17 16:42 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 05 become a hero.mp3"
+Aug 17 16:46 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 02 blue moon.mp3"
+Aug 17 16:51 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 07 love echoes.mp3"
+Aug 19 06:55 : player: played "Macroblank Discography (320kbps) 03:04:2023/ごめんと言って lp/Macroblank - ごめんと言って lp - 08 machismo.mp3"
+Aug 19 07:31 : player: played "lofi/If Drake and J. Cole made lofi hip hop radio-sDXy4xqKmA0.mp3"
+Aug 23 12:54 : config: inotify: auto_update was disabled. enable during compilation phase
+Aug 23 12:54 : config: option 'auto_resample' on line 26 was not recognized
+Aug 23 12:54 : config: option 'use_mmap' on line 27 was not recognized
+Aug 29 18:58 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Aug 29 19:13 : player: played "lofi/If Drake and J. Cole made lofi hip hop radio-sDXy4xqKmA0.mp3"
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: No such song
+Sep 01 11:30 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Sep 01 11:30 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/01 - Operacion densa.flac"
+Sep 01 11:30 : config: inotify: auto_update was disabled. enable during compilation phase
+Sep 01 11:30 : config: option 'auto_resample' on line 26 was not recognized
+Sep 01 11:30 : config: option 'use_mmap' on line 27 was not recognized
+Sep 01 11:32 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/01 - Operacion densa.flac"
+Sep 01 11:36 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/21 - Cancion de dos por tres.flac"
+Sep 01 11:41 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/20 - Yo no quiero volverme tan loco.flac"
+Sep 01 11:43 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/06 - All I do the whole night through (Fred Brown).flac"
+Sep 01 11:44 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/03 - Rejas electrificadas.flac"
+Sep 01 11:47 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/02 - Despertar de mambo.flac"
+Sep 01 11:50 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/23 - Inconsciente colectivo.flac"
+Sep 01 12:06 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/17 - Superheroes.flac"
+Sep 01 12:24 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/04 - Pubis angelical.flac"
+Sep 01 12:28 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/13 - Futuro pobre.flac"
+Sep 01 12:32 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/16 - Yendo de la cama al living.flac"
+Sep 01 12:33 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/12 - Pubis angelical (vocal II).flac"
+Sep 01 12:34 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/11 - Pubis angelical (vocal).flac"
+Sep 01 12:37 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/14 - Tribunas del futuro pobre.flac"
+Sep 01 12:40 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/15 - Todos los pubis juntos.flac"
+Sep 01 12:43 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/10 - Crimen, divina, productor.flac"
+Sep 01 12:45 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/04 - Pubis angelical.flac"
+Sep 01 12:46 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/11 - Pubis angelical (vocal).flac"
+Sep 01 12:50 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/23 - Inconsciente colectivo.flac"
+Sep 01 12:53 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/08 - Transatlantico art deco.flac"
+Sep 01 12:57 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/21 - Cancion de dos por tres.flac"
+Sep 01 13:00 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/19 - Vos tambien estabas verde.flac"
+Sep 08 12:04 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/07 - Sereno fantastico.flac"
+Sep 08 12:04 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Sep 08 12:04 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Sep 08 12:04 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Sep 29 15:54 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Sep 29 15:54 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Sep 29 15:55 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Sep 29 15:55 : config: inotify: auto_update was disabled. enable during compilation phase
+Sep 29 15:55 : config: option 'auto_resample' on line 26 was not recognized
+Sep 29 15:55 : config: option 'use_mmap' on line 27 was not recognized
+Sep 29 15:58 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Sep 29 16:03 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Sep 30 17:15 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Sep 30 17:20 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Sep 30 17:24 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/06 Just Thing.mp3"
+Sep 30 17:27 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/07 太平洋.mp3"
+Oct 01 19:10 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/08 パラダイス.mp3"
+Oct 01 19:14 : player: played "Macroblank Discography (320kbps) 03:04:2023/OCCULT/Macroblank - OCCULT - 01 untitled.mp3"
+Oct 01 19:19 : player: played "Macroblank Discography (320kbps) 03:04:2023/OCCULT/Macroblank - OCCULT - 02 inner lights.mp3"
+Oct 01 19:24 : player: played "Macroblank Discography (320kbps) 03:04:2023/OCCULT/Macroblank - OCCULT - 03 don't let go.mp3"
+Oct 01 19:30 : player: played "Macroblank Discography (320kbps) 03:04:2023/OCCULT/Macroblank - OCCULT - 05 earthlings.mp3"
+Oct 02 15:54 : player: played "Macroblank Discography (320kbps) 03:04:2023/OCCULT/Macroblank - OCCULT - 06 busy days.mp3"
+Oct 02 16:01 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 02 16:01 : config: option 'auto_resample' on line 26 was not recognized
+Oct 02 16:01 : config: option 'use_mmap' on line 27 was not recognized
+Oct 03 13:54 : player: played "Macroblank Discography (320kbps) 03:04:2023/OCCULT/Macroblank - OCCULT - 06 busy days.mp3"
+Oct 03 14:00 : player: played "Tatsuro Yamashita/Cozy/03  Fragile.flac"
+Oct 04 10:10 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-01 Oh Slime.mp3"
+Oct 04 10:16 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-02 ナイトクルージング.mp3"
+Oct 04 10:23 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-03 なんてったの.mp3"
+Oct 04 10:26 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-04 Thank You.mp3"
+Oct 04 16:22 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-05 幸せ者.mp3"
+Oct 04 16:27 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-06 頼りない天使.mp3"
+Oct 04 16:36 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-07 ひこうき.mp3"
+Oct 04 16:43 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-08 In The Flight.mp3"
+Oct 05 09:48 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-09 Walking In The Rhythm.mp3"
+Oct 05 09:54 : player: played "lofi/Joji - Chloe Burbank Vol. 1 (23 Track Album)-qOm-trHYlh8.m4a"
+Oct 05 10:00 : player: played "Macroblank Discography (320kbps) 03:04:2023/トラブルメーカー/Macroblank - トラブルメーカー - 01 トラブルメーカー.mp3"
+Oct 05 10:06 : player: played "Macroblank Discography (320kbps) 03:04:2023/トラブルメーカー/Macroblank - トラブルメーカー - 01 トラブルメーカー.mp3"
+Oct 05 10:12 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 01 bounce back.mp3"
+Oct 05 10:20 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 03 confusion spell.mp3"
+Oct 05 10:25 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 04 doubting spirit.mp3"
+Oct 05 10:30 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 05 whispers.mp3"
+Oct 05 10:35 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 06 slide and glide.mp3"
+Oct 05 10:39 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 07 running out of time.mp3"
+Oct 05 10:43 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 08 mind the gap.mp3"
+Oct 05 10:48 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 09 in the night.mp3"
+Oct 05 10:53 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 10 jungle hunt.mp3"
+Oct 05 20:49 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/01 Weird Fishes-Arpeggi.flac"
+Oct 05 20:53 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/02 15 Step.flac"
+Oct 05 20:57 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/03 Bodysnatchers.flac"
+Oct 05 21:02 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Oct 05 21:05 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/05 The Gloaming.flac"
+Oct 05 21:09 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/06 Myxomatosis.flac"
+Oct 05 21:14 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/07 House of Cards.flac"
+Oct 05 21:18 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/08 Bangers & Mash.flac"
+Oct 05 21:23 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/09 Optimistic.flac"
+Oct 05 21:28 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/10 Reckoner.flac"
+Oct 06 14:31 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/11 Videotape.flac"
+Oct 06 14:36 : player: played "playlists/Mix - Orgbit Friday Night/øneheart x reidenshi - snowfall.mp3"
+Oct 06 14:38 : player: played "playlists/Mix - Orgbit Friday Night/Patrick Watson - Je te laisserai des mots (Simon Cutsem Edit).mp3"
+Oct 06 14:43 : player: played "playlists/Mix - Orgbit Friday Night/Disclosure - Latch feat. Sam Smith  (Official Video).mp3"
+Oct 06 14:47 : player: played "playlists/Mix - Orgbit Friday Night/ROSALÍA - BAGDAD (Cap.7： Liturgia).mp3"
+Oct 06 14:50 : player: played "playlists/Mix - Orgbit Friday Night/David Kushner - Daylight (Official Music Video).mp3"
+Oct 06 14:54 : player: played "playlists/Mix - Orgbit Friday Night/Haux - Homegrown.mp3"
+Oct 06 16:02 : player: played "playlists/Mix - Orgbit Friday Night/RÜFÜS DU SOL - On My Knees (Official Music Video).mp3"
+Oct 06 16:06 : player: played "playlists/Mix - Orgbit Friday Night/LAGOS & Danny Ocean - Mónaco (Video Oficial).mp3"
+Oct 06 16:09 : player: played "playlists/Mix - Orgbit Friday Night/orbit - Around The World (Cover) ⧸ Summer Diary 2022.mp3"
+Oct 06 16:12 : player: played "playlists/Mix - Orgbit Friday Night/Birdy - Keeping Your Head Up (Official Music Video).mp3"
+Oct 06 16:15 : player: played "playlists/Mix - Orgbit Friday Night/Dancing Thing.mp3"
+Oct 06 16:20 : player: played "playlists/Mix - Orgbit Friday Night/HAEVN - Trade It For The Night (Lyric Video) with Neco Novellas.mp3"
+Oct 06 16:24 : player: played "playlists/Mix - Orgbit Friday Night/The Blaze - EYES (Live Performance filmed by Blogothèque).mp3"
+Oct 06 16:27 : player: played "playlists/Mix - Orgbit Friday Night/pikito.mp3"
+Oct 06 16:31 : player: played "playlists/Mix - Orgbit Friday Night/Time To Turn It Right - JÄMO Remix [Nelly Furtado, Hans Zimmer, Fred again.., Swedish House Mafia].mp3"
+Oct 06 16:35 : player: played "playlists/Mix - Orgbit Friday Night/Lord Huron - The Night We Met (Official Audio).mp3"
+Oct 06 16:37 : player: played "playlists/Mix - Orgbit Friday Night/Kenya Grace - Strangers (Official Lyric Video).mp3"
+Oct 06 16:41 : player: played "playlists/Mix - Orgbit Friday Night/SYML - Where's My Love (Acoustic).mp3"
+Oct 06 16:49 : player: played "playlists/Mix - Orgbit Friday Night/orbit - Blind Eyed (Dream diary).mp3"
+Oct 06 16:52 : player: played "playlists/Mix - Orgbit Friday Night/Mallrat x The Chainsmokers - Wish On An Eyelash, Pt. 2.mp3"
+Oct 06 16:56 : player: played "playlists/Mix - Orgbit Friday Night/Foreign 2.mp3"
+Oct 06 16:59 : player: played "playlists/Mix - Orgbit Friday Night/orbit - Missing the Moon (Lyric Video).mp3"
+Oct 06 18:23 : player: played "playlists/Mix - Daughter: NPR Music Tiny Desk/The 1975： NPR Music Tiny Desk Concert [5bIlkpQRyTM].mp3"
+Oct 08 20:34 : player: played "Altered/Altered Crates - Lujabes/Lujabes - Lupe Fiasco, Nujabes - 01 Lamp in Toyko feat. Haruka Nakamura.mp3"
+Oct 08 20:39 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 01 蒸発した.mp3"
+Oct 08 20:44 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 05 密接にそれを見る.mp3"
+Oct 08 20:49 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 06 私が他の誰かになった日.mp3"
+Oct 08 20:54 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 02 プリズムビジョン.mp3"
+Oct 08 20:59 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 03 輝くピース.mp3"
+Oct 08 21:04 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 04 彼はあなたを待っています.mp3"
+Oct 09 15:01 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 01 蒸発した.mp3"
+Oct 09 15:07 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 05 密接にそれを見る.mp3"
+Oct 09 15:12 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 04 彼はあなたを待っています.mp3"
+Oct 09 15:17 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 02 プリズムビジョン.mp3"
+Oct 09 19:22 : player: played "Macroblank Discography (320kbps) 03:04:2023/デスウィッシュ/Macroblank - デスウィッシュ - 03 輝くピース.mp3"
+Oct 09 19:23 : player: played "Fishmans/Live Albums & Bootlegs/[2022-2-B] 2022.3.1 History of Fishmans @Liquid Room~1991-1994 (Video)/history of fishmans night 1.mp4"
+Oct 09 19:37 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-01 Oh Slime.mp3"
+Oct 09 19:44 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-02 ナイトクルージング.mp3"
+Oct 09 19:50 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-03 なんてったの.mp3"
+Oct 09 19:53 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-04 Thank You.mp3"
+Oct 09 19:57 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-05 幸せ者.mp3"
+Oct 09 20:02 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-06 頼りない天使.mp3"
+Oct 09 20:11 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-07 ひこうき.mp3"
+Oct 09 20:18 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-08 In The Flight.mp3"
+Oct 09 20:25 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-09 Walking In The Rhythm.mp3"
+Oct 09 21:05 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-10 Smilin’ Days, Summer Holiday.mp3"
+Oct 09 21:11 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/1-11 Melody.mp3"
+Oct 09 21:27 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/2-01 ゆらめき In The Air.mp3"
+Oct 09 21:33 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/2-02 いかれたBaby.mp3"
+Oct 10 13:07 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/2-03 Long Season.mp3"
+Oct 10 13:07 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 10 13:07 : config: option 'auto_resample' on line 26 was not recognized
+Oct 10 13:07 : config: option 'use_mmap' on line 27 was not recognized
+Oct 10 13:09 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.28 Otokotachi no Wakare (MP3)/2-03 Long Season.mp3"
+Oct 10 13:14 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 01 nothing to lose.mp3"
+Oct 10 13:18 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 02 sinful love.mp3"
+Oct 10 13:23 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 03 grief.mp3"
