@@ -2216,3 +2216,88 @@ Oct 10 13:09 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-A] 98.12.
 Oct 10 13:14 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 01 nothing to lose.mp3"
 Oct 10 13:18 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 02 sinful love.mp3"
 Oct 10 13:23 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 03 grief.mp3"
+Oct 10 14:20 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 05 stay with me.mp3"
+Oct 10 14:25 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 06 interpolated.mp3"
+Oct 10 14:29 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 07 mystic haze.mp3"
+Oct 10 14:33 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 08 dancing.mp3"
+Oct 10 14:38 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.1/Macroblank - RARE PSALMS COLLECTION VOL.1 - 09 watching ghosts.mp3"
+Oct 10 17:21 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 01 bounce back.mp3"
+Oct 10 17:27 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 02 last breath.mp3"
+Oct 10 17:31 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 03 confusion spell.mp3"
+Oct 10 17:36 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 04 doubting spirit.mp3"
+Oct 12 09:44 : player: played "Macroblank Discography (320kbps) 03:04:2023/RARE PSALMS COLLECTION VOL.2/Macroblank - RARE PSALMS COLLECTION VOL.2 - 05 whispers.mp3"
+Oct 12 09:48 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/01 Pokka Pokka.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 21023638.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Oct 12 09:57 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/02 Weather Report.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 12695783.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Oct 12 10:02 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/03 うしろ姿.mp3"
+Oct 12 10:08 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/04 In The Flight.mp3"
+Oct 12 10:13 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/05 Magic Love.mp3"
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 20409236.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Oct 12 10:21 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/06 バックビートにのっかって.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 31196778.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Oct 12 10:34 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/07 Walking In The Rhythm.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+Oct 12 10:42 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/08 Daydream.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Oct 12 10:48 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/01 ひっくりかえってた２人.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+Oct 12 10:54 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/02 ひこうき.mp3"
+Oct 12 11:00 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/03 Special Night.mp3"
+Oct 12 11:04 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/04 Good Morning.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+Oct 12 11:07 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/05 夏の思い出.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Oct 12 11:11 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/07 いなごが飛んでる.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Oct 12 11:17 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/06 Future.mp3"
+Oct 12 11:23 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/08 Go Go Clubですれ違い.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Oct 12 11:29 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/09 チャンス.mp3"
+Oct 12 11:34 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/10 ピアノ.mp3"
+Oct 12 11:39 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/01. いい言葉ちょうだい.mp3"
+Oct 12 16:09 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/04. 影ドロボウ.mp3"
+Oct 12 16:10 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/05. ダイビング.mp3"
+Oct 12 16:14 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/06. ミネラルウォーター.mp3"
+Oct 12 16:18 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/07. なんてったの.mp3"
+Oct 12 16:19 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/08. ハンバーグ.mp3"
+Oct 13 09:33 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 13 09:33 : config: option 'auto_resample' on line 26 was not recognized
+Oct 13 09:33 : config: option 'use_mmap' on line 27 was not recognized
+Oct 13 12:40 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/09. 100ミリちょっとの.mp3"
+Oct 13 12:44 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/10. 頼りない天使.mp3"
+Oct 13 12:49 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/12. 君だけがダイヤモンド.mp3"
+Oct 13 12:55 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/14. 土曜日の夜.mp3"
+Oct 13 12:59 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/15. 曲目紹介.mp3"
+Oct 13 12:59 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/16. 教育.mp3"
+Oct 14 11:06 : player: played "Two Door Cinema Club/[Cover] Two Door Cinema Club - Next Year.m4a"
+Oct 14 11:11 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-01 ずっと前.mp3"
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 14814275.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Oct 14 11:18 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-02 Baby Blue.mp3"
+Oct 14 11:19 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-03 Slow Days.mp3"
+Oct 14 11:25 : player: played "Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 01 あなたを許すのは難しい.mp3"
+Oct 14 11:31 : player: played "Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 02 ステップバイステップ.mp3"
+Oct 14 11:36 : player: played "Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 03 ゆっくり苦しむ.mp3"
+Oct 14 11:41 : player: played "Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 04 もう一度チャンスをください.mp3"
+Oct 14 11:46 : player: played "Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 05 予期せぬ取調べ.mp3"
+Oct 14 11:50 : player: played "Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 06 どこにも行かない.mp3"
+Oct 14 11:54 : player: played "Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 07 あなたの恐れに直面する.mp3"
+Oct 14 12:00 : player: played "Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 08 雨の中で涙のように失われた.mp3"

@@ -1,0 +1,4 @@
+shift + alt (hjkl) : move windows
+cmd + alt (hjkl) : rezise
+alt (hjkl) : focus
+

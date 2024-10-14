@@ -21,10 +21,10 @@ hyper - r : /Applications/Alacritty.app/Contents/MacOS/alacritty -t 'Rioki' --wo
 hyper - c : /Users/italo/.config/Bin/fun/classic-radio.sh
 
 # focus
-# alt - h : yabai -m window --focus west
-# alt - j : yabai -m window --focus south
-# alt - k : yabai -m window --focus north
-# alt - l : yabai -m window --focus east
+alt - h : yabai -m window --focus west
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - l : yabai -m window --focus east
 
 # Moving windows
 shift + alt - h : yabai -m window --warp west
@@ -56,10 +56,10 @@ cmd + alt + shift - g : yabai -m space --toggle padding; yabai -m space --toggle
 alt - t : yabai -m window --toggle float
 
 ## create desktop, move window and follow focus
-shift + cmd - n : yabai -m space --create \
-set index (yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index') && \
-yabai -m window --space "$index" && \
-yabai -m space --focus "$index"
+# shift + cmd - n : yabai -m space --create \
+# set index (yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index') && \
+# yabai -m window --space "$index" && \
+# yabai -m space --focus "$index"
 
 ## create desktop and follow focus
 shift + alt - n : yabai -m space --create && \

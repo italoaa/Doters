@@ -833,6 +833,8 @@ tab-indent."
 (setq org-edit-src-content-indentation 0)
 (setq org-clock-sound (concat user-emacs-directory "bell.wav"))
 
+(setq org-image-actual-width nil)
+
 
 (require 'org-tempo)
 (require 'org-habit)
@@ -840,9 +842,25 @@ tab-indent."
 (require 'ox-extra)
 (add-to-list 'org-modules 'org-habit)
 
-(setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/gcal.org" "~/org/Agenda/habits.org"))
+(setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/project.org"))
 
 (setq meditations-dir (concat org-directory "/meditations/"))
+
+(setq org-columns-default-format
+      "%TODO %25ITEM %DEADLINE")
+
+(setq org-agenda-view-columns-initially t)
+
+(setq org-agenda-custom-commands
+      '(("p" "Projects agenda"
+	 ((agenda "" ((org-agenda-span 'week)
+		      (org-agenda-overriding-header "Weekly")))
+	  (tags-todo "+Graphics"
+		     ((org-agenda-overriding-header "Graphics Todos")))
+	  (tags-todo "+Individual"
+		     ((org-agenda-overriding-header "Dissertation Todos")))
+	  ))
+        ))
 
 ;; Function to generate the file path with title
 (defun generate-meditation-file-path ()
@@ -854,10 +872,26 @@ tab-indent."
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/org/Agenda/index.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
+	("p" "Project Task")
+	("pg" "Graphics" entry (file+headline "~/org/Agenda/project.org" "Graphics")
+	 "* TODO %? :Graphics:\nDEADLINE: %^t\nSCHEDULED: %t\n%i\n %a"
+	 )
+	("pc" "Complex graphs" entry (file+headline "~/org/Agenda/project.org" "Complex graphs")
+	 "* TODO %? :ComplexGraphs:\nDEADLINE: %^t \n%i\n %a"
+	 )
+	("pi" "Individual project" entry (file+headline "~/org/Agenda/project.org" "Individual project")
+	 "* TODO %? :Individual:\nDEADLINE: %^t \n%i\n %a"
+	 )
+	("pm" "Machine learning project" entry (file+headline "~/org/Agenda/project.org" "Machine learning project")
+	 "* TODO %? :ML:\nDEADLINE: %^t \n%i\n %a"
+	 )
+	("ps" "Secure computing project" entry (file+headline "~/org/Agenda/project.org" "Secure computing project")
+	 "* TODO %? :SecureComp:\nDEADLINE: %^t \n%i\n %a"
+	 )
         ("m" "Meditation Entry" plain (file generate-meditation-file-path)
          "#+title: %?\nEntered on %U\n\n%i\n" :empty-lines 1)
 	)
-)
+      )
 
 (require 'epa-file)
 (setq epg-pinentry-mode 'loopback)
@@ -866,28 +900,6 @@ tab-indent."
 (setq plstore-cache-passphrase-for-symmetric-encryption t)
 
 (use-package org-gcal)
-
-;; centering fragments
-(defun org-justify-fragment-overlay (beg end image &optional imagetype)
-  "Adjust the justification of a LaTeX fragment.
-The justification is set by :justify-display in
-`org-format-latex-options'. Only equations at the beginning of a
-line are justified."
-  (cond
-   ;; Centered justification
-   ((and (eq 'center (plist-get org-format-latex-options :justify-display))
-         (= beg (line-beginning-position)))
-    (let* ((ov (ov-at))
-           (disp (overlay-get ov 'display)))
-      (overlay-put ov 'line-prefix `(space :align-to (- center (0.5 . ,disp))))))
-   ;; Right justification
-   ((and (eq 'right (plist-get org-format-latex-options :justify-display))
-         (= beg (line-beginning-position)))
-    (let* ((img (create-image image 'imagemagick t))
-           (width (car (image-display-size (overlay-get (ov-at) 'display))))
-           (offset (floor (- (window-text-width) width (- (line-end-position) end)))))
-      (overlay-put (ov-at) 'before-string (make-string offset ? ))))))
-
 
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 (setq org-latex-pdf-process
@@ -934,6 +946,11 @@ line are justified."
         ("f" "Finance" plain "\n\n\n* Main\n%?\n\n* References\n"
          :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                             "#+title: ${title}\n#+filetags: :Finance:\n")
+         :unnarrowed t)
+
+        ("J" "Japanese" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Japanese:\n")
          :unnarrowed t)
 
         ("e" "Economics" plain "\n\n\n* Main\n%?\n\n* References\n"
@@ -1051,6 +1068,8 @@ line are justified."
     :config
     (require 'org-download)
     (org-download-enable))
+
+(use-package zotxt)
 
 (use-package org-appear
   :commands (org-appear-mode)

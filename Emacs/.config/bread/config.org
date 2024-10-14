@@ -1061,6 +1061,8 @@ Still does not work
 (setq org-edit-src-content-indentation 0)
 (setq org-clock-sound (concat user-emacs-directory "bell.wav"))
 
+(setq org-image-actual-width nil)
+
 
 (require 'org-tempo)
 (require 'org-habit)
@@ -1071,7 +1073,7 @@ Still does not work
 #+end_src
 
 #+RESULTS:
-: org-tempo
+| org-habit | ol-doi | ol-w3m | ol-bbdb | ol-bibtex | ol-docview | ol-gnus | ol-info | ol-irc | ol-mhe | ol-rmail | ol-eww |
 
 ** Org Agenda
 #+begin_src emacs-lisp
@@ -1190,6 +1192,11 @@ Still does not work
                             "#+title: ${title}\n#+filetags: :Finance:\n")
          :unnarrowed t)
 
+        ("J" "Japanese" plain "\n\n\n* Main\n%?\n\n* References\n"
+         :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
+                            "#+title: ${title}\n#+filetags: :Japanese:\n")
+         :unnarrowed t)
+
         ("e" "Economics" plain "\n\n\n* Main\n%?\n\n* References\n"
          :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                             "#+title: ${title}\n#+filetags: :Economics:\n")
@@ -1284,6 +1291,9 @@ Still does not work
           (save-buffer))
       (message "Not visiting a file or no tags found!"))))
 #+end_src
+
+#+RESULTS:
+: add-university-tag-and-course
 
 ** org Roam UI
 #+begin_src emacs-lisp
