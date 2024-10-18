@@ -34,6 +34,8 @@
 
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
+(set-face-attribute 'default nil :height 160)
+
 (setq backup-by-copying t ; don't clobber symlinks
       backup-directory-alist '(("." . "~/.saves")) ; don't litter my fs tree
       delete-old-versions t
@@ -41,21 +43,23 @@
       kept-old-versions 2
       version-control t)
 
-(add-to-list 'load-path "./nano-theme")
+(add-to-list 'load-path (concat user-emacs-directory "nano-theme"))
 (require 'nano-theme)
+
 (nano-dark)
+
+;;(load-theme 'spaceduck t)
 
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
-(package-refresh-contents)
 
 ;; Download Evil
 (unless (package-installed-p 'evil)
   (package-install 'evil))
 
-(add-to-list 'load-path "./evil")
+(add-to-list 'load-path (concat user-emacs-directory "evil"))
 (require 'evil)
 (evil-mode 1)
 
@@ -72,7 +76,7 @@
 (require 'marginalia)
 (marginalia-mode)
 
-(add-to-list 'load-path "./consult")
+(add-to-list 'load-path (concat user-emacs-directory "consult"))
 (require 'consult)
 
 (setq register-preview-delay 0.5
@@ -104,3 +108,32 @@
 (setq org-clock-sound (concat user-emacs-directory "bell.wav"))
 
 (setq org-image-actual-width nil)
+
+(evil-set-leader 'motion (kbd "SPC"))
+(evil-define-key 'normal 'global (kbd "<leader> f s") 'save-buffer)
+(evil-define-key 'normal 'global (kbd "<leader> j") 'next-buffer)
+(evil-define-key 'normal 'global (kbd "<leader> k") 'previous-buffer)
+(evil-define-key 'normal 'global (kbd "<leader> c") 'compile)
+(evil-define-key 'normal 'global (kbd "<leader> f c") '(lambda () (interactive) (find-file "~/.config/bread/config.org")))
+(evil-define-key 'normal 'global (kbd "<leader> f r") 'consult-recent-file)
+(evil-define-key 'normal 'global (kbd "<leader> f b") 'consult-buffer)
+(evil-define-key 'normal 'global (kbd "<leader> w c") 'evil-window-delete)
+(evil-define-key 'normal 'global (kbd "<leader> w n") 'evil-window-new)
+(evil-define-key 'normal 'global (kbd "<leader> w s") 'evil-window-split)
+(evil-define-key 'normal 'global (kbd "<leader> w v") 'evil-window-vsplit)
+(evil-define-key 'normal 'global (kbd "<leader> w h") 'evil-window-left)
+(evil-define-key 'normal 'global (kbd "<leader> w j") 'evil-window-down)
+(evil-define-key 'normal 'global (kbd "<leader> w k") 'evil-window-up)
+(evil-define-key 'normal 'global (kbd "<leader> w l") 'evil-window-right)
+(evil-define-key 'normal 'global (kbd "<leader> w w") 'evil-window-next)
+(evil-define-key 'normal 'global (kbd "<leader> w H") 'buf-move-left)
+(evil-define-key 'normal 'global (kbd "<leader> w J") 'buf-move-down)
+(evil-define-key 'normal 'global (kbd "<leader> w K") 'buf-move-up)
+(evil-define-key 'normal 'global (kbd "<leader> w L") 'buf-move-right)
+(evil-define-key 'normal 'global (kbd "<leader> g g") 'magit)
+
+
+;; evil collection
+(add-to-list 'load-path (concat user-emacs-directory "evil-collection"))
+(require 'evil-collection)
+(evil-collection-init)
