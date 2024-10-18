@@ -1,10 +1,10 @@
-sw_volume: 100
+sw_volume: 36
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: pause
-current: 0
-time: 172.068000
-random: 0
+current: 9
+time: 353.157000
+random: 1
 repeat: 0
 single: 0
 consume: 1
@@ -12,7 +12,15 @@ crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 09 粉々になった.mp3
-1:Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 10 メンタルウォーヘビーウェイト.mp3
-2:Macroblank Discography (320kbps) 03:04:2023/痛みの永遠/Macroblank - 痛みの永遠 - 11 戻る方法はありません.mp3
+0:nujabes/Spiritual-State-Flac/03 Gone Are the Days (feat. Uyama Hiroto).flac
+1:nujabes/Spiritual-State-Flac/04 Spiral.flac
+2:nujabes/Spiritual-State-Flac/06 Color of Autumn.flac
+3:nujabes/Spiritual-State-Flac/07 Dawn on the Side.flac
+4:nujabes/Spiritual-State-Flac/08 Yes (feat. Pase Rock).flac
+5:nujabes/Spiritual-State-Flac/09 Rainyway Back Home.flac
+6:nujabes/Spiritual-State-Flac/12 Waiting for the Clouds (feat. Substantial).flac
+7:nujabes/Spiritual-State-Flac/13 Prayer.flac
+8:nujabes/Spiritual-State-Flac/14 Island (feat. Uyama Hiroto & Haruka Nakamura).flac
+9:nujabes/Spiritual-State-Flac/15 Spiritual State (Tribe Special Edition Mix).flac
+10:nujabes/Spiritual-State-Flac/16 Scorpion Dilemma.flac
 playlist_end
