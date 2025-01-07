@@ -1,37 +1,8 @@
-#+title: The Bread Recipe
-#+AUTHOR: Italo Amaya
-#+Description: This is my personal emacs config. I have called it bread :) I used DT's configuration to start out and make my own. Now this configuration has code of rougier/nano-emacs which looked so nice I decided to implement it in my configuration and from everywhere.
-
-* Setup
-This is the step where we set up the environment for our bread. We are going to abstract away some setup so that the configuration file is easier to read
-
-** Install on mac
-This config is made for emacs-plus@30 compiled by:
-#+begin_src sh :noeval
-brew install emacs-plus@30 --with-mailutils --with-imagemagick --with-native-comp
-#+end_src
-
-I edited the formulae in homebrew and commented the env and the inject path. This allowed it to compile
-#+begin_src 
-on_macos do
-    # env :std
-end
-
-# inject PATH to Info.plist
-# inject_path
-
-#+end_src
-
-** Import modules directory
-#+begin_src emacs-lisp
 ;; Remove the tilte bar
 (add-to-list 'load-path (concat user-emacs-directory "modules/"))
 (add-to-list 'load-path (concat user-emacs-directory "modules/mu4e/"))
 (add-to-list 'load-path (concat user-emacs-directory "modules/nano-emacs/"))
-#+end_src
 
-** Nano
-#+begin_src emacs-lisp
 ;; Settings for nano
 (setq nano-enabled nil)
 ;; Use an if statement if nano is enabled
@@ -62,30 +33,18 @@ end
   )
 
 (set-face-attribute 'default nil :height 160) ; For 12pt font
-#+end_src
 
-#+RESULTS:
-
-** Elpaca
-#+begin_src emacs-lisp
 (require 'elpaca-setup)
-#+end_src
-** Secret
-#+begin_src emacs-lisp
+
 (require 'secret)
-#+end_src
-** Backups
-#+begin_src emacs-lisp
+
 (setq backup-by-copying t ; don't clobber symlinks
       backup-directory-alist '(("." . "~/.saves")) ; don't litter my fs tree
       delete-old-versions t
       kept-new-versions 6
       kept-old-versions 2
       version-control t)
-#+end_src
 
-* Emacs and personal Functions
-#+begin_src emacs-lisp
 (recentf-mode)
 (add-to-list 'default-frame-alist '(undecorated . t))
 ;;(elpaca nil (setq mu4e-mu-version "1.10.8"))
@@ -96,7 +55,6 @@ end
 (menu-bar-mode t)
 (tool-bar-mode -1)
 (set-scroll-bar-mode nil)
-(blink-cursor-mode -1)
 
 (global-display-line-numbers-mode 1)
 (global-visual-line-mode t)
@@ -119,7 +77,6 @@ end
 ;; Common directories
 (setq gnus-home-directory "/Users/italo/"
       config-dir (concat gnus-home-directory ".config/")
-      downloads-dir (concat gnus-home-directory "Downloads/")
       drop-dir (concat gnus-home-directory "Personal/Dropbox/")
       org-directory (concat drop-dir "Bak/Org")
       bread-dir (concat config-dir "bread/")
@@ -158,12 +115,6 @@ end
 ;; setting is useful beyond Corfu.
 (setq read-extended-command-predicate #'command-completion-default-include-p)
 
-#+end_src
-
-* Packages
-** Editor
-*** Evil
-#+begin_src emacs-lisp
 ;; Expands to: (elpaca evil (use-package evil :demand t))
 (use-package evil
   :demand t
@@ -186,17 +137,13 @@ end
   :after evil
   :config
   (evil-collection-init))
-#+end_src
-*** Perspective mode
-#+begin_src emacs-lisp
+
 (use-package perspective
   :custom
   (persp-suppress-no-prefix-key-warning t)
   :init
   (persp-mode))
-#+end_src
-*** Doom-themes
-#+begin_src emacs-lisp
+
 (use-package doom-themes
   :demand t
   :config
@@ -227,14 +174,6 @@ end
 
 ;; Use elpaca to load the theme to ensure doom-themes is laoded
 
-(use-package auto-dark
-  :init (auto-dark-mode)
-  :custom
-  (auto-dark-themes '((doom-spacegrey) (doom-flatwhite)))
-  )
-#+end_src
-*** Smartparens
-#+begin_src emacs-lisp
 (use-package smartparens
   :diminish smartparens-mode
   :defer 1
@@ -277,10 +216,6 @@ end
              :unless '(sp-point-before-word-p sp-point-before-same-p)))
   (smartparens-global-mode t))
 
-#+end_src
-
-*** undo-tree
-#+begin_src emacs-lisp
 (use-package undo-tree
   :config
   (setq undo-tree-auto-save-history t)
@@ -289,18 +224,14 @@ end
   (define-key evil-normal-state-map (kbd "u") 'undo-tree-undo)
   (define-key evil-normal-state-map (kbd "C-r") 'undo-tree-redo)
   (global-undo-tree-mode 1))
-#+end_src
-*** Projectile
-#+begin_src emacs-lisp
+
 (use-package projectile
   :config
   (projectile-mode 1))
 
 (use-package ag)
 (use-package rg)
-#+end_src
-*** Dired
-#+begin_src emacs-lisp
+
 (use-package dired-open
   :config
   (setq dired-open-extensions '(("mkv" . "mpv")
@@ -324,34 +255,22 @@ end
 (use-package peep-dired
   :after dired
   :hook (evil-normalize-keymaps . peep-dired-hook))
-#+end_src
-*** Diminish
-#+begin_src emacs-lisp
+
 (use-package diminish)
-#+end_src
-*** magit
-#+begin_src emacs-lisp
+
 (use-package magit)
 (use-package magit-todos
   :after magit
   :config (magit-todos-mode 1))
-#+end_src
-*** hl-todo
-#+begin_src emacs-lisp
+
 (use-package hl-todo
   :config
   (global-hl-todo-mode))
 
-#+end_src
-*** Vterm
-#+begin_src emacs-lisp
 (use-package vterm
   :init
   (setq vterm-shell "/usr/local/bin/fish"))
 
-#+end_src
-*** Exec path
-#+begin_src emacs-lisp
 (use-package exec-path-from-shell
  :custom
  (shell-file-name "/usr/local/bin/fish" "This is necessary because some Emacs install overwrite this variable")
@@ -359,106 +278,33 @@ end
  :init
  (if (string-equal system-type "darwin")
     (exec-path-from-shell-initialize)))
-#+end_src
 
-*** tramp
-#+begin_src emacs-lisp
 (setq tramp-default-method "ssh")
-#+end_src
 
-*** TODO Folding
-#+begin_src emacs-lisp
 ;; Add hook to use hs mode
-#+end_src
 
-*** Ellama DISABLED
-#+begin_src text 
-(use-package ellama
-  :bind ("C-c e" . ellama-transient-main-menu)
-  :init
-  ;; setup key bindings
-  ;; (setopt ellama-keymap-prefix "C-c e")
-  ;; language you want ellama to translate to
-  (setopt ellama-language "English")
-  ;; could be llm-openai for example
-  (require 'llm-ollama)
-  (setopt ellama-provider
-	    (make-llm-ollama
-			   :chat-model "zephyr:7b-beta-q6_K"
-			   :embedding-model "zephyr:7b-beta-q6_K"))
-  (setopt ellama-summarization-provider
-	    (make-llm-ollama
-	     :chat-model "qwen2.5:3b"
-	     :embedding-model "nomic-embed-text"
-	     :default-chat-non-standard-params '(("num_ctx" . 32768))))
-  ;; Predefined llm providers for interactive switching.
-  ;; You shouldn't add ollama providers here - it can be selected interactively
-  ;; without it. It is just example.
-  (setopt ellama-providers
-	    '(("zephyr" . (make-llm-ollama
-			   :chat-model "zephyr:7b-beta-q6_K"
-			   :embedding-model "zephyr:7b-beta-q6_K"))
-	      ("mistral" . (make-llm-ollama
-			    :chat-model "mistral:7b-instruct-v0.2-q6_K"
-			    :embedding-model "mistral:7b-instruct-v0.2-q6_K"))
-	      ("mixtral" . (make-llm-ollama
-			    :chat-model "mixtral:8x7b-instruct-v0.1-q3_K_M-4k"
-			    :embedding-model "mixtral:8x7b-instruct-v0.1-q3_K_M-4k"))))
-  ;; Naming new sessions with llm
-  (setopt ellama-naming-provider
-	    (make-llm-ollama
-	     :chat-model "llama3:8b-instruct-q8_0"
-	     :embedding-model "nomic-embed-text"
-	     :default-chat-non-standard-params '(("stop" . ("\n")))))
-  (setopt ellama-naming-scheme 'ellama-generate-name-by-llm)
-  ;; Translation llm provider
-  (setopt ellama-translation-provider
-	  (make-llm-ollama
-	   :chat-model "qwen2.5:3b"
-	   :embedding-model "nomic-embed-text"
-	   :default-chat-non-standard-params
-	   '(("num_ctx" . 32768)))))
-#+end_src
-
-*** PDF
-#+begin_src emacs-lisp
 (use-package pdf-tools
   :config
   ;; Disable docview mode since pdf-tools is better
-  (pdf-tools-install)
   (setq auto-mode-alist (delete '("\\.pdf\\'" . doc-view-mode) auto-mode-alist))
-  (require 'display-line-numbers)
-  (defun display-line-numbers--turn-on ()
-    "Turn on `display-line-numbers-mode'."
-    (unless (or (minibufferp) (eq major-mode 'pdf-view-mode))
-      (display-line-numbers-mode)))
   )
-#+end_src
-** Visual
-*** trasparency
-#+begin_src emacs-lisp
+
 (defun transparency (value)
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
-#+end_src
-*** All the icons
-#+begin_src emacs-lisp
+
 (use-package all-the-icons
   :demand t
   :if (display-graphic-p))
 
 (use-package all-the-icons-dired
   :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
-#+end_src
-*** Rainbow mode
-#+begin_src emacs-lisp
+
 (use-package rainbow-mode
   :diminish
   :hook org-mode prog-mode)
-#+end_src
-*** which-key
-#+begin_src emacs-lisp
+
 (use-package which-key
   :init
   (which-key-mode 1)
@@ -477,60 +323,16 @@ end
         which-key-max-description-length 25
         which-key-allow-imprecise-window-fit nil
         which-key-separator " → " ))
-#+end_src
-*** Popper mode DISABLED
-#+begin_src text
-(use-package popper
-  :ensure t ; or :straight t
-  :init
-  (setq popper-reference-buffers
-	'("\\*Messages\\*"
-	  "Output\\*$"
-	  "\\*Async Shell Command\\*"
-	  help-mode
-	  compilation-mode))
-  ;; Match eshell, shell, term and/or vterm buffers
-  (setq popper-reference-buffers
-	(append popper-reference-buffers
-		'("^\\*eshell.*\\*$" eshell-mode ;eshell as a popup
-		  "^\\*shell.*\\*$"  shell-mode  ;shell as a popup
-		  "^\\*term.*\\*$"   term-mode   ;term as a popup
-		  "^\\*vterm.*\\*$"  vterm-mode  ;vterm as a popup
-		  )))
-  
-  (setq popper-group-function #'popper-group-by-projectile) ; projectile projects
-  (setq popper-display-control t)  ;This is the DEFAULT behavior
-  (popper-mode +1)
-  (popper-echo-mode +1)
-  :config
-  (add-to-list 'display-buffer-alist
-	       '("\\*Compilation\\*"
-		 (display-buffer-in-side-window)
-		 (side . right)
-		 (window-width . 80)))
-  )
-#+end_src
-*** Svg tag mode
-#+begin_src emacs-lisp
+
 (use-package svg-tag-mode)
-#+end_src
-*** Yeetube
-#+begin_src emacs-lisp
+
 (use-package yeetube
  :ensure (:host github :repo "https://git.thanosapollo.org/yeetube")
  :config
  )
-#+end_src
 
-#+RESULTS:
-*** Dirvish
-#+begin_src emacs-lisp
 (use-package dirvish)
-#+end_src
-** General (keybindings)
-The keybindings of emacs is like the flour of the bread. Because I come from doom emacs these follow the keybindings from DT's configuration who is also a doom emacs user! [[https://gitlab.com/dwt1/configuring-emacs/-/blob/main/06-cleaning-up-the-config/config.org?ref_type=heads#evil][Original config]].
- 
-#+begin_src emacs-lisp
+
 ;;(elpaca nil (define-key evil-insert-state-map (kbd "ESC ESC ESC") 'evil-force-normal-state))
 (global-set-key (kbd "C-<escape>") 'evil-collection-corfu-quit-and-escape)
 
@@ -609,7 +411,6 @@ tab-indent."
   (flour/leader-keys
     "f R" '((lambda () (interactive) (find-file italoaa-dir)) :wk "Find Project")
     "f C" '((lambda () (interactive) (find-file config-dir)) :wk "Find Config")
-    "f D" '((lambda () (interactive) (find-file downloads-dir)) :wk "Find Config")
     "f c" '((lambda () (interactive) (find-file "~/.config/bread/config.org")) :wk "Edit emacs config")
     "f r" '(consult-recent-file :wk "Find recent files")
     "f b" '(consult-buffer :wk "Find buffer")
@@ -788,24 +589,10 @@ tab-indent."
   )
 
 ;; (evil-define-key 'normal dired-mode-map (kbd "C-u") #'evil-scroll-up)
-#+end_src
 
-#+RESULTS:
-
-** Programming
-
-*** TODO C-xrefactory
-
-*** TODO Format-all
-
-** Completion
-*** Jinx
-#+begin_src emacs-lisp
 (use-package jinx
   :hook (emacs-startup . global-jinx-mode))
-#+end_src
-*** Cape
-#+begin_src emacs-lisp
+
 (use-package cape
   :init
   (add-to-list 'completion-at-point-functions #'cape-dabbrev)
@@ -822,35 +609,6 @@ tab-indent."
   ;; (add-to-list 'completion-at-point-functions #'cape-line)
 )
 
-#+end_src
-*** Corfu
-#+begin_src text
-(use-package corfu
-  ;; Optionally use TAB for cycling, default is `corfu-complete'.
-  :bind (:map corfu-map
-              ("M-SPC"      . corfu-insert-separator)
-              ("TAB"        . corfu-next)
-              ([tab]        . corfu-next)
-              ("S-TAB"      . corfu-previous)
-              ([backtab]    . corfu-previous)
-              ("S-<return>" . corfu-insert)
-              ("<return>"        . nil))
-  :custom
-  (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
-  (corfu-auto t)                 ;; Enable auto completion
-  (corfu-auto-prefix 2)
-  (corfu-auto-delay 0.8)
-  (corfu-popupinfo-delay '(0.5 . 0.2))
-  (corfu-preview-current 'insert) ; insert previewed candidate
-  (corfu-preselect 'prompt)
-  (corfu-on-exact-match nil)      ; Don't auto expand tempel snippets
-  :init
-  (global-corfu-mode)
-  )
-#+end_src
-
-*** Vertico consult and marginalia 
-#+begin_src emacs-lisp
 (use-package vertico
   :init
   (vertico-mode)
@@ -946,51 +704,7 @@ tab-indent."
   (setq completion-styles '(orderless basic)
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
-#+end_src
 
-#+RESULTS:
-: [nil 26403 21055 182396 nil elpaca-process-queues nil nil 0 nil]
-
-*** Company
-#+begin_src text
-(use-package company
-  :defer 2
-  :diminish
-  :config
-  (setq company-backends
-        '((company-capf company-dabbrev-code company-keywords)
-          company-files
-          company-dabbrev
-          company-bbdb
-          company-semantic
-          company-cmake
-          company-clang
-          (company-gtags company-etags)
-          company-oddmuse))
-  :custom
-  (company-minimum-prefix-length 3)
-  (company-show-numbers t)
-  (company-tooltip-align-annotations 't)
-  (setq company-minimum-prefix-length 3
-        company-idle-delay 0.0) ;; default is 0.2
-
-  ;; Different scroll margin
-  ;;(setq vertico-scroll-margin 0)
-
-  (global-company-mode t))
-
-(use-package company-box
-  :after company
-  :diminish
-  :hook (company-mode-hook . company-box-mode))
-
-#+end_src
-
-#+RESULTS:
-: [nil 26403 18871 10801 nil elpaca-process-queues nil nil 0 nil]
-
-*** ya-snippets
-#+begin_src emacs-lisp
 (use-package yasnippet
   :demand t
   :config
@@ -998,55 +712,15 @@ tab-indent."
   (yas-minor-mode-on))
 (use-package yasnippet-snippets
   :demand t)
-#+end_src
-*** lsp DISABLED
-#+begin_src text
-(use-package lsp-mode
-  :init
-  ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-  (setq lsp-keymap-prefix "C-c l")
-  (setq lsp-headerline-breadcrumb-enable nil)
-  :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
-         (python-mode . lsp)
-         (rust-mode . lsp)
-         ;; if you want which-key integration
-         (lsp-mode . lsp-enable-which-key-integration))
-  :commands lsp)
-(setq read-process-output-max (* 1024 1024)) ;; 1mb
-(setq lsp-log-io nil) ; if set to true can cause a performance hit
-(setq lsp-idle-delay 0.500)
-(setq gc-cons-threshold 100000000)
-#+end_src
 
-#+RESULTS:
-: 100000000
-
-**** lsp-ivy
-#+begin_src emacs-lisp
 ;;(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
-#+end_src
-**** dap-mode
-#+begin_src TEXT
-(use-package dap-mode
-  :after lsp-mode
-  :commands dap-debug
-  :hook ((python-mode . dap-ui-mode)
-	 (python-mode . dap-mode))
-  :config
-  (require 'dap-python)
-  (setq dap-python-debugger 'debugpy))
-#+end_src
-** Writing
-*** TODO FlyCheck
-#+begin_src emacs-lisp
+
 (use-package flycheck
   :demand t
   :defer t
   :diminish
   :init (global-flycheck-mode))
-#+end_src
-*** AI DISABLED
-#+begin_src emacs-lisp
+
 (use-package org-ai
   :ensure t
   :commands (org-ai-mode
@@ -1065,14 +739,7 @@ tab-indent."
   ;;(add-hook 'prog-mode-hook 'copilot-mode)
   (add-to-list 'copilot-indentation-alist '(org-mode 4))
   )
-#+end_src
 
-#+RESULTS:
-: [nil 26415 53582 458527 nil elpaca-process-queues nil nil 0 nil]
-
-** Email
-Still does not work
-#+begin_src emacs-lisp
 ;; Nano is wierd
 ;; (require 'nano-mu4e)
 (require 'mu4e)
@@ -1120,13 +787,7 @@ Still does not work
 	 )
       )
 ;; (setq mu4e-dashboard-file (concat mu4e-maildir "mu4e-dashboard.org"))
-#+end_src
 
-#+RESULTS:
-: my-mu4e
-
-** RSS
-#+begin_src emacs-lisp
 (use-package elfeed
   :config
   (setq elfeed-feeds
@@ -1134,10 +795,7 @@ Still does not work
 	  "https://irreal.org/blog/?feed=rss2"
 	  "https://protesilaos.com/news.xml"
 	  )))
-#+end_src
-* Org mode
-** Variables
-#+begin_src emacs-lisp
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -1174,13 +832,6 @@ Still does not work
 (require 'ox-extra)
 (add-to-list 'org-modules 'org-habit)
 
-#+end_src
-
-#+RESULTS:
-| org-habit | ol-doi | ol-w3m | ol-bbdb | ol-bibtex | ol-docview | ol-gnus | ol-info | ol-irc | ol-mhe | ol-rmail | ol-eww |
-
-** Org Agenda
-#+begin_src emacs-lisp
 (setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/project.org"))
 
 (setq meditations-dir (concat org-directory "/meditations/"))
@@ -1239,35 +890,19 @@ Still does not work
 (setq plstore-cache-passphrase-for-symmetric-encryption t)
 
 (use-package org-gcal)
-#+end_src
 
-#+RESULTS:
-: [nil 26375 54209 347767 nil elpaca-process-queues nil nil 0 nil]
-
-** org latex
-#+begin_src emacs-lisp
 (setq org-format-latex-options (plist-put org-format-latex-options :scale 2.0))
 (setq org-latex-pdf-process
     '("pdflatex -interaction nonstopmode -output-directory %o %f"
         "pdflatex -interaction nonstopmode -output-directory %o %f"
         "pdflatex -interaction nonstopmode -output-directory %o %f"))
 (setq org-latex-with-hyperref nil) ;; stop org adding hypersetup{author..} to latex export
-;; (setq org-preview-latex-default-process "dvipng")
-;; (setq org-preview-latex-default-process "dvisvgm")
-;; (plist-put org-format-latex-options :foreground nil)
-;; (plist-put org-format-latex-options :background nil)
-#+end_src
 
-#+RESULTS:
-
-#+begin_src emacs-lisp
 (use-package engrave-faces
   :ensure t
   :init
   (setq org-latex-src-block-backend 'engraved))
-#+end_src
-** org roam and capture
-#+begin_src emacs-lisp
+
 (use-package org-roam
   :config
   (org-roam-db-autosync-mode 1)
@@ -1406,13 +1041,7 @@ Still does not work
             (insert (concat "#+filetags: " tag-to-add "\n")))
           (save-buffer))
       (message "Not visiting a file or no tags found!"))))
-#+end_src
 
-#+RESULTS:
-: add-university-tag-and-course
-
-** org Roam UI
-#+begin_src emacs-lisp
 (use-package org-roam-ui
   :after org-roam
   :config
@@ -1420,9 +1049,7 @@ Still does not work
         org-roam-ui-follow t
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
-#+end_src
-** org download
-#+begin_src emacs-lisp
+
 (use-package org-download
     :after org
     :defer nil
@@ -1436,13 +1063,9 @@ Still does not work
     :config
     (require 'org-download)
     (org-download-enable))
-#+end_src
-** org Zotero
-#+begin_src emacs-lisp
+
 (use-package zotxt)
-#+end_src
-** org appear
-#+begin_src emacs-lisp
+
 (use-package org-appear
   :commands (org-appear-mode)
   :hook (org-mode . org-appear-mode)
@@ -1451,38 +1074,28 @@ Still does not work
         org-appear-autoemphasis t        ;; Enable org-appear on emphasis (bold, italics, etc)
         org-appear-autolinks nil        ;; Don't enable on links
         org-appear-autosubmarkers t))    ;; Enable on subscript and superscript
-#+end_src
-** org bullets
-#+begin_src emacs-lisp
+
 ;;(use-package org-bullets
 ;;    :hook (org-mode . org-bullets-mode)
 ;;    :custom
 ;;    (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 ;;    (org-bullets-bullet-list '("◉" "○" "■" "◆" "▲" "▶")))
-#+end_src
-** org Babel
-#+begin_src emacs-lisp
+
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((shell . t) (python . t) (emacs-lisp . t) (C . t)))
 
 (setq org-confirm-babel-evaluate nil)
-#+end_src
-** org modern
-#+begin_src emacs-lisp
+
 (use-package org-modern
   :after org
   :config
   (set-face-attribute 'org-modern-label nil
                       :height 150)
   (global-org-modern-mode))
-#+end_src
-** org present
-#+begin_src emacs-lisp
+
 (use-package org-present)
-#+end_src
-** org journal
-#+begin_src emacs-lisp
+
 (use-package org-journal
   :config
   (setq org-journal-date-prefix "#+TITLE: "
@@ -1491,34 +1104,21 @@ Still does not work
         org-journal-file-format "%d-%m-%Y.org"
         org-journal-time-prefix "* ")
   )
-#+end_src
-** org reveal
-#+begin_src emacs-lisp
+
 (use-package ox-reveal)
-#+end_src
-** ob Async
-#+begin_src emacs-lisp
+
 (use-package ob-async)
-#+end_src
-** ob nix
-#+begin_src emacs-lisp
+
 ;; (use-package ob-nixn)
-#+end_src
-** ox hugo
-#+begin_src emacs-lisp
+
 (use-package ox-hugo
   :ensure t   ;Auto-install the package from Melpa
   :after ox
   :config
   )
-#+end_src
-* Languages 
-** Programming
-#+begin_src emacs-lisp
+
 (add-hook 'prog-mode-hook #'hs-minor-mode)
-#+end_src
-** Rust [0/3]
-#+begin_src emacs-lisp
+
 (use-package rust-mode
   :config
   (setq rust-format-on-save t
@@ -1526,15 +1126,7 @@ Still does not work
 	rust-cargo-bin "/Users/italo/.cargo/bin/cargo"))
 
 (add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
-#+end_src
-*** TODO Rustic
-*** TODO Keybindings
-- rust-dbg-wrap-or-unwrap
-- rust-toggle-mutability
-*** TODO Config
-~rust-cargo-default-arguments~ set additional cargo args used for check,compile,run,test
-** Treesitter
-#+begin_src emacs-lisp
+
 ;; (require 'treesit)
 ;; (add-to-list 'treesit-language-source-alist
 ;; 	     '(typescript . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")))
@@ -1546,17 +1138,13 @@ Still does not work
   :config
   (treesit-auto-add-to-auto-mode-alist 'all)
   (global-treesit-auto-mode))
-#+end_src
-** C++
-#+begin_src emacs-lisp
+
 (add-hook 'c-mode-hook 'lsp)
 
 (add-hook 'c++-mode-hook 'lsp)
 
 (use-package fancy-compilation)
-#+end_src
-** Python
-#+begin_src emacs-lisp
+
 (use-package lsp-pyright
   :demand t
   :hook (python-mode . (lambda ()
@@ -1573,58 +1161,35 @@ Still does not work
   (setq python-black-command "/usr/local/anaconda3/bin/black"
 	python-black-on-save-mode t))
 
-#+end_src
-
-*** Config
-#+begin_src emacs-lisp
 (setq python-shell-interpreter (concat gnus-home-directory ".local/venv/ai/bin/python3")
       python-shell-virtualenv-root (concat gnus-home-directory ".local/venv/ai/")
       org-babel-python-command (concat gnus-home-directory ".local/venv/ai/bin/python3"))
       ;; lsp-pyright-venv-path "/usr/local/anaconda3")
-#+end_src
-** Nix
-#+begin_src emacs-lisp
+
 (use-package nix-mode)
 (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
-#+end_src
-** html
-#+begin_src emacs-lisp
+
 (use-package emmet-mode)
 (add-to-list 'auto-mode-alist '("\\.html\\'" . emmet-mode))
-#+end_src
-** Astro
-#+begin_src emacs-lisp
+
 (use-package astro-ts-mode)
 ;; Hook when a .astro file is opened
 (add-to-list 'auto-mode-alist '("\\.astro\\'" . astro-ts-mode))
-#+end_src
-** Markdown
-#+begin_src emacs-lisp
+
 (use-package markdown-mode)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-#+end_src
-** Lua
-#+begin_src emacs-lisp
+
 (use-package lua-mode)
 (add-to-list 'auto-mode-alist '("\\.lua\\'" . astro-ts-mode))
-#+end_src
-** Yaml
-#+begin_src emacs-lisp
+
 (use-package yaml-mode)
-#+end_src
-** Docker
-#+begin_src emacs-lisp
+
 (use-package dockerfile-mode)
 (use-package docker-compose-mode)
-#+end_src
-** Csv
-#+begin_src emacs-lisp
+
 (use-package csv-mode)
-#+end_src
-* Ends
-#+begin_src emacs-lisp
+
 (set-scroll-bar-mode nil)
 
 ;; Recognize .vm files as .txt files
 (add-to-list 'auto-mode-alist '("\\.vm\\'" . text-mode))
-#+end_src

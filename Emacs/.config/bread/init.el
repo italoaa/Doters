@@ -32,7 +32,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("b9761a2e568bee658e0ff723dd620d844172943eb5ec4053e2b199c59e0bcc22"
+   '("77fff78cc13a2ff41ad0a8ba2f09e8efd3c7e16be20725606c095f9a19c24d3d"
+     "e3daa8f18440301f3e54f2093fe15f4fe951986a8628e98dcd781efbec7a46f2"
+     "691d671429fa6c6d73098fc6ff05d4a14a323ea0a18787daeb93fde0e48ab18b"
+     "34cf3305b35e3a8132a0b1bdf2c67623bc2cb05b125f8d7d26bd51fd16d547ec"
+     "a9eeab09d61fef94084a95f82557e147d9630fbbb82a837f971f83e66e21e5ad"
+     "c5878086e65614424a84ad5c758b07e9edcf4c513e08a1c5b1533f313d1b17f1"
+     "d6b934330450d9de1112cbb7617eaf929244d192c4ffb1b9e6b63ad574784aad"
+     "b9761a2e568bee658e0ff723dd620d844172943eb5ec4053e2b199c59e0bcc22"
      "8d8207a39e18e2cc95ebddf62f841442d36fcba01a2a9451773d4ed30b632443"
      "3fe1ebb870cc8a28e69763dde7b08c0f6b7e71cc310ffc3394622e5df6e4f0da"
      "e4a702e262c3e3501dfe25091621fe12cd63c7845221687e36a79e17cf3a67e0"
@@ -53,12 +60,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-document-title ((t (:inherit default :weight bold :font "Monaco" :height 2.0 :underline nil))))
- '(org-level-1 ((t (:inherit default :weight bold :font "Monaco" :height 1.75))))
- '(org-level-2 ((t (:inherit default :weight bold :font "Monaco" :height 1.5))))
- '(org-level-3 ((t (:inherit default :weight bold :font "Monaco" :height 1.25))))
- '(org-level-4 ((t (:inherit default :weight bold :font "Monaco" :height 1.1))))
- '(org-level-5 ((t (:inherit default :weight bold :font "Monaco"))))
- '(org-level-6 ((t (:inherit default :weight bold :font "Monaco"))))
- '(org-level-7 ((t (:inherit default :weight bold :font "Monaco"))))
- '(org-level-8 ((t (:inherit default :weight bold :font "Monaco")))))
+ '(org-document-title ((t (:inherit default :weight normal :font "Monaco" :height 3.0 :underline nil))))
+ '(org-level-1 ((t (:inherit default :weight regular :font "Monaco" :height 1.75))))
+ '(org-level-2 ((t (:inherit default :weight regular :font "Monaco" :height 1.5))))
+ '(org-level-3 ((t (:inherit default :weight regular :font "Monaco" :height 1.25))))
+ '(org-level-4 ((t (:inherit default :weight regular :font "Monaco" :height 1.1))))
+ '(org-level-5 ((t (:inherit default :weight regular :font "Monaco"))))
+ '(org-level-6 ((t (:inherit default :weight regular :font "Monaco"))))
+ '(org-level-7 ((t (:inherit default :weight regular :font "Monaco"))))
+ '(org-level-8 ((t (:inherit default :weight regular :font "Monaco")))))

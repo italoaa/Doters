@@ -25,5 +25,8 @@
 ;; Unecorated round frame
 (add-to-list 'default-frame-alist '(undecorated-round . t))
 
+;; lsp mode
+(setenv "LSP_USE_PLISTS" "true")
+
 (provide 'early-init)
 ;;; early-init.el ends here

@@ -41,6 +41,8 @@ yabai -m config bottom_padding 5
 yabai -m config left_padding 5
 yabai -m config right_padding 5
 yabai -m config window_gap 5
+
+yabai -m config external_bar all:40:0
  
 yabai -m signal --add event=space_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
 

@@ -4,8 +4,14 @@
 (add-to-list 'load-path (concat user-emacs-directory "modules/nano-emacs/"))
 
 ;; Settings for nano
-(setq nano-enabled t)
+(setq nano-enabled nil)
 ;; Use an if statement if nano is enabled
+;; (require 'nano-modeline)
+(require 'nano-colors)
+(require 'nano-layout)
+(require 'nano-command)
+(require 'nano-faces)
+(require 'nano-theme)
 (if nano-enabled
     (progn
       (setq nano-font-size 16)
@@ -20,16 +26,13 @@
 
       ;; End the config loading with the splash screen
       (require 'nano-splash)
-
-      (require 'nano-modeline)
-      (require 'nano-colors)
-      (require 'nano-layout)
-      (require 'nano-command)
       ;; (require 'nano-agenda)
       ;; (require 'nano-minibuffer)
       (set-scroll-bar-mode nil)
       )
   )
+
+(set-face-attribute 'default nil :height 160) ; For 12pt font
 
 (require 'elpaca-setup)
 
@@ -52,6 +55,7 @@
 (menu-bar-mode t)
 (tool-bar-mode -1)
 (set-scroll-bar-mode nil)
+(blink-cursor-mode -1)
 
 (global-display-line-numbers-mode 1)
 (global-visual-line-mode t)
@@ -74,6 +78,7 @@
 ;; Common directories
 (setq gnus-home-directory "/Users/italo/"
       config-dir (concat gnus-home-directory ".config/")
+      downloads-dir (concat gnus-home-directory "Downloads/")
       drop-dir (concat gnus-home-directory "Personal/Dropbox/")
       org-directory (concat drop-dir "Bak/Org")
       bread-dir (concat config-dir "bread/")
@@ -171,6 +176,12 @@
 
 ;; Use elpaca to load the theme to ensure doom-themes is laoded
 
+(use-package auto-dark
+  :init (auto-dark-mode)
+  :custom
+  (auto-dark-themes '((doom-spacegrey) (doom-flatwhite)))
+  )
+
 (use-package smartparens
   :diminish smartparens-mode
   :defer 1
@@ -256,6 +267,9 @@
 (use-package diminish)
 
 (use-package magit)
+(use-package magit-todos
+  :after magit
+  :config (magit-todos-mode 1))
 
 (use-package hl-todo
   :config
@@ -276,6 +290,18 @@
 (setq tramp-default-method "ssh")
 
 ;; Add hook to use hs mode
+
+(use-package pdf-tools
+  :config
+  ;; Disable docview mode since pdf-tools is better
+  (pdf-tools-install)
+  (setq auto-mode-alist (delete '("\\.pdf\\'" . doc-view-mode) auto-mode-alist))
+  (require 'display-line-numbers)
+  (defun display-line-numbers--turn-on ()
+    "Turn on `display-line-numbers-mode'."
+    (unless (or (minibufferp) (eq major-mode 'pdf-view-mode))
+      (display-line-numbers-mode)))
+  )
 
 (defun transparency (value)
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
@@ -399,6 +425,7 @@ tab-indent."
   (flour/leader-keys
     "f R" '((lambda () (interactive) (find-file italoaa-dir)) :wk "Find Project")
     "f C" '((lambda () (interactive) (find-file config-dir)) :wk "Find Config")
+    "f D" '((lambda () (interactive) (find-file downloads-dir)) :wk "Find Config")
     "f c" '((lambda () (interactive) (find-file "~/.config/bread/config.org")) :wk "Edit emacs config")
     "f r" '(consult-recent-file :wk "Find recent files")
     "f b" '(consult-buffer :wk "Find buffer")
@@ -597,29 +624,6 @@ tab-indent."
   ;; (add-to-list 'completion-at-point-functions #'cape-line)
 )
 
-(use-package corfu
-  ;; Optionally use TAB for cycling, default is `corfu-complete'.
-  :bind (:map corfu-map
-              ("M-SPC"      . corfu-insert-separator)
-              ("TAB"        . corfu-next)
-              ([tab]        . corfu-next)
-              ("S-TAB"      . corfu-previous)
-              ([backtab]    . corfu-previous)
-              ("S-<return>" . corfu-insert)
-              ("<return>"        . nil))
-  :custom
-  (corfu-cycle t)                ;; Enable cycling for `corfu-next/previous'
-  (corfu-auto t)                 ;; Enable auto completion
-  (corfu-auto-prefix 2)
-  (corfu-auto-delay 0.8)
-  (corfu-popupinfo-delay '(0.5 . 0.2))
-  (corfu-preview-current 'insert) ; insert previewed candidate
-  (corfu-preselect 'prompt)
-  (corfu-on-exact-match nil)      ; Don't auto expand tempel snippets
-  :init
-  (global-corfu-mode)
-  )
-
 (use-package vertico
   :init
   (vertico-mode)
@@ -748,6 +752,7 @@ tab-indent."
   :ensure (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
   :config
   ;;(add-hook 'prog-mode-hook 'copilot-mode)
+  (add-to-list 'copilot-indentation-alist '(org-mode 4))
   )
 
 ;; Nano is wierd
@@ -811,15 +816,15 @@ tab-indent."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-document-title ((t (:inherit default :weight bold :font "Monaco" :height 2.0 :underline nil))))
- '(org-level-1 ((t (:inherit default :weight bold :font "Monaco" :height 1.75))))
- '(org-level-2 ((t (:inherit default :weight bold :font "Monaco" :height 1.5))))
- '(org-level-3 ((t (:inherit default :weight bold :font "Monaco" :height 1.25))))
- '(org-level-4 ((t (:inherit default :weight bold :font "Monaco" :height 1.1))))
- '(org-level-5 ((t (:inherit default :weight bold :font "Monaco"))))
- '(org-level-6 ((t (:inherit default :weight bold :font "Monaco"))))
- '(org-level-7 ((t (:inherit default :weight bold :font "Monaco"))))
- '(org-level-8 ((t (:inherit default :weight bold :font "Monaco")))))
+ '(org-document-title ((t (:inherit default :weight normal :font "Monaco" :height 3.0 :underline nil))))
+ '(org-level-1 ((t (:inherit default :weight regular :font "Monaco" :height 1.75))))
+ '(org-level-2 ((t (:inherit default :weight regular :font "Monaco" :height 1.5))))
+ '(org-level-3 ((t (:inherit default :weight regular :font "Monaco" :height 1.25))))
+ '(org-level-4 ((t (:inherit default :weight regular :font "Monaco" :height 1.1))))
+ '(org-level-5 ((t (:inherit default :weight regular :font "Monaco"))))
+ '(org-level-6 ((t (:inherit default :weight regular :font "Monaco"))))
+ '(org-level-7 ((t (:inherit default :weight regular :font "Monaco"))))
+ '(org-level-8 ((t (:inherit default :weight regular :font "Monaco")))))
 
 ;; Unbind RET for going to links
 ;;(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
@@ -907,6 +912,15 @@ tab-indent."
         "pdflatex -interaction nonstopmode -output-directory %o %f"
         "pdflatex -interaction nonstopmode -output-directory %o %f"))
 (setq org-latex-with-hyperref nil) ;; stop org adding hypersetup{author..} to latex export
+;; (setq org-preview-latex-default-process "dvipng")
+;; (setq org-preview-latex-default-process "dvisvgm")
+;; (plist-put org-format-latex-options :foreground nil)
+;; (plist-put org-format-latex-options :background nil)
+
+(use-package engrave-faces
+  :ensure t
+  :init
+  (setq org-latex-src-block-backend 'engraved))
 
 (use-package org-roam
   :config
@@ -967,7 +981,7 @@ tab-indent."
             :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                                 "#+title: ${title}\n#+filetags: :Job:Interview:\n")
             :unnarrowed t)
-            ("jc" "Company" plain "\n\n\n* Main\n%?\n\n* References\n"
+            ("jc" "Company" plain "\n\n\n* Main\n_Research Sources_:\n- [ ] Company website\n- [ ] Glassdoor\n** TODO Job Description\n- Role: \n- Deadlines: \n- Location: \n** TODO Culture and Values\n*** Recruitment Process\n** TODO Business overview\n*** Products\n*** Industry and Market position\n*** Financial Performance\n** TODO Career Development\n*** Growth opportunities\n*** Learning and Development\n** TODO Recent News and Events\n"
             :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                                 "#+title: ${title}\n#+filetags: :Job:Company:\n")
             :unnarrowed t)
@@ -1014,7 +1028,7 @@ tab-indent."
                                 "#+title: ${title}\n#+filetags: :CompSci:AI:Model:\n")
             :unnarrowed t)
 	("r" "Reasearch/Source")
-            ("ra" "Article Analysis Note" plain "\n\n\n* Main\n%?\n\n* References\n"
+            ("ra" "Article Analysis Note" plain "\n\n\n* Abstract\n%?\n\n* References\n"
             :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                                 "#+title: ${title}\n#+filetags: :Research:Article:\n")
             :unnarrowed t)
@@ -1116,6 +1130,14 @@ tab-indent."
 
 ;; (use-package ob-nixn)
 
+(use-package ox-hugo
+  :ensure t   ;Auto-install the package from Melpa
+  :after ox
+  :config
+  )
+
+(add-hook 'prog-mode-hook #'hs-minor-mode)
+
 (use-package rust-mode
   :config
   (setq rust-format-on-save t
@@ -1142,16 +1164,42 @@ tab-indent."
 
 (use-package fancy-compilation)
 
+(use-package lsp-pyright
+  :demand t
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-pyright)
+                          (lsp))) ; or lsp-deferred
+  :config
+  (setq python-indent 4)) 
+
+(use-package python-black
+  :demand t
+  :after python
+  :hook (python-mode . python-black-on-save-mode)
+  :config
+  (setq python-black-command "/usr/local/anaconda3/bin/black"
+	python-black-on-save-mode t))
+
 (setq python-shell-interpreter (concat gnus-home-directory ".local/venv/ai/bin/python3")
       python-shell-virtualenv-root (concat gnus-home-directory ".local/venv/ai/")
       org-babel-python-command (concat gnus-home-directory ".local/venv/ai/bin/python3"))
       ;; lsp-pyright-venv-path "/usr/local/anaconda3")
 
 (use-package nix-mode)
+(add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
 
 (use-package emmet-mode)
+(add-to-list 'auto-mode-alist '("\\.html\\'" . emmet-mode))
+
+(use-package astro-ts-mode)
+;; Hook when a .astro file is opened
+(add-to-list 'auto-mode-alist '("\\.astro\\'" . astro-ts-mode))
+
+(use-package markdown-mode)
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 (use-package lua-mode)
+(add-to-list 'auto-mode-alist '("\\.lua\\'" . astro-ts-mode))
 
 (use-package yaml-mode)
 

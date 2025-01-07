@@ -8,8 +8,8 @@
  (last-modified 26107 10632 486647 0))
 ("org-capture-last-stored"
  (filename
-  . "~/Personal/Dropbox/Bak/Org/roam/20241008132246-plausible_reasoning.org")
- (front-context-string . "* Main\nPlausible")
- (rear-context-string . "tags: :Physics:\n") (position . 119)
- (last-modified 26373 9503 668541 0))
+  . "~/Personal/Dropbox/Bak/Org/roam/20241228153507-wavenet_model.org")
+ (front-context-string . "* Main\n\n\n* Refer")
+ (rear-context-string . "Learning:Model:\n") (position . 138)
+ (last-modified 26480 24830 207478 0))
 )

@@ -60,8 +60,17 @@
   (package-install 'evil))
 
 (add-to-list 'load-path (concat user-emacs-directory "evil"))
+(setq evil-want-keybinding nil) ;; we dont want
 (require 'evil)
 (evil-mode 1)
+
+;; evil collection dependencie
+(add-to-list 'load-path (concat user-emacs-directory "annalist"))
+
+;; evil collection
+(add-to-list 'load-path (concat user-emacs-directory "evil-collection"))
+(require 'evil-collection)
+(evil-collection-init)
 
 (unless (package-installed-p 'magit)
   (package-install 'magit))
@@ -131,9 +140,3 @@
 (evil-define-key 'normal 'global (kbd "<leader> w K") 'buf-move-up)
 (evil-define-key 'normal 'global (kbd "<leader> w L") 'buf-move-right)
 (evil-define-key 'normal 'global (kbd "<leader> g g") 'magit)
-
-
-;; evil collection
-(add-to-list 'load-path (concat user-emacs-directory "evil-collection"))
-(require 'evil-collection)
-(evil-collection-init)
