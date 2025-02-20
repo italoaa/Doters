@@ -4,25 +4,26 @@
 (add-to-list 'load-path (concat user-emacs-directory "modules/nano-emacs/"))
 
 ;; Settings for nano
-(setq nano-enabled nil)
+(setq nano-enabled t)
 ;; Use an if statement if nano is enabled
-;; (require 'nano-modeline)
+(require 'nano-modeline)
 (require 'nano-colors)
 (require 'nano-layout)
 (require 'nano-command)
 (require 'nano-faces)
 (require 'nano-theme)
+;; (require 'nano-hl-block)
 (if nano-enabled
     (progn
-      (setq nano-font-size 16)
+      (setq nano-font-size 15)
 
       (require 'nano-faces)
-      (require 'nano-theme)
-      (require 'nano-theme-dark)
-      (require 'nano-theme-light)
+      ;; (require 'nano-theme)
+      ;; (require 'nano-theme-dark)
+      ;; (require 'nano-theme-light)
 
-      (nano-theme-set-dark)
-      (call-interactively 'nano-refresh-theme)
+      ;; (nano-theme-set-dark)
+      ;; (call-interactively 'nano-refresh-theme)
 
       ;; End the config loading with the splash screen
       (require 'nano-splash)
@@ -32,7 +33,7 @@
       )
   )
 
-(set-face-attribute 'default nil :height 160) ; For 12pt font
+(set-face-attribute 'default nil :height 150) ; For 12pt font
 
 (require 'elpaca-setup)
 
@@ -164,7 +165,7 @@
 
   (if (not nano-enabled)
       (load-theme 'doom-spacegrey t)
-    (set-face-attribute 'default nil :height 160) ; For 12pt font
+    (set-face-attribute 'default nil :height 150) ; For 12pt font
     )
   )
 
@@ -260,6 +261,7 @@
     (evil-define-key 'normal peep-dired-mode-map (kbd "j") 'peep-dired-next-file)
     (evil-define-key 'normal peep-dired-mode-map (kbd "k") 'peep-dired-prev-file)))
 
+(add-hook 'dired-mode-hook #'dired-hide-details-mode)
 (use-package peep-dired
   :after dired
   :hook (evil-normalize-keymaps . peep-dired-hook))
@@ -314,6 +316,8 @@
 
 (use-package all-the-icons-dired
   :hook (dired-mode . (lambda () (all-the-icons-dired-mode t))))
+
+(use-package olivetti)
 
 (use-package rainbow-mode
   :diminish
@@ -1157,6 +1161,10 @@ tab-indent."
   :config
   (treesit-auto-add-to-auto-mode-alist 'all)
   (global-treesit-auto-mode))
+
+(use-package ts-fold
+  :ensure (:host github :repo "https://github.com/emacs-tree-sitter/ts-fold")
+  )
 
 (add-hook 'c-mode-hook 'lsp)
 

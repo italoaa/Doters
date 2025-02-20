@@ -6409,3 +6409,789 @@ Jan 07 17:49 : ffmpeg/aac: Could not update timestamps for skipped samples.
 Jan 07 17:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
 Jan 07 18:02 : ffmpeg/aac: Could not update timestamps for skipped samples.
 Jan 07 18:02 : player: played "toe/11. Toe - Good Bye ⧸⧸ New Sentimentality.mp3"
+Jan 07 18:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 07 18:15 : player: played "toe/11. Toe - Good Bye ⧸⧸ New Sentimentality.mp4"
+Jan 07 18:28 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Jan 07 18:29 : player: played "toe/11. Toe - Good Bye ⧸⧸ New Sentimentality.webm"
+Jan 08 11:37 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 08 11:41 : player: played "Orbit/Perspectives/Call Me at Midnight.mp3"
+Jan 08 11:45 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Jan 08 15:23 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Jan 08 15:25 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Jan 08 15:27 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Jan 08 15:49 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Jan 08 15:49 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jan 08 15:49 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Jan 08 15:53 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Jan 08 16:24 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Jan 08 16:24 : exception: No such directory
+Jan 08 16:26 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Jan 08 16:33 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Jan 08 16:36 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Jan 08 16:38 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Jan 08 16:41 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Jan 08 16:48 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Jan 08 16:51 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+Jan 08 16:55 : player: played "Orbit/Demos/​so far away.mp3"
+Jan 08 16:58 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Jan 08 16:59 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Jan 08 17:02 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Jan 08 17:05 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Jan 08 17:08 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Jan 08 17:15 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Jan 08 17:18 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Jan 08 17:21 : player: played "Orbit/Sunday by the River/21.mp3"
+Jan 08 17:25 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Jan 08 17:29 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Jan 08 17:31 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Jan 08 17:34 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Jan 08 17:36 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Jan 08 17:40 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Jan 08 17:44 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Jan 08 17:48 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Jan 08 17:55 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream diary).mp3"
+Jan 08 17:57 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Jan 08 18:01 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Jan 08 18:02 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Jan 08 18:05 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Jan 08 18:08 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 08 18:13 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Jan 08 18:15 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Jan 08 18:19 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Jan 08 18:21 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Jan 08 18:24 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Jan 08 18:25 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Jan 09 10:01 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 09 10:01 : config: option 'auto_resample' on line 26 was not recognized
+Jan 09 10:01 : config: option 'use_mmap' on line 27 was not recognized
+Jan 09 10:08 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 09 10:08 : config: option 'auto_resample' on line 26 was not recognized
+Jan 09 10:08 : config: option 'use_mmap' on line 27 was not recognized
+Jan 09 11:12 : player: played "boilerRoom/Kaytranada Boiler Room Montreal DJ Set [-5EQIiabJvk].mp3"
+Jan 09 11:13 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Jan 09 11:13 : player: played "Sylvan-Esso/Sylvan Esso - Hey Mami (Big Wild Remix) [Q_vXB_rBKkc].mp3"
+Jan 09 11:13 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 09 11:13 : config: option 'auto_resample' on line 26 was not recognized
+Jan 09 11:13 : config: option 'use_mmap' on line 27 was not recognized
+Jan 09 11:13 : player: played "Sylvan-Esso/Sylvan Esso - Hey Mami (Big Wild Remix) [Q_vXB_rBKkc].mp3"
+Jan 09 11:13 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 09 11:13 : config: option 'auto_resample' on line 26 was not recognized
+Jan 09 11:13 : config: option 'use_mmap' on line 27 was not recognized
+Jan 09 11:14 : player: played "Sylvan-Esso/Sylvan Esso - Hey Mami (Big Wild Remix) [Q_vXB_rBKkc].mp3"
+Jan 09 11:14 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Jan 09 11:14 : player: played "breakcore/Mellow Breaks [l4fBd4AHySk].mp3"
+Jan 09 11:14 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 09 11:14 : config: option 'auto_resample' on line 26 was not recognized
+Jan 09 11:14 : config: option 'use_mmap' on line 27 was not recognized
+Jan 09 11:39 : player: played "breakcore/Mellow Breaks [l4fBd4AHySk].mp3"
+Jan 09 11:42 : player: played "breakcore/license plate 777 (i believe in angels) ｜ music video.mp3"
+Jan 11 17:01 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Jan 12 19:07 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+
+Warning: Encountered more data after announced end of track (frame 13642/13642). Frankenstein!
+Jan 12 23:15 : player: played "Jizue/Jizue - Shiori (2014) [V0]/02 Bullet Bull.mp3"
+Jan 12 23:27 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 12 23:31 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 12 23:33 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Jan 12 23:36 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Jan 12 23:39 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Jan 12 23:40 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Jan 12 23:45 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Jan 12 23:46 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Jan 12 23:49 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Jan 12 23:53 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Jan 12 23:57 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Jan 13 00:00 : player: played "Orbit/Perspectives/Call Me at Midnight.mp3"
+Jan 13 00:03 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Jan 13 00:10 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Jan 13 00:12 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Jan 13 00:15 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Jan 13 00:16 : player: played "Orbit/Summer Someday/Summer Someday.mp3"
+Jan 13 00:21 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Jan 13 16:01 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Jan 13 16:48 : player: played "Naked and Famous/The Naked And Famous - Young Blood.mp3"
+Jan 13 16:52 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 13 16:55 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Jan 13 16:58 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Jan 13 17:03 : player: played "Orbit/Demos/orbit - Hands (Burning Man Diary).mp3"
+Jan 13 17:05 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Jan 13 17:10 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Jan 13 17:13 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Jan 13 17:15 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Jan 13 17:18 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Jan 13 17:21 : player: played "Orbit/Sunday by the River/21.mp3"
+Jan 13 17:26 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Jan 13 17:28 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Jan 13 17:29 : player: played "Orbit/Demos/Heaven_sketch_050623.mp3"
+Jan 13 17:33 : player: played "Orbit/Sunday by the River/orbit - Missing the Moon (Lyric Video).mp3"
+Jan 13 17:53 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream diary).mp3"
+Jan 13 17:55 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Jan 13 17:58 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Jan 13 18:00 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Jan 13 18:03 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Jan 13 18:04 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Jan 13 18:05 : player: played "Orbit/Summer Someday/Summer Someday.mp3"
+Jan 13 18:08 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Jan 13 18:12 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Jan 13 18:14 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Jan 13 18:17 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Jan 13 18:20 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Jan 13 18:22 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Jan 13 18:26 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Jan 13 18:34 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Jan 13 18:35 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Jan 13 18:38 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+Jan 13 18:41 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Jan 13 18:46 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Jan 13 18:50 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Jan 13 18:51 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Jan 16 16:02 : player: played "Orbit/Perspectives/Call Me at Midnight.mp3"
+Jan 16 16:05 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 16 20:19 : player: played "Orbit/Sunday by the River/21.mp3"
+Jan 17 11:12 : player: played "Orbit/Sunday by the River/21.mp3"
+Jan 17 11:15 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Jan 17 11:15 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Jan 17 11:15 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Jan 17 11:35 : player: played "mixes/get me home.m4a"
+Jan 17 12:17 : player: played "mixes/PlayStation 2 Drum & Bass DJ Mix.mp3"
+Jan 17 13:07 : player: played "Paulinho-Nogueira/O Fino Do Violão Vol. 2 [-h2l2ct1VK0].mp3"
+Jan 18 16:09 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Jan 18 16:09 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Jan 18 16:09 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Jan 18 16:12 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Jan 18 16:17 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Jan 18 16:20 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/03 Smilin' Days, Summer Holiday.mp3"
+Jan 18 16:24 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Jan 18 16:28 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Jan 18 16:32 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/06 Just Thing.mp3"
+Jan 18 16:36 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/07 太平洋.mp3"
+Jan 18 16:40 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/08 パラダイス.mp3"
+Jan 18 16:44 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/09 うまく歩けないよ.mp3"
+Jan 18 18:05 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/11 Walkin'.mp3"
+Jan 18 18:07 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/12 スー・パー.mp3"
+Jan 18 18:13 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/13 いかれたBaby (Remix).mp3"
+Jan 18 18:18 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:21 : exception: No such song
+Jan 18 18:27 : player: played "nujabes/Spiritual-State-Flac/01 Spiritual State (feat. Uyama Hiroto).flac"
+Jan 18 18:32 : player: played "nujabes/Spiritual-State-Flac/02 Sky Is Tumbling (feat. Cise Starr).flac"
+Jan 23 15:26 : player: played "nujabes/Spiritual-State-Flac/03 Gone Are the Days (feat. Uyama Hiroto).flac"
+Jan 23 15:29 : player: played "nujabes/Spiritual-State-Flac/04 Spiral.flac"
+Jan 23 15:33 : player: played "nujabes/Spiritual-State-Flac/05 City Lights (feat. Pase Rock & Substantial).flac"
+Jan 23 15:34 : player: played "nujabes/Spiritual-State-Flac/06 Color of Autumn.flac"
+Jan 23 15:40 : player: played "nujabes/Spiritual-State-Flac/07 Dawn on the Side.flac"
+Jan 23 15:47 : player: played "nujabes/Spiritual-State-Flac/08 Yes (feat. Pase Rock).flac"
+Jan 23 15:50 : player: played "nujabes/Spiritual-State-Flac/09 Rainyway Back Home.flac"
+Jan 23 15:54 : player: played "nujabes/Spiritual-State-Flac/10 Far Fowls.flac"
+Jan 23 15:56 : player: played "nujabes/Spiritual-State-Flac/11 Fellows.flac"
+Jan 23 16:00 : player: played "nujabes/Spiritual-State-Flac/12 Waiting for the Clouds (feat. Substantial).flac"
+Jan 23 16:29 : player: played "nujabes/Spiritual-State-Flac/13 Prayer.flac"
+Jan 23 16:34 : player: played "nujabes/Spiritual-State-Flac/14 Island (feat. Uyama Hiroto & Haruka Nakamura).flac"
+Jan 23 16:40 : player: played "nujabes/Spiritual-State-Flac/15 Spiritual State (Tribe Special Edition Mix).flac"
+Jan 23 18:19 : player: played "nujabes/Spiritual-State-Flac/01 Spiritual State (feat. Uyama Hiroto).flac"
+Jan 23 18:24 : player: played "nujabes/Spiritual-State-Flac/02 Sky Is Tumbling (feat. Cise Starr).flac"
+Jan 23 18:30 : player: played "nujabes/Spiritual-State-Flac/03 Gone Are the Days (feat. Uyama Hiroto).flac"
+Jan 23 18:34 : player: played "nujabes/Spiritual-State-Flac/04 Spiral.flac"
+Jan 23 18:37 : player: played "nujabes/Spiritual-State-Flac/05 City Lights (feat. Pase Rock & Substantial).flac"
+Jan 23 18:39 : player: played "nujabes/Spiritual-State-Flac/06 Color of Autumn.flac"
+Jan 23 18:44 : player: played "nujabes/Spiritual-State-Flac/07 Dawn on the Side.flac"
+Jan 23 18:52 : player: played "nujabes/Spiritual-State-Flac/08 Yes (feat. Pase Rock).flac"
+Jan 23 18:54 : player: played "nujabes/Spiritual-State-Flac/09 Rainyway Back Home.flac"
+Jan 23 18:59 : player: played "nujabes/Spiritual-State-Flac/10 Far Fowls.flac"
+Jan 23 19:01 : player: played "nujabes/Spiritual-State-Flac/11 Fellows.flac"
+Jan 23 19:05 : player: played "nujabes/Spiritual-State-Flac/12 Waiting for the Clouds (feat. Substantial).flac"
+Jan 23 19:08 : player: played "nujabes/Spiritual-State-Flac/13 Prayer.flac"
+Jan 23 19:20 : player: played "nujabes/Spiritual-State-Flac/14 Island (feat. Uyama Hiroto & Haruka Nakamura).flac"
+Jan 24 17:25 : player: played "Orbit/Perspectives/Call Me at Midnight.mp3"
+Jan 24 17:27 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Jan 24 17:31 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Jan 24 17:33 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Jan 24 17:36 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Jan 24 17:38 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Jan 24 17:40 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Jan 24 17:45 : player: played "Orbit/Demos/orbit - Hands (Burning Man Diary).mp3"
+Jan 24 17:48 : player: played "Orbit/Sunday by the River/21.mp3"
+Jan 24 17:51 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Jan 24 17:57 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream diary).mp3"
+Jan 24 18:00 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Jan 24 18:07 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Jan 24 18:12 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Jan 24 18:17 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Jan 24 18:18 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Jan 24 18:21 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 24 18:23 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Jan 24 18:27 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Jan 24 18:30 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Jan 24 18:32 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Jan 24 18:36 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Jan 24 18:40 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Jan 24 18:43 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Jan 24 18:46 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Jan 24 19:27 : player: played "Orbit/Demos/​so far away.mp3"
+Jan 24 19:30 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Jan 24 19:32 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Jan 24 19:36 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Jan 24 19:39 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Jan 24 19:42 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Jan 24 19:43 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Jan 24 19:44 : player: played "Orbit/Summer Someday/Summer Someday.mp3"
+Jan 24 19:46 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Jan 24 19:48 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Jan 24 19:52 : player: played "Orbit/Sunday by the River/orbit - Missing the Moon (Lyric Video).mp3"
+Jan 24 19:56 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Jan 25 11:48 : player: played "Orbit/Young Blood (cover).mp3"
+Jan 25 11:53 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Jan 25 11:55 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Jan 25 11:58 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Jan 25 12:00 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Jan 25 12:02 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Jan 25 12:08 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Jan 25 12:15 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Jan 25 12:18 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Jan 25 12:20 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Jan 25 12:23 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Jan 25 12:25 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Jan 27 11:40 : player: played "Naked and Famous/The Naked And Famous - Young Blood.mp3"
+Jan 27 11:45 : player: played "Satellite Lovers/Sons of 1973 (1996)/01 - Best Friend.flac"
+Jan 27 11:49 : player: played "Satellite Lovers/Sons of 1973 (1996)/02 - 夏の続き.flac"
+Jan 27 11:59 : player: played "Satellite Lovers/Sons of 1973 (1996)/03 - How Much I Love You, Baby.flac"
+Jan 27 12:07 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jan 27 12:07 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jan 27 12:07 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 2/02. Joji - BLAHBLAHBLAH DEMO (Explicit).flac
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 2/04. Joji - 1AM FREESTYLE (Explicit).flac
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 2/01. Joji - NIGHT RIDER (Explicit).flac
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 2/03. Joji - YUKON (INTERLUDE) (Explicit).flac
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 1/03. Joji - Die For You (Explicit).flac
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 1/01. Joji - Glimpse of Us (Explicit).flac
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 1/04. Joji - Before The Day Is Over (Explicit).flac
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 1/05. Joji - Dissolve (Explicit).flac
+Jan 27 12:07 : update: added Joji/Smithereens/Disc 1/02. Joji - Feeling Like The End (Explicit).flac
+Jan 27 12:07 : update: added Joji/Nectar/16 Reanimator.flac
+Jan 27 12:07 : update: added Joji/Nectar/05 Upgrade.flac
+Jan 27 12:07 : update: added Joji/Nectar/07 Run.flac
+Jan 27 12:07 : update: added Joji/Nectar/11 Pretty Boy.flac
+Jan 27 12:07 : update: added Joji/Nectar/10 Nitrous.flac
+Jan 27 12:07 : update: added Joji/Nectar/03 Tick Tock.flac
+Jan 27 12:07 : update: added Joji/Nectar/06 Gimme Love.flac
+Jan 27 12:07 : update: added Joji/Nectar/13 Afterthought.flac
+Jan 27 12:07 : update: added Joji/Nectar/14 Mr. Hollywood.flac
+Jan 27 12:07 : update: added Joji/Nectar/04 Daylight.flac
+Jan 27 12:07 : update: added Joji/Nectar/18 Your Man.flac
+Jan 27 12:07 : update: added Joji/Nectar/15 777.flac
+Jan 27 12:07 : update: added Joji/Nectar/09 High Hopes.flac
+Jan 27 12:07 : update: added Joji/Nectar/12 Normal People.flac
+Jan 27 12:07 : update: added Joji/Nectar/01 Ew.flac
+Jan 27 12:07 : update: added Joji/Nectar/08 Sanctuary.flac
+Jan 27 12:07 : update: added Joji/Nectar/17 Like You Do.flac
+Jan 27 12:07 : update: added Joji/Nectar/02 MODUS.flac
+Jan 27 12:07 : update: added Joji/In Tongues EP/04 Window.flac
+Jan 27 12:07 : update: added Joji/In Tongues EP/06 Worldstar Money (Interlude).flac
+Jan 27 12:07 : update: added Joji/In Tongues EP/03 Demons.flac
+Jan 27 12:07 : update: added Joji/In Tongues EP/01 Will He.flac
+Jan 27 12:07 : update: added Joji/In Tongues EP/02 Pills.flac
+Jan 27 12:07 : update: added Joji/In Tongues EP/05 Bitter Fuck.flac
+Jan 27 12:07 : update: added Joji/Ballads/01 Attention.flac
+Jan 27 12:07 : update: added Joji/Ballads/03 Test Drive.flac
+Jan 27 12:07 : update: added Joji/Ballads/11 XNXX.flac
+Jan 27 12:07 : update: added Joji/Ballads/08 No Fun.flac
+Jan 27 12:07 : update: added Joji/Ballads/05 Can't Get Over You.flac
+Jan 27 12:07 : update: added Joji/Ballads/02 Slow Dancing in the Dark.flac
+Jan 27 12:07 : update: added Joji/Ballads/07 Why Am I Still in LA.flac
+Jan 27 12:07 : update: added Joji/Ballads/09 Come Thru.flac
+Jan 27 12:07 : update: added Joji/Ballads/10 R.I.P.flac
+Jan 27 12:07 : update: added Joji/Ballads/04 Wanted U.flac
+Jan 27 12:07 : update: added Joji/Ballads/12 I'll See You in 40.flac
+Jan 27 12:07 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Jan 27 12:07 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Jan 27 12:07 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Jan 27 12:07 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Jan 27 12:07 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Jan 27 12:07 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Jan 27 12:10 : player: played "Joji/In Tongues EP/01 Will He.flac"
+Jan 27 12:13 : player: played "Joji/In Tongues EP/02 Pills.flac"
+Jan 27 12:16 : player: played "Joji/In Tongues EP/03 Demons.flac"
+Jan 27 12:19 : player: played "Joji/In Tongues EP/04 Window.flac"
+Jan 27 12:21 : player: played "Joji/In Tongues EP/05 Bitter Fuck.flac"
+Jan 27 12:23 : player: played "Joji/In Tongues EP/06 Worldstar Money (Interlude).flac"
+Jan 27 12:50 : player: played "Joji/Ballads/01 Attention.flac"
+Jan 27 13:01 : player: played "Joji/Ballads/03 Test Drive.flac"
+Jan 27 13:05 : player: played "Joji/Ballads/04 Wanted U.flac"
+Jan 27 13:06 : player: played "Joji/Ballads/05 Can't Get Over You.flac"
+Jan 27 13:10 : player: played "Joji/Ballads/07 Why Am I Still in LA.flac"
+Jan 27 13:12 : player: played "Joji/Ballads/08 No Fun.flac"
+Jan 27 13:15 : player: played "Joji/Ballads/09 Come Thru.flac"
+Jan 27 13:17 : player: played "Joji/Ballads/10 R.I.P.flac"
+Jan 27 13:19 : player: played "Joji/Ballads/11 XNXX.flac"
+Jan 27 13:24 : player: played "Joji/Ballads/12 I'll See You in 40.flac"
+Jan 27 13:29 : player: played "Joji/Smithereens/Disc 1/01. Joji - Glimpse of Us (Explicit).flac"
+Jan 27 13:30 : player: played "Joji/Smithereens/Disc 1/02. Joji - Feeling Like The End (Explicit).flac"
+Jan 27 13:34 : player: played "Joji/Smithereens/Disc 1/03. Joji - Die For You (Explicit).flac"
+Jan 27 13:37 : player: played "Joji/Smithereens/Disc 1/04. Joji - Before The Day Is Over (Explicit).flac"
+Jan 27 13:40 : player: played "Joji/Smithereens/Disc 1/05. Joji - Dissolve (Explicit).flac"
+Jan 27 13:42 : player: played "Joji/Smithereens/Disc 2/01. Joji - NIGHT RIDER (Explicit).flac"
+Jan 27 13:44 : player: played "Joji/Smithereens/Disc 2/02. Joji - BLAHBLAHBLAH DEMO (Explicit).flac"
+Jan 27 13:47 : player: played "Joji/Smithereens/Disc 2/03. Joji - YUKON (INTERLUDE) (Explicit).flac"
+Jan 27 13:48 : player: played "Joji/Smithereens/Disc 2/04. Joji - 1AM FREESTYLE (Explicit).flac"
+Jan 27 17:15 : player: played "Joji/Ballads/01 Attention.flac"
+Jan 27 17:18 : player: played "Joji/Ballads/03 Test Drive.flac"
+Jan 27 17:20 : player: played "Joji/Nectar/03 Tick Tock.flac"
+Jan 27 17:23 : player: played "Joji/Ballads/08 No Fun.flac"
+Jan 27 17:26 : player: played "Joji/Nectar/16 Reanimator.flac"
+Jan 27 17:36 : player: played "Joji/Nectar/02 MODUS.flac"
+Jan 27 17:40 : player: played "Joji/Nectar/13 Afterthought.flac"
+Jan 27 17:42 : player: played "Joji/In Tongues EP/03 Demons.flac"
+Jan 27 17:45 : player: played "Joji/Ballads/10 R.I.P.flac"
+Jan 27 17:49 : player: played "Joji/Smithereens/Disc 1/01. Joji - Glimpse of Us (Explicit).flac"
+Jan 27 17:51 : player: played "Joji/Ballads/09 Come Thru.flac"
+Jan 27 17:53 : player: played "Joji/Smithereens/Disc 1/02. Joji - Feeling Like The End (Explicit).flac"
+Jan 27 17:56 : player: played "Joji/Nectar/14 Mr. Hollywood.flac"
+Jan 27 18:00 : player: played "Joji/Smithereens/Disc 1/03. Joji - Die For You (Explicit).flac"
+Jan 27 18:02 : player: played "Joji/In Tongues EP/06 Worldstar Money (Interlude).flac"
+Jan 27 18:04 : player: played "Joji/Smithereens/Disc 2/01. Joji - NIGHT RIDER (Explicit).flac"
+Jan 27 18:06 : player: played "Joji/Nectar/10 Nitrous.flac"
+Jan 27 18:09 : player: played "Joji/Nectar/15 777.flac"
+Jan 27 18:12 : player: played "Joji/In Tongues EP/04 Window.flac"
+Jan 28 10:10 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 28 10:10 : config: option 'auto_resample' on line 26 was not recognized
+Jan 28 10:10 : config: option 'use_mmap' on line 27 was not recognized
+Jan 28 15:52 : player: played "Joji/Ballads/12 I'll See You in 40.flac"
+Jan 28 15:54 : player: played "Joji/Ballads/11 XNXX.flac"
+Jan 28 15:57 : player: played "Joji/Nectar/18 Your Man.flac"
+Jan 28 15:59 : player: played "Joji/Ballads/05 Can't Get Over You.flac"
+Jan 28 16:02 : player: played "Joji/Smithereens/Disc 1/05. Joji - Dissolve (Explicit).flac"
+Jan 28 16:04 : player: played "Joji/In Tongues EP/05 Bitter Fuck.flac"
+Jan 28 16:08 : player: played "Joji/Ballads/02 Slow Dancing in the Dark.flac"
+Jan 28 16:09 : player: played "Joji/Joji - Feeling Like The End [-1mgA2wKQF8].wav"
+Jan 28 16:13 : player: played "Joji/Nectar/01 Ew.flac"
+Jan 28 18:57 : player: played "Miri/Casa II.mp3"
+Feb 03 13:40 : player: played "Joji/Smithereens/Disc 2/04. Joji - 1AM FREESTYLE (Explicit).flac"
+Feb 03 13:43 : player: played "Joji/Nectar/08 Sanctuary.flac"
+Feb 03 13:47 : player: played "Joji/Ballads/04 Wanted U.flac"
+Feb 03 13:49 : player: played "Joji/Nectar/05 Upgrade.flac"
+Feb 03 13:51 : player: played "Joji/Nectar/11 Pretty Boy.flac"
+Feb 03 13:55 : player: played "Joji/Ballads/07 Why Am I Still in LA.flac"
+Feb 03 14:59 : player: played "Joji/Smithereens/Disc 2/02. Joji - BLAHBLAHBLAH DEMO (Explicit).flac"
+Feb 03 15:01 : player: played "Joji/Smithereens/Disc 2/03. Joji - YUKON (INTERLUDE) (Explicit).flac"
+Feb 03 15:04 : player: played "Joji/Smithereens/Disc 1/05. Joji - Dissolve (Explicit).flac"
+Feb 03 15:07 : player: played "Joji/Smithereens/Disc 1/04. Joji - Before The Day Is Over (Explicit).flac"
+Feb 03 15:10 : player: played "Joji/Smithereens/Disc 2/02. Joji - BLAHBLAHBLAH DEMO (Explicit).flac"
+Feb 03 15:13 : player: played "Joji/Smithereens/Disc 1/03. Joji - Die For You (Explicit).flac"
+Feb 03 15:15 : player: played "Joji/Smithereens/Disc 2/04. Joji - 1AM FREESTYLE (Explicit).flac"
+Feb 03 15:17 : player: played "Joji/Smithereens/Disc 2/01. Joji - NIGHT RIDER (Explicit).flac"
+Feb 03 15:19 : player: played "Joji/Smithereens/Disc 1/02. Joji - Feeling Like The End (Explicit).flac"
+Feb 03 15:23 : player: played "Joji/Nectar/01 Ew.flac"
+Feb 03 15:26 : player: played "Joji/Nectar/08 Sanctuary.flac"
+Feb 03 15:29 : player: played "Joji/Nectar/13 Afterthought.flac"
+Feb 03 15:32 : player: played "Joji/Nectar/09 High Hopes.flac"
+Feb 03 15:37 : player: played "Joji/Nectar/11 Pretty Boy.flac"
+Feb 03 15:39 : player: played "Joji/Nectar/04 Daylight.flac"
+Feb 03 15:41 : player: played "Joji/Nectar/03 Tick Tock.flac"
+Feb 03 15:44 : player: played "Joji/Nectar/10 Nitrous.flac"
+Feb 03 15:47 : player: played "Joji/Nectar/14 Mr. Hollywood.flac"
+Feb 03 15:51 : player: played "Joji/Nectar/17 Like You Do.flac"
+Feb 03 15:52 : player: played "Joji/Nectar/05 Upgrade.flac"
+Feb 03 15:55 : player: played "Joji/Nectar/18 Your Man.flac"
+Feb 03 16:53 : player: played "Joji/Nectar/12 Normal People.flac"
+Feb 03 16:56 : player: played "Joji/Nectar/02 MODUS.flac"
+Feb 03 16:59 : player: played "Joji/Nectar/06 Gimme Love.flac"
+Feb 03 17:03 : player: played "Joji/Nectar/16 Reanimator.flac"
+Feb 03 17:07 : player: played "Joji/In Tongues EP/01 Will He.flac"
+Feb 03 17:09 : player: played "Joji/In Tongues EP/04 Window.flac"
+Feb 03 17:14 : player: played "Joji/In Tongues EP/05 Bitter Fuck.flac"
+Feb 03 17:17 : player: played "Joji/In Tongues EP/02 Pills.flac"
+Feb 03 17:19 : player: played "Joji/In Tongues EP/06 Worldstar Money (Interlude).flac"
+Feb 03 17:22 : player: played "Joji/In Tongues EP/03 Demons.flac"
+Feb 04 11:42 : player: played "Joji/Smithereens/Disc 1/04. Joji - Before The Day Is Over (Explicit).flac"
+Feb 04 11:44 : player: played "Joji/Smithereens/Disc 2/03. Joji - YUKON (INTERLUDE) (Explicit).flac"
+Feb 04 11:47 : player: played "Joji/Smithereens/Disc 1/05. Joji - Dissolve (Explicit).flac"
+Feb 04 11:51 : player: played "Joji/Smithereens/Disc 1/03. Joji - Die For You (Explicit).flac"
+Feb 04 11:53 : player: played "Joji/Smithereens/Disc 2/02. Joji - BLAHBLAHBLAH DEMO (Explicit).flac"
+Feb 04 11:55 : player: played "Joji/Smithereens/Disc 1/02. Joji - Feeling Like The End (Explicit).flac"
+Feb 04 11:57 : player: played "Joji/Smithereens/Disc 2/01. Joji - NIGHT RIDER (Explicit).flac"
+Feb 04 11:59 : player: played "Joji/Smithereens/Disc 2/04. Joji - 1AM FREESTYLE (Explicit).flac"
+Feb 04 12:14 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Feb 04 12:14 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Feb 04 12:14 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Feb 04 12:18 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Feb 04 12:22 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/08 パラダイス.mp3"
+Feb 04 12:25 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/03 Smilin' Days, Summer Holiday.mp3"
+Feb 04 12:29 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Feb 04 12:33 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/06 Just Thing.mp3"
+Feb 04 12:36 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/07 太平洋.mp3"
+Feb 04 12:39 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/10 1, 2, 3, 4,.mp3"
+Feb 04 12:43 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Feb 04 12:48 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Feb 04 13:06 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/09 うまく歩けないよ.mp3"
+Feb 04 13:12 : player: played "Satellite Lovers/Sons of 1973 (1996)/01 - Best Friend.flac"
+Feb 04 15:40 : player: played "Naked and Famous/The Naked And Famous - Young Blood.mp3"
+Feb 04 15:44 : player: played "Orbit/Young Blood (cover).mp3"
+Feb 04 15:47 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Feb 04 15:50 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Feb 04 15:52 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Feb 04 15:55 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Feb 04 15:59 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Feb 04 16:03 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Feb 04 16:05 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Feb 04 16:09 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+Feb 04 16:12 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Feb 04 16:16 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Feb 04 16:21 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Feb 04 16:23 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Feb 04 16:26 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Feb 04 16:28 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Feb 04 16:32 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Feb 06 07:56 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 06 07:56 : config: option 'auto_resample' on line 26 was not recognized
+Feb 06 07:56 : config: option 'use_mmap' on line 27 was not recognized
+Feb 06 11:13 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Feb 06 11:16 : player: played "Joji/Ballads/01 Attention.flac"
+Feb 06 11:18 : player: played "Joji/Nectar/12 Normal People.flac"
+Feb 06 11:22 : player: played "Joji/Ballads/07 Why Am I Still in LA.flac"
+Feb 06 11:26 : player: played "Joji/Ballads/12 I'll See You in 40.flac"
+Feb 06 11:28 : player: played "Joji/Nectar/03 Tick Tock.flac"
+Feb 06 11:30 : player: played "Joji/Nectar/10 Nitrous.flac"
+Feb 06 11:33 : player: played "Joji/In Tongues EP/04 Window.flac"
+Feb 06 11:36 : player: played "Joji/In Tongues EP/02 Pills.flac"
+Feb 06 11:40 : player: played "Joji/Ballads/08 No Fun.flac"
+Feb 06 11:42 : player: played "Joji/Nectar/04 Daylight.flac"
+Feb 06 11:45 : player: played "Joji/Nectar/08 Sanctuary.flac"
+Feb 07 09:27 : player: played "Joji/Ballads/09 Come Thru.flac"
+Feb 07 09:31 : player: played "Joji/Smithereens/Disc 1/01. Joji - Glimpse of Us (Explicit).flac"
+Feb 07 09:35 : player: played "Joji/Smithereens/Disc 1/04. Joji - Before The Day Is Over (Explicit).flac"
+Feb 07 09:38 : player: played "Joji/Nectar/06 Gimme Love.flac"
+Feb 07 09:40 : player: played "Joji/Nectar/05 Upgrade.flac"
+Feb 07 09:42 : player: played "Joji/Smithereens/Disc 2/04. Joji - 1AM FREESTYLE (Explicit).flac"
+Feb 07 09:44 : player: played "Joji/Smithereens/Disc 2/03. Joji - YUKON (INTERLUDE) (Explicit).flac"
+Feb 07 10:39 : player: played "Joji/In Tongues EP/03 Demons.flac"
+Feb 07 10:41 : player: played "Joji/Ballads/11 XNXX.flac"
+Feb 07 10:44 : player: played "Joji/Nectar/16 Reanimator.flac"
+Feb 08 18:10 : player: played "Joji/Ballads/04 Wanted U.flac"
+Feb 09 13:34 : player: played "Orbit/Young Blood (cover).mp3"
+Feb 09 14:23 : player: played "Orbit/Young Blood (cover).mp3"
+Feb 09 14:26 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Feb 09 14:29 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Feb 09 14:31 : player: played "Orbit/Perspectives/Call Me at Midnight.mp3"
+Feb 09 14:35 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Feb 09 14:36 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Feb 09 14:41 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Feb 09 14:42 : player: played "Orbit/Summer Someday/Summer Someday.mp3"
+Feb 09 14:44 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Feb 09 14:47 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Feb 09 14:50 : player: played "Orbit/Young Blood (cover).mp3"
+Feb 09 14:54 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Feb 09 14:57 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Feb 09 15:00 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Feb 09 15:04 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Feb 09 15:07 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Feb 09 15:12 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Feb 09 15:14 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Feb 09 15:19 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Feb 09 15:21 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Feb 09 15:23 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Feb 09 15:30 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream diary).mp3"
+Feb 09 15:37 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Feb 09 15:39 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Feb 09 15:52 : player: played "Orbit/Sunday by the River/21.mp3"
+Feb 10 10:02 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Feb 10 10:04 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Feb 10 10:07 : player: played "Orbit/Sunday by the River/orbit - Missing the Moon (Lyric Video).mp3"
+Feb 10 10:11 : player: played "Orbit/Demos/​so far away.mp3"
+Feb 10 10:13 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Feb 10 10:17 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Feb 10 10:19 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Feb 10 10:21 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Feb 10 10:22 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Feb 10 10:26 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Feb 10 10:29 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+Feb 10 10:33 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Feb 10 10:35 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Feb 10 10:40 : player: played "Orbit/Demos/orbit - Hands (Burning Man Diary).mp3"
+Feb 10 10:42 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Feb 10 10:45 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 10 10:45 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 10 10:45 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Feb 10 10:45 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 10 10:45 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 10 10:45 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Feb 10 10:45 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Feb 10 10:45 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Feb 10 10:45 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Feb 10 10:59 : player: played "toe/11. Toe - Good Bye ⧸⧸ New Sentimentality.mp3"
+Feb 10 11:01 : player: played "The Blaze/The Blaze x Endel - JUNGLE (Sleep Soundscape).mp3"
+Feb 10 11:05 : player: played "Rei Brown/raybaboon/rei brown - raybaboon - 01 Everything Falls Apart.flac"
+Feb 12 13:28 : player: played "Rei Brown/raybaboon/rei brown - raybaboon - 02 The Wind.flac"
+Feb 12 13:28 : player: played "Paulinho-Nogueira/O Fino do Violão (1965) [wzzLTExE38Q].mp3"
+Feb 12 14:09 : player: played "Paulinho-Nogueira/O Fino Do Violão Vol. 2 [-h2l2ct1VK0].mp3"
+Feb 12 16:51 : player: played "Orbit/Young Blood (cover).mp3"
+Feb 12 16:52 : player: played "Orbit/Demos/Heaven_sketch_050623.mp3"
+Feb 12 16:56 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Feb 12 16:59 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+Feb 12 17:02 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Feb 12 17:05 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Feb 12 17:06 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Feb 12 17:09 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Feb 12 17:14 : player: played "Orbit/Demos/orbit - Hands (Burning Man Diary).mp3"
+Feb 12 17:17 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Feb 12 17:20 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Feb 12 17:24 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Feb 13 13:12 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Feb 13 13:13 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Feb 13 13:16 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Feb 14 13:44 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Feb 14 13:46 : player: played "Berlioz/Jazz is for ordinary People/berlioz - jazz is for ordinary people.mp3"
+Feb 14 13:50 : player: played "Berlioz/Jazz is for ordinary People/berlioz - wash my sins away.mp3"
+Feb 14 13:53 : player: played "Berlioz/Jazz is for ordinary People/hot house.mp3"
+Feb 14 13:57 : player: played "Berlioz/Jazz is for ordinary People/berlioz - jazz is for ordinary people.mp3"
+Feb 14 14:00 : player: played "Berlioz/Jazz is for ordinary People/hot house.mp3"
+Feb 14 14:03 : player: played "Berlioz/Jazz is for ordinary People/r & r.mp3"
+Feb 14 14:06 : player: played "Berlioz/Jazz is for ordinary People/berlioz - deep in it.mp3"
+Feb 14 14:09 : player: played "Berlioz/Jazz is for ordinary People/r & r.mp3"
+Feb 14 14:12 : player: played "Berlioz/Jazz is for ordinary People/berlioz - deep in it.mp3"
+Feb 14 14:16 : player: played "Berlioz/Jazz is for ordinary People/berlioz - wash my sins away.mp3"
+Feb 14 14:18 : player: played "Berlioz/Jazz is for ordinary People/berlioz - deep in it.mp3"
+Feb 15 11:10 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Feb 15 11:12 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Feb 15 11:16 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Feb 15 11:18 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Feb 15 11:21 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Feb 15 11:22 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Feb 15 11:25 : player: played "Orbit/Sunday by the River/21.mp3"
+Feb 15 11:30 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Feb 15 11:34 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Feb 15 11:41 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream diary).mp3"
+Feb 15 11:45 : player: played "Orbit/Demos/orbit - Hands (Burning Man Diary).mp3"
+Feb 15 11:48 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Feb 15 11:51 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Feb 15 11:53 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Feb 15 11:55 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Feb 15 11:57 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Feb 15 12:00 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Feb 15 12:01 : player: played "Orbit/Summer Someday/Summer Someday.mp3"
+Feb 15 12:05 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Feb 15 12:08 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Feb 15 12:10 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Feb 15 12:17 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Feb 15 12:20 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Feb 15 12:22 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Feb 15 12:26 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Feb 15 12:29 : player: played "Orbit/Perspectives/Call Me at Midnight.mp3"
+Feb 15 12:30 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Feb 15 12:35 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Feb 15 12:37 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Feb 15 12:41 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Feb 15 12:46 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Feb 15 12:47 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Feb 15 12:58 : player: played "Orbit/Demos/​so far away.mp3"
+Feb 15 15:10 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 15 15:29 : player: played "mixes/get me home.m4a"
+Feb 15 15:33 : player: played "Orbit/Sunday by the River/orbit - Missing the Moon (Lyric Video).mp3"
+Feb 15 15:36 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+Feb 15 15:38 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Feb 15 16:27 : player: played "Orbit/Young Blood (cover).mp3"
+Feb 17 19:49 : player: played "mixes/TAKUYA NAKAMURA @TheLotRadio 11-13-2023.mp3"
+Feb 19 10:12 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 19 10:12 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 19 10:12 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Feb 19 10:12 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Feb 19 10:12 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Feb 19 10:12 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Feb 19 10:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Feb 19 10:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Feb 19 10:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Feb 19 10:21 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/01 - Part 1.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Feb 19 10:26 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/02 - Part 2.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Feb 19 10:37 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/03 - Part 3.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Feb 19 10:42 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/04 - Part 4.mp3"
+Feb 19 10:52 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/05 - Part 5.mp3"
+Feb 19 18:18 : player: played "Naked and Famous/The Naked And Famous - Young Blood.mp3"
+Feb 19 18:21 : player: played "Orbit/Young Blood (cover).mp3"
+Feb 19 18:28 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream diary).mp3"
+Feb 19 18:33 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Feb 19 18:37 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Feb 19 18:41 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"

@@ -8,8 +8,8 @@
  (last-modified 26107 10632 486647 0))
 ("org-capture-last-stored"
  (filename
-  . "~/Personal/Dropbox/Bak/Org/roam/20241228153507-wavenet_model.org")
- (front-context-string . "* Main\n\n\n* Refer")
- (rear-context-string . "Learning:Model:\n") (position . 138)
- (last-modified 26480 24830 207478 0))
+  . "~/Personal/Dropbox/Bak/Org/roam/20250219211509-image_steganalysis_of_low_embedding_rate_based_on_the_attention_mechanism_and_transfer_learning.org")
+ (front-context-string . "* Abstract\n\n\n* R")
+ (rear-context-string . "search:Article:\n") (position . 204)
+ (last-modified 26550 18920 805927 0))
 )
