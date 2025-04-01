@@ -7195,3 +7195,1626 @@ Feb 19 18:28 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream di
 Feb 19 18:33 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
 Feb 19 18:37 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
 Feb 19 18:41 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Feb 20 12:10 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Feb 20 12:19 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/01 - Part 1.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Feb 20 12:25 : player: played "Fishmans/Studio Albums/[1996-3] Long Season/02 - Part 2.mp3"
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+[src/libmpg123/id3.c:process_comment():587] error: No comment text / valid description?
+Feb 21 09:45 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/01 - Oh Slime.flac"
+Feb 21 09:52 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/02 - ナイトクルージング.flac"
+Feb 21 09:58 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/03 - なんてったの.flac"
+Feb 21 10:01 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/04 - Thank You.flac"
+Feb 21 10:05 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/05 - 幸せ者.flac"
+Feb 21 10:10 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/06 - 頼りない天使.flac"
+Feb 21 10:19 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/07 - ひこうき.flac"
+Feb 21 15:54 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/08 - In The Flight.flac"
+Feb 21 16:02 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/09 - Walking in the Rhythm.flac"
+Feb 21 16:07 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/10 - Smilin' Days, Summer Holiday.flac"
+Feb 21 16:12 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/11 - Melody.flac"
+Feb 21 16:28 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/12 - ゆらめき In The Air.flac"
+Feb 21 16:34 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/13 - いかれたBaby.flac"
+Feb 21 17:21 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/14 - Long Season.flac"
+Feb 21 17:21 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 21 17:40 : player: played "mixes/get me home.m4a"
+Feb 23 12:29 : player: played "Orbit/Young Blood (cover).mp3"
+Feb 23 12:30 : player: played "Orbit/Demos/Heaven_sketch_050623.mp3"
+Feb 23 12:34 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Feb 23 12:36 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Feb 23 12:41 : player: played "Orbit/Demos/orbit - Hands (Burning Man Diary).mp3"
+Feb 24 07:40 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Feb 24 07:41 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Feb 24 07:45 : player: played "Orbit/Demos/​so far away.mp3"
+Feb 24 07:49 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Feb 24 07:50 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Feb 24 07:52 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Feb 24 07:57 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Feb 24 07:59 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Feb 24 08:01 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Feb 24 08:03 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Feb 24 08:06 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Feb 24 17:19 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Feb 24 17:27 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/01 - Oh Slime.flac"
+Feb 24 17:33 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/02 - ナイトクルージング.flac"
+Feb 24 17:40 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/03 - なんてったの.flac"
+Feb 24 17:43 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/04 - Thank You.flac"
+Feb 24 17:47 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/05 - 幸せ者.flac"
+Feb 24 17:52 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/06 - 頼りない天使.flac"
+Feb 24 18:01 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/07 - ひこうき.flac"
+Feb 24 18:08 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/08 - In The Flight.flac"
+Feb 25 10:21 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/09 - Walking in the Rhythm.flac"
+Feb 25 10:21 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Feb 25 10:24 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-01 ずっと前.mp3"
+Feb 25 10:24 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 14814275.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Feb 25 10:27 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-02 Baby Blue.mp3"
+Feb 25 10:27 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Feb 25 10:30 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-03 Slow Days.mp3"
+Feb 25 10:30 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Feb 25 10:33 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-04 Sunny Blue.mp3"
+Feb 25 10:33 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Feb 25 10:33 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-01 ずっと前.mp3"
+Feb 25 10:33 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 25 10:33 : config: option 'auto_resample' on line 26 was not recognized
+Feb 25 10:33 : config: option 'use_mmap' on line 27 was not recognized
+Feb 25 11:16 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-01 ずっと前.mp3"
+Feb 25 11:17 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Feb 25 11:17 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 25 11:17 : config: option 'auto_resample' on line 26 was not recognized
+Feb 25 11:17 : config: option 'use_mmap' on line 27 was not recognized
+Feb 25 11:35 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Feb 25 11:37 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Feb 25 11:42 : player: played "Orbit/Demos/orbit - Hands (Burning Man Diary).mp3"
+Feb 25 15:34 : player: played "Orbit/Demos/​so far away.mp3"
+Feb 25 15:38 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Feb 25 15:39 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Feb 25 15:41 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Feb 25 15:46 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Feb 25 15:48 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Feb 25 17:08 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Feb 25 17:11 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Feb 25 17:13 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Feb 25 17:20 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Feb 25 17:23 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Feb 25 17:25 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Feb 28 11:56 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Feb 28 11:56 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 11:56 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Feb 28 11:57 : player: played "mixes/get me home.m4a"
+Feb 28 11:57 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 28 11:57 : config: option 'auto_resample' on line 26 was not recognized
+Feb 28 11:57 : config: option 'use_mmap' on line 27 was not recognized
+Feb 28 11:57 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 11:57 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 11:57 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 11:57 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 11:57 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 11:57 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 11:57 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 11:57 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Feb 28 14:10 : player: played "mixes/get me home.m4a"
+Feb 28 14:11 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Feb 28 14:11 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Feb 28 14:11 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 28 14:11 : config: option 'auto_resample' on line 26 was not recognized
+Feb 28 14:11 : config: option 'use_mmap' on line 27 was not recognized
+Feb 28 14:11 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Feb 28 14:11 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Feb 28 14:11 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 28 14:11 : config: option 'auto_resample' on line 26 was not recognized
+Feb 28 14:11 : config: option 'use_mmap' on line 27 was not recognized
+Mar 01 14:17 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Mar 01 14:17 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 01 14:17 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 01 14:17 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 01 14:17 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 01 14:17 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Mar 01 14:17 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 01 14:17 : config: option 'auto_resample' on line 26 was not recognized
+Mar 01 14:17 : config: option 'use_mmap' on line 27 was not recognized
+Mar 01 14:22 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Mar 01 14:25 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/05 The Gloaming.flac"
+Mar 01 14:29 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/06 Myxomatosis.flac"
+Mar 01 14:34 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/07 House of Cards.flac"
+Mar 01 14:42 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/09 Optimistic.flac"
+Mar 01 15:00 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/13 All I Need.flac"
+Mar 01 15:03 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/14 Go Slowly.flac"
+Mar 01 15:09 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/01 Weird Fishes-Arpeggi.flac"
+Mar 01 15:13 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/02 15 Step.flac"
+Mar 01 15:17 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/03 Bodysnatchers.flac"
+Mar 01 15:22 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Mar 03 15:06 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/05 The Gloaming.flac"
+Mar 03 15:16 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-01 ずっと前.mp3"
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 14814275.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 03 15:37 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-02 Baby Blue.mp3"
+Mar 03 15:42 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-03 Slow Days.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 14254212.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 03 15:48 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-04 Sunny Blue.mp3"
+Mar 03 15:54 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-05 ナイトクルージング.mp3"
+Mar 03 15:58 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-06 幸せ者.mp3"
+Mar 03 16:05 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-07 すばらしくて Nice Choice.mp3"
+Mar 03 16:12 : player: played "Fishmans/Studio Albums/[1996-1] 空中キャンプ (Kūchū Camp)/1-08 新しい人.mp3"
+Mar 03 16:29 : exception: No such directory
+Mar 03 16:37 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/01 - Oh Slime.flac"
+Mar 03 16:44 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/02 - ナイトクルージング.flac"
+Mar 03 16:50 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/03 - なんてったの.flac"
+Mar 03 16:53 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/04 - Thank You.flac"
+Mar 03 16:57 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/05 - 幸せ者.flac"
+Mar 03 17:02 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/06 - 頼りない天使.flac"
+Mar 03 17:11 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/07 - ひこうき.flac"
+Mar 03 17:24 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/08 - In The Flight.flac"
+Mar 03 18:06 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/09 - Walking in the Rhythm.flac"
+Mar 03 18:21 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/10 - Smilin' Days, Summer Holiday.flac"
+Mar 03 18:27 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/11 - Melody.flac"
+Mar 04 19:38 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/12 - ゆらめき In The Air.flac"
+Assertion failed: (nbytes % output->out_audio_format.GetFrameSize() == 0), function PlayChunk, file Thread.cxx, line 282.
+Mar 04 19:38 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 04 19:38 : config: option 'auto_resample' on line 26 was not recognized
+Mar 04 19:38 : config: option 'use_mmap' on line 27 was not recognized
+Mar 04 19:38 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/12 - ゆらめき In The Air.flac"
+Assertion failed: (nbytes % output->out_audio_format.GetFrameSize() == 0), function PlayChunk, file Thread.cxx, line 282.
+Mar 04 19:38 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 04 19:38 : config: option 'auto_resample' on line 26 was not recognized
+Mar 04 19:38 : config: option 'use_mmap' on line 27 was not recognized
+Mar 04 19:38 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/12 - ゆらめき In The Air.flac"
+Mar 04 19:38 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 04 19:38 : config: option 'auto_resample' on line 26 was not recognized
+Mar 04 19:38 : config: option 'use_mmap' on line 27 was not recognized
+Mar 04 19:38 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/12 - ゆらめき In The Air.flac"
+Assertion failed: (nbytes % output->out_audio_format.GetFrameSize() == 0), function PlayChunk, file Thread.cxx, line 282.
+Mar 04 19:39 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 04 19:39 : config: option 'auto_resample' on line 26 was not recognized
+Mar 04 19:39 : config: option 'use_mmap' on line 27 was not recognized
+Mar 04 19:39 : player: played "Fishmans/Live Albums & Bootlegs/[1999-3-C] 98.12.28 Otokotachi no Wakare (5.1 Surround Sound Audio)/12 - ゆらめき In The Air.flac"
+Mar 05 10:06 : player: played "Fishmans/others/宇宙日本世田谷/01 Pokka Pokka.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 21023638.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 05 10:15 : player: played "Fishmans/others/宇宙日本世田谷/02 Weather Report.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 12695783.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 05 10:20 : player: played "Fishmans/others/宇宙日本世田谷/03 うしろ姿.mp3"
+Mar 05 10:26 : player: played "Fishmans/others/宇宙日本世田谷/04 In The Flight.mp3"
+Mar 05 10:31 : player: played "Fishmans/others/宇宙日本世田谷/05 Magic Love.mp3"
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 20409236.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 05 10:39 : player: played "Fishmans/others/宇宙日本世田谷/06 バックビートにのっかって.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 31196778.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 05 10:52 : player: played "Fishmans/others/宇宙日本世田谷/07 Walking In The Rhythm.mp3"
+Mar 05 11:01 : player: played "Fishmans/others/宇宙日本世田谷/08 Daydream.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Mar 05 11:28 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/01 ひっくりかえってた２人.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+Mar 05 11:34 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/02 ひこうき.mp3"
+Mar 05 11:39 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/03 Special Night.mp3"
+Mar 05 11:44 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/04 Good Morning.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+Mar 05 11:47 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/05 夏の思い出.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Mar 05 11:56 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/06 Future.mp3"
+Mar 05 11:59 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/07 いなごが飛んでる.mp3"
+Mar 05 12:05 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/08 Go Go Clubですれ違い.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Mar 05 12:11 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/09 チャンス.mp3"
+Mar 05 12:16 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/10 ピアノ.mp3"
+Mar 05 15:31 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Mar 05 15:34 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Mar 05 15:35 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Mar 05 15:40 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Mar 05 15:41 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Mar 05 15:45 : player: played "Orbit/Young Blood (cover).mp3"
+Mar 05 15:47 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Mar 05 15:48 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Mar 05 15:52 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Mar 05 15:59 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Mar 05 16:03 : player: played "Orbit/Demos/​so far away.mp3"
+Mar 05 16:06 : player: played "Orbit/Sunday by the River/21.mp3"
+Mar 05 16:09 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Mar 05 17:08 : player: played "Orbit/Perspectives/Call Me at Midnight.mp3"
+Mar 05 17:13 : player: played "mixes/Paradox-Vol.43/Afraid of the Dark (feat. Tolü Makay).mp3"
+Mar 05 17:20 : player: played "mixes/Paradox-Vol.43/ASC - Flashback.mp3"
+Mar 05 17:28 : player: played "mixes/Paradox-Vol.43/B-Key - Man Of Science VIP (2022).mp3"
+Mar 05 17:35 : player: played "mixes/Paradox-Vol.43/Crystalline.mp3"
+Mar 05 17:42 : player: played "mixes/Paradox-Vol.43/DYL & DB1 - Conquer⧸Divide (Part 1).mp3"
+Mar 05 17:48 : player: played "mixes/Paradox-Vol.43/Gremlinz and Rumbleton - Steelcase.mp3"
+Mar 05 17:54 : player: played "mixes/Paradox-Vol.43/Paradox - Nord ｜ Overshadow.mp3"
+Mar 05 19:20 : player: played "mixes/Paradox-Vol.43/Paradox - Vol.43 Radio Show.mp3"
+Mar 05 19:26 : player: played "mixes/Paradox-Vol.43/Seba - The Colour of Space.mp3"
+Mar 06 09:49 : player: played "mixes/Paradox-Vol.43/Suburban Architecture - Cubic Nature [DJ Trax Remix].mp3"
+Mar 06 09:49 : player: played "charly/Charly Garcia - Piano Bar - (flac)/11. Cancion para mi muerte.flac"
+Mar 06 10:27 : player: played "lofi/Joji - Chloe Burbank Vol. 1 (23 Track Album)-qOm-trHYlh8.m4a"
+Mar 06 10:35 : player: played "Satellite Lovers/Sons of 1973 (1996)/01 - Best Friend.flac"
+Mar 06 10:39 : player: played "Satellite Lovers/Sons of 1973 (1996)/02 - 夏の続き.flac"
+Mar 06 10:43 : player: played "Satellite Lovers/Sons of 1973 (1996)/03 - How Much I Love You, Baby.flac"
+Mar 06 10:48 : player: played "Satellite Lovers/Sons of 1973 (1996)/04 - Sunnyday, Holiday.flac"
+Mar 06 10:54 : player: played "Satellite Lovers/Sons of 1973 (1996)/05 - 空へ (S.L meets HV!).flac"
+Mar 06 10:58 : player: played "Satellite Lovers/Sons of 1973 (1996)/06 - 外はいい天気.flac"
+Mar 06 10:59 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Mar 06 10:59 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Mar 06 11:00 : player: played "Satellite Lovers/Sons of 1973 (1996)/07 - Sunshine Love (Lover_s Picnic Version).flac"
+Mar 06 11:00 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Mar 06 11:00 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (u8)
+Mar 06 11:00 : exception: Failed to decode Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov
+Mar 06 11:00 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/CD Extra/MOVIE/BABY.mov"
+Mar 06 11:03 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/01 Running Man.mp3"
+Mar 06 11:08 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/02 いかれたBaby.mp3"
+Mar 06 11:11 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/03 Smilin' Days, Summer Holiday.mp3"
+Mar 06 11:14 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/04 エヴリデイ・エヴリナイト.mp3"
+Mar 06 11:19 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/05 疲れない人.mp3"
+Mar 06 11:23 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/06 Just Thing.mp3"
+Mar 06 11:26 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/07 太平洋.mp3"
+Mar 06 11:31 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/08 パラダイス.mp3"
+Mar 06 11:35 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/09 うまく歩けないよ.mp3"
+Mar 06 11:38 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/10 1, 2, 3, 4,.mp3"
+Mar 06 11:44 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/11 Walkin'.mp3"
+Mar 06 11:46 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/12 スー・パー.mp3"
+Mar 06 11:52 : player: played "Fishmans/Studio Albums/[1993-2] Neo Yankees' Holiday/13 いかれたBaby (Remix).mp3"
+Mar 06 12:27 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 06 12:27 : ffmpeg/aac: Could not update timestamps for skipped samples.
+Mar 06 12:32 : player: played "Miri/Casa II.mp3"
+Mar 06 12:36 : player: played "Orbit/Young Blood (cover).mp3"
+Mar 06 12:37 : player: played "playlists/pure video game bops for locking in/[HOUSE] TOMOSUKE - What is Love？.mp3"
+Mar 06 19:41 : player: played "playlists/pure video game bops for locking in/Blockids PS1 OST.mp3"
+Mar 06 19:43 : player: played "Orbit/Demos/Heaven_sketch_050623.mp3"
+Mar 06 19:46 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Mar 06 19:49 : player: played "Orbit/Sunday by the River/orbit - Missing the Moon (Lyric Video).mp3"
+Mar 06 19:51 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Mar 06 19:55 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Mar 06 19:58 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Mar 06 19:59 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Mar 06 20:04 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Mar 06 20:09 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Mar 06 20:16 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Mar 06 20:18 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Mar 06 20:22 : player: played "Orbit/Young Blood (cover).mp3"
+Mar 06 20:24 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Mar 06 20:26 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Mar 06 20:30 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Mar 06 20:33 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Mar 06 20:37 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Mar 06 20:38 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Mar 06 20:42 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Mar 06 20:45 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Mar 06 20:46 : player: played "Orbit/Summer Someday/Summer Someday.mp3"
+Mar 06 20:50 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Mar 06 20:54 : player: played "Orbit/Demos/​so far away.mp3"
+Mar 06 20:55 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Mar 06 20:58 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Mar 07 18:49 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Mar 07 18:51 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Mar 07 18:54 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Mar 07 18:57 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+Mar 07 19:00 : player: played "Orbit/Sunday by the River/21.mp3"
+Mar 07 19:02 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Mar 07 19:06 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Mar 07 19:08 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Mar 08 15:33 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Mar 08 17:11 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream diary).mp3"
+Mar 08 17:14 : player: played "Orbit/Young Blood (cover).mp3"
+Mar 08 17:17 : player: played "Orbit/Sunday by the River/21.mp3"
+Mar 08 17:19 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Mar 08 17:20 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Mar 08 17:23 : player: played "Orbit/Sunday by the River/orbit - Missing the Moon (Lyric Video).mp3"
+Mar 08 17:26 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Mar 08 17:29 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Mar 08 17:32 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Mar 09 11:01 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 09 11:01 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 09 11:01 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 09 11:01 : update: added VAGUE002/girl crying.flac
+Mar 09 11:01 : update: added VAGUE002/deadboy.flac
+Mar 09 11:01 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 09 11:01 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 09 11:01 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 09 11:01 : update: added Chinese/Chinese Guqin  ： Flowing water Guqin 流水 古琴曲.mp3
+Mar 09 11:01 : update: added Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3
+Mar 09 11:01 : update: added Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3
+Mar 09 11:01 : update: added Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3
+Mar 09 11:01 : update: added Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 09 11:01 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 09 11:01 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 09 11:01 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 09 11:10 : update: added Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3
+Mar 09 11:13 : player: played "Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3"
+Mar 09 11:17 : player: played "Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3"
+Mar 09 11:47 : player: played "Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3"
+Mar 09 11:59 : player: played "Chinese/Chinese Guqin  ： Flowing water Guqin 流水 古琴曲.mp3"
+Mar 09 13:22 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 09 13:27 : player: played "Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3"
+Mar 09 14:31 : player: played "Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3"
+Mar 09 14:51 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 09 14:55 : player: played "Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3"
+Mar 09 15:00 : player: played "Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3"
+Mar 09 15:30 : player: played "Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3"
+Mar 09 17:56 : player: played "Chinese/Chinese Guqin  ： Flowing water Guqin 流水 古琴曲.mp3"
+Mar 09 18:00 : player: played "Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3"
+Mar 09 18:04 : player: played "Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3"
+Mar 09 18:34 : player: played "Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3"
+Mar 09 18:38 : player: played "Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3"
+Mar 09 18:46 : player: played "Chinese/Chinese Guqin  ： Flowing water Guqin 流水 古琴曲.mp3"
+Mar 09 19:06 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 10 09:12 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 10 09:12 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 10 09:12 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 10 09:12 : update: added Piano/Joe Hisaishi - One Summer's Day.mp3
+Mar 10 09:12 : update: added /《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.webm
+Mar 10 09:12 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 10 09:12 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 10 09:12 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 10 09:12 : update: added /《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 10 09:12 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 10 09:12 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 10 09:12 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 10 09:12 : player: played "《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Mar 10 09:12 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 10 09:12 : config: option 'auto_resample' on line 26 was not recognized
+Mar 10 09:12 : config: option 'use_mmap' on line 27 was not recognized
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 10 09:13 : update: removing 《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.webm
+Mar 10 09:13 : update: removing 《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3
+Mar 10 09:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 10 09:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 10 09:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 10 09:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 10 09:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 10 09:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 10 09:13 : update: added Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.webm
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 10 09:13 : update: added Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 10 09:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 10 09:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 10 09:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 10 09:13 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 10 09:13 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 10 09:13 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 10 09:13 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 10 09:13 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 10 09:13 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 10 09:15 : player: played "《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Mar 10 09:17 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Mar 10 09:47 : player: played "Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3"
+Mar 10 10:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 10 10:07 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 10 10:07 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 10 10:08 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.webm"
+Mar 10 10:08 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 10 10:08 : config: option 'auto_resample' on line 26 was not recognized
+Mar 10 10:08 : config: option 'use_mmap' on line 27 was not recognized
+Mar 10 10:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 10 10:12 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Mar 10 10:12 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.webm"
+Mar 10 10:12 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 10 10:13 : player: played "Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3"
+Mar 10 10:13 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 10 10:13 : config: option 'auto_resample' on line 26 was not recognized
+Mar 10 10:13 : config: option 'use_mmap' on line 27 was not recognized
+Mar 10 10:17 : player: played "Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3"
+Mar 10 10:21 : player: played "Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3"
+Mar 10 10:29 : player: played "Chinese/Chinese Guqin  ： Flowing water Guqin 流水 古琴曲.mp3"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 10 10:41 : player: played "Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3"
+Mar 10 10:43 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Mar 10 11:07 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 10 11:10 : player: played "Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3"
+Mar 10 15:44 : player: played "Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3"
+Mar 10 16:01 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 10 16:01 : player: played "boilerRoom/Kaytranada Boiler Room Montreal DJ Set [-5EQIiabJvk].mp3"
+Mar 10 16:01 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 10 16:01 : config: option 'auto_resample' on line 26 was not recognized
+Mar 10 16:01 : config: option 'use_mmap' on line 27 was not recognized
+Mar 10 16:02 : player: played "boilerRoom/Kaytranada Boiler Room Montreal DJ Set [-5EQIiabJvk].mp3"
+Mar 10 16:02 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 10 16:03 : player: played "mixes/Overmono, Fred Again.. & Lil Yachty @TheLotRadio.mp3"
+Mar 10 16:03 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 10 16:03 : config: option 'auto_resample' on line 26 was not recognized
+Mar 10 16:03 : config: option 'use_mmap' on line 27 was not recognized
+Mar 10 17:16 : player: played "mixes/Overmono, Fred Again.. & Lil Yachty @TheLotRadio.mp3"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 11 16:38 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Mar 12 11:51 : player: played "Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3"
+Mar 12 12:21 : player: played "Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3"
+Mar 12 12:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 12 12:29 : player: played "Chinese/Chinese Guqin  ： Flowing water Guqin 流水 古琴曲.mp3"
+Mar 12 12:29 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 12 12:30 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 12 12:30 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 12 12:30 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 12 12:30 : config: option 'auto_resample' on line 26 was not recognized
+Mar 12 12:30 : config: option 'use_mmap' on line 27 was not recognized
+Mar 12 12:51 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 12 12:55 : player: played "Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3"
+Mar 12 12:59 : player: played "Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3"
+Mar 12 13:00 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 12 13:00 : player: played "Kendric/Sing About Me, I'm Dying Of Thirst [75wmW7xjyog].mp3"
+Mar 12 13:00 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 12 13:00 : config: option 'auto_resample' on line 26 was not recognized
+Mar 12 13:00 : config: option 'use_mmap' on line 27 was not recognized
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 13 11:23 : player: played "Kendric/Sing About Me, I'm Dying Of Thirst [75wmW7xjyog].mp3"
+Mar 13 11:25 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Mar 13 11:29 : player: played "Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3"
+Mar 13 11:49 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 13 11:57 : player: played "Chinese/Chinese Guqin  ： Flowing water Guqin 流水 古琴曲.mp3"
+Mar 14 12:36 : player: played "Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3"
+Mar 14 12:36 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 14 12:36 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 14 12:36 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 14 12:36 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 14 12:36 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 14 12:36 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 14 12:36 : update: added Solomun/Wadim.mp3
+Mar 14 12:36 : update: added Solomun/Out of Focus (feat. Zoot Woman).mp3
+Mar 14 12:36 : update: added Solomun/Prospect (feat. ÄTNA).mp3
+Mar 14 12:36 : update: added Solomun/The Center Will Not Hold.mp3
+Mar 14 12:36 : update: added Solomun/Your Love Gives Me Gravity (feat. Planningtorock).mp3
+Mar 14 12:36 : update: added Solomun/Ocean (feat. Jamie Foxx).mp3
+Mar 14 12:36 : update: added Solomun/Night Travel (feat. Tom Smith).mp3
+Mar 14 12:36 : update: added Solomun/Never Sleep Again.mp3
+Mar 14 12:36 : update: added Solomun/Home.mp3
+Mar 14 12:36 : update: added Solomun/Take Control (feat. Anne Clark).mp3
+Mar 14 12:36 : update: added Solomun/Tuk Tuk (feat. ÄTNA).mp3
+Mar 14 12:36 : update: added Solomun/Kreatur der Nacht (feat. Isolation Berlin).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Night Talk - Gamma.mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Simion - Lost Feat. Roland Clark (Club Mix) [Suara].mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/SOLOMUN - Something We All Adore ⧸ THE CURE - Love Song Epic Live Mashup Mix @ Boiler Room Tulum.mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Mousse T. - Horny (Radio Slave & Thomas Gandey Just 17 Mix).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Fur Coat - Monday (Original Mix).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Louie Austen - Hoping (Herbert's High Dub).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/KOLLEKTIV TURMSTRASSE - Sorry I Am Late (Official Video).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/International Pony - Our House (Vas Floyd remix).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Liu Bei - Atlas World (Solomun Day Mix).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/SBTRKT feat. Ezra Koenig - New Dorp. New York (Solomun Edit) Boiler Room.mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Thomas Bangalter - Club Soda [HIGH QUALITY].mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Alix Alvarez ＂Fayall＂.mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/The Martians -  Tobacco Ties (Limited 7' Version).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Jairo Catelo - Timeless.mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Westbam & Nena - Oldschool Baby (Piano Mix).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Jozif - Lady B's Lullaby (Original Mix).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Zola Jesus - Hikikomori (Oskar Offermann Remix).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/SevenDoors - Movement of Whale.mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Phenomenal Handclap Band - Baby (Clock Opera Remix Extended).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Khan feat. Julee Cruise - Say Goodbye (Losoul Shes Homeless Mix).mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/matthias meyer - tout va bien.mp3
+Mar 14 12:36 : update: added mixes/solomun-boiler/Veerus, Maxie Devine - My Train (Original Mix).mp3
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 14 12:36 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 14 12:36 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 14 12:36 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 14 12:36 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 14 12:36 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 14 12:36 : player: played "Solomun/Prospect (feat. ÄTNA).mp3"
+Mar 14 12:36 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 14 12:36 : config: option 'auto_resample' on line 26 was not recognized
+Mar 14 12:36 : config: option 'use_mmap' on line 27 was not recognized
+Mar 14 12:41 : exception: Failed to decode /Users/italo/Personal/Media/Music/Solomun/Prospect (feat. ÄTNA).mp3; Failed to open '/Users/italo/Personal/Media/Music/Solomun/Prospect (feat. ÄTNA).mp3': No such file or directory
+Mar 14 12:41 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 14 12:41 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 14 12:41 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 14 12:41 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 14 12:41 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 14 12:41 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 14 12:41 : update: removing Solomun/Home.mp3
+Mar 14 12:41 : update: removing Solomun/Never Sleep Again.mp3
+Mar 14 12:41 : update: removing Solomun/Kreatur der Nacht (feat. Isolation Berlin).mp3
+Mar 14 12:41 : update: removing Solomun/Ocean (feat. Jamie Foxx).mp3
+Mar 14 12:41 : update: removing Solomun/Night Travel (feat. Tom Smith).mp3
+Mar 14 12:41 : update: removing Solomun/Prospect (feat. ÄTNA).mp3
+Mar 14 12:41 : update: removing Solomun/Out of Focus (feat. Zoot Woman).mp3
+Mar 14 12:41 : update: removing Solomun/The Center Will Not Hold.mp3
+Mar 14 12:41 : update: removing Solomun/Take Control (feat. Anne Clark).mp3
+Mar 14 12:41 : update: removing Solomun/Wadim.mp3
+Mar 14 12:41 : update: removing Solomun/Tuk Tuk (feat. ÄTNA).mp3
+Mar 14 12:41 : update: removing Solomun/Your Love Gives Me Gravity (feat. Planningtorock).mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Wadim.mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Out of Focus (feat. Zoot Woman).mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Prospect (feat. ÄTNA).mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/The Center Will Not Hold.mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Your Love Gives Me Gravity (feat. Planningtorock).mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Ocean (feat. Jamie Foxx).mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Night Travel (feat. Tom Smith).mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Never Sleep Again.mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Home.mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Take Control (feat. Anne Clark).mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Tuk Tuk (feat. ÄTNA).mp3
+Mar 14 12:41 : update: added Solomun/Nobody is not Loved/Kreatur der Nacht (feat. Isolation Berlin).mp3
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 14 12:41 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 14 12:41 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 14 12:41 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 14 12:42 : player: played "Solomun/Prospect (feat. ÄTNA).mp3"
+Mar 16 11:11 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 16 11:11 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 16 11:11 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 16 11:11 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 16 11:11 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 16 11:11 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 16 11:11 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 16 11:11 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 16 11:11 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 16 11:15 : player: played "Solomun/Nobody is not Loved/Home.mp3"
+Mar 16 11:20 : player: played "Solomun/Nobody is not Loved/Kreatur der Nacht (feat. Isolation Berlin).mp3"
+Mar 16 11:24 : player: played "Solomun/Nobody is not Loved/Out of Focus (feat. Zoot Woman).mp3"
+Mar 16 12:49 : player: played "Solomun/Nobody is not Loved/Your Love Gives Me Gravity (feat. Planningtorock).mp3"
+Mar 16 12:53 : player: played "Solomun/Nobody is not Loved/Prospect (feat. ÄTNA).mp3"
+Mar 16 12:57 : player: played "Solomun/Nobody is not Loved/Ocean (feat. Jamie Foxx).mp3"
+Mar 16 13:01 : player: played "Solomun/Nobody is not Loved/Night Travel (feat. Tom Smith).mp3"
+Mar 16 16:05 : player: played "Solomun/Nobody is not Loved/The Center Will Not Hold.mp3"
+Mar 16 19:23 : player: played "Solomun/Nobody is not Loved/Prospect (feat. ÄTNA).mp3"
+Mar 16 19:30 : player: played "mixes/Overmono-boiler-manchester/For Those I Love - I Have a Love (Overmono Remix).mp3"
+Mar 16 19:35 : player: played "mixes/Overmono-boiler-manchester/Overmono - So U Kno (Audio).mp3"
+Mar 16 19:39 : player: played "mixes/Overmono-boiler-manchester/Kwengface, Joy Orbison, Overmono - Freedom 2.mp3"
+Mar 16 19:42 : player: played "mixes/Overmono-boiler-manchester/Overmono - Cold Blooded (Audio).mp3"
+Mar 16 19:47 : player: played "mixes/Overmono-boiler-manchester/Overmono - Gunk.mp3"
+Mar 16 19:50 : player: played "mixes/Overmono-boiler-manchester/Overmono - Good Lies (Audio).mp3"
+Mar 16 19:53 : player: played "mixes/Overmono-boiler-manchester/Overmono - Walk Thru Water feat. St. Panther (Audio).mp3"
+Mar 16 19:59 : player: played "mixes/Overmono-boiler-manchester/Overmono - Bby.mp3"
+Mar 16 20:03 : player: played "mixes/Overmono-boiler-manchester/If U Ever (Mixed).mp3"
+Mar 16 20:09 : player: played "mixes/Overmono-boiler-manchester/Hackney Parrot - Overmono (Boiler Room ⧸⧸ Manchester).mp3"
+Mar 16 20:13 : player: played "mixes/Overmono-boiler-manchester/The Streets - Turn The Page (Overmono Remix).mp3"
+Mar 16 20:16 : player: played "mixes/Overmono-boiler-manchester/Overmono - Feelings Plain (Audio).mp3"
+Mar 16 20:20 : player: played "mixes/Overmono-boiler-manchester/Overmono - Is U (Audio).mp3"
+Mar 16 20:35 : player: played "VAGUE002/deadboy.flac"
+Mar 16 20:37 : player: played "VAGUE002/deadboy.flac"
+Mar 16 20:38 : player: played "boilerRoom/Kaytranada Boiler Room Montreal DJ Set [-5EQIiabJvk].mp3"
+Mar 16 20:43 : player: played "Solomun/Nobody is not Loved/Prospect (feat. ÄTNA).mp3"
+Mar 16 20:46 : player: played "Solomun/Nobody is not Loved/Home.mp3"
+Mar 16 20:48 : player: played "Fishmans/Studio Albums/[1992-2] King Master George/16. 教育.mp3"
+Mar 16 20:51 : player: played "Orbit/Young Blood (cover).mp3"
+Mar 16 21:59 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 16 21:59 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 16 21:59 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 16 21:59 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 16 21:59 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 16 21:59 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 16 21:59 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 16 21:59 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 16 21:59 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Mar 16 22:03 : player: played "Radiohead/Radiohead - Live From The Basement [FLAC]/04 Nude.flac"
+Mar 16 22:07 : player: played "Piano/Joe Hisaishi - One Summer's Day.mp3"
+Mar 16 22:08 : player: played "Latin Mafia/LATIN MAFIA x Humbe - Patadas de Ahogado (FOREST D. Edit).mp3"
+Mar 16 22:15 : player: played "Orbit/Summer Someday/orbit - Blind Eyed (Dream diary).mp3"
+Mar 16 22:19 : player: played "Orbit/Perspectives/orbit - Awake (Diary 3).mp3"
+Mar 16 22:21 : player: played "Orbit/Fever Dreams/orbit - September.mp3"
+Mar 16 22:23 : player: played "Orbit/Fever Dreams/orbit - BoxoMorens_Demo_130422_9.mp3"
+Mar 16 22:25 : player: played "Orbit/Fever Dreams/Blue_Demo_100422_9.mp3"
+Mar 16 22:29 : player: played "Orbit/Demos/something with my brain_demo.mp3"
+Mar 16 22:36 : player: played "Orbit/Fever Dreams/orbit - 3AMstillalive_Demo_120422_4.mp3"
+Mar 16 22:39 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Mar 16 22:41 : player: played "Orbit/Demos/Youth In Our Garden_demo_9.mp3"
+Mar 16 22:45 : player: played "Orbit/Summer Someday/orbit - Wish You Well (Dream Diary).mp3"
+Mar 16 22:49 : player: played "Orbit/Summer Someday/orbit - Friday Night (Summer Someday Tour Diary).mp3"
+Mar 16 22:52 : player: played "Orbit/Fever Dreams/orbit - Language_Demo_090422_5.mp3"
+Mar 16 22:54 : player: played "Orbit/Perspectives/Call Me at Midnight.mp3"
+Mar 16 22:57 : player: played "Orbit/Demos/Swim_Demo_v2.mp3"
+Mar 16 22:59 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Mar 16 23:02 : player: played "Orbit/Fever Dreams/orbit - InternetHeartRate_Demo_150422_4.mp3"
+Mar 16 23:06 : player: played "Orbit/Summer Someday/orbit - DarkTimes ⧸ BlueFlower (Dream Diary).mp3"
+Mar 16 23:08 : player: played "Orbit/Perspectives/You Could Be.mp3"
+Mar 16 23:11 : player: played "Orbit/Sunday by the River/21.mp3"
+Mar 16 23:15 : player: played "Orbit/Perspectives/orbit - Perspectives (Diary 1).mp3"
+Mar 16 23:19 : player: played "Orbit/Demos/Regional Trains_Demo (feat. Aiden Gore).mp3"
+Mar 16 23:20 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Mar 16 23:24 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Mar 16 23:26 : player: played "Orbit/Fever Dreams/orbit - WildPlaces_Demo_140422_7.mp3"
+Mar 16 23:30 : player: played "Orbit/Demos/Hypnotized_221024.mp3"
+Mar 17 13:13 : player: played "Orbit/Demos/orbit - Hands (Burning Man Diary).mp3"
+Mar 17 13:17 : player: played "Orbit/Demos/​so far away.mp3"
+Mar 17 13:20 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Mar 17 13:24 : player: played "Orbit/Sunday by the River/orbit - Missing the Moon (Lyric Video).mp3"
+Mar 17 13:25 : player: played "Orbit/Demos/who do you love_Sketch_060324.mp3"
+Mar 17 13:29 : player: played "Orbit/Young Blood (cover).mp3"
+Mar 17 13:33 : player: played "Orbit/Demos/Vancouver Hotel Sketch.mp3"
+Mar 17 13:35 : player: played "Orbit/Demos/water_sketch_10.mp3"
+Mar 17 13:36 : player: played "Orbit/Summer Someday/Summer Someday.mp3"
+Mar 17 13:39 : player: played "Orbit/Perspectives/orbit - Somebody That I Like (Diary 2).mp3"
+Mar 17 13:40 : player: played "Orbit/Demos/secret frequencies on her pocket radio_Sketch_3.mp3"
+Mar 17 13:42 : player: played "Orbit/Demos/if you could see the mountain tops_piano version_4.mp3"
+Mar 17 13:44 : player: played "Orbit/Demos/soundcheck botanique record later_voicememo edit 1.mp3"
+Mar 17 13:48 : player: played "Orbit/Summer Someday/orbit - Ocean (Dream diary).mp3"
+Mar 17 17:50 : player: played "mixes/Youtube-Mix-License-plate-777/[DnB] - Feint - Snake Eyes (feat. CoMa) [Monstercat Release].mp3"
+Mar 17 19:06 : player: played "mixes/Overmono, Fred Again.. & Lil Yachty @TheLotRadio.mp3"
+Mar 18 09:38 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/01 - Operacion densa.flac"
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:38 : exception: No such song
+Mar 18 09:40 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/01 - Operacion densa.flac"
+Mar 18 09:42 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/02 - Despertar de mambo.flac"
+Mar 18 09:43 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/03 - Rejas electrificadas.flac"
+Mar 18 09:46 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/04 - Pubis angelical.flac"
+Mar 18 09:48 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/05 - Monoculo fantastico.flac"
+Mar 18 09:50 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/06 - All I do the whole night through (Fred Brown).flac"
+Mar 18 09:53 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/07 - Sereno fantastico.flac"
+Mar 18 09:57 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/08 - Transatlantico art deco.flac"
+Mar 18 10:00 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/09 - Caspa de estrellas.flac"
+Mar 18 10:03 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/10 - Crimen, divina, productor.flac"
+Mar 18 10:04 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/11 - Pubis angelical (vocal).flac"
+Mar 18 10:05 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/12 - Pubis angelical (vocal II).flac"
+Mar 18 10:08 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/13 - Futuro pobre.flac"
+Mar 18 10:11 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/14 - Tribunas del futuro pobre.flac"
+Mar 18 10:14 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/15 - Todos los pubis juntos.flac"
+Mar 18 10:18 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/16 - Yendo de la cama al living.flac"
+Mar 18 10:23 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/17 - Superheroes.flac"
+Mar 18 10:27 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/18 - No bombardeen Buenos Aires.flac"
+Mar 18 10:30 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/19 - Vos tambien estabas verde.flac"
+Mar 18 10:35 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/20 - Yo no quiero volverme tan loco.flac"
+Mar 18 10:39 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/21 - Cancion de dos por tres.flac"
+Mar 18 10:44 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/22 - Peluca telefonica.flac"
+Mar 18 10:48 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/23 - Inconsciente colectivo.flac"
+Mar 18 10:50 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/01 - Operacion densa.flac"
+Mar 18 10:53 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/02 - Despertar de mambo.flac"
+Mar 18 10:54 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/03 - Rejas electrificadas.flac"
+Mar 18 10:56 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/04 - Pubis angelical.flac"
+Mar 18 11:13 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/05 - Monoculo fantastico.flac"
+Mar 18 11:14 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/06 - All I do the whole night through (Fred Brown).flac"
+Mar 18 11:17 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/07 - Sereno fantastico.flac"
+Mar 18 11:21 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/08 - Transatlantico art deco.flac"
+Mar 18 11:24 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/09 - Caspa de estrellas.flac"
+Mar 18 11:27 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/10 - Crimen, divina, productor.flac"
+Mar 18 11:28 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/11 - Pubis angelical (vocal).flac"
+Mar 18 11:29 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/12 - Pubis angelical (vocal II).flac"
+Mar 18 11:32 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/13 - Futuro pobre.flac"
+Mar 18 11:35 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/14 - Tribunas del futuro pobre.flac"
+Mar 18 11:38 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/15 - Todos los pubis juntos.flac"
+Mar 18 11:42 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/16 - Yendo de la cama al living.flac"
+Mar 18 11:47 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/17 - Superheroes.flac"
+Mar 18 11:51 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/18 - No bombardeen Buenos Aires.flac"
+Mar 18 11:54 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/19 - Vos tambien estabas verde.flac"
+Mar 18 11:59 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/20 - Yo no quiero volverme tan loco.flac"
+Mar 18 12:03 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/21 - Cancion de dos por tres.flac"
+Mar 18 12:16 : player: played "Orbit/Young Blood (cover).mp3"
+Mar 18 12:19 : player: played "Orbit/Sunday by the River/21.mp3"
+Mar 18 12:20 : player: played "Orbit/Sunday by the River/Finders.mp3"
+Mar 18 12:24 : player: played "Orbit/Sunday by the River/orbit - Follow Don't Follow (Music Video).mp3"
+Mar 18 12:28 : player: played "Orbit/Sunday by the River/orbit - Missing the Moon (Lyric Video).mp3"
+Mar 18 12:32 : player: played "Orbit/Sunday by the River/orbit - Parachute (Official Lyric Video).mp3"
+Mar 18 12:34 : player: played "Orbit/Sunday by the River/orbit - Sunday by the River (Lyric Video).mp3"
+Mar 18 12:37 : player: played "Orbit/Sunday by the River/Treasure.mp3"
+Mar 18 12:44 : player: played "Solomun/Nobody is not Loved/Prospect (feat. ÄTNA).mp3"
+Mar 18 18:53 : update: added mixing/mun/Thrill.mp3
+Mar 18 18:53 : update: added mixing/mun/Night Talk - Gamma.mp3
+Mar 18 18:53 : update: added mixing/mun/Peter Peter - Bien réel (Clip officiel).mp3
+Mar 18 18:53 : update: added mixing/mun/London Grammar - Wasting My Young Years (Fading Soul Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/The Rapture Pt.III.mp3
+Mar 18 18:53 : update: added mixing/mun/RÜFÜS DU SOL ●● Innerbloom (Official Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Chet Faker - Gold (Official Music Video).mp3
+Mar 18 18:53 : update: added mixing/mun/TOO COOL TO BE CARELESS.mp3
+Mar 18 18:53 : update: added mixing/mun/Black Mantis.mp3
+Mar 18 18:53 : update: added mixing/mun/Flume & Chet Faker - Drop the Game [Official Music Video].mp3
+Mar 18 18:53 : update: added mixing/mun/Britannia.mp3
+Mar 18 18:53 : update: added mixing/mun/Rone - Bye Bye Macadam (Official Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Ekata (Lunar Plane Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Face to Face Again (The Joy) -  Kirsty Hawkshaw (Seba Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Noir & Haze - Around [Solomun Vox Mix] - NMB037.mp3
+Mar 18 18:53 : update: added mixing/mun/Petra (TWO LANES Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Mwaki.mp3
+Mar 18 18:53 : update: added mixing/mun/Leblanc - Nuclear Fission.mp3
+Mar 18 18:53 : update: added mixing/mun/Jan Blomqvist, Natascha Polké - Midnight Sun (Official Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Hope.mp3
+Mar 18 18:53 : update: added mixing/mun/Duke Dumont - Ocean Drive (Official Music Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Zerb - Mwaki (feat. Sofiya Nzau) [Official Audio].mp3
+Mar 18 18:53 : update: added mixing/mun/Yamore.mp3
+Mar 18 18:53 : update: added mixing/mun/Lynnic, ItsArius & Dinia - With You.mp3
+Mar 18 18:53 : update: added mixing/mun/RÜFÜS DU SOL - On My Knees (Official Music Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Everything I Own (Gorje Hewek Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Monday.mp3
+Mar 18 18:53 : update: added mixing/mun/SBTRKT - NEW DORP. NEW YORK. feat. Ezra Koenig (Official Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Late Night (Solomun Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Miracle.mp3
+Mar 18 18:53 : update: added mixing/mun/Kid Francescoli - ＂Moon＂ (Official Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Parra for Cuva ft. Anna Naklab - Wicked Games (Official Music Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Her Eyes.mp3
+Mar 18 18:53 : update: added mixing/mun/Bingo.mp3
+Mar 18 18:53 : update: added mixing/mun/Secret Places (Club Version).mp3
+Mar 18 18:53 : update: added mixing/mun/BICEP ｜ GLUE (Official Video).mp3
+Mar 18 18:53 : update: added mixing/mun/What I Need.mp3
+Mar 18 18:53 : update: added mixing/mun/What I Need.webm
+Mar 18 18:53 : update: added mixing/mun/Jan Blomqvist - The Space In Between (Ben Böhmer Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Walking With Elephants.mp3
+Mar 18 18:53 : update: added mixing/mun/Röyksopp - Sordid Affair (Maceo Plex Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Free (Hosh Edit).mp3
+Mar 18 18:53 : update: added mixing/mun/What To Do (& ME Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Massane - Not Alone.mp3
+Mar 18 18:53 : update: added mixing/mun/Corazon (Night Mix).mp3
+Mar 18 18:53 : update: added mixing/mun/Lynnic - Rise.mp3
+Mar 18 18:53 : update: added mixing/mun/n u a g e s - Dreams ❀.mp3
+Mar 18 18:53 : update: added mixing/mun/Liu Bei - Infatuation (OFFICIAL VIDEO).mp3
+Mar 18 18:53 : update: added mixing/mun/I'm Gonna Get You.mp3
+Mar 18 18:53 : update: added mixing/mun/Disco Gnome (Tale Of Us Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Turn Around (Âme Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/CHRYSTAL - THE DAYS  (NOTION REMIX).mp3
+Mar 18 18:53 : update: added mixing/mun/Somebody's Story.mp3
+Mar 18 18:53 : update: added mixing/mun/NTO & Monolink - Beyond Control (Official Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Move.mp3
+Mar 18 18:53 : update: added mixing/mun/Let's Pretend (Extended Mix).mp3
+Mar 18 18:53 : update: added mixing/mun/Tetris (Edit).mp3
+Mar 18 18:53 : update: added mixing/mun/Alone Together.mp3
+Mar 18 18:53 : update: added mixing/mun/Far Away Place (Rampa Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/HUGEL x Topic x Arash feat. Daecolm - I Adore You (Visualizer).mp3
+Mar 18 18:53 : update: added mixing/mun/Juno Love.mp3
+Mar 18 18:53 : update: added mixing/mun/Alone (feat. FEMME).mp3
+Mar 18 18:53 : update: added mixing/mun/Shaman.mp3
+Mar 18 18:53 : update: added mixing/mun/Secret Encounters.mp3
+Mar 18 18:53 : update: added mixing/mun/In A Manner Of Speaking.mp3
+Mar 18 18:53 : update: added mixing/mun/Elderbrook - Inner Light with Bob Moses (Official Music Video).mp3
+Mar 18 18:53 : update: added mixing/mun/Tout le monde est fou.mp3
+Mar 18 18:53 : update: added mixing/mun/SHOUSE - Love Tonight (Official Radio Edit).mp3
+Mar 18 18:53 : update: added mixing/mun/Vue.mp3
+Mar 18 18:53 : update: added mixing/mun/Zola Jesus - Hikikomori (Oskar Offermann Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/31 Bloom.mp3
+Mar 18 18:53 : update: added mixing/mun/TWO LANES - Sign (Live Session).mp3
+Mar 18 18:53 : update: added mixing/mun/Aria.mp3
+Mar 18 18:53 : update: added mixing/mun/French 79 - Hometown [Official Video].mp3
+Mar 18 18:53 : update: added mixing/mun/Movement of Whale.mp3
+Mar 18 18:53 : update: added mixing/mun/Womack & Womack - Teardrops (Rules Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Solitary Daze.mp3
+Mar 18 18:53 : update: added mixing/mun/Tom Odell - Another Love (Zwette Edit).mp3
+Mar 18 18:53 : update: added mixing/mun/Khan feat. Julee Cruise - Say Goodbye (Losoul Shes Homeless Mix).mp3
+Mar 18 18:53 : update: added mixing/mun/Recovery.mp3
+Mar 18 18:53 : update: added mixing/mun/Adam Port, Stryv - Move feat. Malachiii (Extended Version).mp3
+Mar 18 18:53 : update: added mixing/mun/Bind (Rampa Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Rise.mp3
+Mar 18 18:53 : update: added mixing/mun/Parra for Cuva - Swept Away (feat. Anna Naklab & Mr. Gramo).mp3
+Mar 18 18:53 : update: added mixing/mun/Never Forget. (Keep Moving On.).mp3
+Mar 18 18:53 : update: added mixing/mun/ZHU - Cocaine Model [OFFICIAL VIDEO HD].mp3
+Mar 18 18:53 : update: added mixing/mun/Les Djinns (Trentemoeller Remix).mp3
+Mar 18 18:53 : update: added mixing/mun/Nobody Stayed for the DJ.mp3
+Mar 18 18:53 : update: added mixing/mun/After the Siege.mp3
+Mar 18 18:53 : update: added mixing/mun/Zimmer - Dani (ft. The Undercover Dream Lovers) [Official Video].mp3
+Mar 18 18:53 : update: added mixing/mun/Thomas Bangalter - Club Soda (A1).mp3
+Mar 18 18:53 : update: added mixing/mun/Set Me Free (Extended Mix).mp3
+Mar 18 18:53 : update: added mixing/mun/Route 94 - My Love (Official Video) ft. Jess Glynne.mp3
+Mar 18 18:53 : update: added mixing/mun/RÜFÜS DU SOL ●● You Were Right [Official Video].mp3
+Mar 18 18:53 : update: added mixing/mun/Fields.mp3
+Mar 18 18:53 : update: added mixing/mun/Dezko - Ascend (Official Audio).mp3
+Mar 18 18:53 : update: added mixing/mun/Midnight in Peckham.mp3
+Mar 18 18:53 : update: added mixing/mun/Nina Simone - Sinnerman (Jacob Adan Remix) #DeepHouse.mp3
+Mar 18 18:53 : update: added mixing/mun/Chelsea Wolfe - The Warden (Maceo Plex Remix).mp3
+Mar 18 18:59 : player: played "mixing/mun/31 Bloom.mp3"
+Mar 18 19:02 : player: played "mixing/mun/Rise.mp3"
+Mar 18 19:09 : player: played "mixing/mun/The Rapture Pt.III.mp3"
+Mar 18 19:16 : player: played "mixing/mun/Shaman.mp3"
+Mar 18 19:18 : player: played "mixing/mun/What I Need.mp3"
+Mar 18 19:22 : player: played "mixing/mun/Yamore.mp3"
+Mar 18 19:25 : player: played "mixing/mun/Duke Dumont - Ocean Drive (Official Music Video).mp3"
+Mar 18 19:32 : player: played "mixing/mun/Alone (feat. FEMME).mp3"
+Mar 18 19:35 : player: played "mixing/mun/Mwaki.mp3"
+Mar 18 19:39 : player: played "mixing/mun/Fields.mp3"
+Mar 18 19:43 : player: played "mixing/mun/Alone Together.mp3"
+Mar 18 19:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 18 19:46 : player: played "mixing/mun/Womack & Womack - Teardrops (Rules Remix).mp3"
+Mar 18 19:50 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Mar 18 19:50 : player: played "mixing/mun/What I Need.webm"
+Mar 18 19:57 : player: played "mixing/mun/Juno Love.mp3"
+Mar 18 20:05 : player: played "mixing/mun/Monday.mp3"
+Mar 18 20:09 : player: played "mixing/mun/Chet Faker - Gold (Official Music Video).mp3"
+Mar 18 20:18 : player: played "mixing/mun/Movement of Whale.mp3"
+Mar 18 20:26 : player: played "mixing/mun/Late Night (Solomun Remix).mp3"
+Mar 18 20:29 : player: played "mixing/mun/Massane - Not Alone.mp3"
+Mar 18 20:36 : player: played "mixing/mun/Midnight in Peckham.mp3"
+Mar 18 20:41 : player: played "mixing/mun/Recovery.mp3"
+Mar 18 20:49 : player: played "mixing/mun/What To Do (& ME Remix).mp3"
+Mar 18 20:54 : player: played "mixing/mun/After the Siege.mp3"
+Mar 18 20:59 : player: played "mixing/mun/BICEP ｜ GLUE (Official Video).mp3"
+Mar 18 21:03 : player: played "mixing/mun/Tetris (Edit).mp3"
+Mar 19 16:50 : player: played "mixing/mun/Secret Encounters.mp3"
+Mar 19 16:55 : player: played "mixing/mun/Never Forget. (Keep Moving On.).mp3"
+Mar 19 17:01 : player: played "mixing/mun/Set Me Free (Extended Mix).mp3"
+Mar 19 17:07 : player: played "mixing/mun/n u a g e s - Dreams ❀.mp3"
+Mar 19 17:16 : player: played "mixing/mun/RÜFÜS DU SOL ●● Innerbloom (Official Video).mp3"
+Mar 19 17:21 : player: played "mixing/mun/Dezko - Ascend (Official Audio).mp3"
+Mar 19 17:27 : player: played "mixing/mun/Bind (Rampa Remix).mp3"
+Mar 19 17:33 : player: played "mixing/mun/Parra for Cuva - Swept Away (feat. Anna Naklab & Mr. Gramo).mp3"
+Mar 19 17:40 : player: played "mixing/mun/Secret Places (Club Version).mp3"
+Mar 19 17:46 : player: played "mixing/mun/Chelsea Wolfe - The Warden (Maceo Plex Remix).mp3"
+Mar 19 17:50 : player: played "mixing/mun/CHRYSTAL - THE DAYS  (NOTION REMIX).mp3"
+Mar 19 17:53 : player: played "mixing/mun/Route 94 - My Love (Official Video) ft. Jess Glynne.mp3"
+Mar 19 17:58 : player: played "mixing/mun/Miracle.mp3"
+Mar 19 18:04 : player: played "mixing/mun/Adam Port, Stryv - Move feat. Malachiii (Extended Version).mp3"
+Mar 19 18:31 : player: played "mixing/mun/Noir & Haze - Around [Solomun Vox Mix] - NMB037.mp3"
+Mar 19 18:37 : player: played "mixing/mun/Hope.mp3"
+Mar 19 18:40 : player: played "mixing/mun/Lynnic, ItsArius & Dinia - With You.mp3"
+Mar 20 12:27 : player: played "mixing/mun/Her Eyes.mp3"
+Mar 20 12:33 : player: played "mixing/mun/31 Bloom.mp3"
+Mar 20 12:41 : player: played "mixing/mun/Late Night (Solomun Remix).mp3"
+Mar 20 13:18 : player: played "mixing/mun/Elderbrook - Inner Light with Bob Moses (Official Music Video).mp3"
+Mar 20 13:30 : player: played "mixing/mun/Secret Places (Club Version).mp3"
+Mar 20 13:39 : player: played "mixing/mun/What To Do (& ME Remix).mp3"
+Mar 20 13:46 : player: played "mixing/mun/Monday.mp3"
+Mar 20 13:52 : player: played "mixing/mun/French 79 - Hometown [Official Video].mp3"
+Mar 20 13:56 : player: played "mixing/mun/Liu Bei - Infatuation (OFFICIAL VIDEO).mp3"
+Mar 20 13:59 : player: played "mixing/mun/Lynnic, ItsArius & Dinia - With You.mp3"
+Mar 20 14:04 : player: played "mixing/mun/Peter Peter - Bien réel (Clip officiel).mp3"
+Mar 20 14:07 : player: played "mixing/mun/London Grammar - Wasting My Young Years (Fading Soul Remix).mp3"
+Mar 20 16:07 : player: played "mixing/mun/Disco Gnome (Tale Of Us Remix).mp3"
+Mar 20 16:14 : player: played "mixing/mun/Les Djinns (Trentemoeller Remix).mp3"
+Mar 20 16:18 : player: played "mixing/mun/Flume & Chet Faker - Drop the Game [Official Music Video].mp3"
+Mar 20 16:22 : player: played "mixing/mun/Chet Faker - Gold (Official Music Video).mp3"
+Mar 20 16:26 : player: played "mixing/mun/BICEP ｜ GLUE (Official Video).mp3"
+Mar 20 16:30 : player: played "mixing/mun/Petra (TWO LANES Remix).mp3"
+Mar 20 16:33 : player: played "mixing/mun/What I Need.mp3"
+Mar 20 16:37 : player: played "mixing/mun/Yamore.mp3"
+Mar 20 16:40 : player: played "mixing/mun/Massane - Not Alone.mp3"
+Mar 20 16:46 : player: played "mixing/mun/Vue.mp3"
+Mar 20 16:49 : player: played "mixing/mun/Rise.mp3"
+Mar 20 16:59 : player: played "mixing/mun/Thrill.mp3"
+Mar 20 17:03 : player: played "mixing/mun/Mwaki.mp3"
+Mar 20 17:12 : player: played "mixing/mun/RÜFÜS DU SOL ●● Innerbloom (Official Video).mp3"
+Mar 20 17:15 : player: played "mixing/mun/Route 94 - My Love (Official Video) ft. Jess Glynne.mp3"
+Mar 20 17:19 : player: played "mixing/mun/Jan Blomqvist, Natascha Polké - Midnight Sun (Official Video).mp3"
+Mar 20 17:22 : player: played "mixing/mun/Duke Dumont - Ocean Drive (Official Music Video).mp3"
+Mar 20 17:29 : player: played "mixing/mun/Bingo.mp3"
+Mar 21 09:59 : player: played "mixing/mun/After the Siege.mp3"
+Mar 21 10:05 : player: played "mixing/mun/31 Bloom.mp3"
+Mar 21 10:11 : player: played "mixing/mun/Vue.mp3"
+Mar 21 10:21 : player: played "mixing/mun/Secret Encounters.mp3"
+Mar 21 10:25 : player: played "mixing/mun/TWO LANES - Sign (Live Session).mp3"
+Mar 21 10:34 : player: played "mixing/mun/Nina Simone - Sinnerman (Jacob Adan Remix) #DeepHouse.mp3"
+Mar 21 10:37 : player: played "mixing/mun/Dezko - Ascend (Official Audio).mp3"
+Mar 21 10:42 : player: played "mixing/mun/Elderbrook - Inner Light with Bob Moses (Official Music Video).mp3"
+Mar 21 10:48 : player: played "mixing/mun/Noir & Haze - Around [Solomun Vox Mix] - NMB037.mp3"
+Mar 21 10:54 : player: played "mixing/mun/Everything I Own (Gorje Hewek Remix).mp3"
+Mar 21 10:58 : player: played "mixing/mun/Fields.mp3"
+Mar 21 11:04 : player: played "mixing/mun/Black Mantis.mp3"
+Mar 21 11:08 : player: played "mixing/mun/Far Away Place (Rampa Remix).mp3"
+Mar 21 11:11 : player: played "mixing/mun/Mwaki.mp3"
+Mar 21 11:18 : player: played "mixing/mun/Ekata (Lunar Plane Remix).mp3"
+Mar 21 11:25 : player: played "mixing/mun/The Rapture Pt.III.mp3"
+Mar 21 11:30 : player: played "mixing/mun/Miracle.mp3"
+Mar 21 11:44 : player: played "mixing/mun/Les Djinns (Trentemoeller Remix).mp3"
+Mar 21 11:49 : player: played "mixing/mun/n u a g e s - Dreams ❀.mp3"
+Mar 21 11:55 : player: played "mixing/mun/French 79 - Hometown [Official Video].mp3"
+Mar 21 11:58 : player: played "mixing/mun/Route 94 - My Love (Official Video) ft. Jess Glynne.mp3"
+Mar 21 12:02 : player: played "mixing/mun/RÜFÜS DU SOL ●● You Were Right [Official Video].mp3"
+Mar 21 12:05 : player: played "mixing/mun/Zimmer - Dani (ft. The Undercover Dream Lovers) [Official Video].mp3"
+Mar 21 12:09 : player: played "mixing/mun/TOO COOL TO BE CARELESS.mp3"
+Mar 21 15:03 : player: played "mixing/mun/Juno Love.mp3"
+Mar 21 15:08 : player: played "mixing/mun/Lynnic, ItsArius & Dinia - With You.mp3"
+Mar 21 15:13 : player: played "mixing/mun/Leblanc - Nuclear Fission.mp3"
+Mar 23 09:45 : player: played "mixing/mun/Nobody Stayed for the DJ.mp3"
+Mar 23 09:53 : player: played "mixing/mun/Turn Around (Âme Remix).mp3"
+Mar 23 14:11 : player: played "mixing/mun/Set Me Free (Extended Mix).mp3"
+Mar 23 14:17 : player: played "mixing/mun/Let's Pretend (Extended Mix).mp3"
+Mar 23 14:23 : player: played "mixing/mun/NTO & Monolink - Beyond Control (Official Video).mp3"
+Mar 23 14:29 : player: played "mixing/mun/Chelsea Wolfe - The Warden (Maceo Plex Remix).mp3"
+Mar 23 14:35 : player: played "mixing/mun/Parra for Cuva - Swept Away (feat. Anna Naklab & Mr. Gramo).mp3"
+Mar 23 14:39 : player: played "mixing/mun/Thomas Bangalter - Club Soda (A1).mp3"
+Mar 23 14:46 : player: played "mixing/mun/In A Manner Of Speaking.mp3"
+Mar 23 14:54 : player: played "mixing/mun/Röyksopp - Sordid Affair (Maceo Plex Remix).mp3"
+Mar 23 14:58 : player: played "mixing/mun/Thrill.mp3"
+Mar 23 15:06 : player: played "mixing/mun/Movement of Whale.mp3"
+Mar 23 15:10 : player: played "mixing/mun/Parra for Cuva ft. Anna Naklab - Wicked Games (Official Music Video).mp3"
+Mar 23 15:19 : player: played "mixing/mun/RÜFÜS DU SOL ●● Innerbloom (Official Video).mp3"
+Mar 23 15:23 : player: played "mixing/mun/Aria.mp3"
+Mar 23 15:26 : player: played "mixing/mun/London Grammar - Wasting My Young Years (Fading Soul Remix).mp3"
+Mar 23 15:33 : player: played "mixing/mun/Solitary Daze.mp3"
+Mar 23 15:37 : player: played "mixing/mun/Her Eyes.mp3"
+Mar 23 15:41 : player: played "mixing/mun/Liu Bei - Infatuation (OFFICIAL VIDEO).mp3"
+Mar 23 15:45 : player: played "mixing/mun/Petra (TWO LANES Remix).mp3"
+Mar 23 15:52 : player: played "mixing/mun/Night Talk - Gamma.mp3"
+Mar 23 16:00 : player: played "mixing/mun/What To Do (& ME Remix).mp3"
+Mar 23 16:04 : player: played "mixing/mun/Jan Blomqvist, Natascha Polké - Midnight Sun (Official Video).mp3"
+Mar 23 17:50 : player: played "mixing/mun/Tom Odell - Another Love (Zwette Edit).mp3"
+Mar 24 12:20 : player: played "Led Zeppelin/Led Zeppelin - Led Zeppelin III 1970 HIGHRESAUDIO 2496/04 Since Ive Been Loving You.flac"
+Mar 24 13:47 : player: played "mixing/mun/31 Bloom.mp3"
+Mar 24 13:53 : player: played "mixing/mun/Black Mantis.mp3"
+Mar 24 13:59 : player: played "mixing/mun/Thrill.mp3"
+Mar 24 14:04 : player: played "mixing/mun/French 79 - Hometown [Official Video].mp3"
+Mar 24 14:12 : player: played "mixing/mun/Khan feat. Julee Cruise - Say Goodbye (Losoul Shes Homeless Mix).mp3"
+Mar 24 14:16 : player: played "mixing/mun/Tetris (Edit).mp3"
+Mar 24 14:22 : player: played "mixing/mun/n u a g e s - Dreams ❀.mp3"
+Mar 24 14:26 : player: played "mixing/mun/Elderbrook - Inner Light with Bob Moses (Official Music Video).mp3"
+Mar 24 14:34 : player: played "mixing/mun/Bind (Rampa Remix).mp3"
+Mar 24 14:40 : player: played "mixing/mun/NTO & Monolink - Beyond Control (Official Video).mp3"
+Mar 24 14:43 : player: played "mixing/mun/Rone - Bye Bye Macadam (Official Video).mp3"
+Mar 24 14:47 : player: played "mixing/mun/Dezko - Ascend (Official Audio).mp3"
+Mar 24 14:53 : player: played "mixing/mun/Hope.mp3"
+Mar 25 09:27 : player: played "mixing/mun/Route 94 - My Love (Official Video) ft. Jess Glynne.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Mar 25 09:33 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/01 ひっくりかえってた２人.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+Mar 25 09:39 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/02 ひこうき.mp3"
+Mar 25 09:44 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/03 Special Night.mp3"
+Mar 25 09:48 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/05 夏の思い出.mp3"
+Mar 25 09:53 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/09 チャンス.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1954] error: bit deficit after dequant
+Mar 25 10:14 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/06 Future.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Mar 25 10:20 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/08 Go Go Clubですれ違い.mp3"
+[src/libmpg123/layer3.c:INT123_do_layer3():1948] error: dequantization failed!
+Mar 25 10:25 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/10 ピアノ.mp3"
+Mar 25 10:29 : player: played "Fishmans/Studio Albums/[1991-1] Chappie, Don't Cry/07 いなごが飛んでる.mp3"
+Mar 25 10:34 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/01 Pokka Pokka.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 12695783.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 25 10:39 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/03 うしろ姿.mp3"
+Mar 25 10:47 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/08 Daydream.mp3"
+Mar 25 10:52 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/05 Magic Love.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 21023638.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 25 11:01 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/02 Weather Report.mp3"
+Note: Illegal Audio-MPEG-Header 0xaa544147 at offset 31196778.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 25 11:14 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/07 Walking In The Rhythm.mp3"
+Note: Illegal Audio-MPEG-Header 0x55544147 at offset 20409236.
+Note: Trying to resync...
+Note: Hit end of (available) data during resync.
+Mar 25 11:22 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/06 バックビートにのっかって.mp3"
+Mar 25 11:28 : player: played "Fishmans/Studio Albums/[1997-1] 宇宙 日本 世田谷 (Uchū Nippon Setagaya)/04 In The Flight.mp3"
+Mar 25 13:52 : player: played "mixing/mun/31 Bloom.mp3"
+Mar 25 13:58 : player: played "mixing/mun/Bingo.mp3"
+Mar 25 14:05 : player: played "mixing/mun/Kid Francescoli - ＂Moon＂ (Official Video).mp3"
+Mar 25 14:09 : player: played "mixing/mun/Tetris (Edit).mp3"
+Mar 25 14:12 : player: played "mixing/mun/Rise.mp3"
+Mar 25 14:16 : player: played "mixing/mun/Fields.mp3"
+Mar 25 14:23 : player: played "mixing/mun/Solitary Daze.mp3"
+Mar 25 14:30 : player: played "mixing/mun/Chelsea Wolfe - The Warden (Maceo Plex Remix).mp3"
+Mar 25 14:36 : player: played "mixing/mun/Free (Hosh Edit).mp3"
+Mar 25 14:39 : player: played "mixing/mun/London Grammar - Wasting My Young Years (Fading Soul Remix).mp3"
+Mar 25 14:46 : player: played "mixing/mun/Alone (feat. FEMME).mp3"
+Mar 25 14:52 : player: played "mixing/mun/What I Need.mp3"
+Mar 25 14:58 : player: played "mixing/mun/Nina Simone - Sinnerman (Jacob Adan Remix) #DeepHouse.mp3"
+Mar 25 15:04 : player: played "mixing/mun/Tom Odell - Another Love (Zwette Edit).mp3"
+Mar 25 15:14 : player: played "mixing/mun/RÜFÜS DU SOL ●● Innerbloom (Official Video).mp3"
+Mar 25 15:18 : player: played "mixing/mun/RÜFÜS DU SOL ●● You Were Right [Official Video].mp3"
+Mar 25 15:21 : player: played "mixing/mun/HUGEL x Topic x Arash feat. Daecolm - I Adore You (Visualizer).mp3"
+Mar 25 15:27 : player: played "mixing/mun/Set Me Free (Extended Mix).mp3"
+Mar 25 15:31 : player: played "mixing/mun/Duke Dumont - Ocean Drive (Official Music Video).mp3"
+Mar 25 15:35 : player: played "mixing/mun/Chet Faker - Gold (Official Music Video).mp3"
+Mar 25 15:42 : player: played "mixing/mun/Noir & Haze - Around [Solomun Vox Mix] - NMB037.mp3"
+Mar 25 15:45 : player: played "mixing/mun/Jan Blomqvist, Natascha Polké - Midnight Sun (Official Video).mp3"
+Mar 26 15:44 : player: played "mixing/mun/NTO & Monolink - Beyond Control (Official Video).mp3"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 26 15:44 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 26 15:44 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 26 15:44 : config: option 'auto_resample' on line 26 was not recognized
+Mar 26 15:44 : config: option 'use_mmap' on line 27 was not recognized
+Mar 26 15:46 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Mar 26 15:51 : player: played "Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3"
+Mar 26 15:55 : player: played "Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3"
+Mar 26 16:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 26 16:03 : player: played "Chinese/Chinese Guqin  ： Flowing water Guqin 流水 古琴曲.mp3"
+Mar 26 16:07 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Mar 26 16:07 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.webm"
+Mar 26 16:28 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 26 16:31 : player: played "Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3"
+Mar 26 17:01 : player: played "Chinese/30分钟好听的古筝曲 30 minutes Instrumental Guzheng Music Chinese Traditional Music - Relaxing Study Music..mp3"
+Mar 26 20:02 : player: played "Solomun/Nobody is not Loved/Prospect (feat. ÄTNA).mp3"
+Mar 26 20:07 : player: played "Solomun/Nobody is not Loved/Home.mp3"
+Mar 26 20:11 : player: played "Solomun/Nobody is not Loved/Take Control (feat. Anne Clark).mp3"
+Mar 26 20:15 : player: played "Solomun/Nobody is not Loved/Tuk Tuk (feat. ÄTNA).mp3"
+Mar 26 20:19 : player: played "Solomun/Nobody is not Loved/Out of Focus (feat. Zoot Woman).mp3"
+Mar 26 20:23 : player: played "Solomun/Nobody is not Loved/The Center Will Not Hold.mp3"
+Mar 26 20:26 : player: played "Solomun/Nobody is not Loved/Never Sleep Again.mp3"
+Mar 26 20:30 : player: played "Solomun/Nobody is not Loved/Prospect (feat. ÄTNA).mp3"
+Mar 27 14:50 : player: played "Solomun/Nobody is not Loved/Kreatur der Nacht (feat. Isolation Berlin).mp3"
+Mar 27 14:50 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 27 14:50 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 27 14:50 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 27 14:50 : mpg123: mpg123_getformat() failed: Message: I am done with this track.
+Mar 27 14:50 : ffmpeg/mp3: Format mp3 detected only with low score of 1, misdetection possible!
+Mar 27 14:50 : ffmpeg/mp3: Failed to find two consecutive MPEG audio frames.
+Mar 27 14:50 : update: added mixes/Adriatique at Signal 2108 Alpe d'Huez in the Alps, France for Cercle.mp3
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0002
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0001
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0015
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0014
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0013
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0012
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0011
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0010
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0009
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0008
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0007
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0006
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0005
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0004
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0003
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0002
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 01 - Softly/Softly.cue/track0001
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0014
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0013
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0012
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0011
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0010
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0009
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0008
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0007
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0006
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0005
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0004
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0003
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0002
+Mar 27 14:50 : update: removing nujabes/Spiritual-State-Flac/Nujabes - Spiritual State.cue/track0001
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0023
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0022
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0021
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0020
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0019
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0018
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0017
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0016
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0015
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0014
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0013
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0012
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0011
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0010
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0009
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0008
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0007
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0006
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0005
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0004
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0003
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0002
+Mar 27 14:50 : update: removing charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/Pubis angelical - Yendo de la cama al living.cue/track0001
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0007
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0006
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0005
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0004
+Mar 27 14:50 : update: removing Tatsuro Yamashita/Softly [Deluxe Edition]/Disc 02 - The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo]/The Latest Acoustic Live ~ [Recorded Live, 2021.12.03 at Tokyo FM Hall, Tokyo].cue/track0003
+Mar 27 14:52 : player: played "VAGUE002/deadboy.flac"
+Mar 27 14:55 : player: played "VAGUE002/girl crying.flac"
+Mar 28 11:46 : player: played "singles/Polish cow (English Lyrics Full Version) [OyDyOweu-PA].mp3"
+Mar 28 11:48 : player: played "VAGUE002/deadboy.flac"
+Mar 28 11:51 : player: played "VAGUE002/girl crying.flac"
+Mar 28 11:54 : player: played "Rei Brown/raybaboon/rei brown - raybaboon - 01 Everything Falls Apart.flac"
+Mar 28 11:57 : player: played "Rei Brown/raybaboon/rei brown - raybaboon - 02 The Wind.flac"
+Mar 28 12:00 : player: played "Rei Brown/raybaboon/rei brown - raybaboon - 03 Where Did I Go.flac"
+Mar 28 12:03 : player: played "Rei Brown/raybaboon/rei brown - raybaboon - 04 Landing On Mars.flac"
+Mar 28 12:07 : player: played "Rei Brown/raybaboon/rei brown - raybaboon - 05 Picture Frames.flac"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 28 13:07 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Warning: Xing stream size off by more than 1%, fuzzy seeking may be even more fuzzy than by design!
+Mar 28 13:07 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 28 13:07 : config: option 'auto_resample' on line 26 was not recognized
+Mar 28 13:07 : config: option 'use_mmap' on line 27 was not recognized
+Mar 28 13:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 28 13:10 : player: played "Chinese/《不染》---古琴獨奏述深情《香蜜沉沉燼如霜》主題曲.mp3"
+Mar 28 13:10 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 28 13:10 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 28 13:10 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 28 13:13 : player: played "Chinese/《青花瓷》《Blue And White Porcelain》｜原唱：周傑倫  Jay Zhou｜古箏 純箏 Chinese Zither｜翻奏 崔江卉 Coverd by Cuijianghui.mp3"
+Mar 28 13:13 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 28 13:17 : player: played "Chinese/【古琴Guqin】《何以歌》Nameless Song - 《魔道祖师》主题曲 ＂Mo Dao Zu Shi＂ Theme Song - Cover 南一先生 - Performer 东韵.mp3"
+Mar 28 13:17 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 28 13:21 : player: played "Chinese/【古筝】《三生三世十里桃花 》繁花  咲き乱れる花 Phồn Hoa.mp3"
+Mar 28 13:21 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 28 19:13 : player: played "Chinese/20分钟古筝流行曲合集 20 minutes Guzheng instrumental Peaceful Songs Relaxing Beautiful Study Music. Therapy.mp3"
+Mar 28 19:13 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 28 19:32 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 28 19:34 : player: played "Berlioz/Jazz is for ordinary People/berlioz - deep in it.mp3"
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: No such song
+Mar 29 08:45 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 31 18:51 : player: played "charly/Charly Garcia - Pubis angelical - Yendo de la cama al living (1982)/01 - Operacion densa.flac"
+Mar 31 18:51 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 31 18:51 : exception: Failed to open "CoreAudio" (osx); The operation couldn’t be completed. (OSStatus error 560947818.)
+Mar 31 18:51 : player: played "mixes/solomun-boiler/SBTRKT feat. Ezra Koenig - New Dorp. New York (Solomun Edit) Boiler Room.mp3"
+Mar 31 18:51 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 31 18:51 : config: option 'auto_resample' on line 26 was not recognized
+Mar 31 18:51 : config: option 'use_mmap' on line 27 was not recognized
+Mar 31 18:58 : player: played "mixes/solomun-boiler/Simion - Lost Feat. Roland Clark (Club Mix) [Suara].mp3"
+Mar 31 19:02 : player: played "mixes/solomun-boiler/Thomas Bangalter - Club Soda [HIGH QUALITY].mp3"
+Mar 31 21:26 : player: played "mixes/solomun-boiler/Jairo Catelo - Timeless.mp3"
+Apr 01 10:41 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 01 10:41 : config: option 'auto_resample' on line 26 was not recognized
+Apr 01 10:41 : config: option 'use_mmap' on line 27 was not recognized
+Apr 01 10:58 : player: played "Drum-n-Bass/Mellow Breaks [l4fBd4AHySk].mp3"
+Apr 01 10:58 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 01 10:58 : config: option 'auto_resample' on line 26 was not recognized
+Apr 01 10:58 : config: option 'use_mmap' on line 27 was not recognized
+Apr 01 13:37 : player: played "Drum-n-Bass/Mellow Breaks [l4fBd4AHySk].mp3"
+Apr 01 13:41 : player: played "Solomun/Nobody is not Loved/Prospect (feat. ÄTNA).mp3"
+Apr 01 22:49 : player: played "Solomun/Nobody is not Loved/Wadim.mp3"

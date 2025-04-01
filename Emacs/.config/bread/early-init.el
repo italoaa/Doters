@@ -28,5 +28,14 @@
 ;; lsp mode
 (setenv "LSP_USE_PLISTS" "true")
 
+(defun avoid-initial-flash-of-light ()
+  "Avoid flash of light when starting Emacs, if needed.
+New frames are instructed to call `prot-emacs-re-enable-frame-theme'."
+  (set-face-attribute 'default nil :background "#000000" :foreground "#ffffff")
+  (set-face-attribute 'mode-line nil :background "#000000" :foreground "#ffffff" :box 'unspecified)
+    )
+
+(avoid-initial-flash-of-light)
+
 (provide 'early-init)
 ;;; early-init.el ends here

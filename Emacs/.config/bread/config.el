@@ -6,12 +6,12 @@
 ;; Settings for nano
 (setq nano-enabled t)
 ;; Use an if statement if nano is enabled
-(require 'nano-modeline)
+;;(require 'nano-modeline)
 (require 'nano-colors)
-(require 'nano-layout)
+;;(require 'nano-layout)
 (require 'nano-command)
 (require 'nano-faces)
-(require 'nano-theme)
+;;(require 'nano-theme)
 ;; (require 'nano-hl-block)
 (if nano-enabled
     (progn
@@ -22,18 +22,16 @@
       ;; (require 'nano-theme-dark)
       ;; (require 'nano-theme-light)
 
-      ;; (nano-theme-set-dark)
+      ;; (nano-theme-set-light)
       ;; (call-interactively 'nano-refresh-theme)
 
       ;; End the config loading with the splash screen
-      (require 'nano-splash)
+      ;; (require 'nano-splash)
       ;; (require 'nano-agenda)
       ;; (require 'nano-minibuffer)
       (set-scroll-bar-mode nil)
       )
   )
-
-(set-face-attribute 'default nil :height 150) ; For 12pt font
 
 (require 'elpaca-setup)
 
@@ -45,6 +43,11 @@
       kept-new-versions 6
       kept-old-versions 2
       version-control t)
+
+(setq initial-scratch-message "\
+;; Don't Complain!
+
+")
 
 (recentf-mode)
 (add-to-list 'default-frame-alist '(undecorated . t))
@@ -58,13 +61,31 @@
 (set-scroll-bar-mode nil)
 (blink-cursor-mode -1)
 
-(global-display-line-numbers-mode 1)
+;; (global-display-line-numbers-mode 1)
 (global-visual-line-mode t)
 
 (setq display-line-numbers-type 'relative)
 (setq scroll-margin 2)
 (setq indent-tabs-mode nil)
 (setq tab-width 4)
+
+
+;; font
+(set-face-attribute 'default nil :font "Aporetic Sans Mono")
+(set-face-attribute 'default nil :height 165) ; For 12pt font
+
+(setq frame-resize-pixelwise t
+      frame-inhibit-implied-resize t
+      frame-title-format '("%b")
+      ring-bell-function 'ignore
+      use-dialog-box t ; only for mouse events, which I seldom use
+      use-file-dialog nil
+      use-short-answers t
+      inhibit-splash-screen t
+      inhibit-startup-screen t
+      inhibit-x-resources t
+      inhibit-startup-echo-area-message user-login-name ; read the docstring
+      inhibit-startup-buffer-menu t)
 
 
 ;; I prefer cmd key for meta
@@ -78,6 +99,8 @@
 
 ;; Common directories
 (setq gnus-home-directory "/Users/italo/"
+      gnus-cache-directory "/Users/italo/.cache/emacs"
+      gnus-cache-active-file "/Users/italo/.cache/emacs/active"
       config-dir (concat gnus-home-directory ".config/")
       downloads-dir (concat gnus-home-directory "Downloads/")
       drop-dir (concat gnus-home-directory "Personal/Dropbox/")
@@ -86,6 +109,7 @@
       repos-dir (concat gnus-home-directory "Personal/Programming/Repos/")
       github-dir (concat repos-dir "github.com/")
       italoaa-dir (concat github-dir "italoaa/"))
+
 
 (defun kill-all-except-dashboard-and-essential ()
   "Kill all buffers except the dashboard, *scratch*, and *Messages*, prompting to save unsaved buffers with y or n."
@@ -105,10 +129,6 @@
         (kill-buffer buffer)))))
 
 
-;; Enable indentation+completion using the TAB key.
-;; `completion-at-point' is often bound to M-TAB.
-(setq tab-always-indent 'complete)
-
 ;; Emacs 30 and newer: Disable Ispell completion function. As an alternative,
 ;; try `cape-dict'.
 (setq text-mode-ispell-word-completion nil)
@@ -117,6 +137,192 @@
 ;; mode.  Corfu commands are hidden, since they are not used via M-x. This
 ;; setting is useful beyond Corfu.
 (setq read-extended-command-predicate #'command-completion-default-include-p)
+
+(use-package spacious-padding
+  :ensure t
+  :if (display-graphic-p)
+  :hook (after-init . spacious-padding-mode)
+  :bind ("<f8>" . spacious-padding-mode)
+  :init
+  ;; These are the defaults, but I keep it here for visiibility.
+  (setq spacious-padding-widths
+        '( :internal-border-width 30
+           :header-line-width 4
+           :mode-line-width 6
+           :tab-width 4
+           :right-divider-width 30
+           :scroll-bar-width 8
+           :left-fringe-width 20
+           :right-fringe-width 20))
+
+  ;; Read the doc string of `spacious-padding-subtle-mode-line' as
+  ;; it is very flexible.
+  (setq spacious-padding-subtle-mode-line
+        '( :mode-line-active spacious-padding-subtle-mode-line-active
+           :mode-line-inactive spacious-padding-subtle-mode-line-inactive))
+  )
+
+
+;;(elpaca nil (spacious-padding-mode))
+
+(use-package perspective
+  :custom
+  (persp-suppress-no-prefix-key-warning t)
+  :init
+  (persp-mode))
+(force-mode-line-update)
+
+;; so japanese characters dont lag
+
+(set-fontset-font "fontset-default" 'big5 "Noto Sans Mono CJK TC")
+
+(require 'fish)
+
+
+(setq fish-update-period 0.4) ;; Time between flaps (default 0.2 seconds)
+(setq fish-bar-length 20) ;; Width of swimming area (default 32)
+
+(defun my-modeline--vc-branch ()
+  "Get the current Git branch for the mode line."
+  (when vc-mode
+    (let ((branch (magit-get-current-branch)))
+      (if branch
+          (format "  %s " (car (split-string branch "-g" t))) ;; Extract branch name
+        ""))))
+
+(defvar-local my-modeline-vc-branch
+    '(:eval
+      (when (mode-line-window-selected-p)
+	(propertize (my-modeline--vc-branch) 'face 'font-lock-comment-face)))
+  "Mode line construct to display the current Git branch.")
+
+(put 'my-modeline-vc-branch 'risky-local-variable t)
+
+;; Function to get current perspective name
+;; (defun my-modeline--persp-name ()
+  ;; "Get current perspective name for the mode line."
+  ;; (when (bound-and-true-p persp-mode)
+    ;; (let ((name (persp-current-name)))
+      ;; (if name
+          ;; (format " [%s] " name)
+        ;; " default "))))
+
+;; Perspective modeline variable
+;; (defvar-local my-modeline-persp-name
+    ;; '(:eval
+      ;; (when (mode-line-window-selected-p)
+	;; (propertize (my-modeline--persp-name) 'face 'elpaca-busy)))
+  ;; "Mode line construct to display the perspective name.")
+
+;; (put 'my-modeline-persp-name 'risky-local-variable t)
+
+(fish-start-timer)
+
+;; Updated modeline format with perspective name
+(setq-default mode-line-format
+	      '("%e"
+                my-modeline-buffer-name
+		"  "
+                my-modeline-major-mode
+		" "
+		my-modeline-vc-branch
+                " "
+                my-modeline-fish
+                ))
+
+;; Rest of your existing code
+(defcustom my-modeline-max-buffer-name-length 30
+  "Maximum length of buffer name to display in modeline before truncating."
+  :type 'integer
+  :group 'my-modeline)
+
+(defcustom my-modeline-buffer-name-ellipsis "..."
+  "String to show at the end of truncated buffer names."
+  :type 'string
+  :group 'my-modeline)
+
+(defun my-modeline--buffer-name ()
+  "Return `buffer-name` formatted for modeline with truncation if needed."
+  (let* ((name (buffer-name))
+         (ellipsis-length (length my-modeline-buffer-name-ellipsis))
+         (max-effective-length (- my-modeline-max-buffer-name-length ellipsis-length))
+         (truncated-name (if (> (length name) my-modeline-max-buffer-name-length)
+                             (concat 
+			      (substring name 0 max-effective-length)
+			      my-modeline-buffer-name-ellipsis)
+                           name)))
+    (format " %s " truncated-name)))
+
+(defvar-local my-modeline-buffer-name
+  '(:eval
+    (propertize (my-modeline--buffer-name)
+                'face (if (mode-line-window-selected-p)
+                          'elpaca-busy  ;; Face when window is selected
+                        'shadow)))  ;; Face when window is not selected
+    "Mode line construct to display the buffer name with conditional formatting.")
+
+(put 'my-modeline-buffer-name 'risky-local-variable t)
+
+(defun my-modeline--major-mode-name ()
+  "Return capitalized `major-mode' as a string."
+  (capitalize (symbol-name major-mode)))
+
+fish-mode-line-string
+(defvar-local my-modeline-fish
+    '(:eval
+      (when (mode-line-window-selected-p)
+	(propertize fish-mode-line-string 'face 'default))
+      )
+  "Mode line construct to display the fish")
+(put 'my-modeline-fish 'risky-local-variable t)
+
+(defvar-local my-modeline-major-mode
+    '(:eval
+      (list
+       (propertize "雨" 'face 'shadow)
+       " "
+      (when (mode-line-window-selected-p)
+       (propertize (my-modeline--major-mode-name) 'face 'bold))
+      )
+      )
+  "Mode line construct to display the major mode.")
+
+(put 'my-modeline-major-mode 'risky-local-variable t)
+
+;; Define the fallback function if not available
+(unless (fboundp 'mode-line-window-selected-p)
+  (defun mode-line-window-selected-p ()
+    "Return non-nil if we're updating the mode line for the selected window.
+  This function is meant to be called in `:eval' mode line
+  constructs to allow altering the look of the mode line depending
+  on whether the mode line belongs to the currently selected window
+  or not."
+    (let ((window (selected-window)))
+      (or (eq window (old-selected-window))
+	  (and (minibuffer-window-active-p (minibuffer-window))
+	       (with-selected-window (minibuffer-window)
+		 (eq window (minibuffer-selected-window))))))))
+
+(setq evil-symbol-word-search t)
+
+(add-to-list 'display-buffer-alist
+	     '("\\*Compilation\\*"
+	       (display-buffer-in-side-window)
+	       (side . right)
+	       (window-width . 80)))
+
+(add-to-list 'display-buffer-alist
+	     '("\\*Org Src.*\\*"
+	       (display-buffer-in-side-window)
+	       (side . right)
+	       (window-width . 80)))
+
+;; make a function to open a new scratch buffer in org mode
+(defun new-scratch-org-buffer ()
+  "Create a new scratch buffer in org mode"
+  (interactive)
+  (switch-to-buffer (get-buffer-create "*scratch-org*"))
+  (org-mode))
 
 ;; Expands to: (elpaca evil (use-package evil :demand t))
 (use-package evil
@@ -140,12 +346,6 @@
   :after evil
   :config
   (evil-collection-init))
-
-(use-package perspective
-  :custom
-  (persp-suppress-no-prefix-key-warning t)
-  :init
-  (persp-mode))
 
 (use-package doom-themes
   :demand t
@@ -309,6 +509,7 @@
   "Sets the transparency of the frame window. 0=transparent/100=opaque"
   (interactive "nTransparency Value 0 - 100 opaque:")
   (set-frame-parameter (selected-frame) 'alpha value))
+(transparency 96)
 
 (use-package all-the-icons
   :demand t
@@ -444,6 +645,7 @@ tab-indent."
     "b k" '(kill-buffer :wk "Kill this buffer")
     "b K" '(kill-all-except-dashboard-and-essential :wk "Kill All except escential")
     "b l" '(list-bookmarks :wk "List bookmarks")
+    "b j" '(bookmark-jump :wk "Bookmark Jump")
     "b m" '(bookmark-set :wk "Set bookmark")
     "b n" '(next-buffer :wk "Next buffer")
     "b p" '(previous-buffer :wk "Previous buffer")
@@ -516,6 +718,14 @@ tab-indent."
     "h x" '(describe-command :wk "Display full documentation for command"))
 
   (flour/leader-keys
+    "M" '(:ignore t :wk "Modes")
+    "M o" '(org-mode t :wk "Org mode")
+    "M p" '(python-ts-mode t :wk "Python mode")
+    "M e" '(emacs-lisp-mode t :wk "Elisp mode")
+    "M c" '(c-ts-mode t :wk "Elisp mode")
+    "M C" '(c++-ts-mode t :wk "Elisp mode")
+    )
+  (flour/leader-keys
     "m" '(:ignore t :wk "Org")
     "m a" '(org-agenda :wk "Org agenda")
     "m e" '(org-export-dispatch :wk "Org export dispatch")
@@ -523,19 +733,13 @@ tab-indent."
     "m t" '(org-todo :wk "Org todo")
     "m B" '(org-babel-tangle :wk "Org babel tangle")
     "m T" '(org-todo-list :wk "Org todo list")
-
     "m c" '(:ignore t :wk "Org Clock")
     "m c i" '(org-clock-in :wk "Org clock in")
     "m c o" '(org-clock-out :wk "Org clock out")
     "m c g" '(org-clock-goto :wk "Org clock goto")
     "m c r" '(org-clock-report :wk "Org clock report")
-    )
-
-  (flour/leader-keys
     "m b" '(:ignore t :wk "Tables")
-    "m b -" '(org-table-insert-hline :wk "Insert hline in table"))
-
-  (flour/leader-keys
+    "m b -" '(org-table-insert-hline :wk "Insert hline in table")
     "m d" '(:ignore t :wk "Date/deadline")
     "m d t" '(org-time-stamp :wk "Org time stamp"))
 
@@ -544,10 +748,12 @@ tab-indent."
 
   (flour/leader-keys
     "t" '(:ignore t :wk "Toggle")
-    "t f" '(flycheck-mode :wk "Toggle flycheck")
+    "t f" '(jinx-mode :wk "Toggle flycheck")
     "t l" '(display-line-numbers-mode :wk "Toggle line numbers")
     "t r" '(rainbow-mode :wk "Toggle rainbow mode")
-    "t t" '(visual-line-mode :wk "Toggle truncated lines")
+    "t u" '(org-tidy-untidy-buffer :wk "Untify current buffer until save")
+    "t s" '(spacious-padding-mode :wk "Toggle spacious padding mode")
+    "t t" '(org-sidebar-tree-toggle :wk "Toggle the org tree")
     "t i" '(org-toggle-inline-images :wk "toggle inline images"))
 
   (flour/leader-keys
@@ -590,10 +796,10 @@ tab-indent."
     "w l" '(evil-window-right :wk "Window right")
     "w w" '(evil-window-next :wk "Goto next window")
     ;; Move Windows
-    "w H" '(buf-move-left :wk "Buffer move left")
-    "w J" '(buf-move-down :wk "Buffer move down")
-    "w K" '(buf-move-up :wk "Buffer move up")
-    "w L" '(buf-move-right :wk "Buffer move right"))
+    "w H" '(windmove-swap-states-left :wk "Buffer move left")
+    "w J" '(windmove-swap-states-down :wk "Buffer move down")
+    "w K" '(windmove-swap-states-up :wk "Buffer move up")
+    "w L" '(windmove-swap-states-right :wk "Buffer move right"))
 
   (flour/leader-keys
     "g" '(:ignore t :wk "Git")
@@ -618,7 +824,7 @@ tab-indent."
   (add-to-list 'completion-at-point-functions #'cape-file)
   ;; (add-to-list 'completion-at-point-functions #'cape-elisp-block)
   (add-to-list 'completion-at-point-functions #'cape-history)
-  ;; (add-to-list 'completion-at-point-functions #'cape-keyword)
+  (add-to-list 'completion-at-point-functions #'cape-keyword)
   ;; (add-to-list 'completion-at-point-functions #'cape-tex)
   ;; (add-to-list 'completion-at-point-functions #'cape-sgml)
   ;; (add-to-list 'completion-at-point-functions #'cape-rfc1345)
@@ -732,13 +938,15 @@ tab-indent."
 (use-package yasnippet-snippets
   :demand t)
 
-;;(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+;; LATEX
+;; #+CITE_EXPORT: csl vancouver.csl
+(setq org-cite-csl-styles-dir (concat bread-dir "cls")
+      org-cite-export-processors '((t csl))
+      )
 
-(use-package flycheck
-  :demand t
-  :defer t
-  :diminish
-  :init (global-flycheck-mode))
+(use-package citeproc)
+
+(require 'zen-mode)
 
 (use-package org-ai
   :ensure t
@@ -758,6 +966,16 @@ tab-indent."
   ;;(add-hook 'prog-mode-hook 'copilot-mode)
   (add-to-list 'copilot-indentation-alist '(org-mode 4))
   )
+
+(use-package shell-maker
+  :ensure (:host github :repo "xenodium/shell-maker" :files ("shell-maker*.el")))
+
+(use-package chatgpt-shell
+  :ensure (:host github :repo "xenodium/chatgpt-shell" :files ("chatgpt-shell*.el"))
+  :config
+  (setq chatgpt-shell-model-version "anthropic/claude-3.7-sonnet")
+  :custom
+  ((chatgpt-shell-openrouter-key open-router-key)))
 
 ;; Nano is wierd
 ;; (require 'nano-mu4e)
@@ -815,20 +1033,22 @@ tab-indent."
 	  "https://protesilaos.com/news.xml"
 	  )))
 
+;; (set-face-attribute 'default nil :font "Monaco")
+;; (set-face-attribute 'default nil :font "Andale Mono")
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-document-title ((t (:inherit default :weight normal :font "Monaco" :height 3.0 :underline nil))))
- '(org-level-1 ((t (:inherit default :weight regular :font "Monaco" :height 1.75))))
- '(org-level-2 ((t (:inherit default :weight regular :font "Monaco" :height 1.5))))
- '(org-level-3 ((t (:inherit default :weight regular :font "Monaco" :height 1.25))))
- '(org-level-4 ((t (:inherit default :weight regular :font "Monaco" :height 1.1))))
- '(org-level-5 ((t (:inherit default :weight regular :font "Monaco"))))
- '(org-level-6 ((t (:inherit default :weight regular :font "Monaco"))))
- '(org-level-7 ((t (:inherit default :weight regular :font "Monaco"))))
- '(org-level-8 ((t (:inherit default :weight regular :font "Monaco")))))
+ '(org-document-title ((t (:inherit default :weight normal  :height 2.0 :underline nil))))
+ '(org-level-1 ((t (:inherit default :weight regular  :height 1.75))))
+ '(org-level-2 ((t (:inherit default :weight regular  :height 1.5))))
+ '(org-level-3 ((t (:inherit default :weight regular  :height 1.25))))
+ '(org-level-4 ((t (:inherit default :weight regular  :height 1.1))))
+ '(org-level-5 ((t (:inherit default :weight regular ))))
+ '(org-level-6 ((t (:inherit default :weight regular ))))
+ '(org-level-7 ((t (:inherit default :weight regular ))))
+ '(org-level-8 ((t (:inherit default :weight regular )))))
 
 ;; Unbind RET for going to links
 ;;(elpaca nil (evil-define-key 'normal evil-motion-mode-map (kbd "RET") nil))
@@ -849,6 +1069,7 @@ tab-indent."
 (require 'org-habit)
 
 (require 'ox-extra)
+(ox-extras-activate '(latex-header-blocks ignore-headlines))
 (add-to-list 'org-modules 'org-habit)
 
 (setq org-agenda-files '("~/org/Agenda/index.org" "~/org/Agenda/project.org"))
@@ -1117,6 +1338,17 @@ tab-indent."
                       :height 150)
   (global-org-modern-mode))
 
+(use-package org-modern-indent
+ :ensure (:host github :repo "jdtsmith/org-modern-indent")
+ :config
+  (add-hook 'org-mode-hook #'org-modern-indent-mode 90))
+(use-package org-sidebar
+  :ensure (:host github :repo "alphapapa/org-sidebar"))
+;; (use-package org-tidy
+;;   :ensure t
+;;   :hook
+;;   (org-mode . org-tidy-mode))
+
 (use-package org-present)
 
 (use-package org-journal
@@ -1129,6 +1361,7 @@ tab-indent."
   )
 
 (use-package ox-reveal)
+(use-package htmlize)
 
 (use-package ob-async)
 
@@ -1150,43 +1383,44 @@ tab-indent."
 
 (add-hook 'rust-mode-hook 'lsp-deferred) ;; Load lsp when in a rust buffer
 
-;; (require 'treesit)
-;; (add-to-list 'treesit-language-source-alist
-;; 	     '(typescript . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "typescript/src")))
-;; (add-to-list 'treesit-language-source-alist
-;; 	     '(tsx . ("https://github.com/tree-sitter/tree-sitter-typescript" "master" "tsx/src")))
-(use-package treesit-auto
-  :custom
-  (treesit-auto-install 'prompt)
-  :config
-  (treesit-auto-add-to-auto-mode-alist 'all)
-  (global-treesit-auto-mode))
-
-(use-package ts-fold
-  :ensure (:host github :repo "https://github.com/emacs-tree-sitter/ts-fold")
-  )
-
 (add-hook 'c-mode-hook 'lsp)
 
 (add-hook 'c++-mode-hook 'lsp)
 
 (use-package fancy-compilation)
 
-(use-package lsp-pyright
-  :demand t
-  :hook (python-mode . (lambda ()
-                          (require 'lsp-pyright)
-                          (lsp))) ; or lsp-deferred
-  :config
-  (setq python-indent 4)) 
+;;; From https://robbmann.io/posts/emacs-eglot-pyrightconfig/ Thanks!!
+(defun pyrightconfig-write (virtualenv)
+  (interactive "DEnv: ")
 
-(use-package python-black
-  :demand t
-  :after python
-  :hook (python-mode . python-black-on-save-mode)
-  :config
-  (setq python-black-command "/usr/local/anaconda3/bin/black"
-	python-black-on-save-mode t))
+  (let* (;; file-truename and tramp-file-local-name ensure that neither `~' nor
+         ;; the Tramp prefix (e.g. "/ssh:my-host:") wind up in the final
+         ;; absolute directory path.
+         (venv-dir (tramp-file-local-name (file-truename virtualenv)))
+
+         ;; Given something like /path/to/.venv/, this strips off the trailing `/'.
+         (venv-file-name (directory-file-name venv-dir))
+
+         ;; Naming convention for venvPath matches the field for
+         ;; pyrightconfig.json.  `file-name-directory' gets us the parent path
+         ;; (one above .venv).
+         (venvPath (file-name-directory venv-file-name))
+
+         ;; Grabs just the `.venv' off the end of the venv-file-name.
+         (venv (file-name-base venv-file-name))
+
+         ;; Eglot demands that `pyrightconfig.json' is in the project root
+         ;; folder.
+         (base-dir (vc-git-root default-directory))
+         (out-file (expand-file-name "pyrightconfig.json" base-dir))
+
+         ;; Finally, get a string with the JSON payload.
+         (out-contents (json-encode (list :venvPath venvPath :venv venv))))
+
+    ;; Emacs uses buffers for everything.  This creates a temp buffer, inserts
+    ;; the JSON payload, then flushes that content to final `pyrightconfig.json'
+    ;; location
+    (with-temp-file out-file (insert out-contents))))
 
 (setq python-shell-interpreter (concat gnus-home-directory ".local/venv/ai/bin/python3")
       python-shell-virtualenv-root (concat gnus-home-directory ".local/venv/ai/")

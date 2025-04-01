@@ -2,14 +2,16 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-refile-last-stored" (filename . "~/org/Agenda/index.org")
- (front-context-string . "** Done\n*** DONE")
- (rear-context-string . "*Main][Main]]\n\n\n") (position . 1782)
- (last-modified 26107 10632 486647 0))
-("org-capture-last-stored"
+(("title"
  (filename
-  . "~/Personal/Dropbox/Bak/Org/roam/20250219211509-image_steganalysis_of_low_embedding_rate_based_on_the_attention_mechanism_and_transfer_learning.org")
- (front-context-string . "* Abstract\n\n\n* R")
- (rear-context-string . "search:Article:\n") (position . 204)
- (last-modified 26550 18920 805927 0))
+  . "~/Personal/Dropbox/Bak/Org/roam/20250203133542-unveiling_hidden_signals_exploring_the_impact_of_attention_based_models_on_steganalysis.org")
+ (front-context-string . "OPTIONS: toc:nil")
+ (rear-context-string . ": Italo Amaya\n#+") (position . 292)
+ (last-modified 26596 5227 9930 0))
+("arch"
+ (filename
+  . "~/Personal/Dropbox/Bak/Org/roam/20250203133542-unveiling_hidden_signals_exploring_the_impact_of_attention_based_models_on_steganalysis.org")
+ (front-context-string . "Models Architect")
+ (rear-context-string . "ementation.\n\n** ") (position . 36450)
+ (last-modified 26596 5212 894291 0))
 )
