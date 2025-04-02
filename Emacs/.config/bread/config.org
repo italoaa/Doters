@@ -1034,6 +1034,15 @@ tab-indent."
 : [nil 26593 55668 903268 nil elpaca-process-queues nil nil 0 nil]
 
 ** Programming
+*** Indent bars mode
+#+begin_src emacs-lisp
+(use-package indent-bars
+  :ensure (:host github :repo "jdtsmith/indent-bars" :files ("indent-bars.el"))
+  :hook ((python-mode yaml-mode) . indent-bars-mode)) ; or whichever modes you prefer
+#+end_src
+
+#+RESULTS:
+: [nil 26605 3971 531667 nil elpaca-process-queues nil nil 0 nil]
 
 *** TODO C-xrefactory
 
